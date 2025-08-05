@@ -7,10 +7,6 @@
 
   <!-- IMPORTANTE: apuntar al CSS dentro de css/ -->
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- JSON embebido para evitar problemas de fetch en file:// -->
-  <script id="data-json" type="application/json">
-  <!-- Pega aquí TODO el contenido de DetallePortafolio.json -->
   [
     {
       "Año": 2025,
@@ -120,6 +116,51 @@
     }
 
     poblarFiltros();
+    
   </script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('DetallePortafolio.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} – ${response.statusText}`);
+      }
+      return response.json();
+    })
+    .then(proyectos => {
+      // Resto de tu código original, usando “proyectos”:
+      const selP = document.getElementById('project-select');
+      const selY = document.getElementById('year-select');
+      const nombres = [...new Set(proyectos.map(x => x.Proyecto))].sort();
+      const años    = [...new Set(proyectos.map(x => x['Año']))].sort((a,b)=>b-a);
+      nombres.forEach(n => selP.add(new Option(n, n)));
+      años   .forEach(y => selY.add(new Option(y, y)));
+      selP.addEventListener('change', filtrar);
+      selY.addEventListener('change', filtrar);
+
+      function filtrar() {
+        const name = selP.value;
+        const year = selY.value;
+        const match = proyectos.find(p => p.Proyecto===name && String(p['Año'])===year);
+        const fields = ['Contexto Caso de Uso','Problema','Herramientas','Habilidades','Resultados'];
+        const ids    = ['detail-context','detail-problema','detail-herramientas','detail-habilidades','detail-resultados'];
+        if (!match) {
+          ids.forEach(id => document.getElementById(id).innerText = '');
+          document.getElementById('detail-context').innerText = 'Selecciona un proyecto…';
+          return;
+        }
+        fields.forEach((f,i) => {
+          document.getElementById(ids[i]).innerText = match[f] || '';
+        });
+      }
+    })
+    .catch(err => {
+      console.error('Error cargando datos de proyectos:', err);
+      document.querySelector('.content-wrapper').innerHTML =
+        '<p style="color:red;">No se pudo cargar la lista de proyectos.</p>';
+    });
+});
+</script>
 </body>
 </html>
+
