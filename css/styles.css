@@ -194,3 +194,23 @@ body {
     width: 100%;
   }
 }
+/* —————————————
+   Botones de igual tamaño
+   ————————————— */
+.links, .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;        /* espacio entre botones */
+  flex-wrap: wrap;  /* para que bajen de línea si falta espacio */
+}
+
+.links .btn,
+.social .btn {
+  flex: 1 1 200px;    /* base: 200px, crecen/encogen */
+  max-width: 250px;   /* opcional, para no hacerse demasiado grandes */
+  padding: 0.75rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
