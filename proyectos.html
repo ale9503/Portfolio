@@ -5,149 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mis Proyectos</title>
 
-  <!-- IMPORTANTE: apuntar al CSS dentro de css/ -->
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    /* Si quieres, aquí van tus estilos inline específicos de esta página */
-  </style>
 </head>
 <body>
   <aside class="sidebar">
     <div class="photo-container">
       <img src="1.png" alt="Foto de perfil" class="profile-photo" />
     </div>
-    <div class="contact-info">
-      <a href="https://www.alejandrogomezhub.com" target="_blank">Página web</a>
-      <a href="mailto:ale.9503@hotmail.com">ale.9503@hotmail.com</a>
-      <a href="tel:+573108195437">+57 310 819 5437</a>
-    </div>
+    <nav class="links">
+      <a
+        href="index.html"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Página web</a
+      >
+      <a
+        href="https://wa.me/573108195437"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >WhatsApp</a
+      >
+      <a
+        href="https://linkedin.com/in/nalejob"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+    </nav>
   </aside>
 
   <main class="main-content">
-    <div class="content-wrapper">
-      <h1>Mis Proyectos</h1>
+    <h1>Mis Proyectos</h1>
 
-      <div class="filter-container">
-        <div>
-          <label for="project-select">Nombre del proyecto</label><br />
-          <select id="project-select">
-            <option value="">— Selecciona —</option>
-          </select>
-        </div>
-        <div>
-          <label for="year-select">Año</label><br />
-          <select id="year-select">
-            <option value="">— Selecciona —</option>
-          </select>
-        </div>
-        <a href="index.html" class="btn">PG Proyectos</a>
+    <div class="filter-container">
+      <div>
+        <label for="project-select">Nombre del proyecto</label>
+        <select id="project-select">
+          <option value="">— Selecciona —</option>
+        </select>
       </div>
-
-      <div class="project-detail">
-        <div class="detail-box detail-context" id="detail-context">Selecciona un proyecto…</div>
-        <div class="detail-box detail-lower">
-          <div class="detail-problema detail-box" id="detail-problema"></div>
-          <div class="detail-middle">
-            <div class="detail-box" id="detail-herramientas"></div>
-            <div class="detail-box" id="detail-habilidades"></div>
-          </div>
-          <div class="detail-resultados detail-box" id="detail-resultados"></div>
-        </div>
+      <div>
+        <label for="year-select">Año</label>
+        <select id="year-select">
+          <option value="">— Selecciona —</option>
+        </select>
       </div>
     </div>
 
-    <section class="social">
-      <a href="https://wa.me/573108195437" class="btn">WhatsApp</a>
-      <a href="https://linkedin.com/in/nalejob" class="btn">LinkedIn</a>
-    </section>
+    <div class="project-detail">
+      <div class="detail-box">
+        <h2>Contexto Caso de Uso</h2>
+        <p id="detail-context"></p>
+      </div>
+      <div class="detail-box">
+        <h2>Problema</h2>
+        <p id="detail-problema"></p>
+      </div>
+      <div class="detail-box">
+        <h2>Herramientas</h2>
+        <p id="detail-herramientas"></p>
+      </div>
+      <div class="detail-box">
+        <h2>Habilidades</h2>
+        <p id="detail-habilidades"></p>
+      </div>
+      <div class="detail-box">
+        <h2>Resultados</h2>
+        <p id="detail-resultados"></p>
+      </div>
+    </div>
   </main>
 
   <script>
-    // Parseamos el JSON embebido
-    const proyectos = JSON.parse(
-      document.getElementById('data-json').textContent
-    );
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('DetallePortafolio.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status} – ${response.statusText}`);
+          }
+          return response.json();
+        })
+        .then(proyectos => {
+          const selP = document.getElementById('project-select');
+          const selY = document.getElementById('year-select');
 
-    // Rellenar dropdowns
-    function poblarFiltros() {
-      const selP = document.getElementById('project-select');
-      const selY = document.getElementById('year-select');
+          // Llenar filtros
+          const nombres = [...new Set(proyectos.map(x => x.Proyecto))].sort();
+          const años = [...new Set(proyectos.map(x => x['Año']))].sort(
+            (a, b) => b - a
+          );
+          nombres.forEach(n => selP.add(new Option(n, n)));
+          años.forEach(y => selY.add(new Option(y, y)));
 
-      const nombres = [...new Set(proyectos.map(x => x.Proyecto))].sort();
-      const años    = [...new Set(proyectos.map(x => x['Año']))].sort((a,b)=>b-a);
+          selP.addEventListener('change', filtrar);
+          selY.addEventListener('change', filtrar);
 
-      nombres.forEach(n => selP.add(new Option(n, n)));
-      años   .forEach(y => selY.add(new Option(y, y)));
+          function filtrar() {
+            const name = selP.value;
+            const year = selY.value;
+            const match = proyectos.find(
+              p => p.Proyecto === name && String(p['Año']) === year
+            );
 
-      selP.addEventListener('change', filtrar);
-      selY.addEventListener('change', filtrar);
-    }
+            if (!match) {
+              document.getElementById('detail-context').innerText =
+                'Selecciona un proyecto…';
+              ['detail-problema', 'detail-herramientas', 'detail-habilidades', 'detail-resultados'].forEach(
+                id => (document.getElementById(id).innerText = '')
+              );
+              return;
+            }
 
-    // Filtrar y mostrar detalle
-    function filtrar() {
-      const name = document.getElementById('project-select').value;
-      const year = document.getElementById('year-select').value;
-      const match = proyectos.find(p => p.Proyecto===name && String(p['Año'])===year);
-      const fields = ['Contexto Caso de Uso','Problema','Herramientas','Habilidades','Resultados'];
-      const ids    = ['detail-context','detail-problema','detail-herramientas','detail-habilidades','detail-resultados'];
-
-      if (!match) {
-        ids.forEach(id => document.getElementById(id).innerText = '');
-        document.getElementById('detail-context').innerText = 'Selecciona un proyecto…';
-        return;
-      }
-      fields.forEach((f,i) => {
-        document.getElementById(ids[i]).innerText = match[f] || '';
-      });
-    }
-
-    poblarFiltros();
-    
-  </script>
-  <script>
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('DetallePortafolio.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status} – ${response.statusText}`);
-      }
-      return response.json();
-    })
-    .then(proyectos => {
-      // Resto de tu código original, usando “proyectos”:
-      const selP = document.getElementById('project-select');
-      const selY = document.getElementById('year-select');
-      const nombres = [...new Set(proyectos.map(x => x.Proyecto))].sort();
-      const años    = [...new Set(proyectos.map(x => x['Año']))].sort((a,b)=>b-a);
-      nombres.forEach(n => selP.add(new Option(n, n)));
-      años   .forEach(y => selY.add(new Option(y, y)));
-      selP.addEventListener('change', filtrar);
-      selY.addEventListener('change', filtrar);
-
-      function filtrar() {
-        const name = selP.value;
-        const year = selY.value;
-        const match = proyectos.find(p => p.Proyecto===name && String(p['Año'])===year);
-        const fields = ['Contexto Caso de Uso','Problema','Herramientas','Habilidades','Resultados'];
-        const ids    = ['detail-context','detail-problema','detail-herramientas','detail-habilidades','detail-resultados'];
-        if (!match) {
-          ids.forEach(id => document.getElementById(id).innerText = '');
-          document.getElementById('detail-context').innerText = 'Selecciona un proyecto…';
-          return;
-        }
-        fields.forEach((f,i) => {
-          document.getElementById(ids[i]).innerText = match[f] || '';
+            document.getElementById(
+              'detail-context'
+            ).innerText = match['Contexto Caso de Uso'] || '';
+            document.getElementById('detail-problema').innerText =
+              match['Problema'] || '';
+            document.getElementById('detail-herramientas').innerText =
+              match['Herramientas'] || '';
+            document.getElementById('detail-habilidades').innerText =
+              match['Habilidades'] || '';
+            document.getElementById('detail-resultados').innerText =
+              match['Resultados'] || '';
+          }
+        })
+        .catch(err => {
+          console.error('Error cargando datos de proyectos:', err);
+          document.querySelector(
+            '.main-content'
+          ).innerHTML = `<p style="color:red;">
+            No se pudo cargar la lista de proyectos.
+          </p>`;
         });
-      }
-    })
-    .catch(err => {
-      console.error('Error cargando datos de proyectos:', err);
-      document.querySelector('.content-wrapper').innerHTML =
-        '<p style="color:red;">No se pudo cargar la lista de proyectos.</p>';
     });
-});
-</script>
+  </script>
 </body>
 </html>
-
-
