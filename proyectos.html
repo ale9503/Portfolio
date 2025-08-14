@@ -7,6 +7,8 @@
 
   <!-- Mantengo tu hoja de estilos -->
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
 </head>
 <body>
   <!-- Mantengo estructura y diseño general -->
@@ -128,11 +130,75 @@
 
             setDetails(match);
           });
-
+        // --- PARSEAR "clave:valor; clave:valor" ---
+        function parseHerramientas(txt) {
+          if (!txt) return [];
+          return txt
+            .split(/;|\n|,/g)
+            .map(s => s.trim())
+            .filter(Boolean)
+            .map(pair => {
+              const [k, ...rest] = pair.split(':');
+              return { key: (k || '').trim(), value: (rest.join(':') || '').trim() };
+            });
+        }
+      
+        // --- MAPA DE ICONOS (Simple Icons + MDI como genéricos) ---
+        // Si una clave no está mapeada, se usa GENÉRICO.
+        const GENERIC_ICON = 'mdi:toolbox-outline';
+        const ICONS = {
+          'Python': 'simple-icons:python',
+          'Power BI': 'simple-icons:powerbi',
+          'Power Query': 'simple-icons:powerquery',
+          'Power Automate': 'simple-icons:powerautomate',
+          'SQL': 'mdi:database',
+          'PostgreSQL': 'simple-icons:postgresql',
+          'MySQL': 'simple-icons:mysql',
+          'MongoDB': 'simple-icons:mongodb',
+          'Excel': 'simple-icons:microsoftexcel',
+          'Tableau': 'simple-icons:tableau',
+          'Git': 'simple-icons:git',
+          'GitHub': 'simple-icons:github',
+          'Docker': 'simple-icons:docker',
+          'AWS': 'simple-icons:amazonaws',
+          'GCP': 'simple-icons:googlecloud',
+          'Azure': 'simple-icons:microsoftazure',
+          'R': 'simple-icons:r',
+          'Apache Spark': 'simple-icons:apachespark',
+          'Spark': 'simple-icons:apachespark',
+          'Apache Airflow': 'simple-icons:apacheairflow',
+          'Airflow': 'simple-icons:apacheairflow',
+          'D3.js': 'simple-icons:d3dotjs',
+          'React': 'simple-icons:react',
+          'Node.js': 'simple-icons:nodedotjs',
+          'Linux': 'simple-icons:linux',
+          'Figma': 'simple-icons:figma'
+        };
+      
+        // --- RENDERIZAR ICONOS EN #detail-herramientas ---
+        function renderHerramientasIconify(txt) {
+          const host = document.getElementById('detail-herramientas');
+          host.innerHTML = ''; // Limpia lo anterior
+      
+          const items = parseHerramientas(txt);
+          items.forEach(({ key, value }) => {
+            const wrap = document.createElement('span');
+            wrap.className = 'tool-chip';
+            const tip = `${key}${value ? ': ' + value : ''}`;
+            wrap.title = tip;
+            wrap.setAttribute('aria-label', tip);
+      
+            const ic = document.createElement('iconify-icon');
+            ic.setAttribute('icon', ICONS[key] || GENERIC_ICON);
+      
+            wrap.appendChild(ic);
+            host.appendChild(wrap);
+          });
+        }
           function setDetails(item) {
             document.getElementById('detail-context').innerText       = item['Contexto Caso de Uso'] || '';
             document.getElementById('detail-problema').innerText      = item['Problema'] || '';
-            document.getElementById('detail-herramientas').innerText  = item['Herramientas'] || '';
+            renderHerramientasIconify(match['Herramientas']);
             document.getElementById('detail-habilidades').innerText   = item['Habilidades'] || '';
             document.getElementById('detail-resultados').innerText    = item['Resultados'] || '';
           }
@@ -153,3 +219,4 @@
   </script>
 </body>
 </html>
+
