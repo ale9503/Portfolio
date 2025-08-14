@@ -198,7 +198,7 @@
           function setDetails(item) {
             document.getElementById('detail-context').innerText       = item['Contexto Caso de Uso'] || '';
             document.getElementById('detail-problema').innerText      = item['Problema'] || '';
-            renderHerramientasIconify(match['Herramientas']);
+            renderHerramientasIconify(item['Herramientas']);
             document.getElementById('detail-habilidades').innerText   = item['Habilidades'] || '';
             document.getElementById('detail-resultados').innerText    = item['Resultados'] || '';
           }
@@ -219,4 +219,5 @@
   </script>
 </body>
 </html>
+
 
