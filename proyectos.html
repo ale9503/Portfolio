@@ -5,35 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mis Proyectos</title>
 
+  <!-- Mantengo tu hoja de estilos -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- Mantengo estructura y diseño general -->
   <aside class="sidebar">
     <div class="photo-container">
       <img src="1.png" alt="Foto de perfil" class="profile-photo" />
     </div>
     <nav class="links">
-      <a
-        href="index.html"
-        class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Página web</a
-      >
-      <a
-        href="https://wa.me/573108195437"
-        class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-        >WhatsApp</a
-      >
-      <a
-        href="https://linkedin.com/in/nalejob"
-        class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-        >LinkedIn</a
-      >
+      <a href="index.html" class="btn" target="_blank" rel="noopener noreferrer">Página web</a>
+      <a href="https://wa.me/573108195437" class="btn" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://linkedin.com/in/nalejob" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </nav>
   </aside>
 
@@ -41,20 +25,24 @@
     <h1>Mis Proyectos</h1>
 
     <div class="filter-container">
-      <div>
-        <label for="project-select">Nombre del proyecto</label>
-        <select id="project-select">
-          <option value="">— Selecciona —</option>
-        </select>
-      </div>
+      <!-- (1) Invertir ubicación: Año primero a la izquierda -->
       <div>
         <label for="year-select">Año</label>
         <select id="year-select">
           <option value="">— Selecciona —</option>
         </select>
       </div>
+
+      <!-- (2) Nombre del proyecto oculto inicialmente -->
+      <div id="project-block" style="display:none;">
+        <label for="project-select">Nombre del proyecto</label>
+        <select id="project-select" disabled>
+          <option value="">— Selecciona —</option>
+        </select>
+      </div>
     </div>
 
+    <!-- (3) Mostrar información SOLO cuando ambos dropdowns tengan selección -->
     <div class="project-detail">
       <div class="detail-box">
         <h2>Contexto Caso de Uso</h2>
@@ -81,64 +69,85 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Carga el JSON de detalle
       fetch('DetallePortafolio.json')
         .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP ${response.status} – ${response.statusText}`);
-          }
+          if (!response.ok) throw new Error(`HTTP ${response.status} – ${response.statusText}`);
           return response.json();
         })
         .then(proyectos => {
-          const selP = document.getElementById('project-select');
-          const selY = document.getElementById('year-select');
+          const selYear = document.getElementById('year-select');
+          const selProj = document.getElementById('project-select');
+          const projectBlock = document.getElementById('project-block');
 
-          // Llenar filtros
-          const nombres = [...new Set(proyectos.map(x => x.Proyecto))].sort();
-          const años = [...new Set(proyectos.map(x => x['Año']))].sort(
-            (a, b) => b - a
-          );
-          nombres.forEach(n => selP.add(new Option(n, n)));
-          años.forEach(y => selY.add(new Option(y, y)));
+          // (1) Poblar AÑOS (únicos) en orden descendente
+          const aniosUnicos = [...new Set(proyectos.map(p => p['Año']))].sort((a, b) => b - a);
+          aniosUnicos.forEach(y => selYear.add(new Option(String(y), String(y))));
 
-          selP.addEventListener('change', filtrar);
-          selY.addEventListener('change', filtrar);
+          // (2) Al cambiar año: mostrar bloque de proyecto y poblar SOLO proyectos del año
+          selYear.addEventListener('change', () => {
+            const year = selYear.value;
+            clearDetails();
 
-          function filtrar() {
-            const name = selP.value;
-            const year = selY.value;
-            const match = proyectos.find(
-              p => p.Proyecto === name && String(p['Año']) === year
-            );
+            // Reset de proyectos
+            selProj.innerHTML = '';
+            selProj.add(new Option('— Selecciona —', ''));
 
-            if (!match) {
-              document.getElementById('detail-context').innerText =
-                'Selecciona un proyecto…';
-              ['detail-problema', 'detail-herramientas', 'detail-habilidades', 'detail-resultados'].forEach(
-                id => (document.getElementById(id).innerText = '')
-              );
+            if (!year) {
+              // Sin año => ocultar bloque proyectos y deshabilitar
+              projectBlock.style.display = 'none';
+              selProj.disabled = true;
               return;
             }
 
-            document.getElementById(
-              'detail-context'
-            ).innerText = match['Contexto Caso de Uso'] || '';
-            document.getElementById('detail-problema').innerText =
-              match['Problema'] || '';
-            document.getElementById('detail-herramientas').innerText =
-              match['Herramientas'] || '';
-            document.getElementById('detail-habilidades').innerText =
-              match['Habilidades'] || '';
-            document.getElementById('detail-resultados').innerText =
-              match['Resultados'] || '';
+            // Filtrar proyectos por año y poblar nombres
+            const proyectosAño = proyectos.filter(p => String(p['Año']) === year);
+            const nombresUnicos = [...new Set(proyectosAño.map(p => p.Proyecto))].sort();
+            nombresUnicos.forEach(nombre => selProj.add(new Option(nombre, nombre)));
+
+            // Mostrar bloque proyectos y habilitar
+            projectBlock.style.display = '';
+            selProj.disabled = false;
+          });
+
+          // (3) Al cambiar proyecto: solo mostrar info si hay año + proyecto
+          selProj.addEventListener('change', () => {
+            const year = selYear.value;
+            const name = selProj.value;
+
+            if (!year || !name) {
+              clearDetails();
+              return;
+            }
+
+            const match = proyectos.find(p => p.Proyecto === name && String(p['Año']) === year);
+            if (!match) {
+              clearDetails();
+              return;
+            }
+
+            setDetails(match);
+          });
+
+          function setDetails(item) {
+            document.getElementById('detail-context').innerText       = item['Contexto Caso de Uso'] || '';
+            document.getElementById('detail-problema').innerText      = item['Problema'] || '';
+            document.getElementById('detail-herramientas').innerText  = item['Herramientas'] || '';
+            document.getElementById('detail-habilidades').innerText   = item['Habilidades'] || '';
+            document.getElementById('detail-resultados').innerText    = item['Resultados'] || '';
+          }
+
+          function clearDetails() {
+            ['detail-context','detail-problema','detail-herramientas','detail-habilidades','detail-resultados']
+              .forEach(id => document.getElementById(id).innerText = '');
           }
         })
         .catch(err => {
           console.error('Error cargando datos de proyectos:', err);
-          document.querySelector(
-            '.main-content'
-          ).innerHTML = `<p style="color:red;">
-            No se pudo cargar la lista de proyectos.
-          </p>`;
+          document.querySelector('.main-content').insertAdjacentHTML(
+            'beforeend',
+            '<p style="color:red;">No se pudo cargar la lista de proyectos.</p>'
+          );
         });
     });
   </script>
