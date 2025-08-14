@@ -174,23 +174,59 @@
           'Linux': 'simple-icons:linux',
           'Figma': 'simple-icons:figma'
         };
+      // Quita corchetes y paréntesis de la clave
+      function normalizeKey(key) {
+        return (key || '')
+          .replace(/^\[|\]$/g, '')     // quita corchetes externos
+          .replace(/\(.*?\)/g, '')     // quita cualquier " (algo) "
+          .replace(/\s{2,}/g, ' ')
+          .trim();
+      }
       
+      // Devuelve un icono aún si la clave no encaja exacta (búsqueda por "contiene")
+      function iconFor(rawKey, ICONS, GENERIC_ICON) {
+        const k = normalizeKey(rawKey);
+        if (ICONS[k]) return ICONS[k];
+      
+        const s = k.toLowerCase();
+        if (s.includes('excel')) return 'simple-icons:microsoftexcel';
+        if (s.includes('power bi')) return 'simple-icons:powerbi';
+        if (s.includes('power query')) return 'simple-icons:powerquery';
+        if (s.includes('power pivot')) return 'mdi:table-pivot';
+        if (s.includes('python')) return 'simple-icons:python';
+        if (s.includes('fastapi')) return 'simple-icons:fastapi';
+        if (s.includes('sqlite')) return 'simple-icons:sqlite';
+        if (s.includes('google cloud')) return 'simple-icons:googlecloud';
+        if (s.includes('github pages')) return 'simple-icons:githubpages';
+        if (s.includes('binance')) return 'simple-icons:binance';
+        if (s.includes('pandas')) return 'simple-icons:pandas';
+        if (s.includes('scikit') || s.includes('sklearn')) return 'simple-icons:scikitlearn';
+        if (s.includes('xgboost')) return 'simple-icons:xgboost';
+        if (s.includes('api')) return 'mdi:api';
+        if (s.includes('rpa') || s.includes('rda')) return 'mdi:robot-outline';
+        if (s.includes('bpmn')) return 'mdi:chart-flow';
+        if (s.includes('base de datos')) return 'mdi:database';
+        if (s.includes('certificado') || s.includes('ssl')) return 'mdi:certificate-outline';
+      
+        return GENERIC_ICON;
+      }
         // --- RENDERIZAR ICONOS EN #detail-herramientas ---
         function renderHerramientasIconify(txt) {
           const host = document.getElementById('detail-herramientas');
-          host.innerHTML = ''; // Limpia lo anterior
-      
+          host.innerHTML = '';
+        
           const items = parseHerramientas(txt);
           items.forEach(({ key, value }) => {
             const wrap = document.createElement('span');
             wrap.className = 'tool-chip';
-            const tip = `${key}${value ? ': ' + value : ''}`;
+            const nk = normalizeKey(key);
+            const tip = `${nk}${value ? ': ' + value : ''}`;
             wrap.title = tip;
             wrap.setAttribute('aria-label', tip);
-      
+        
             const ic = document.createElement('iconify-icon');
-            ic.setAttribute('icon', ICONS[key] || GENERIC_ICON);
-      
+            ic.setAttribute('icon', iconFor(key, ICONS, GENERIC_ICON));
+        
             wrap.appendChild(ic);
             host.appendChild(wrap);
           });
@@ -219,5 +255,6 @@
   </script>
 </body>
 </html>
+
 
 
