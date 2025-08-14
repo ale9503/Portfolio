@@ -133,8 +133,17 @@
         // --- PARSEAR "clave:valor; clave:valor" ---
         function parseHerramientas(txt) {
           if (!txt) return [];
+          const out = [];
+          const rx = /\[([^\]]+)\]\s*:\s*\{([^}]*)\}/g; // [Clave]: {Valor}
+          let m;
+          while ((m = rx.exec(txt)) !== null) {
+            out.push({ key: m[1].trim(), value: m[2].trim() });
+          }
+          if (out.length) return out;
+        
+          // Fallback (por si alguna entrada no viene con corchetes):
           return txt
-            .split(/;|\n|,/g)
+            .split(/;|\n/g)
             .map(s => s.trim())
             .filter(Boolean)
             .map(pair => {
@@ -255,6 +264,7 @@
   </script>
 </body>
 </html>
+
 
 
 
