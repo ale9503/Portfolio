@@ -32,48 +32,50 @@
     <main class="main">
       <header class="hero">
         <h1 class="hero__title">Mis Proyectos <span class="hero__motto">De la mente al mundo</span></h1>
-        <p class="hero__lede">Explora mis casos por año. Abre un proyecto para ver su contexto, problema, herramientas, habilidades y resultados.</p>
+        <p class="hero__lede">Explora mis casos por año. Selecciona un año y luego un proyecto. Verás el contexto, problema, herramientas/metodologías, habilidades y resultados.</p>
       </header>
 
-      <section>
-        <div class="filter-container">
-          <div>
-            <label for="year-select">Año</label>
-            <select id="year-select">
-              <option value="">— Selecciona —</option>
-            </select>
-          </div>
-
-          <div id="project-block" style="display:none;">
-            <label for="project-select">Nombre del proyecto</label>
-            <select id="project-select" disabled>
-              <option value="">— Selecciona —</option>
-            </select>
-          </div>
+      <section class="case-layout" aria-label="Detalle del proyecto">
+        <!-- Barras Year / Project (apiladas) -->
+        <div class="bar bar--year">
+          <label for="year-select">Año</label>
+          <select id="year-select" aria-label="Selecciona año">
+            <option value="">— Selecciona —</option>
+          </select>
         </div>
 
-        <div class="project-detail">
-          <div class="detail-box">
-            <h2>Contexto Caso de Uso</h2>
-            <p id="detail-context"></p>
-          </div>
-          <div class="detail-box">
-            <h2>Problema</h2>
-            <p id="detail-problema"></p>
-          </div>
-          <div class="detail-box">
-            <h2>Herramientas</h2>
-            <div id="detail-herramientas"></div>
-          </div>
-          <div class="detail-box">
-            <h2>Habilidades</h2>
-            <p id="detail-habilidades"></p>
-          </div>
-          <div class="detail-box">
-            <h2>Resultados</h2>
-            <p id="detail-resultados"></p>
-          </div>
+        <div class="bar bar--proj" id="project-bar" style="opacity:.75;">
+          <label for="project-select">Nombre del proyecto</label>
+          <select id="project-select" disabled aria-label="Selecciona proyecto">
+            <option value="">— Selecciona —</option>
+          </select>
         </div>
+
+        <!-- Cajas -->
+        <article class="case-box case--context">
+          <h2>Contexto Caso de Uso</h2>
+          <p id="detail-context"></p>
+        </article>
+
+        <article class="case-box case--problem">
+          <h2>Problema</h2>
+          <p id="detail-problema"></p>
+        </article>
+
+        <article class="case-box case--tools">
+          <h2>Herramientas, Metodologías</h2>
+          <div id="detail-herramientas"></div>
+        </article>
+
+        <article class="case-box case--skills">
+          <h2>Habilidades</h2>
+          <p id="detail-habilidades"></p>
+        </article>
+
+        <article class="case-box case--results">
+          <h2>Resultados Obtenidos</h2>
+          <p id="detail-resultados"></p>
+        </article>
       </section>
     </main>
   </div>
@@ -92,7 +94,7 @@
     function initProjects(proyectos){
       const selYear = document.getElementById('year-select');
       const selProj = document.getElementById('project-select');
-      const projectBlock = document.getElementById('project-block');
+      const projBar = document.getElementById('project-bar');
 
       // Poblar años únicos (desc)
       const years = [...new Set(proyectos.map(p => p['Año']))].sort((a,b)=>b-a);
@@ -106,19 +108,17 @@
         // Reset de proyectos
         selProj.innerHTML = '';
         selProj.add(new Option('— Selecciona —', ''));
+        selProj.disabled = true;
+        projBar.style.opacity = .75;
 
-        if (!year){
-          projectBlock.style.display = 'none';
-          selProj.disabled = true;
-          return;
-        }
+        if (!year){ return; }
 
         const proyectosAño = proyectos.filter(p => String(p['Año']) === year);
         const nombresUnicos = [...new Set(proyectosAño.map(p => p.Proyecto))].sort();
         nombresUnicos.forEach(nombre => selProj.add(new Option(nombre, nombre)));
 
-        projectBlock.style.display = '';
         selProj.disabled = false;
+        projBar.style.opacity = 1;
       });
 
       // Cambio de proyecto
