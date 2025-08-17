@@ -3,268 +3,255 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mis Proyectos</title>
+  <title>Mis Proyectos — Alejandro Gómez</title>
+  <meta name="description" content="Casos reales por año. Contexto, problema, herramientas, habilidades y resultados." />
 
-  <!-- Mantengo tu hoja de estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/styles.css" />
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-
 </head>
 <body>
-  <!-- Mantengo estructura y diseño general -->
-  <aside class="sidebar">
-    <div class="photo-container">
-      <img src="1.png" alt="Foto de perfil" class="profile-photo" />
-    </div>
-    <nav class="links">
-      <a href="index.html" class="btn" target="_blank" rel="noopener noreferrer">Página web</a>
-      <a href="https://wa.me/573108195437" class="btn" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href="https://linkedin.com/in/nalejob" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </nav>
-  </aside>
+  <div class="layout">
 
-  <main class="main-content">
-    <h1>Mis Proyectos</h1>
+    <aside class="sidebar">
+      <div class="photo-container">
+        <img src="1.png" alt="Foto de perfil de Alejandro Gómez" class="profile-photo" />
+      </div>
+      <nav class="social">
+        <a href="index.html" class="btn btn--secondary">Home</a>
+        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:ale.9503@hotmail.com?subject=Contacto%20por%20proyectos" class="btn btn--secondary">Email</a>
+      </nav>
+    </aside>
 
-    <div class="filter-container">
-      <!-- (1) Invertir ubicación: Año primero a la izquierda -->
-      <div>
-        <label for="year-select">Año</label>
-        <select id="year-select">
-          <option value="">— Selecciona —</option>
-        </select>
-      </div>
+    <main class="main">
+      <header class="hero">
+        <h1 class="hero__title">Mis Proyectos <span class="hero__motto">De la mente al mundo</span></h1>
+        <p class="hero__lede">Explora mis casos por año. Abre un proyecto para ver su contexto, problema, herramientas, habilidades y resultados.</p>
+      </header>
 
-      <!-- (2) Nombre del proyecto oculto inicialmente -->
-      <div id="project-block" style="display:none;">
-        <label for="project-select">Nombre del proyecto</label>
-        <select id="project-select" disabled>
-          <option value="">— Selecciona —</option>
-        </select>
-      </div>
-    </div>
+      <section>
+        <div class="filter-container">
+          <div>
+            <label for="year-select">Año</label>
+            <select id="year-select">
+              <option value="">— Selecciona —</option>
+            </select>
+          </div>
 
-    <!-- (3) Mostrar información SOLO cuando ambos dropdowns tengan selección -->
-    <div class="project-detail">
-      <div class="detail-box">
-        <h2>Contexto Caso de Uso</h2>
-        <p id="detail-context"></p>
-      </div>
-      <div class="detail-box">
-        <h2>Problema</h2>
-        <p id="detail-problema"></p>
-      </div>
-      <div class="detail-box">
-        <h2>Herramientas</h2>
-        <p id="detail-herramientas"></p>
-      </div>
-      <div class="detail-box">
-        <h2>Habilidades</h2>
-        <p id="detail-habilidades"></p>
-      </div>
-      <div class="detail-box">
-        <h2>Resultados</h2>
-        <p id="detail-resultados"></p>
-      </div>
-    </div>
-  </main>
+          <div id="project-block" style="display:none;">
+            <label for="project-select">Nombre del proyecto</label>
+            <select id="project-select" disabled>
+              <option value="">— Selecciona —</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="project-detail">
+          <div class="detail-box">
+            <h2>Contexto Caso de Uso</h2>
+            <p id="detail-context"></p>
+          </div>
+          <div class="detail-box">
+            <h2>Problema</h2>
+            <p id="detail-problema"></p>
+          </div>
+          <div class="detail-box">
+            <h2>Herramientas</h2>
+            <div id="detail-herramientas"></div>
+          </div>
+          <div class="detail-box">
+            <h2>Habilidades</h2>
+            <p id="detail-habilidades"></p>
+          </div>
+          <div class="detail-box">
+            <h2>Resultados</h2>
+            <p id="detail-resultados"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Carga el JSON de detalle
-      fetch('DetallePortafolio.json')
-        .then(response => {
-          if (!response.ok) throw new Error(`HTTP ${response.status} – ${response.statusText}`);
-          return response.json();
-        })
-        .then(proyectos => {
-          const selYear = document.getElementById('year-select');
-          const selProj = document.getElementById('project-select');
-          const projectBlock = document.getElementById('project-block');
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('DetallePortafolio.json')
+      .then(r => { if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+      .then(data => initProjects(data))
+      .catch(err => {
+        console.error('Error cargando proyectos:', err);
+        const main = document.querySelector('main');
+        if (main) main.insertAdjacentHTML('beforeend', '<p style="color:red;">No se pudo cargar la lista de proyectos.</p>');
+      });
 
-          // (1) Poblar AÑOS (únicos) en orden descendente
-          const aniosUnicos = [...new Set(proyectos.map(p => p['Año']))].sort((a, b) => b - a);
-          aniosUnicos.forEach(y => selYear.add(new Option(String(y), String(y))));
+    function initProjects(proyectos){
+      const selYear = document.getElementById('year-select');
+      const selProj = document.getElementById('project-select');
+      const projectBlock = document.getElementById('project-block');
 
-          // (2) Al cambiar año: mostrar bloque de proyecto y poblar SOLO proyectos del año
-          selYear.addEventListener('change', () => {
-            const year = selYear.value;
-            clearDetails();
+      // Poblar años únicos (desc)
+      const years = [...new Set(proyectos.map(p => p['Año']))].sort((a,b)=>b-a);
+      years.forEach(y => selYear.add(new Option(String(y), String(y))));
 
-            // Reset de proyectos
-            selProj.innerHTML = '';
-            selProj.add(new Option('— Selecciona —', ''));
+      // Cambio de año
+      selYear.addEventListener('change', () => {
+        const year = selYear.value;
+        clearDetails();
 
-            if (!year) {
-              // Sin año => ocultar bloque proyectos y deshabilitar
-              projectBlock.style.display = 'none';
-              selProj.disabled = true;
-              return;
-            }
+        // Reset de proyectos
+        selProj.innerHTML = '';
+        selProj.add(new Option('— Selecciona —', ''));
 
-            // Filtrar proyectos por año y poblar nombres
-            const proyectosAño = proyectos.filter(p => String(p['Año']) === year);
-            const nombresUnicos = [...new Set(proyectosAño.map(p => p.Proyecto))].sort();
-            nombresUnicos.forEach(nombre => selProj.add(new Option(nombre, nombre)));
-
-            // Mostrar bloque proyectos y habilitar
-            projectBlock.style.display = '';
-            selProj.disabled = false;
-          });
-
-          // (3) Al cambiar proyecto: solo mostrar info si hay año + proyecto
-          selProj.addEventListener('change', () => {
-            const year = selYear.value;
-            const name = selProj.value;
-
-            if (!year || !name) {
-              clearDetails();
-              return;
-            }
-
-            const match = proyectos.find(p => p.Proyecto === name && String(p['Año']) === year);
-            if (!match) {
-              clearDetails();
-              return;
-            }
-
-            setDetails(match);
-          });
-        // --- PARSEAR "clave:valor; clave:valor" ---
-        function parseHerramientas(txt) {
-          if (!txt) return [];
-          const out = [];
-          const rx = /\[([^\]]+)\]\s*:\s*\{([^}]*)\}/g; // [Clave]: {Valor}
-          let m;
-          while ((m = rx.exec(txt)) !== null) {
-            out.push({ key: m[1].trim(), value: m[2].trim() });
-          }
-          if (out.length) return out;
-        
-          // Fallback (por si alguna entrada no viene con corchetes):
-          return txt
-            .split(/;|\n/g)
-            .map(s => s.trim())
-            .filter(Boolean)
-            .map(pair => {
-              const [k, ...rest] = pair.split(':');
-              return { key: (k || '').trim(), value: (rest.join(':') || '').trim() };
-            });
+        if (!year){
+          projectBlock.style.display = 'none';
+          selProj.disabled = true;
+          return;
         }
-      
-        // --- MAPA DE ICONOS (Simple Icons + MDI como genéricos) ---
-        // Si una clave no está mapeada, se usa GENÉRICO.
-        const GENERIC_ICON = 'mdi:toolbox-outline';
-        const ICONS = {
-          'Python': 'simple-icons:python',
-          'Power BI': 'simple-icons:powerbi',
-          'Power Query': 'simple-icons:powerquery',
-          'Power Automate': 'simple-icons:powerautomate',
-          'SQL': 'mdi:database',
-          'PostgreSQL': 'simple-icons:postgresql',
-          'MySQL': 'simple-icons:mysql',
-          'MongoDB': 'simple-icons:mongodb',
-          'Excel': 'simple-icons:microsoftexcel',
-          'Tableau': 'simple-icons:tableau',
-          'Git': 'simple-icons:git',
-          'GitHub': 'simple-icons:github',
-          'Docker': 'simple-icons:docker',
-          'AWS': 'simple-icons:amazonaws',
-          'GCP': 'simple-icons:googlecloud',
-          'Azure': 'simple-icons:microsoftazure',
-          'R': 'simple-icons:r',
-          'Apache Spark': 'simple-icons:apachespark',
-          'Spark': 'simple-icons:apachespark',
-          'Apache Airflow': 'simple-icons:apacheairflow',
-          'Airflow': 'simple-icons:apacheairflow',
-          'D3.js': 'simple-icons:d3dotjs',
-          'React': 'simple-icons:react',
-          'Node.js': 'simple-icons:nodedotjs',
-          'Linux': 'simple-icons:linux',
-          'Figma': 'simple-icons:figma'
-        };
-      // Quita corchetes y paréntesis de la clave
-      function normalizeKey(key) {
-        return (key || '')
-          .replace(/^\[|\]$/g, '')     // quita corchetes externos
-          .replace(/\(.*?\)/g, '')     // quita cualquier " (algo) "
-          .replace(/\s{2,}/g, ' ')
-          .trim();
-      }
-      
-      // Devuelve un icono aún si la clave no encaja exacta (búsqueda por "contiene")
-      function iconFor(rawKey, ICONS, GENERIC_ICON) {
-        const k = normalizeKey(rawKey);
-        if (ICONS[k]) return ICONS[k];
-      
-        const s = k.toLowerCase();
-        if (s.includes('excel')) return 'simple-icons:microsoftexcel';
-        if (s.includes('power bi')) return 'simple-icons:powerbi';
-        if (s.includes('power query')) return 'simple-icons:powerquery';
-        if (s.includes('power pivot')) return 'mdi:table-pivot';
-        if (s.includes('python')) return 'simple-icons:python';
-        if (s.includes('fastapi')) return 'simple-icons:fastapi';
-        if (s.includes('sqlite')) return 'simple-icons:sqlite';
-        if (s.includes('google cloud')) return 'simple-icons:googlecloud';
-        if (s.includes('github pages')) return 'simple-icons:githubpages';
-        if (s.includes('binance')) return 'simple-icons:binance';
-        if (s.includes('pandas')) return 'simple-icons:pandas';
-        if (s.includes('scikit') || s.includes('sklearn')) return 'simple-icons:scikitlearn';
-        if (s.includes('xgboost')) return 'simple-icons:xgboost';
-        if (s.includes('api')) return 'mdi:api';
-        if (s.includes('rpa') || s.includes('rda')) return 'mdi:robot-outline';
-        if (s.includes('bpmn')) return 'mdi:chart-flow';
-        if (s.includes('base de datos')) return 'mdi:database';
-        if (s.includes('certificado') || s.includes('ssl')) return 'mdi:certificate-outline';
-      
-        return GENERIC_ICON;
-      }
-        // --- RENDERIZAR ICONOS EN #detail-herramientas ---
-        function renderHerramientasIconify(txt) {
-          const host = document.getElementById('detail-herramientas');
-          host.innerHTML = '';
-        
-          const items = parseHerramientas(txt);
-          items.forEach(({ key, value }) => {
-            const wrap = document.createElement('span');
-            wrap.className = 'tool-chip';
-            const nk = normalizeKey(key);
-            const tip = `${nk}${value ? ': ' + value : ''}`;
-            wrap.title = tip;
-            wrap.setAttribute('aria-label', tip);
-        
-            const ic = document.createElement('iconify-icon');
-            ic.setAttribute('icon', iconFor(key, ICONS, GENERIC_ICON));
-        
-            wrap.appendChild(ic);
-            host.appendChild(wrap);
-          });
-        }
-          function setDetails(item) {
-            document.getElementById('detail-context').innerText       = item['Contexto Caso de Uso'] || '';
-            document.getElementById('detail-problema').innerText      = item['Problema'] || '';
-            renderHerramientasIconify(item['Herramientas']);
-            document.getElementById('detail-habilidades').innerText   = item['Habilidades'] || '';
-            document.getElementById('detail-resultados').innerText    = item['Resultados'] || '';
-          }
 
-          function clearDetails() {
-            ['detail-context','detail-problema','detail-herramientas','detail-habilidades','detail-resultados']
-              .forEach(id => document.getElementById(id).innerText = '');
-          }
-        })
-        .catch(err => {
-          console.error('Error cargando datos de proyectos:', err);
-          document.querySelector('.main-content').insertAdjacentHTML(
-            'beforeend',
-            '<p style="color:red;">No se pudo cargar la lista de proyectos.</p>'
-          );
-        });
-    });
+        const proyectosAño = proyectos.filter(p => String(p['Año']) === year);
+        const nombresUnicos = [...new Set(proyectosAño.map(p => p.Proyecto))].sort();
+        nombresUnicos.forEach(nombre => selProj.add(new Option(nombre, nombre)));
+
+        projectBlock.style.display = '';
+        selProj.disabled = false;
+      });
+
+      // Cambio de proyecto
+      selProj.addEventListener('change', () => {
+        const year = selYear.value;
+        const name = selProj.value;
+        if (!year || !name){ clearDetails(); return; }
+
+        const match = proyectos.find(p => p.Proyecto === name && String(p['Año']) === year);
+        if (!match){ clearDetails(); return; }
+
+        setDetails(match);
+      });
+    }
+
+    // ---------- Utilidades visuales ----------
+    function parseHerramientas(txt){
+      if (!txt) return [];
+      const out = [];
+      const rx = /\[([^\]]+)\]\s*:\s*\{([^}]*)\}/g; // [Clave]: {Valor}
+      let m;
+      while ((m = rx.exec(txt)) !== null) {
+        out.push({ key: m[1].trim(), value: m[2].trim() });
+      }
+      if (out.length) return out;
+
+      // Fallback simple "clave: valor; clave: valor"
+      return txt.split(/;|\n/g).map(s => s.trim()).filter(Boolean).map(pair => {
+        const [k, ...rest] = pair.split(':');
+        return { key: (k||'').trim(), value: (rest.join(':')||'').trim() };
+      });
+    }
+
+    const GENERIC_ICON = 'mdi:toolbox-outline';
+    const ICONS = {
+      'Python': 'simple-icons:python',
+      'Power BI': 'simple-icons:powerbi',
+      'Power Query': 'simple-icons:powerquery',
+      'Power Automate': 'simple-icons:powerautomate',
+      'SQL': 'mdi:database',
+      'PostgreSQL': 'simple-icons:postgresql',
+      'MySQL': 'simple-icons:mysql',
+      'MongoDB': 'simple-icons:mongodb',
+      'Excel': 'simple-icons:microsoftexcel',
+      'Tableau': 'simple-icons:tableau',
+      'Git': 'simple-icons:git',
+      'GitHub': 'simple-icons:github',
+      'Docker': 'simple-icons:docker',
+      'AWS': 'simple-icons:amazonaws',
+      'GCP': 'simple-icons:googlecloud',
+      'Azure': 'simple-icons:microsoftazure',
+      'R': 'simple-icons:r',
+      'Apache Spark': 'simple-icons:apachespark',
+      'Spark': 'simple-icons:apachespark',
+      'Apache Airflow': 'simple-icons:apacheairflow',
+      'Airflow': 'simple-icons:apacheairflow',
+      'D3.js': 'simple-icons:d3dotjs',
+      'React': 'simple-icons:react',
+      'Node.js': 'simple-icons:nodedotjs',
+      'Linux': 'simple-icons:linux',
+      'Figma': 'simple-icons:figma'
+    };
+
+    function normalizeKey(key){
+      return (key || '')
+        .replace(/^\[|\]$/g, '')
+        .replace(/\(.*?\)/g, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
+
+    function iconFor(rawKey){
+      const k = normalizeKey(rawKey);
+      if (ICONS[k]) return ICONS[k];
+      const s = k.toLowerCase();
+      if (s.includes('excel')) return 'simple-icons:microsoftexcel';
+      if (s.includes('power bi')) return 'simple-icons:powerbi';
+      if (s.includes('power query')) return 'simple-icons:powerquery';
+      if (s.includes('power pivot')) return 'mdi:table-pivot';
+      if (s.includes('python')) return 'simple-icons:python';
+      if (s.includes('fastapi')) return 'simple-icons:fastapi';
+      if (s.includes('sqlite')) return 'simple-icons:sqlite';
+      if (s.includes('google cloud')) return 'simple-icons:googlecloud';
+      if (s.includes('github pages')) return 'simple-icons:githubpages';
+      if (s.includes('binance')) return 'simple-icons:binance';
+      if (s.includes('pandas')) return 'simple-icons:pandas';
+      if (s.includes('scikit') || s.includes('sklearn')) return 'simple-icons:scikitlearn';
+      if (s.includes('xgboost')) return 'simple-icons:xgboost';
+      if (s.includes('api')) return 'mdi:api';
+      if (s.includes('rpa') || s.includes('rda')) return 'mdi:robot-outline';
+      if (s.includes('bpmn')) return 'mdi:chart-flow';
+      if (s.includes('base de datos')) return 'mdi:database';
+      if (s.includes('certificado') || s.includes('ssl')) return 'mdi:certificate-outline';
+      return 'mdi:toolbox-outline';
+    }
+
+    function renderHerramientasIconify(txt){
+      const host = document.getElementById('detail-herramientas');
+      if (!host) return;
+      host.innerHTML = '';
+      const items = parseHerramientas(txt);
+      items.forEach(({key, value}) => {
+        const wrap = document.createElement('span');
+        wrap.className = 'tool-chip';
+        const nk = normalizeKey(key);
+        const tip = `${nk}${value ? ': ' + value : ''}`;
+        wrap.title = tip;
+        wrap.setAttribute('aria-label', tip);
+
+        const ic = document.createElement('iconify-icon');
+        ic.setAttribute('icon', iconFor(key));
+        wrap.appendChild(ic);
+        host.appendChild(wrap);
+      });
+    }
+
+    function setDetails(item){
+      document.getElementById('detail-context').innerText     = item['Contexto Caso de Uso'] || '';
+      document.getElementById('detail-problema').innerText    = item['Problema'] || '';
+      renderHerramientasIconify(item['Herramientas']);
+      document.getElementById('detail-habilidades').innerText = item['Habilidades'] || '';
+      document.getElementById('detail-resultados').innerText  = item['Resultados'] || '';
+    }
+
+    function clearDetails(){
+      document.getElementById('detail-context').innerText     = '';
+      document.getElementById('detail-problema').innerText    = '';
+      const host = document.getElementById('detail-herramientas');
+      if (host) host.innerHTML = '';
+      document.getElementById('detail-habilidades').innerText = '';
+      document.getElementById('detail-resultados').innerText  = '';
+    }
+  });
   </script>
 </body>
 </html>
-
-
-
-
