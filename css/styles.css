@@ -267,12 +267,13 @@ img{ max-width:100%; display:block; }
 
 /* Cajas principales con color lleno */
 .case-box{
-  background: var(--brand-700);
+  background: rgba(0, 61, 92, 0.7); /* azul con opacidad */
   color: var(--white);
   border-radius: var(--radius-1);
   padding: var(--space-4);
   box-shadow: 0 1px 0 rgba(0,0,0,.08);
 }
+
 .case-box h2{
   color: var(--white);
   font-size: clamp(14px, 1.9vw, 18px);
@@ -388,3 +389,4 @@ img{ max-width:100%; display:block; }
     padding: var(--space-5) var(--space-4);
   }
 }
+
