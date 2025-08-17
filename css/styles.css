@@ -193,7 +193,7 @@ img{ max-width:100%; display:block; }
 .ext-icon svg{ display:inline-block; fill: currentColor; }
 
 /* =========================================================
-   Página Proyectos
+   Página Proyectos (layout estilo wireframe)
    ========================================================= */
 .filter-container{
   display: flex;
@@ -221,7 +221,84 @@ img{ max-width:100%; display:block; }
   background: var(--white);
 }
 
-/* Grid de detalle */
+/* ======== Proyecto: layout estilo wireframe solicitado ======== */
+.case-layout{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "year year year"
+    "proj proj proj"
+    "context context context"
+    "problem tools results"
+    "problem skills results";
+  gap: var(--space-3);
+}
+
+/* Barras (Year / Project) estilo bloque */
+.bar{
+  background: var(--brand-700);
+  color: var(--white);
+  border-radius: var(--radius-1);
+  padding: var(--space-3);
+  grid-area: unset;
+  display:flex;
+  align-items:center;
+  gap: var(--space-3);
+  box-shadow: 0 1px 0 rgba(0,0,0,.08);
+}
+.bar--year{ grid-area: year; }
+.bar--proj{ grid-area: proj; }
+
+.bar label{
+  font-weight: 600;
+  margin:0;
+  color: var(--white);
+  min-width: 180px;
+}
+.bar select{
+  flex:1 1 auto;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: var(--radius-1);
+  border: 1px solid rgba(255,255,255,.25);
+  background: var(--white);
+  color: var(--neutral-900);
+}
+
+/* Cajas principales con color lleno */
+.case-box{
+  background: var(--brand-700);
+  color: var(--white);
+  border-radius: var(--radius-1);
+  padding: var(--space-4);
+  box-shadow: 0 1px 0 rgba(0,0,0,.08);
+}
+.case-box h2{
+  color: var(--white);
+  font-size: clamp(14px, 1.9vw, 18px);
+  letter-spacing: .3px;
+  margin: 0 0 var(--space-2) 0;
+  opacity: .95;
+  text-transform: uppercase;
+}
+.case-box p{ margin:0; white-space: pre-wrap; line-height: 1.65; }
+
+.case--context{ grid-area: context; min-height: 220px; }
+.case--problem{ grid-area: problem; min-height: 200px; }
+.case--tools{ grid-area: tools; min-height: 120px; }
+.case--skills{ grid-area: skills; min-height: 120px; }
+.case--results{ grid-area: results; min-height: 200px; }
+
+/* Herramientas en modo claro sobre fondo oscuro */
+.case--tools #detail-herramientas .tool-chip{
+  background: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.25);
+}
+.case--tools #detail-herramientas iconify-icon{
+  color: var(--white);
+}
+
+/* Grid de detalle (versión anterior) — por si lo usas en otra vista */
 .project-detail{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -245,7 +322,7 @@ img{ max-width:100%; display:block; }
   line-height: 1.5;
 }
 
-/* Herramientas como iconos */
+/* Herramientas como iconos (modo claro) */
 #detail-herramientas{
   display: flex;
   flex-wrap: wrap;
@@ -267,16 +344,28 @@ img{ max-width:100%; display:block; }
   line-height: 1;
 }
 
+/* =========================================================
+   Responsive
+   ========================================================= */
 @media (max-width: 1200px){
   .project-detail{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 920px){
+  .case-layout{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "year"
+      "proj"
+      "context"
+      "problem"
+      "tools"
+      "skills"
+      "results";
+  }
 }
 @media (max-width: 820px){
   .project-detail{ grid-template-columns: 1fr; }
 }
-
-/* =========================================================
-   Responsive
-   ========================================================= */
 @media (max-width: 1024px){
   .layout{
     grid-template-columns: 1fr; /* sidebar pasa arriba como header */
