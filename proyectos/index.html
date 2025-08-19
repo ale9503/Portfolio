@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
@@ -18,10 +18,10 @@
 
     <aside class="sidebar">
       <div class="photo-container">
-        <img src="1.png" alt="Foto de perfil de Alejandro Gómez" class="profile-photo" />
+        <img src="/1.png" alt="Foto de perfil de Alejandro Gómez" class="profile-photo" />
       </div>
       <nav class="social">
-        <a href="index.html" class="btn btn--secondary">Home</a>
+        <a href="/" class="btn btn--secondary">Home</a>
         <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -82,7 +82,7 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', () => {
-    fetch('DetallePortafolio.json')
+    fetch('/DetallePortafolio.json')
       .then(r => { if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
       .then(data => initProjects(data))
       .catch(err => {
@@ -255,3 +255,4 @@
   </script>
 </body>
 </html>
+
