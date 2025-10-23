@@ -1,0 +1,30 @@
+[
+  {
+    "What did I learn?": "Automatización de design tokens",
+    "Learning Type*": "Autodidacta",
+    "Skill/Tool": "Figma Tokens\nStyle Dictionary",
+    "Record Date (DD/MM/YYYY)": "10/01/2024",
+    "Description": "Pipeline para sincronizar design tokens con el repositorio front."
+  },
+  {
+    "What did I learn?": "Moderación de entrevistas con usuarios",
+    "Learning Type*": "Formal",
+    "Skill/Tool": "Dovetail; Miro",
+    "Record Date (DD/MM/YYYY)": "05/09/2023",
+    "Description": "Curso certificado para entrevistas remotas."
+  },
+  {
+    "What did I learn?": "Definición de performance budgets",
+    "Learning Type*": "Proyecto",
+    "Skill/Tool": "Lighthouse, WebPageTest",
+    "Record Date (DD/MM/YYYY)": "12/11/2022",
+    "Description": "Implementación de budgets medibles en CI/CD."
+  },
+  {
+    "What did I learn?": "Coaching de equipo cross-funcional",
+    "Learning Type*": "Mentoría",
+    "Skill/Tool": "• Active listening — sesiones 1:1",
+    "Record Date (DD/MM/YYYY)": "",
+    "Description": "Acompañamiento continuo para PMs y designers junior."
+  }
+]
