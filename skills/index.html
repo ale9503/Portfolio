@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa de habilidades — Alejandro Gómez</title>
+  <meta name="description" content="Explora mis habilidades y aprendizajes organizados por año, tipo y herramientas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="photo-container">
+        <img src="/1.png" alt="Foto de perfil de Alejandro Gómez" class="profile-photo" loading="lazy" />
+      </div>
+      <nav class="social">
+        <a href="/" class="btn btn--secondary">Home</a>
+        <a href="/proyectos/" class="btn btn--secondary">Proyectos</a>
+        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:ale.9503@hotmail.com?subject=Contacto%20por%20skills" class="btn btn--secondary">Email</a>
+        <a href="/Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary" download>Descargar mi CV</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="hero" role="banner">
+        <h1 class="hero__title">Mapa de habilidades <span class="hero__motto">Aprendizaje continuo</span></h1>
+        <p class="hero__lede">
+          Este repositorio muestra cómo evoluciona mi práctica profesional. Filtra por año para conocer qué herramientas, metodologías
+          y habilidades he ido sumando, junto con el contexto de cada aprendizaje.
+        </p>
+      </header>
+
+      <section class="skills-overview" aria-labelledby="skills-overview-title">
+        <div class="skills-overview__header">
+          <h2 class="section-title" id="skills-overview-title">Resumen de aprendizajes</h2>
+          <p class="skills-overview__caption">Datos generados automáticamente a partir de mi registro personal.</p>
+        </div>
+        <div class="insights-grid" data-insights-grid></div>
+      </section>
+
+      <section class="skills-controls" aria-label="Filtrar habilidades por año">
+        <div class="filter-container">
+          <div>
+            <label for="skills-year">Filtra por año</label>
+            <select id="skills-year" aria-controls="skills-table-body">
+              <option value="all">Todos los años</option>
+            </select>
+          </div>
+          <p class="skills-count" role="status" aria-live="polite" data-results-count></p>
+        </div>
+      </section>
+
+      <section class="skills-table-section" aria-labelledby="skills-table-title">
+        <h2 class="section-title" id="skills-table-title">Detalle completo de habilidades</h2>
+        <p class="skills-table__hint" id="skills-table-hint">Haz clic en un año para ver únicamente los aprendizajes registrados en ese periodo.</p>
+        <div class="table-wrapper" aria-live="polite">
+          <table class="skills-table" aria-describedby="skills-table-hint">
+            <thead>
+              <tr>
+                <th scope="col">Skill</th>
+                <th scope="col">Tipo de aprendizaje</th>
+                <th scope="col">Herramientas</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Descripción</th>
+              </tr>
+            </thead>
+            <tbody id="skills-table-body" data-skills-body></tbody>
+          </table>
+        </div>
+        <p class="skills-empty" data-empty-state hidden>No se encontraron aprendizajes para el filtro seleccionado.</p>
+        <noscript>
+          <p class="skills-noscript">Activa JavaScript para explorar y filtrar el detalle de habilidades.</p>
+        </noscript>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/skills/skills.js"></script>
+</body>
+</html>

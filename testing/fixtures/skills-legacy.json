@@ -1,0 +1,23 @@
+[
+  {
+    "What did I learn?": "React Hooks fundamentals",
+    "Learning Type*": "Autodidacta",
+    "Skill/Tool": "React, Hooks API",
+    "Record Date (DD/MM/YYYY)": "15/03/2022",
+    "Description": "Implementé useReducer y useContext en un proyecto personal."
+  },
+  {
+    "What did I learn?": "Heurísticas de usabilidad",
+    "Learning Type*": "Formal",
+    "Skill/Tool": "Nielsen principles – Notas en Notion",
+    "Record Date (DD/MM/YYYY)": "2021",
+    "Description": "Revisión guiada durante un workshop interno."
+  },
+  {
+    "What did I learn?": "Feedback de diseño inclusivo",
+    "Learning Type*": "Mentoría",
+    "Skill/Tool": "",
+    "Record Date (DD/MM/YYYY)": "",
+    "Description": "Sesión de revisión con equipo de accesibilidad, sin fecha registrada."
+  }
+]
