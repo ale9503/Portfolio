@@ -62,7 +62,7 @@ function renderInsights(container, dataset) {
     {
       title: 'Herramientas mencionadas',
       value: dataset.meta.uniqueTools,
-      caption: 'Conteo único de tecnologías o métodos',
+      caption: 'Conteo único de tecnologías, métodologias y herramientas',
     },
     {
       title: 'Última actualización',
