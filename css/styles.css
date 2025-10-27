@@ -427,6 +427,42 @@ img{ max-width:100%; display:block; }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.skills-treemap{
+  margin-bottom: var(--space-5);
+  padding: var(--space-4);
+  background: var(--white);
+  border: 2px dotted rgba(0,59,92,.35);
+  border-radius: var(--radius-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.skills-treemap__description{
+  margin: 0;
+  color: var(--neutral-700);
+}
+
+#treemap-skills{
+  min-height: 320px;
+  background: var(--neutral-100);
+  border: 2px dotted rgba(0,59,92,.2);
+  border-radius: var(--radius-1);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: var(--space-3);
+  color: var(--neutral-700);
+}
+
+#treemap-legend{
+  min-height: 80px;
+  background: var(--neutral-100);
+  border: 2px dotted rgba(0,59,92,.2);
+  border-radius: var(--radius-1);
+  padding: var(--space-3);
+}
+
 .insight-card{
   background: var(--white);
   border: 1px solid var(--neutral-200);
