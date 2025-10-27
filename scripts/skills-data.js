@@ -42,6 +42,7 @@ export function normalizeSkills(rawData = []) {
     const title = safeText(entry['What did I learn?']);
     const learningType = safeText(entry['Learning Type*']);
     const tools = normalizeTools(entry['Skill/Tool']);
+    const categories = normalizeCategories(entry['Categoria']);
     const description = safeText(entry['Description']);
     const dateInfo = parseDate(entry['Record Date (DD/MM/YYYY)']);
 
@@ -62,6 +63,7 @@ export function normalizeSkills(rawData = []) {
       title,
       learningType,
       tools,
+      categories,
       description,
       date: dateInfo,
     };
@@ -115,6 +117,22 @@ function createEmptyDataset() {
 function safeText(value) {
   if (value === null || value === undefined) return '';
   return String(value).trim();
+}
+
+function normalizeCategories(value) {
+  if (value === null || value === undefined) return [];
+
+  const source = Array.isArray(value) ? value : [value];
+
+  return source
+    .flatMap(token => {
+      const text = safeText(token);
+      if (!text) return [];
+      return text.split(/[\n,;•·\u2022\u2013\u2014]+/);
+    })
+    .map(token => safeText(token).replace(/^[\-–—]\s*/, ''))
+    .map(token => token.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
 }
 
 function normalizeTools(value) {

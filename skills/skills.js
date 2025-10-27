@@ -219,27 +219,38 @@ function buildTreemapDataset(items = []) {
   const groups = new Map();
 
   items.forEach(item => {
-    const label = item.learningType || 'Sin categoría';
-    const slug = getLearningTypeSlug(label) || 'sin-categoria';
+    const categories = Array.isArray(item.categories) && item.categories.length
+      ? item.categories
+      : ['Sin categoría'];
     const value = Array.isArray(item.tools) && item.tools.length ? item.tools.length : 1;
+    const nodeName = item.title || 'Sin título';
 
-    if (!groups.has(label)) {
-      groups.set(label, {
-        name: label,
+    categories.forEach(category => {
+      const label = category || 'Sin categoría';
+      const slug = getLearningTypeSlug(label) || 'sin-categoria';
+
+      if (!groups.has(label)) {
+        groups.set(label, {
+          name: label,
+          slug,
+          total: 0,
+          children: [],
+        });
+      }
+
+      const group = groups.get(label);
+      group.total += value;
+      group.children.push({
+        name: nodeName,
         slug,
-        total: 0,
-        children: [],
+        value,
       });
-    }
-
-    const group = groups.get(label);
-    group.total += value;
-    group.children.push({
-      name: item.title || 'Sin título',
-      slug,
-      value,
     });
   });
+
+  if (groups.size === 0) {
+    return { root: null, legend: [] };
+  }
 
   const children = Array.from(groups.values()).map(group => ({
     name: group.name,
