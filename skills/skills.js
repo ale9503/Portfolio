@@ -222,10 +222,11 @@ function buildTreemapDataset(items = []) {
     const categories = Array.isArray(item.categories) && item.categories.length
       ? item.categories
       : ['Sin categoría'];
-    const value = Array.isArray(item.tools) && item.tools.length ? item.tools.length : 1;
+    const uniqueCategories = [...new Set(categories.map(category => category || 'Sin categoría'))];
+    const value = 1;
     const nodeName = item.title || 'Sin título';
 
-    categories.forEach(category => {
+    uniqueCategories.forEach(category => {
       const label = category || 'Sin categoría';
       const slug = getLearningTypeSlug(label) || 'sin-categoria';
 
