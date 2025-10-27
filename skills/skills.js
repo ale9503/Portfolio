@@ -310,7 +310,7 @@ function renderTreemap(container, treemapData) {
   layout(hierarchy);
 
   container.classList.add('has-chart');
-  container.setAttribute('aria-label', 'Distribución de habilidades por tipo de aprendizaje.');
+  container.setAttribute('aria-label', 'Distribución de habilidades por categorías y enfoques de aprendizaje.');
   container.innerHTML = '';
 
   const svg = d3.select(container)
