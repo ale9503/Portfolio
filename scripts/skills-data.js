@@ -1,4 +1,4 @@
-const DEFAULT_SOURCE = '/Files/skills_details.json';
+const DEFAULT_SOURCE = resolveDefaultSource();
 const DATE_FORMATTER = new Intl.DateTimeFormat('es-ES', { dateStyle: 'long' });
 
 /**
@@ -6,13 +6,23 @@ const DATE_FORMATTER = new Intl.DateTimeFormat('es-ES', { dateStyle: 'long' });
  * @param {string} [url]
  */
 export async function loadSkillsData(url = DEFAULT_SOURCE) {
-  const response = await fetch(url, { cache: 'no-store' });
-  if (!response.ok) {
-    throw new Error(`No se pudo cargar el detalle de skills. Código ${response.status}`);
-  }
+  try {
+    const response = await fetch(url, { cache: 'no-store' });
+    if (!response.ok) {
+      throw new Error(`No se pudo cargar el detalle de skills. Código ${response.status}`);
+    }
 
-  const raw = await response.json();
-  return normalizeSkills(raw);
+    const raw = await response.json();
+    return normalizeSkills(raw);
+  } catch (error) {
+    if (url === DEFAULT_SOURCE) {
+      const fallbackUrl = '/Files/skills_details.json';
+      if (fallbackUrl !== url) {
+        return loadSkillsData(fallbackUrl);
+      }
+    }
+    throw error;
+  }
 }
 
 /**
@@ -183,4 +193,16 @@ export function getLearningTypeSlug(type) {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-');
+}
+
+function resolveDefaultSource() {
+  if (typeof window !== 'undefined' && window?.location?.href) {
+    try {
+      return new URL('../Files/skills_details.json', window.location.href).toString();
+    } catch (error) {
+      console.warn('No se pudo resolver la ruta base de skills_details.json, se usará el path absoluto.', error);
+    }
+  }
+
+  return '/Files/skills_details.json';
 }
