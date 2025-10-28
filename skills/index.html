@@ -58,12 +58,18 @@
              Actualmente los documentos viven en /Files/ para ajustar el cargador según el entorno de despliegue. -->
       </section>
 
-      <section class="skills-controls" aria-label="Filtrar habilidades por año">
+      <section class="skills-controls" aria-label="Filtrar habilidades por año y categoría">
         <div class="filter-container">
           <div>
             <label for="skills-year">Filtra por año</label>
             <select id="skills-year" aria-controls="skills-table-body">
               <option value="all">Todos los años</option>
+            </select>
+          </div>
+          <div>
+            <label for="skills-category">Filtra por categoría</label>
+            <select id="skills-category" aria-controls="skills-table-body">
+              <option value="all">Todas las categorías</option>
             </select>
           </div>
           <p class="skills-count" role="status" aria-live="polite" data-results-count></p>
@@ -72,7 +78,7 @@
 
       <section class="skills-table-section" aria-labelledby="skills-table-title">
         <h2 class="section-title" id="skills-table-title">Detalle completo de habilidades</h2>
-        <p class="skills-table__hint" id="skills-table-hint">Haz clic en un año para ver únicamente los aprendizajes registrados en ese periodo.</p>
+        <p class="skills-table__hint" id="skills-table-hint">Usa los filtros de año y categoría para explorar los aprendizajes registrados en cada periodo.</p>
         <div class="table-wrapper" aria-live="polite">
           <table class="skills-table" aria-describedby="skills-table-hint">
             <thead>

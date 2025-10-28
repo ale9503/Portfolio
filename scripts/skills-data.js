@@ -36,7 +36,9 @@ export function normalizeSkills(rawData = []) {
 
   const toolAccumulator = new Set();
   const typeAccumulator = new Map();
+  const categoryAccumulator = new Set();
   let hasNoYear = false;
+  let hasNoCategory = false;
 
   const items = rawData.map((entry, index) => {
     const title = safeText(entry['What did I learn?']);
@@ -56,6 +58,14 @@ export function normalizeSkills(rawData = []) {
 
     if (dateInfo.year === null) {
       hasNoYear = true;
+    }
+
+    if (categories.length) {
+      categories.forEach(category => {
+        categoryAccumulator.add(category);
+      });
+    } else {
+      hasNoCategory = true;
     }
 
     return {
@@ -87,11 +97,19 @@ export function normalizeSkills(rawData = []) {
     years.push('Sin fecha');
   }
 
+  if (hasNoCategory) {
+    categoryAccumulator.add('Sin categoría');
+  }
+
+  const categories = Array.from(categoryAccumulator)
+    .sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+
   const latestWithDate = sortableItems.find(item => typeof item.date.sortable === 'number');
 
   return {
     items: sortableItems,
     years,
+    categories,
     meta: {
       total: sortableItems.length,
       uniqueTools: toolAccumulator.size,
@@ -105,6 +123,7 @@ function createEmptyDataset() {
   return {
     items: [],
     years: [],
+    categories: [],
     meta: {
       total: 0,
       uniqueTools: 0,
