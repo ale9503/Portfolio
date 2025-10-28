@@ -9,12 +9,13 @@ async function init() {
   const tableBody = document.querySelector('[data-skills-body]');
   const insightsGrid = document.querySelector('[data-insights-grid]');
   const selectYear = document.getElementById('skills-year');
+  const selectCategory = document.getElementById('skills-category');
   const countLabel = document.querySelector('[data-results-count]');
   const emptyState = document.querySelector('[data-empty-state]');
   const treemapContainer = document.getElementById('treemap-skills');
   const legendContainer = document.getElementById('treemap-legend');
 
-  if (!tableBody || !insightsGrid || !selectYear || !countLabel || !emptyState || !treemapContainer || !legendContainer) {
+  if (!tableBody || !insightsGrid || !selectYear || !selectCategory || !countLabel || !emptyState || !treemapContainer || !legendContainer) {
     console.warn('No se encontraron los elementos necesarios para renderizar la vista de skills.');
     return;
   }
@@ -25,19 +26,31 @@ async function init() {
     const dataset = await loadSkillsData();
     renderInsights(insightsGrid, dataset);
     populateYearFilter(selectYear, dataset.years);
+    populateCategoryFilter(selectCategory, dataset.categories);
 
     const renderer = createTableRenderer({
       tableBody,
       countLabel,
       emptyState,
       total: dataset.meta.total,
+      defaultEmptyMessage: emptyState.textContent?.trim() || 'No se encontraron aprendizajes para el filtro seleccionado.',
     });
 
-    renderer.update(dataset.items, 'all');
+    const filters = {
+      year: selectYear.value,
+      category: selectCategory.value,
+    };
+
+    renderer.update(dataset.items, filters);
 
     selectYear.addEventListener('change', event => {
-      const value = event.target.value;
-      renderer.update(dataset.items, value);
+      filters.year = event.target.value;
+      renderer.update(dataset.items, filters);
+    });
+
+    selectCategory.addEventListener('change', event => {
+      filters.category = event.target.value;
+      renderer.update(dataset.items, filters);
     });
 
     const treemapData = buildTreemapDataset(dataset.items);
@@ -57,6 +70,16 @@ function populateYearFilter(select, years) {
     const option = document.createElement('option');
     option.value = year;
     option.textContent = year === 'Sin fecha' ? 'Sin fecha exacta' : year;
+    select.appendChild(option);
+  });
+}
+
+function populateCategoryFilter(select, categories) {
+  if (!Array.isArray(categories)) return;
+  categories.forEach(category => {
+    const option = document.createElement('option');
+    option.value = category;
+    option.textContent = category;
     select.appendChild(option);
   });
 }
@@ -120,27 +143,40 @@ function buildInsightCard({ title, value, caption, badge }) {
   return article;
 }
 
-function createTableRenderer({ tableBody, countLabel, emptyState, total }) {
+function createTableRenderer({ tableBody, countLabel, emptyState, total, defaultEmptyMessage }) {
   return {
-    update(items, filterValue) {
-      const filtered = filterByYear(items, filterValue);
+    update(items, filters) {
+      const filtered = filterItems(items, filters);
       renderRows(tableBody, filtered);
-      updateCount(countLabel, filtered.length, total, filterValue);
-      toggleEmptyState(emptyState, filtered.length === 0);
+      updateCount(countLabel, filtered.length, total, filters);
+      toggleEmptyState(emptyState, filtered.length === 0, filters, defaultEmptyMessage);
     },
   };
 }
 
-function filterByYear(items, yearValue) {
+function filterItems(items, filters = {}) {
   if (!Array.isArray(items)) return [];
-  if (!yearValue || yearValue === 'all') return items;
 
-  return items.filter(item => {
-    if (yearValue === 'Sin fecha') {
-      return item.date.year === null;
-    }
-    return String(item.date.year) === yearValue;
-  });
+  const yearValue = filters?.year ?? 'all';
+  const categoryValue = filters?.category ?? 'all';
+
+  return items.filter(item => matchesYear(item, yearValue) && matchesCategory(item, categoryValue));
+}
+
+function matchesYear(item, yearValue) {
+  if (!yearValue || yearValue === 'all') return true;
+  if (yearValue === 'Sin fecha') {
+    return item?.date?.year === null;
+  }
+  return String(item?.date?.year) === yearValue;
+}
+
+function matchesCategory(item, categoryValue) {
+  if (!categoryValue || categoryValue === 'all') return true;
+  const categories = Array.isArray(item?.categories) && item.categories.length
+    ? item.categories
+    : ['Sin categoría'];
+  return categories.some(category => category === categoryValue);
 }
 
 function renderRows(tableBody, items) {
@@ -408,20 +444,57 @@ function resetTreemap(container, legendContainer) {
   }
 }
 
-function updateCount(target, current, total, yearValue) {
+function updateCount(target, current, total, filters = {}) {
   if (!target) return;
-  const label = yearValue === 'all' || !yearValue
+  const yearValue = filters?.year ?? 'all';
+  const categoryValue = filters?.category ?? 'all';
+
+  const yearLabel = yearValue === 'all' || !yearValue
     ? 'todos los años'
     : yearValue === 'Sin fecha'
       ? 'registros sin fecha exacta'
       : `el año ${yearValue}`;
 
-  target.textContent = `Mostrando ${formatValue(current)} de ${formatValue(total)} aprendizajes para ${label}.`;
+  const categoryLabel = categoryValue === 'all' || !categoryValue
+    ? 'todas las categorías'
+    : categoryValue === 'Sin categoría'
+      ? 'registros sin categoría'
+      : `la categoría «${categoryValue}»`;
+
+  target.textContent = `Mostrando ${formatValue(current)} de ${formatValue(total)} aprendizajes para ${yearLabel} y ${categoryLabel}.`;
 }
 
-function toggleEmptyState(element, shouldShow) {
+function toggleEmptyState(element, shouldShow, filters, defaultMessage) {
   if (!element) return;
-  element.hidden = !shouldShow;
+  if (shouldShow) {
+    element.hidden = false;
+    element.textContent = buildEmptyStateMessage(filters, defaultMessage);
+    return;
+  }
+
+  element.hidden = true;
+  element.textContent = defaultMessage;
+}
+
+function buildEmptyStateMessage(filters = {}, defaultMessage = 'No se encontraron aprendizajes para el filtro seleccionado.') {
+  const yearValue = filters?.year ?? 'all';
+  const categoryValue = filters?.category ?? 'all';
+
+  const descriptions = [];
+
+  if (yearValue && yearValue !== 'all') {
+    descriptions.push(yearValue === 'Sin fecha' ? 'los registros sin fecha exacta' : `el año ${yearValue}`);
+  }
+
+  if (categoryValue && categoryValue !== 'all') {
+    descriptions.push(categoryValue === 'Sin categoría' ? 'los registros sin categoría' : `la categoría «${categoryValue}»`);
+  }
+
+  if (!descriptions.length) {
+    return defaultMessage;
+  }
+
+  return `No se encontraron aprendizajes para ${descriptions.join(' y ')}.`;
 }
 
 function showError(container, message) {
