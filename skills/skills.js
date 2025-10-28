@@ -194,6 +194,10 @@ function renderRows(tableBody, items) {
     typeCell.appendChild(buildBadge(item.learningType));
     row.appendChild(typeCell);
 
+    const categoriesCell = document.createElement('td');
+    categoriesCell.appendChild(buildCategoriesList(item.categories));
+    row.appendChild(categoriesCell);
+
     const toolsCell = document.createElement('td');
     toolsCell.appendChild(buildToolsList(item.tools));
     row.appendChild(toolsCell);
@@ -241,6 +245,27 @@ function buildToolsList(tools) {
     const tag = document.createElement('span');
     tag.className = 'tool-tag';
     tag.textContent = tool;
+    wrapper.appendChild(tag);
+  });
+
+  return wrapper;
+}
+
+function buildCategoriesList(categories) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'category-tags';
+
+  if (!Array.isArray(categories) || categories.length === 0) {
+    wrapper.textContent = '—';
+    return wrapper;
+  }
+
+  const uniqueCategories = [...new Set(categories.map(category => category || 'Sin categoría'))];
+
+  uniqueCategories.forEach(category => {
+    const tag = document.createElement('span');
+    tag.className = 'category-tag';
+    tag.textContent = category;
     wrapper.appendChild(tag);
   });
 
