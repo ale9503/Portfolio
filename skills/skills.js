@@ -304,8 +304,12 @@ function renderTreemap(container, treemapData) {
 
   const layout = d3.treemap()
     .size([width, height])
-    .paddingInner(6)
-    .paddingOuter(4)
+    .paddingInner(node => (node.depth <= 1 ? 0 : 2))
+    .paddingOuter(0)
+    .paddingTop(node => (node.depth > 1 ? 2 : 0))
+    .paddingRight(node => (node.depth > 1 ? 2 : 0))
+    .paddingBottom(node => (node.depth > 1 ? 2 : 0))
+    .paddingLeft(node => (node.depth > 1 ? 2 : 0))
     .round(true);
 
   layout(hierarchy);
@@ -335,8 +339,8 @@ function renderTreemap(container, treemapData) {
     .attr('width', d => Math.max(d.x1 - d.x0, 0))
     .attr('height', d => Math.max(d.y1 - d.y0, 0))
     .attr('fill', d => colorScale(d.data.slug))
-    .attr('rx', 8)
-    .attr('ry', 8);
+    .attr('rx', 0)
+    .attr('ry', 0);
 
   nodes.append('text')
     .attr('class', 'treemap-node__label')
