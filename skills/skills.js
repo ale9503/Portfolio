@@ -43,15 +43,14 @@ async function init() {
 
     renderer.update(dataset.items, filters);
 
-    selectYear.addEventListener('change', event => {
-      filters.year = event.target.value;
+    const handleFiltersChange = () => {
+      filters.year = selectYear.value;
+      filters.category = selectCategory.value;
       renderer.update(dataset.items, filters);
-    });
+    };
 
-    selectCategory.addEventListener('change', event => {
-      filters.category = event.target.value;
-      renderer.update(dataset.items, filters);
-    });
+    selectYear.addEventListener('change', handleFiltersChange);
+    selectCategory.addEventListener('change', handleFiltersChange);
 
     const treemapData = buildTreemapDataset(dataset.items);
     const treemapResult = renderTreemap(treemapContainer, treemapData);
@@ -76,7 +75,8 @@ function populateYearFilter(select, years) {
 
 function populateCategoryFilter(select, categories) {
   if (!Array.isArray(categories)) return;
-  categories.forEach(category => {
+  const uniqueCategories = Array.from(new Set(categories)).slice(0, 10);
+  uniqueCategories.forEach(category => {
     const option = document.createElement('option');
     option.value = category;
     option.textContent = category;
@@ -146,7 +146,7 @@ function buildInsightCard({ title, value, caption, badge }) {
 function createTableRenderer({ tableBody, countLabel, emptyState, total, defaultEmptyMessage }) {
   return {
     update(items, filters) {
-      const filtered = filterItems(items, filters);
+      const filtered = filterByYearAndCategory(items, filters);
       renderRows(tableBody, filtered);
       updateCount(countLabel, filtered.length, total, filters);
       toggleEmptyState(emptyState, filtered.length === 0, filters, defaultEmptyMessage);
@@ -154,13 +154,9 @@ function createTableRenderer({ tableBody, countLabel, emptyState, total, default
   };
 }
 
-function filterItems(items, filters = {}) {
+function filterByYearAndCategory(items, { year = 'all', category = 'all' } = {}) {
   if (!Array.isArray(items)) return [];
-
-  const yearValue = filters?.year ?? 'all';
-  const categoryValue = filters?.category ?? 'all';
-
-  return items.filter(item => matchesYear(item, yearValue) && matchesCategory(item, categoryValue));
+  return items.filter(item => matchesYear(item, year) && matchesCategory(item, category));
 }
 
 function matchesYear(item, yearValue) {

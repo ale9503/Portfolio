@@ -36,9 +36,8 @@ export function normalizeSkills(rawData = []) {
 
   const toolAccumulator = new Set();
   const typeAccumulator = new Map();
-  const categoryAccumulator = new Set();
+  const categoryAccumulator = new Map();
   let hasNoYear = false;
-  let hasNoCategory = false;
 
   const items = rawData.map((entry, index) => {
     const title = safeText(entry['What did I learn?']);
@@ -60,20 +59,22 @@ export function normalizeSkills(rawData = []) {
       hasNoYear = true;
     }
 
-    if (categories.length) {
-      categories.forEach(category => {
-        categoryAccumulator.add(category);
-      });
-    } else {
-      hasNoCategory = true;
+    let normalizedCategories = Array.from(new Set(categories));
+    if (!normalizedCategories.length) {
+      normalizedCategories = ['Sin categoría'];
     }
+
+    normalizedCategories.forEach(category => {
+      const label = category || 'Sin categoría';
+      categoryAccumulator.set(label, (categoryAccumulator.get(label) || 0) + 1);
+    });
 
     return {
       id: `${dateInfo.iso || 'na'}-${index}`,
       title,
       learningType,
       tools,
-      categories,
+      categories: normalizedCategories,
       description,
       date: dateInfo,
     };
@@ -97,12 +98,14 @@ export function normalizeSkills(rawData = []) {
     years.push('Sin fecha');
   }
 
-  if (hasNoCategory) {
-    categoryAccumulator.add('Sin categoría');
-  }
-
-  const categories = Array.from(categoryAccumulator)
-    .sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
+  const categories = Array.from(categoryAccumulator.entries())
+    .sort((a, b) => {
+      if (b[1] !== a[1]) {
+        return b[1] - a[1];
+      }
+      return a[0].localeCompare(b[0], 'es', { sensitivity: 'base' });
+    })
+    .map(([name]) => name);
 
   const latestWithDate = sortableItems.find(item => typeof item.date.sortable === 'number');
 
