@@ -1,7 +1,81 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
-import { loadSkillsData, getLearningTypeSlug } from '../scripts/skills-data.js';
+import { loadSkillsData, getLearningTypeSlug, getLocaleConfig } from '../scripts/skills-data.js';
 
-const NUMBER_FORMATTER = new Intl.NumberFormat('es-ES');
+const localeConfig = getLocaleConfig();
+const LANGUAGE = localeConfig.lang;
+const labels = localeConfig.labels;
+const NUMBER_FORMATTER = new Intl.NumberFormat(localeConfig.intlLocale);
+
+const STRINGS = {
+  es: {
+    missingElements: 'No se encontraron los elementos necesarios para renderizar la vista de skills.',
+    treemapPlaceholder: 'El mapa se cargará automáticamente cuando JavaScript esté disponible.',
+    insightTotalTitle: 'Aprendizajes registrados',
+    insightTotalCaption: 'Entradas acumuladas en el registro',
+    insightToolsTitle: 'Herramientas mencionadas',
+    insightToolsCaption: 'Conteo único de tecnologías, metodologías y herramientas',
+    insightUpdateTitle: 'Última actualización',
+    insightUpdateCaption: 'Fecha más reciente registrada',
+    typeCaption: 'Registros con este enfoque',
+    loadErrorSummary: 'No pudimos recuperar el resumen en este momento.',
+    loadErrorDetail: 'No se pudo cargar la información de habilidades. Intenta nuevamente más tarde.',
+    emptyDefault: 'No se encontraron aprendizajes para el filtro seleccionado.',
+    yearNoDate: labels.noExactDate,
+    yearAll: 'todos los años',
+    yearNoDateAlt: 'registros sin fecha exacta',
+    yearExactTemplate: 'el año {value}',
+    categoryAll: 'todas las categorías',
+    categoryNoCategory: 'registros sin categoría',
+    categoryExactTemplate: 'la categoría «{value}»',
+    countMessage: 'Mostrando {current} de {total} aprendizajes para {year} y {category}.',
+    emptyYearExact: 'el año {value}',
+    emptyYearNoDate: 'los registros sin fecha exacta',
+    emptyCategoryExact: 'la categoría «{value}»',
+    emptyCategoryNoCategory: 'los registros sin categoría',
+    emptyWithContext: 'No se encontraron aprendizajes para {context}.',
+    andJoiner: 'y',
+    treemapAria: 'Distribución de habilidades por categorías y enfoques de aprendizaje.',
+    treemapRoot: 'Aprendizajes',
+    treemapRootSingle: 'Aprendizaje',
+    badgeUnknown: 'No especificado',
+    untitled: 'Sin título',
+  },
+  en: {
+    missingElements: 'Required elements to render the skills view were not found.',
+    treemapPlaceholder: 'The map will load automatically when JavaScript is available.',
+    insightTotalTitle: 'Recorded learnings',
+    insightTotalCaption: 'Entries accumulated in the log',
+    insightToolsTitle: 'Tools mentioned',
+    insightToolsCaption: 'Unique count of technologies, methodologies, and tools',
+    insightUpdateTitle: 'Last update',
+    insightUpdateCaption: 'Most recent recorded date',
+    typeCaption: 'Records with this focus',
+    loadErrorSummary: 'We could not retrieve the summary right now.',
+    loadErrorDetail: 'Skills information could not be loaded. Please try again later.',
+    emptyDefault: 'No learnings were found for the selected filter.',
+    yearNoDate: labels.noExactDate,
+    yearAll: 'all years',
+    yearNoDateAlt: 'records without an exact date',
+    yearExactTemplate: 'year {value}',
+    categoryAll: 'all categories',
+    categoryNoCategory: 'records without category',
+    categoryExactTemplate: 'category “{value}”',
+    countMessage: 'Showing {current} of {total} learnings for {year} and {category}.',
+    emptyYearExact: 'year {value}',
+    emptyYearNoDate: 'records without an exact date',
+    emptyCategoryExact: 'category “{value}”',
+    emptyCategoryNoCategory: 'records without category',
+    emptyWithContext: 'No learnings were found for {context}.',
+    andJoiner: 'and',
+    treemapAria: 'Skills distribution by categories and learning focus.',
+    treemapRoot: 'Learnings',
+    treemapRootSingle: 'Learning',
+    badgeUnknown: 'Not specified',
+    untitled: 'Untitled',
+  },
+};
+
+const t = key => STRINGS[LANGUAGE][key];
 
 document.addEventListener('DOMContentLoaded', init);
 
@@ -16,14 +90,14 @@ async function init() {
   const legendContainer = document.getElementById('treemap-legend');
 
   if (!tableBody || !insightsGrid || !selectYear || !selectCategory || !countLabel || !emptyState || !treemapContainer || !legendContainer) {
-    console.warn('No se encontraron los elementos necesarios para renderizar la vista de skills.');
+    console.warn(t('missingElements'));
     return;
   }
 
-  treemapContainer.dataset.placeholder = treemapContainer.textContent.trim() || 'El mapa se cargará automáticamente cuando JavaScript esté disponible.';
+  treemapContainer.dataset.placeholder = treemapContainer.textContent.trim() || t('treemapPlaceholder');
 
   try {
-    const dataset = await loadSkillsData();
+    const dataset = await loadSkillsData(undefined, localeConfig.lang);
     renderInsights(insightsGrid, dataset);
     populateYearFilter(selectYear, dataset.years);
     populateCategoryFilter(selectCategory, dataset.categories);
@@ -33,7 +107,7 @@ async function init() {
       countLabel,
       emptyState,
       total: dataset.meta.total,
-      defaultEmptyMessage: emptyState.textContent?.trim() || 'No se encontraron aprendizajes para el filtro seleccionado.',
+      defaultEmptyMessage: emptyState.textContent?.trim() || t('emptyDefault'),
     });
 
     const filters = {
@@ -57,8 +131,8 @@ async function init() {
     renderLegend(legendContainer, treemapResult?.legendItems ?? [], treemapResult?.colorScale);
   } catch (error) {
     console.error(error);
-    countLabel.textContent = 'No pudimos recuperar el resumen en este momento.';
-    showError(emptyState, 'No se pudo cargar la información de habilidades. Intenta nuevamente más tarde.');
+    countLabel.textContent = t('loadErrorSummary');
+    showError(emptyState, t('loadErrorDetail'));
     resetTreemap(treemapContainer, legendContainer);
   }
 }
@@ -68,7 +142,7 @@ function populateYearFilter(select, years) {
   years.forEach(year => {
     const option = document.createElement('option');
     option.value = year;
-    option.textContent = year === 'Sin fecha' ? 'Sin fecha exacta' : year;
+    option.textContent = year === labels.noDate ? t('yearNoDate') : year;
     select.appendChild(option);
   });
 }
@@ -88,19 +162,19 @@ function renderInsights(container, dataset) {
   container.innerHTML = '';
   const metaCards = [
     {
-      title: 'Aprendizajes registrados',
+      title: t('insightTotalTitle'),
       value: dataset.meta.total,
-      caption: 'Entradas acumuladas en el registro',
+      caption: t('insightTotalCaption'),
     },
     {
-      title: 'Herramientas mencionadas',
+      title: t('insightToolsTitle'),
       value: dataset.meta.uniqueTools,
-      caption: 'Conteo único de tecnologías, métodologias y herramientas',
+      caption: t('insightToolsCaption'),
     },
     {
-      title: 'Última actualización',
+      title: t('insightUpdateTitle'),
       value: dataset.meta.lastUpdate,
-      caption: 'Fecha más reciente registrada',
+      caption: t('insightUpdateCaption'),
     },
   ];
 
@@ -113,7 +187,7 @@ function renderInsights(container, dataset) {
     container.appendChild(buildInsightCard({
       title: type,
       value: count,
-      caption: 'Registros con este enfoque',
+      caption: t('typeCaption'),
       badge: slug,
     }));
   });
@@ -161,7 +235,7 @@ function filterByYearAndCategory(items, { year = 'all', category = 'all' } = {})
 
 function matchesYear(item, yearValue) {
   if (!yearValue || yearValue === 'all') return true;
-  if (yearValue === 'Sin fecha') {
+  if (yearValue === labels.noDate) {
     return item?.date?.year === null;
   }
   return String(item?.date?.year) === yearValue;
@@ -171,7 +245,7 @@ function matchesCategory(item, categoryValue) {
   if (!categoryValue || categoryValue === 'all') return true;
   const categories = Array.isArray(item?.categories) && item.categories.length
     ? item.categories
-    : ['Sin categoría'];
+    : [labels.noCategory];
   return categories.some(category => category === categoryValue);
 }
 
@@ -179,9 +253,9 @@ function renderRows(tableBody, items) {
   tableBody.innerHTML = '';
   items.forEach(item => {
     const row = document.createElement('tr');
-    row.dataset.year = item.date.yearLabel ?? 'Sin fecha';
+    row.dataset.year = item.date.yearLabel ?? labels.noDate;
 
-    row.appendChild(buildCell('th', item.title || 'Sin título', {
+    row.appendChild(buildCell('th', item.title || t('untitled'), {
       scope: 'row',
       className: 'skill-name',
     }));
@@ -198,7 +272,7 @@ function renderRows(tableBody, items) {
     toolsCell.appendChild(buildToolsList(item.tools));
     row.appendChild(toolsCell);
 
-    row.appendChild(buildCell('td', item.date.display || 'Sin fecha'));
+    row.appendChild(buildCell('td', item.date.display || labels.noDate));
     row.appendChild(buildCell('td', item.description || '—', { className: 'skill-description' }));
 
     tableBody.appendChild(row);
@@ -217,12 +291,12 @@ function buildBadge(type) {
   const span = document.createElement('span');
   span.className = 'learning-badge';
   if (!type) {
-    span.textContent = 'No especificado';
-    span.dataset.variant = 'sin-categoria';
+    span.textContent = t('badgeUnknown');
+    span.dataset.variant = LANGUAGE === 'en' ? 'no-category' : 'sin-categoria';
     return span;
   }
 
-  const slug = getLearningTypeSlug(type) || 'sin-categoria';
+  const slug = getLearningTypeSlug(type) || (LANGUAGE === 'en' ? 'no-category' : 'sin-categoria');
   span.textContent = type;
   span.dataset.variant = slug;
   return span;
@@ -252,11 +326,11 @@ function buildCategoriesList(categories) {
   wrapper.className = 'category-tags';
 
   if (!Array.isArray(categories) || categories.length === 0) {
-    wrapper.textContent = '—';
+    wrapper.textContent = labels.noCategory;
     return wrapper;
   }
 
-  const uniqueCategories = [...new Set(categories.map(category => category || 'Sin categoría'))];
+  const uniqueCategories = [...new Set(categories.map(category => category || labels.noCategory))];
 
   uniqueCategories.forEach(category => {
     const tag = document.createElement('span');
@@ -278,14 +352,14 @@ function buildTreemapDataset(items = []) {
   items.forEach(item => {
     const categories = Array.isArray(item.categories) && item.categories.length
       ? item.categories
-      : ['Sin categoría'];
-    const uniqueCategories = [...new Set(categories.map(category => category || 'Sin categoría'))];
+      : [labels.noCategory];
+    const uniqueCategories = [...new Set(categories.map(category => category || labels.noCategory))];
     const value = 1;
-    const nodeName = item.title || 'Sin título';
+    const nodeName = item.title || t('untitled');
 
     uniqueCategories.forEach(category => {
-      const label = category || 'Sin categoría';
-      const slug = getLearningTypeSlug(label) || 'sin-categoria';
+      const label = category || labels.noCategory;
+      const slug = getLearningTypeSlug(label) || (LANGUAGE === 'en' ? 'no-category' : 'sin-categoria');
 
       if (!groups.has(label)) {
         groups.set(label, {
@@ -323,7 +397,7 @@ function buildTreemapDataset(items = []) {
 
   return {
     root: {
-      name: 'Aprendizajes',
+      name: t('treemapRoot'),
       children,
     },
     legend,
@@ -372,7 +446,7 @@ function renderTreemap(container, treemapData) {
   layout(hierarchy);
 
   container.classList.add('has-chart');
-  container.setAttribute('aria-label', 'Distribución de habilidades por categorías y enfoques de aprendizaje.');
+  container.setAttribute('aria-label', t('treemapAria'));
   container.innerHTML = '';
 
   const svg = d3.select(container)
@@ -408,7 +482,7 @@ function renderTreemap(container, treemapData) {
     .style('opacity', d => ((d.x1 - d.x0) > 96 && (d.y1 - d.y0) > 32 ? 1 : 0));
 
   nodes.append('title')
-    .text(d => `${d.parent?.data.name ?? 'Aprendizaje'} · ${d.data.name}`);
+    .text(d => `${d.parent?.data.name ?? t('treemapRootSingle')} · ${d.data.name}`);
 
   return {
     colorScale,
@@ -455,7 +529,7 @@ function resetTreemap(container, legendContainer) {
   if (container) {
     container.classList.remove('has-chart');
     container.innerHTML = '';
-    const fallback = container.dataset.placeholder || 'El mapa se cargará automáticamente cuando JavaScript esté disponible.';
+    const fallback = container.dataset.placeholder || t('treemapPlaceholder');
     container.textContent = fallback;
   }
 
@@ -470,19 +544,26 @@ function updateCount(target, current, total, filters = {}) {
   const yearValue = filters?.year ?? 'all';
   const categoryValue = filters?.category ?? 'all';
 
-  const yearLabel = yearValue === 'all' || !yearValue
-    ? 'todos los años'
-    : yearValue === 'Sin fecha'
-      ? 'registros sin fecha exacta'
-      : `el año ${yearValue}`;
+  const yearLabel = buildYearLabel(yearValue);
+  const categoryLabel = buildCategoryLabel(categoryValue);
 
-  const categoryLabel = categoryValue === 'all' || !categoryValue
-    ? 'todas las categorías'
-    : categoryValue === 'Sin categoría'
-      ? 'registros sin categoría'
-      : `la categoría «${categoryValue}»`;
+  target.textContent = t('countMessage')
+    .replace('{current}', formatValue(current))
+    .replace('{total}', formatValue(total))
+    .replace('{year}', yearLabel)
+    .replace('{category}', categoryLabel);
+}
 
-  target.textContent = `Mostrando ${formatValue(current)} de ${formatValue(total)} aprendizajes para ${yearLabel} y ${categoryLabel}.`;
+function buildYearLabel(yearValue) {
+  if (yearValue === 'all' || !yearValue) return t('yearAll');
+  if (yearValue === labels.noDate) return t('yearNoDateAlt');
+  return t('yearExactTemplate').replace('{value}', yearValue);
+}
+
+function buildCategoryLabel(categoryValue) {
+  if (categoryValue === 'all' || !categoryValue) return t('categoryAll');
+  if (categoryValue === labels.noCategory) return t('categoryNoCategory');
+  return t('categoryExactTemplate').replace('{value}', categoryValue);
 }
 
 function toggleEmptyState(element, shouldShow, filters, defaultMessage) {
@@ -497,25 +578,25 @@ function toggleEmptyState(element, shouldShow, filters, defaultMessage) {
   element.textContent = defaultMessage;
 }
 
-function buildEmptyStateMessage(filters = {}, defaultMessage = 'No se encontraron aprendizajes para el filtro seleccionado.') {
+function buildEmptyStateMessage(filters = {}, defaultMessage = t('emptyDefault')) {
   const yearValue = filters?.year ?? 'all';
   const categoryValue = filters?.category ?? 'all';
 
   const descriptions = [];
 
   if (yearValue && yearValue !== 'all') {
-    descriptions.push(yearValue === 'Sin fecha' ? 'los registros sin fecha exacta' : `el año ${yearValue}`);
+    descriptions.push(yearValue === labels.noDate ? t('emptyYearNoDate') : t('emptyYearExact').replace('{value}', yearValue));
   }
 
   if (categoryValue && categoryValue !== 'all') {
-    descriptions.push(categoryValue === 'Sin categoría' ? 'los registros sin categoría' : `la categoría «${categoryValue}»`);
+    descriptions.push(categoryValue === labels.noCategory ? t('emptyCategoryNoCategory') : t('emptyCategoryExact').replace('{value}', categoryValue));
   }
 
   if (!descriptions.length) {
     return defaultMessage;
   }
 
-  return `No se encontraron aprendizajes para ${descriptions.join(' y ')}.`;
+  return t('emptyWithContext').replace('{context}', descriptions.join(` ${t('andJoiner')} `));
 }
 
 function showError(container, message) {

@@ -1,11 +1,36 @@
+const DEFAULT_LOCALE = detectLocale();
 const DEFAULT_SOURCE = resolveDefaultSource();
-const DATE_FORMATTER = new Intl.DateTimeFormat('es-ES', { dateStyle: 'long' });
+
+const LABELS = {
+  es: {
+    noCategory: 'Sin categoría',
+    noDate: 'Sin fecha',
+    noExactDate: 'Sin fecha exacta',
+    noRecords: 'Sin registros',
+  },
+  en: {
+    noCategory: 'No category',
+    noDate: 'No date',
+    noExactDate: 'No exact date',
+    noRecords: 'No records',
+  },
+};
+
+export function getLocaleConfig(locale = DEFAULT_LOCALE) {
+  const lang = normalizeLocale(locale);
+  const intlLocale = lang === 'en' ? 'en-US' : 'es-ES';
+  return { lang, intlLocale, labels: LABELS[lang] };
+}
 
 /**
  * Obtiene y normaliza la información de skills desde un endpoint JSON.
  * @param {string} [url]
+ * @param {string} [locale]
  */
-export async function loadSkillsData(url = DEFAULT_SOURCE) {
+export async function loadSkillsData(url = DEFAULT_SOURCE, locale = DEFAULT_LOCALE) {
+  const config = getLocaleConfig(locale);
+  const dateFormatter = buildDateFormatter(config.intlLocale);
+
   try {
     const response = await fetch(url, { cache: 'no-store' });
     if (!response.ok) {
@@ -13,12 +38,12 @@ export async function loadSkillsData(url = DEFAULT_SOURCE) {
     }
 
     const raw = await response.json();
-    return normalizeSkills(raw);
+    return normalizeSkills(raw, { config, dateFormatter });
   } catch (error) {
     if (url === DEFAULT_SOURCE) {
       const fallbackUrl = '/Files/skills_details.json';
       if (fallbackUrl !== url) {
-        return loadSkillsData(fallbackUrl);
+        return loadSkillsData(fallbackUrl, locale);
       }
     }
     throw error;
@@ -28,10 +53,16 @@ export async function loadSkillsData(url = DEFAULT_SOURCE) {
 /**
  * Normaliza los registros provenientes del CSV convertido a JSON.
  * @param {Array<Record<string, unknown>>} rawData
+ * @param {{ config?: ReturnType<typeof getLocaleConfig>, dateFormatter?: Intl.DateTimeFormat, labels?: typeof LABELS[keyof typeof LABELS], locale?: string }} options
  */
-export function normalizeSkills(rawData = []) {
+export function normalizeSkills(rawData = [], options = {}) {
+  const config = options.config ?? getLocaleConfig(options.locale);
+  const labels = options.labels ?? config.labels;
+  const dateFormatter = options.dateFormatter ?? buildDateFormatter(config.intlLocale);
+  const collatorLocale = config.intlLocale;
+
   if (!Array.isArray(rawData)) {
-    return createEmptyDataset();
+    return createEmptyDataset(labels);
   }
 
   const toolAccumulator = new Set();
@@ -45,7 +76,7 @@ export function normalizeSkills(rawData = []) {
     const tools = normalizeTools(entry['Skill/Tool']);
     const categories = normalizeCategories(entry['Categoria']);
     const description = safeText(entry['Description']);
-    const dateInfo = parseDate(entry['Record Date (DD/MM/YYYY)']);
+    const dateInfo = parseDate(entry['Record Date (DD/MM/YYYY)'], { labels, dateFormatter });
 
     if (tools.length) {
       tools.forEach(tool => toolAccumulator.add(tool.toLowerCase()));
@@ -61,11 +92,11 @@ export function normalizeSkills(rawData = []) {
 
     let normalizedCategories = Array.from(new Set(categories));
     if (!normalizedCategories.length) {
-      normalizedCategories = ['Sin categoría'];
+      normalizedCategories = [labels.noCategory];
     }
 
     normalizedCategories.forEach(category => {
-      const label = category || 'Sin categoría';
+      const label = category || labels.noCategory;
       categoryAccumulator.set(label, (categoryAccumulator.get(label) || 0) + 1);
     });
 
@@ -95,7 +126,7 @@ export function normalizeSkills(rawData = []) {
 
   const years = Array.from(uniqueYears).sort((a, b) => b - a).map(String);
   if (hasNoYear) {
-    years.push('Sin fecha');
+    years.push(labels.noDate);
   }
 
   const categories = Array.from(categoryAccumulator.entries())
@@ -103,7 +134,7 @@ export function normalizeSkills(rawData = []) {
       if (b[1] !== a[1]) {
         return b[1] - a[1];
       }
-      return a[0].localeCompare(b[0], 'es', { sensitivity: 'base' });
+      return a[0].localeCompare(b[0], collatorLocale, { sensitivity: 'base' });
     })
     .map(([name]) => name);
 
@@ -116,13 +147,14 @@ export function normalizeSkills(rawData = []) {
     meta: {
       total: sortableItems.length,
       uniqueTools: toolAccumulator.size,
-      lastUpdate: latestWithDate?.date.display ?? 'Sin registros',
+      lastUpdate: latestWithDate?.date.display ?? labels.noRecords,
+      labels,
     },
     types: Object.fromEntries(typeAccumulator),
   };
 }
 
-function createEmptyDataset() {
+function createEmptyDataset(labels) {
   return {
     items: [],
     years: [],
@@ -130,7 +162,8 @@ function createEmptyDataset() {
     meta: {
       total: 0,
       uniqueTools: 0,
-      lastUpdate: 'Sin registros',
+      lastUpdate: labels.noRecords,
+      labels,
     },
     types: {},
   };
@@ -166,15 +199,15 @@ function normalizeTools(value) {
     .filter(Boolean);
 }
 
-function parseDate(value) {
+function parseDate(value, { labels, dateFormatter }) {
   const rawText = safeText(value);
   if (!rawText) {
     return {
       raw: '',
       iso: null,
-      display: 'Sin fecha',
+      display: labels.noDate,
       year: null,
-      yearLabel: 'Sin fecha',
+      yearLabel: labels.noDate,
       sortable: null,
     };
   }
@@ -195,7 +228,7 @@ function parseDate(value) {
       return {
         raw: rawText,
         iso: date.toISOString(),
-        display: DATE_FORMATTER.format(date),
+        display: dateFormatter.format(date),
         year,
         yearLabel: String(year),
         sortable: date.getTime(),
@@ -222,7 +255,7 @@ function parseDate(value) {
     iso: null,
     display: rawText,
     year: null,
-    yearLabel: 'Sin fecha',
+    yearLabel: labels.noDate,
     sortable: null,
   };
 }
@@ -245,4 +278,23 @@ function resolveDefaultSource() {
   }
 
   return '/Files/skills_details.json';
+}
+
+function detectLocale() {
+  if (typeof document !== 'undefined' && document?.documentElement?.lang) {
+    return document.documentElement.lang;
+  }
+  if (typeof navigator !== 'undefined' && navigator?.language) {
+    return navigator.language;
+  }
+  return 'es';
+}
+
+function normalizeLocale(locale) {
+  if (!locale || typeof locale !== 'string') return 'es';
+  return locale.toLowerCase().startsWith('en') ? 'en' : 'es';
+}
+
+function buildDateFormatter(localeTag) {
+  return new Intl.DateTimeFormat(localeTag, { dateStyle: 'long' });
 }
