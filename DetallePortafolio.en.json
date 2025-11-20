@@ -1,0 +1,146 @@
+[
+  {
+    "Año": 2025,
+    "Proyecto": "Data governance for the MIS team (100 people)",
+    "Contexto Caso de Uso": "In a multinational organization, tracking time allocation for the MIS team—about 100 people—was fragmented and disconnected. Each manager kept their own records, preventing an integrated view. A system was designed from scratch to centralize information, structure the data hierarchy, and connect operational levels with senior leadership. It became a strategic pillar that translated individual efforts into actionable data for the organization.",
+    "Problema": "The absence of unified data governance created a gap between strategic decisions and operational reality. Without clear traceability of hours, it was difficult to forecast costs, identify bottlenecks, and plan resources effectively.",
+    "Herramientas": "[Excel with VBA]: {process automation and form consolidation}, [Power Query]: {data extraction and transformation from multiple sources}, [Power Pivot with DAX]: {data modeling and advanced resource utilization calculations}, [LLMs]: {assistance in categorizing and structuring records to optimize analytical load}",
+    "Habilidades": "Data governance, hierarchical structuring, interactive visualization, capacity analysis, and operational efficiency.",
+    "Resultados": "Achieved a consolidated view of team allocation, enabling precise cost projections, better data quality, and tailored insights for multiple audiences (technology, business, and finance)."
+  },
+  {
+    "Año": 2025,
+    "Proyecto": "Capital markets regulatory compliance (U.S.)",
+    "Contexto Caso de Uso": "A new directive from the U.S. regulator required critical applications in the technology portfolio (foreign exchange, commodities, prime services, and collateral management) to update security patches to ensure component integrity. A global-scale project was structured to coordinate remediation of approximately 10,000 components across 14 applications. Tracking was executed with transversal teams, cleaning findings through scans and assigning tasks by remediation type. The approach was precise, coordinated, and collaborative.",
+    "Problema": "Lack of traceability on the state of technology components, combined with regulatory pressure, put operations and reputation at risk. Clear, agile governance was needed to avoid penalties, improve cybersecurity posture, and ensure accountability.",
+    "Herramientas": "[Power BI]: {real-time visualization of progress and findings for local and global teams}, [Excel]: {historical control of remediations by application}, [Power Query]: {transformation of scanned data and component categorization}, [Power Apps]: {application design to capture and report compliance status in the regulatory program}",
+    "Habilidades": "Data strategy and governance, global project management, regulatory risk management, audit support.",
+    "Resultados": "Full compliance with the regulatory requirement in 9 months: 100% of components were remediated or decommissioned, reducing technology risk and strengthening the compliance posture before auditors and regulators."
+  },
+  {
+    "Año": 2024,
+    "Proyecto": "OSFI regulatory compliance for credit products (Canada)",
+    "Contexto Caso de Uso": "The Canadian regulator (OSFI) introduced legal changes to adjust caps on mortgage products. To comply, a bank-wide project covering around 30 applications and 200 contributors from technology and business was launched. With a budget of 5M CAD, the project identified affected systems, adjusted rates and caps, ran tests in controlled environments (UAT, QA), and ensured compliance. As Project Manager Union, I led financial control, milestone validation, payments, contracts, and ensured operational and budget compliance.",
+    "Problema": "Updating legal parameters in critical products required transversal technology changes. There was no clear traceability of application impact or a consolidated financial control model, putting on-time, in-scope compliance at risk.",
+    "Herramientas": "[Power BI]: {visualization of financial health and team dedication}, [Excel]: {financial consolidation of contracts, costs, and hour control}, [Power Query]: {extraction and cleaning of financial data from multiple sources}, [Power Pivot with DAX]: {financial data modeling and customized reporting}, [JPPM]: {time tracking and workload management}, [Templates/Project Charters]: {structuring and formalizing scope, budget, and project governance}",
+    "Habilidades": "Technology project management, financial and contractual management, budget control, functional testing oversight and regulatory compliance, risk and audit management.",
+    "Resultados": "Project delivered in 8 months with no major extensions or deviations. Budget variance <5%, 100% compliance with regulator requirements, monthly financial control, and real-time executive visibility."
+  },
+  {
+    "Año": 2023,
+    "Proyecto": "Automation and reporting portfolio for global Human Resources",
+    "Contexto Caso de Uso": "To scale efficiency in global HR operations, a portfolio of technology solutions was created. It started with a cloud RPA that triaged cases using 75 defined rules, automatically redirecting requests to the right teams. The initial success led to new robots that validated data, ensured completeness, and enabled no-rework operations. A specialized bot for real-time extraction and reporting across all regions was added, laying the groundwork for a new data-driven vision of the operation.",
+    "Problema": "The volume and complexity of global HR cases caused operational overload, rework, and limited executive visibility. Decisions needed standardization, response times had to be reduced, and actionable insights from operations were required to guide strategy.",
+    "Herramientas": "[Pega RPA]: {triage automation, case validation, and operational database updates}, [Power BI]: {real-time visualization of KPIs and global performance}, [Power Query]: {periodic extraction of logs and metrics}, [Power Pivot with DAX]: {data modeling and value reporting}, [Excel]: {template structuring and operational workload control}, [Scrum]: {agile management of the robot portfolio as PO and SM}, [Financial models]: {estimation of operational savings and efficiency per robot}",
+    "Habilidades": "Product and project management, automation (RPA), advanced reporting, global stakeholder management, data governance, operational efficiency.",
+    "Resultados": "Estimated reduction of 10–15 FTEs in operational workload, real-time executive reporting, insights on quality and operational efficiency, and future scalability toward AI-powered projects."
+  },
+  {
+    "Año": 2023,
+    "Proyecto": "Automated validation system for Caribbean contact centers",
+    "Contexto Caso de Uso": "To address critical fraud and impersonation levels in contact centers in Colombia, Panama, and Costa Rica, a desktop robotic system was developed to strengthen real-time client authentication. The system triggered automatically at the start of each call, generating random questions based on risk criteria and validating answers before allowing any operation. The bot raised alerts when authentication failed and generated structured audit logs. It was installed on more than 120 stations running 24/7.",
+    "Problema": "Call-center operations lacked robust filters and structured questions to verify customer identity. Unauthorized third parties could perform sensitive changes, exposing the bank to fraud and regulatory penalties.",
+    "Herramientas": "[Pega RPA]: {desktop robot development and deployment for authentication}, [Excel]: {log reporting and authentication event analysis}, [Risk framework]: {design of randomization criteria and risk levels for filters}, [Scrum]: {agile development with backlog, user stories, and refinement sessions}, [PO artifacts]: {product leadership, user vision, release validation, and acceptance criteria}",
+    "Habilidades": "Product and project management, automation (RPA), operational data governance, operational cybersecurity, multicultural stakeholder management, operational risk analysis.",
+    "Resultados": "Stable installation and operation across 120+ stations, significant reduction in impersonation events, mitigation of reputational and financial risk, and traceability for audits and security decisions."
+  },
+  {
+    "Año": 2024,
+    "Proyecto": "Algorithmic system for cryptoasset analysis",
+    "Contexto Caso de Uso": "As an investment enthusiast and active trader, I noticed that exchange technical indicators were used by millions simultaneously, creating lagged effects and higher volatility. To improve speed and precision in decision-making, I built an algorithmic system in Python that connects to the Binance API and analyzes multiple timeframes to anticipate price direction.",
+    "Problema": "Reliance on common technical indicators available on exchanges generated predictable market behavior and delays in reading real trends, hindering agile and differentiated decisions.",
+    "Herramientas": "[Python]: {data extraction and algorithmic calculations across multiple timeframes}, [Binance API]: {real-time market data access for multiple cryptocurrencies}, [Power BI]: {visualization of results and additional insights}",
+    "Habilidades": "Algorithmic thinking, data engineering, technical analysis, API consumption, visualization of investment insights.",
+    "Resultados": "Automated analysis of multiple timeframes, faster signal reading, and a customized decision-making framework ready for evolution into fully automated trading."
+  },
+  {
+    "Año": 2021,
+    "Proyecto": "Digital transformation of a traditional restaurant",
+    "Contexto Caso de Uso": "After acquiring a traditional Colombian restaurant in Bogotá, I identified a disconnect between daily operations and access to key information for decision-making, especially when I could not be onsite. Given the team’s low digital literacy, I designed a solution adapted to their culture and operations: simple manual sheets later digitized. This information was structured, loaded into relational databases, and visualized through dashboards, enabling daily monitoring without heavy tech investment or drastic process changes.",
+    "Problema": "Lack of digitalization and low technological literacy prevented real-time visibility of costs, revenue, and supplies, complicating strategic and operational decisions for a business dependent on daily cash flow and product turnover.",
+    "Herramientas": "[Instant messaging]: {practical, accessible collection of daily operational data}, [Excel]: {sheet consolidation and preliminary data processing}, [SQLite]: {local storage of structured data}, [Power Query]: {data extraction and transformation from multiple sources}, [Power Pivot]: {modeling relationships among recipes, costs, sales, and supplies}, [Power BI (Desktop and Mobile)]: {daily visualization of revenue, costs, dishes sold, and operational efficiency}",
+    "Habilidades": "Analytics applied to traditional business, data modeling, operational visualization, digital transformation aligned to organizational culture, user-centered design, operational efficiency without costly infrastructure.",
+    "Resultados": "Daily visibility (one-day lag) of income, expenses, and costs per dish and ingredient. Creation of a digital recipe book with ~140 recipes and 2,800 supply records. Optimized purchasing, staffing, and costs, enabling data-driven decisions."
+  },
+  {
+    "Año": 2025,
+    "Proyecto": "Digital transformation calculator",
+    "Contexto Caso de Uso": "After completing a dual master’s in digital transformation and digital business, I consolidated my knowledge by building a free tool to diagnose companies’ digital maturity. The goal was to deliver market value while creating a useful database for benchmarking and decision-making. I designed and coded a calculator entirely in-house that, from a web form, receives user inputs, computes maturity scores by capability, generates a personalized report, and delivers it automatically via email.",
+    "Problema": "There was no accessible, free, and automated tool to quickly deliver reliable, actionable digital capability diagnostics. Existing platforms were fragmented or too generic, making personalized use or data reuse difficult.",
+    "Herramientas": "[HTML/CSS]: {structure and design of the web form on GitHub Pages}, [FastAPI]: {backend handling for capture, execution, and report generation}, [Python]: {automation of score calculations, chart generation, and report consolidation}, [SQLite]: {local database to store inputs and results}, [Google Cloud]: {secure hosting of scripts and model files}, [GitHub Pages]: {free frontend hosting connected to the backend}, [SSL Certificates]: {domain security and data confidentiality}",
+    "Habilidades": "Full-stack web development, digital product design, data engineering, automation, organizational capability analysis, questionnaire design, visualization, and digital value delivery.",
+    "Resultados": "Fully functional tool that evaluates six key capabilities within the broader digital data management capability. Automatic report generation with current state, quick wins, improvement routes, key metrics, and opportunities. Reusable knowledge base for benchmarking analysis and market needs."
+  },
+  {
+    "Año": 2025,
+    "Proyecto": "Algorithmic trading robot for cryptoassets",
+    "Contexto Caso de Uso": "This project evolved from the prior crypto analysis system. The goal was to scale customized technical indicators into an autonomous algorithm capable of deciding whether to buy, sell, or hold, with future automatic execution via API. The robot processes historical and real-time data, calculates more than 60 variables, evaluates model accuracy, and runs backtesting to validate profitability before real operations.",
+    "Problema": "Investment decisions based on traditional technical analysis are slow, manual, and error-prone, especially in volatile crypto markets. There was no personalized system combining speed, precision, and automation with logic tailored to trading style (scalping, holding, etc.).",
+    "Herramientas": "[Python]: {full development of the analysis and automation system}, [SQLite]: {structured storage of histories and interval calculations}, [Binance API]: {market data extraction and later automated operations}, [Pandas & DataFrames]: {data modeling and transformation}, [Scikit-learn & XGBoost]: {predictive model creation}, [Confusion matrices]: {precision and accuracy validation}, [Backtesting]: {profitability validation over historical data}, [Cloud (planned)]: {24/7 execution on VMs like Google Cloud}, [Reddit APIs (future)]: {signal extraction for sentiment-based fundamental analysis}",
+    "Habilidades": "Data engineering, predictive modeling, algorithm development, futures scalping, model validation, automation, technical analysis, and preparation for fundamental analysis integration (sentiment, influencers, emotions).",
+    "Resultados": "Functional MVP with over 60 variables, 15+ custom indicators, and processing of millions of records per interval. Structured algorithm with double validation (precision and profitability). Next steps: cloud deployment, integration with fundamental analysis sources, and multi-strategy creation for an automated portfolio."
+  },
+  {
+    "Año": 2018,
+    "Proyecto": "Bank risk model replica",
+    "Contexto Caso de Uso": "During my first months in Scotiabank’s asset compliance area, I used downtime from internal reforms to explore the risk models used to classify clients. Fascinated by the segmentation logic based on product type, geography, or banking behavior, I built a basic replica from scratch in Excel, designing a risk calculator that assigned scores by key criteria. It deepened my understanding of institutional logic while improving analysis efficiency.",
+    "Problema": "Client compliance reviews required manually gathering scattered information and applying multiple risk criteria. This was time-consuming, error-prone, and limited traceability and consistency. There was no personal tool to systematize the logic or provide automated support.",
+    "Herramientas": "[Excel]: {full development of the risk calculator with custom formulas}, [Business logic]: {implementation of client, product, geographic, and market risk criteria in a tabular model}, [Simple automation]: {conditional scripting and tabulation based on risk score}",
+    "Habilidades": "Risk analysis, simplified model design, automation with Excel, interpretation of compliance policies, structured thinking, self-directed exploration of regulatory models.",
+    "Resultados": "Functional prototype with 10 key variables, enabling faster, systematic, and traceable analysis. The tool served as a learning base for risk scoring, basic automation, and the logic behind the institutional model."
+  },
+  {
+    "Año": 2025,
+    "Proyecto": "Leadership framework to break down personal purpose for individuals and teams",
+    "Contexto Caso de Uso": "During a period of personal and professional redefinition—while mentoring companies and studying a master’s in digital transformation—I designed a framework to help people and leaders break down their personal purpose and connect individual motivations with group and business objectives. The methodology combines tools like Ikigai, Bourdieu’s capitals, the Wheel of Life, and SMART actions, along with visual management systems such as Kanban or Scrum, generating focus, clarity, and actionable plans.",
+    "Problema": "People and teams often operate without a clear link between what they personally value and what they execute daily. This leads to low motivation, poor deliverables, and personal burnout. There was no structured tool to identify and align personal purpose with organizational purpose.",
+    "Herramientas": "[Personalized Ikigai]: {identification of deep motivations through categorization and reflection}, [Bourdieu’s capitals]: {classification and quantification of life priorities}, [Wheel of Life]: {visualization of current balance and future goals at 3, 6, and 12 months}, [SMART Goals]: {definition of actionable objectives per period}, [Management tools]: {tracking actions with Trello, ClickUp, Miro, Planner, Excel, or others}, [Productivity methods]: {implementation of Kanban, Scrum, or the 4D discipline}",
+    "Habilidades": "Self-awareness, purpose-driven leadership, personal and team coaching, personal productivity, design of continuous improvement systems, integration of personal and organizational goals.",
+    "Resultados": "200% improvement in speed and quality of deliverables for teams using the framework. Reduced burnout, greater strategic clarity for individuals, and reclaimed time without sacrificing results. Continuous personal use of the framework enables balanced, high-performance execution across multiple life dimensions."
+  },
+  {
+    "Año": 2024,
+    "Proyecto": "Digital transformation of a digital marketing agency",
+    "Contexto Caso de Uso": "This project began as the capstone for my dual master’s in digital transformation leadership and digital business. It was executed with a Colombian digital marketing agency that, despite its digital commercial focus, lacked robust technology foundations. We identified competitive risk from rapid AI and automation adoption by freelancers or agile tech solutions and designed a transformation plan in three phases (cultural foundation, operational digitalization, and advanced analytics). We implemented an MVP for phase one with an interface called ModelView, digitalizing key processes, integrating structured data, and connecting them to an LLM as an operational assistant.",
+    "Problema": "Digital marketing agencies risk obsolescence if they do not embed real technology in their internal processes. This company had no digital infrastructure, data governance, or automation, leaving it vulnerable to faster, more scalable solutions.",
+    "Herramientas": "[Excel and BPM tools]: {process mapping and analysis}, [Figma and Design Thinking]: {prototyping and customer experience redesign}, [Power BI and SQL]: {connection of structured and semi-structured data}, [Firebase Studio]: {management of non-relational databases for clients and processes}, [Descriptive and customer analytics]: {visualization of patterns, behaviors, and processing times}, [Scrum + Predictive]: {hybrid execution by phases and iterations}, [LLM (cloud)]: {implementation of an internal digital assistant for brand, client, and process queries}, [ModelView interface]: {integrated visualization of processes and documents}",
+    "Habilidades": "Strategic transformation design, MVP execution, process analysis, applied AI adoption for operations, digital architecture, data governance, LLM integration, agile and hybrid methodologies.",
+    "Resultados": "Successful MVP for phase one. Digitalized key processes, interface connected to data and operational LLM. Ability to scale processes, estimated 30% reduction in execution times, and stronger cultural and technical readiness for advanced automation and intelligent services."
+  },
+  {
+    "Año": 2023,
+    "Proyecto": "Process robotics orchestrator for logical access management in banking",
+    "Contexto Caso de Uso": "Responding to an audit requirement in a bank’s logical access management area with over 6,000 employees, I designed and implemented a process robotics orchestrator. It served as a centralized governance framework to automate access operations across more than 25 operational lines. The project started with the Contact Center operation in Canada, documented processes for ~10 applications, and designed a standardized data and process flow. Automations later scaled to areas like Collections, Finance, and AML using a hybrid methodology (predictive for planning and Scrum for technical execution).",
+    "Problema": "Access management was manual, fragmented, and poorly traceable, creating compliance gaps, operational risks, and excessive delays. Heavy reliance on manual processes limited visibility, speed, and control over user provisioning, removal, and changes.",
+    "Herramientas": "[Excel]: {initial structuring and traceability of access}, [BPMN tools]: {process mapping and documentation by operation}, [Power BI]: {visual tracking and reporting on automation status}, [Structured databases]: {storage of access flows by operation}, [Scrum + Predictive]: {portfolio planning and agile execution per automation}, [Data and process strategy]: {aligning operational inputs/outputs to feed robotics}",
+    "Habilidades": "RPA orchestration, design of scalable automation portfolios, regulatory compliance, operational transformation, banking operations management, cross-functional leadership in process and data.",
+    "Resultados": "Cut onboarding time for new users from 35 days to 2 weeks in the first MVP, with a projection to 1 week. Freed ~2 FTEs per operation through automation. Standardized processes and full access traceability. Expanded the model to AML, Finance, and Collections as part of the automation roadmap."
+  },
+  {
+    "Año": 2023,
+    "Proyecto": "Robotic automation of exogenous reporting for the tax team (banking)",
+    "Contexto Caso de Uso": "In a bank with roughly 5,000 employees, the tax team manually and periodically completed exogenous reports required by authorities. This repetitive activity, with heavy year-end peaks, consumed analysts’ valuable time. An RDA (Robotic Desktop Application) bot was designed and implemented to automate the process from analyst inputs. Execution was user-triggered, and the bot performed the necessary operations with minimal follow-up.",
+    "Problema": "The operational load of exogenous reporting limited tax team efficiency. Manual work, coupled with the cyclical and regulated nature of the process, made it prone to errors, rework, and reliance on tacit knowledge. Greater standardization, speed, and regulatory compliance through automation were needed.",
+    "Herramientas": "[RDA (Robotic Desktop Automation)]: {automation of exogenous reporting with manual trigger}, [Excel]: {data source and inputs for the bots}, [Scrum]: {agile management of the automation}, [PO Tools]: {definition of user stories and deliverable validation}, [Technical documentation]: {collection of queries and consolidation logic}",
+    "Habilidades": "Desktop robotics, operational optimization, process documentation, agile leadership, regulated solution design, human-robot interaction.",
+    "Resultados": "Freed 15% of the tax team’s capacity, reduced manual errors, and met automation requirements. Increased process traceability with recurring monthly execution and automated year-end consolidation."
+  },
+  {
+    "Año": 2022,
+    "Proyecto": "Robotic automation of exogenous reporting for the tax team (banking)",
+    "Contexto Caso de Uso": "In a bank with roughly 5,000 employees, the tax team manually and periodically completed exogenous reports required by authorities. This repetitive activity, with heavy year-end peaks, consumed analysts’ valuable time. An RDA (Robotic Desktop Application) bot was designed and implemented to automate the process from analyst inputs. Execution was user-triggered, and the bot performed the necessary operations with minimal follow-up.",
+    "Problema": "The operational load of exogenous reporting limited tax team efficiency. Manual work, coupled with the cyclical and regulated nature of the process, made it prone to errors, rework, and reliance on tacit knowledge. Greater standardization, speed, and regulatory compliance through automation were needed.",
+    "Herramientas": "[RDA (Robotic Desktop Automation)]: {automation of exogenous reporting with manual trigger}, [Excel]: {data source and inputs for the bots}, [Scrum]: {agile management of the automation}, [PO Tools]: {definition of user stories and deliverable validation}, [Technical documentation]: {collection of queries and consolidation logic}",
+    "Habilidades": "Desktop robotics, operational optimization, process documentation, agile leadership, regulated solution design, human-robot interaction.",
+    "Resultados": "Freed 15% of the tax team’s capacity, reduced manual errors, and met automation requirements. Increased process traceability with recurring monthly execution and automated year-end consolidation."
+  },
+  {
+    "Año": 2021,
+    "Proyecto": "Post-call robotic automation for Collections advisors",
+    "Contexto Caso de Uso": "In an operation with roughly 50 Collections advisors across several Caribbean countries, we identified an opportunity to automate post-call tasks. The manual data entry process lacked structure and led to loss of key information for client traceability. A desktop automation (RDA) solution was designed and implemented to trigger automatically after each call, guiding advisors through standardized data capture and enriching it with client system information.",
+    "Problema": "Post-call data capture was inconsistent and dependent on each advisor’s judgment. This affected customer experience, operational traceability, and subsequent analysis. It also increased operational workload without adding direct value.",
+    "Herramientas": "[RDA (Robotic Desktop Automation)]: {active automation of the post-call process}, [Scrum]: {iterative management of development and deployment}, [PO Tools]: {requirements definition and user story refinement}, [Databases]: {structured storage of logs and client attributes}, [Collaborative documentation]: {documentation and standardization of the post-call flow}",
+    "Habilidades": "Collaborative human-robot automation, post-interaction process design, customer experience analysis, remote operations management, integration of client and operations data, leadership of regional-scale projects.",
+    "Resultados": "Freed 7% of operational capacity per advisor, created structured consolidation of thousands of daily interactions, standardized post-call records across multiple Caribbean countries, and improved traceability and analysis of customer experience."
+  }
+]

@@ -101,6 +101,26 @@ img{ max-width:100%; display:block; }
 }
 .btn--social{ width: 100%; }
 
+.language-switch{
+  display: flex;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.language-switch .btn{
+  flex: 1 1 0;
+  text-align: center;
+  min-height: 40px;
+}
+
+.language-switch .is-active{
+  background: var(--brand-600);
+  color: var(--white);
+  border-color: var(--brand-600);
+  pointer-events: none;
+  opacity: .95;
+}
+
 /* Contenido principal */
 .main{
   display: block;

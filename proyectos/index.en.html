@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mis Proyectos — Alejandro Gómez</title>
-  <meta name="description" content="Casos reales por año. Contexto, problema, herramientas, habilidades y resultados." />
+  <title>My Projects — Alejandro Gómez</title>
+  <meta name="description" content="Real-world cases by year. Context, problem, tools, skills, and results." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,69 +18,69 @@
 
     <aside class="sidebar">
       <div class="photo-container">
-        <img src="/1.png" alt="Foto de perfil de Alejandro Gómez" class="profile-photo" />
+        <img src="/1.png" alt="Profile photo of Alejandro Gómez" class="profile-photo" />
       </div>
       <nav class="social">
-        <a href="/" class="btn btn--secondary">Home</a>
-        <a href="/skills/" class="btn btn--secondary">Skills</a>
+        <a href="/index.en.html" class="btn btn--secondary">Home</a>
+        <a href="/skills/index.en.html" class="btn btn--secondary">Skills</a>
         <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:ale.9503@hotmail.com?subject=Contacto%20por%20proyectos" class="btn btn--secondary">Email</a>
-        <a href="Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary btn--social" download>Descargar mi CV</a>
+        <a href="mailto:ale.9503@hotmail.com?subject=Contact%20about%20projects" class="btn btn--secondary">Email</a>
+        <a href="/Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary btn--social" download>Download my résumé</a>
       </nav>
 
-      <div class="language-switch" role="group" aria-label="Selecciona idioma">
-        <a href="/proyectos/index.html" class="btn btn--secondary is-active" lang="es">ES</a>
-        <a href="/proyectos/index.en.html" class="btn btn--secondary" lang="en">EN</a>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <a href="/proyectos/index.html" class="btn btn--secondary" lang="es">ES</a>
+        <a href="/proyectos/index.en.html" class="btn btn--secondary is-active" lang="en">EN</a>
       </div>
     </aside>
 
     <main class="main">
       <header class="hero">
-        <h1 class="hero__title">Mis Proyectos <span class="hero__motto">De la mente al mundo</span></h1>
-        <p class="hero__lede">Explora mis casos por año. Selecciona un año y luego un proyecto. Verás el contexto, problema, herramientas/metodologías, habilidades y resultados.</p>
+        <h1 class="hero__title">My Projects <span class="hero__motto">From mind to world</span></h1>
+        <p class="hero__lede">Browse my cases by year. Pick a year, then a project to see context, problem, tools/methodologies, skills, and outcomes.</p>
       </header>
 
-      <section class="case-layout" aria-label="Detalle del proyecto">
+      <section class="case-layout" aria-label="Project details">
         <!-- Barras Year / Project (apiladas) -->
         <div class="bar bar--year">
-          <label for="year-select">Año</label>
-          <select id="year-select" aria-label="Selecciona año">
-            <option value="">— Selecciona —</option>
+          <label for="year-select">Year</label>
+          <select id="year-select" aria-label="Select year">
+            <option value="">— Select —</option>
           </select>
         </div>
 
         <div class="bar bar--proj" id="project-bar" style="opacity:.75;">
-          <label for="project-select">Nombre del proyecto</label>
-          <select id="project-select" disabled aria-label="Selecciona proyecto">
-            <option value="">— Selecciona —</option>
+          <label for="project-select">Project name</label>
+          <select id="project-select" disabled aria-label="Select project">
+            <option value="">— Select —</option>
           </select>
         </div>
 
         <!-- Cajas -->
         <article class="case-box case--context">
-          <h2>Contexto Caso de Uso</h2>
+          <h2>Use Case Context</h2>
           <p id="detail-context"></p>
         </article>
 
         <article class="case-box case--problem">
-          <h2>Problema</h2>
+          <h2>Problem</h2>
           <p id="detail-problema"></p>
         </article>
 
         <article class="case-box case--tools">
-          <h2>Herramientas, Metodologías</h2>
+          <h2>Tools &amp; Methodologies</h2>
           <div id="detail-herramientas"></div>
         </article>
 
         <article class="case-box case--skills">
-          <h2>Habilidades</h2>
+          <h2>Skills</h2>
           <p id="detail-habilidades"></p>
         </article>
 
         <article class="case-box case--results">
-          <h2>Resultados Obtenidos</h2>
+          <h2>Results Achieved</h2>
           <p id="detail-resultados"></p>
         </article>
       </section>
@@ -296,5 +296,3 @@
   </script>
 </body>
 </html>
-
-

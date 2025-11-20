@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills map — Alejandro Gómez</title>
+  <meta name="description" content="Explore my skills and learnings organized by year, type, and tools." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="photo-container">
+        <img src="/1.png" alt="Profile photo of Alejandro Gómez" class="profile-photo" loading="lazy" />
+      </div>
+      <nav class="social">
+        <a href="/index.en.html" class="btn btn--secondary">Home</a>
+        <a href="/proyectos/index.en.html" class="btn btn--secondary">Projects</a>
+        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:ale.9503@hotmail.com?subject=Contact%20about%20skills" class="btn btn--secondary">Email</a>
+        <a href="/Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary" download>Download my résumé</a>
+      </nav>
+
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <a href="/skills/index.html" class="btn btn--secondary" lang="es">ES</a>
+        <a href="/skills/index.en.html" class="btn btn--secondary is-active" lang="en">EN</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="hero" role="banner">
+        <h1 class="hero__title">Skills map <span class="hero__motto">Continuous learning</span></h1>
+        <p class="hero__lede">
+          This repository shows how my professional practice has evolved. Filter by year to see which tools, methodologies,
+          and skills I've added over time, together with the context behind each learning.
+        </p>
+      </header>
+
+      <section class="skills-overview" aria-labelledby="skills-overview-title">
+        <div class="skills-overview__header">
+          <h2 class="section-title" id="skills-overview-title">Learning summary</h2>
+          <p class="skills-overview__caption">Data generated automatically from my personal log.</p>
+        </div>
+        <div class="insights-grid" data-insights-grid></div>
+      </section>
+
+      <section class="skills-treemap" aria-labelledby="skills-treemap-title">
+        <h2 class="section-title" id="skills-treemap-title">Visual skills map</h2>
+        <p class="skills-treemap__description">
+          This section will display an interactive visualization with the distribution of skills by category, learning focus,
+          and key tools.
+        </p>
+        <div id="treemap-skills" role="img">The map will load automatically when JavaScript is available.</div>
+        <div id="treemap-legend"></div>
+        <!-- Futuro script: cargar datos desde ./files/skills_details.json.
+             Actualmente los documentos viven en /Files/ para ajustar el cargador según el entorno de despliegue. -->
+      </section>
+
+      <section class="skills-controls" aria-label="Filter skills by year and category">
+        <div class="filter-container">
+          <div class="filter-field">
+            <label for="skills-year">Filter by year</label>
+            <select id="skills-year" aria-controls="skills-table-body">
+              <option value="all">All years</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="skills-category">Filter by category</label>
+            <select id="skills-category" aria-controls="skills-table-body">
+              <option value="all">All categories</option>
+            </select>
+          </div>
+          <p class="skills-count" role="status" aria-live="polite" data-results-count></p>
+        </div>
+      </section>
+
+      <section class="skills-table-section" aria-labelledby="skills-table-title">
+        <h2 class="section-title" id="skills-table-title">Full skills detail</h2>
+        <p class="skills-table__hint" id="skills-table-hint">Use the year and category filters to explore each recorded learning.</p>
+        <div class="table-wrapper" aria-live="polite">
+          <table class="skills-table" aria-describedby="skills-table-hint">
+            <thead>
+              <tr>
+                <th scope="col">Skill</th>
+                <th scope="col">Learning type</th>
+                <th scope="col">Category</th>
+                <th scope="col">Tools</th>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody id="skills-table-body" data-skills-body></tbody>
+          </table>
+        </div>
+        <p class="skills-empty" data-empty-state hidden>No learnings found for the selected filter.</p>
+        <noscript>
+          <p class="skills-noscript">Enable JavaScript to explore and filter the skills detail.</p>
+        </noscript>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/skills/skills.js"></script>
+</body>
+</html>
