@@ -1028,5 +1028,15 @@
     "Categoria": [
       "Finanzas & Riesgo & Cumplimiento"
     ]
+  },
+  {
+    "What did I learn?": "Arquitecturas y Patrones de Software",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Software Architecture Patterns, Software Design Patterns",
+    "Record Date (DD/MM/YYYY)": "25/11/2025",
+    "Description": "El curso permitió comprender, con estructura clara, los principales patrones de arquitectura utilizados en la industria. Se abordó el contexto general de la arquitectura de software, diferencias con los design patterns y las categorías clave. Se estudiaron patrones de sistemas (monolitos, n-tier, SOA, microservicios, serverless, distribuidos y P2P), patrones de aplicación (por capas, onion, hexagonal/ports and adapters, microkernel, modular monolith, CQRS, Event Sourcing y cómo combinarlos) y patrones de UI (MVC, MVP, MVVM y sus diferencias). En conjunto, el aprendizaje ofreció una visión ordenada de cómo seleccionar y combinar patrones según necesidades técnicas y de negocio.",
+    "Categoria": [
+      "Tecnología & Plataformas"
+    ]
   }
 ]
