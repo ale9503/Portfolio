@@ -1,0 +1,109 @@
+{
+    "hero": {
+        "title": "Alejandro Gómez",
+        "motto": "DE LA MENTE AL MUNDO",
+        "tagline": "Estratega de Producto y Technical Delivery Manager con +11 años orquestando transformaciones en banca global (>$25M CAD) y escalando startups.",
+        "metrics": [
+            "11+ años creando valor",
+            "Innovación y Automatización Inteligente",
+            "Estrategia y Analítica para crear valor"
+        ]
+    },
+    "pillars": {
+        "title": "Mis 5 Pilares de Transformación Digital",
+        "description": "Mi experiencia e intereses convergen en navegar la transformación digital para aportar valor—ya sea optimizando costos (FinOps) o creando nuevas líneas de ingresos. Al integrar Inteligencia Artificial, mi objetivo es ser el eslabón esencial entre visión y ejecución.",
+        "items": [
+            {
+                "id": "banking",
+                "name": "Banca y Finanzas",
+                "description": "Orquestando estrategias digitales interregionales y velando por el estricto cumplimiento regulatorio financiero."
+            },
+            {
+                "id": "technology",
+                "name": "Tecnología e IA",
+                "description": "Potenciando la arquitectura con tecnologías emergentes y herramientas agénticas (LLMs) para soluciones escalables."
+            },
+            {
+                "id": "product",
+                "name": "Gestión de Producto",
+                "description": "Diseñando y coordinando el ciclo de vida del producto enfocándose siempre en la creación de valor."
+            },
+            {
+                "id": "project",
+                "name": "Gestión de Proyectos",
+                "description": "Liderando portafolios multimillonarios con adherencia estricta a presupuestos, alcances y tiempos."
+            },
+            {
+                "id": "innovation",
+                "name": "Innovación y FinOps",
+                "description": "Impulsando la eficiencia operativa estructural a través de robótica, optimización de procesos y control financiero."
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": "cybersecurity",
+            "title": "Portafolio Global de Ciberseguridad",
+            "context": "Liderazgo de un programa para la actualización de 'look and feel' y protocolos internos de Single Sign-On (SSO) en 9 países (Canadá, LatAm, Caribe).",
+            "role": "Program Manager",
+            "action": "Coordiné transversalmente con equipos locales y legales de 9 jurisdicciones para estandarizar procesos de autenticación, asegurando el cumplimiento regulatorio y protegiendo la propiedad intelectual de cada país. Dirigí un presupuesto total de ~$21M CAD y un equipo de ~300 personas (FTEs y contratistas).",
+            "impact": "Estandarización exitosa de los accesos preservando regulaciones internacionales, sin afectar la operación diaria de millones de clientes corporativos y asegurando paridad normativa."
+        },
+        {
+            "id": "mortgage",
+            "title": "Cumplimiento Regulatorio OSFI en Hipotecas",
+            "context": "Programa de $5M CAD en Canadá para ajustar sistemas críticos de acuerdo a los nuevos topes hipotecarios dictaminados por el regulador OSFI.",
+            "role": "Project Manager",
+            "action": "Gestioné un robusto equipo (FTEs y Contratistas) responsable de revisar, desarrollar y probar ~30 aplicaciones en la interfaz central del banco. Orquesté un despliegue en fases escalonadas e incrementales por tecnología.",
+            "impact": "Entrega del programa con una variación presupuestal <5%. Despliegue de los beneficios esperados en la línea base (tiempo) según lo requerido, alcanzando un 100% de cumplimiento regulatorio."
+        },
+        {
+            "id": "robotics",
+            "title": "Ecosistema Robótico Corporativo",
+            "context": "Diseño y coordinación del ciclo de vida de un portafolio de automatización tecnológica con impacto en el 80% de las áreas de la compañía (Impuestos, Contact Center, AML, Recursos Humanos, Tecnología, Cobranzas).",
+            "role": "Product Owner / Architect",
+            "action": "Diseñé 24 soluciones tecnológicas de automatización (RPA/Integraciones) desde cero, interviniendo flujos 'end-to-end' obsoletos o altamente manuales para integrarlos en operaciones estructuradas.",
+            "impact": "Las automatizaciones generaron entre ~30 y 50 FTEs en reducción de costos directos y creación de nueva capacidad instalada. Esto liberó a los equipos operativos para asumir nuevas asignaciones estratégicas de mayor valor."
+        }
+    ],
+    "skills_radar": {
+        "labels": [
+            "Innovación & Producto",
+            "Estrategia & Valor",
+            "Datos & Analítica",
+            "Liderazgo & Cambio",
+            "Tecnología & Plataformas",
+            "Desarrollo Personal",
+            "Procesos & Automatización",
+            "Riesgo & Finanzas",
+            "UX & Cliente",
+            "Proyectos & Delivery"
+        ],
+        "tooltips": {
+            "Innovación & Producto": "Llevando soluciones digitales desde la concepción hasta el mercado.",
+            "Estrategia & Valor": "Conectando objetivos de negocio con arquitectura tecnológica.",
+            "Datos & Analítica": "Usando SQL, Python y BI para decisiones informadas.",
+            "Liderazgo & Cambio": "Gestionando equipos multiculturales (>300 FTEs) globalmente.",
+            "Tecnología & Plataformas": "Despliegues ágiles en ecosistemas complejos.",
+            "Desarrollo Personal": "Liderazgo consciente e implementación de Kanban personal.",
+            "Procesos & Automatización": "Arquitectura RPA que libera capacidad (+50 FTEs).",
+            "Riesgo & Finanzas": "Gobernanza de presupuestos ejecutivos (>$25M CAD).",
+            "UX & Cliente": "Jornadas de usuario centradas en la fluidez e intuición.",
+            "Proyectos & Delivery": "Ejecución precisa con variación presupuestal <5%."
+        }
+    },
+    "ui": {
+        "download_cv": "Descargar CV",
+        "contact": "Contáctame",
+        "explore_projects": "Explora Casos de Estudio",
+        "discover_lab": "Descubre mi Sandbox",
+        "skills_detail": "¿Quieres descubrir en detalle mis habilidades?",
+        "projects_title": "Casos de Estudio Ejecutivos",
+        "sandbox_title": "Tech R&D & AI Sandbox",
+        "purpose_title": "Personal-Purpose Framework",
+        "impact": "Impacto",
+        "action": "Acción",
+        "context": "Contexto",
+        "role": "Rol"
+    }
+}

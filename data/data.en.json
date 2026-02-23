@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "title": "Alejandro Gómez",
+    "motto": "DE LA MENTE AL MUNDO / FROM MIND TO WORLD",
+    "tagline": "Product Strategist and Technical Delivery Manager with +11 years orchestrating global transformations in banking (>$25M CAD) and scaling startups.",
+    "metrics": [
+      "11+ years creating value",
+      "Innovation and Intelligent Automation",
+      "Strategy and Analytics for Value Creation"
+    ]
+  },
+  "pillars": {
+    "title": "My 5 Pillars of Digital Transformation",
+    "description": "My experience and interests converge on navigating digital transformation to provide value—optimizing costs or creating new revenue lines. By integrating FinOps and AI, my goal is to be the essential link between vision and execution.",
+    "items": [
+      {
+        "id": "banking",
+        "name": "Banking & Finance",
+        "description": "Orchestrating complex financial regulations and digital banking strategies across borders."
+      },
+      {
+        "id": "technology",
+        "name": "Technology & AI",
+        "description": "Leveraging emerging technologies and Artificial Intelligence to architect scalable solutions."
+      },
+      {
+        "id": "product",
+        "name": "Product Management",
+        "description": "Designing and coordinating the product lifecycle with a focus on value creation and user experience."
+      },
+      {
+        "id": "project",
+        "name": "Project Delivery",
+        "description": "Leading multi-million dollar portfolios with strict adherence to budget, scope, and timeline."
+      },
+      {
+        "id": "innovation",
+        "name": "Innovation & FinOps",
+        "description": "Driving efficiency and new business lines through process optimization, robotics, and financial engineering."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "cybersecurity",
+      "title": "Global Cybersecurity Portfolio",
+      "context": "Led a program to update the look and feel and internal protocols of Single Sign-On (SSO) for 9 countries across Canada, Latin America, and the Caribbean.",
+      "role": "Program Manager",
+      "action": "Coordinated with local project teams, balancing regulatory compliance across multiple jurisdictions and protecting intellectual property. Managed ~$21M CAD and a team of ~300 staff members (FTEs and Contractors), orchestrating multiple areas including legal and technology.",
+      "impact": "Successfully standardized SSO processes across 9 jurisdictions, ensuring seamless technological updates and full regulatory compliance."
+    },
+    {
+      "id": "mortgage",
+      "title": "Mortgage Compliance OSFI (Canada)",
+      "context": "A $5M CAD program required by the Canadian regulator (OSFI) to update systems for the mortgage threshold of interest rates.",
+      "role": "Project Manager",
+      "action": "Managed FTEs and Contractors to review, update, and test ~30 applications across the bank interface. Implemented the system update running in phased increments for each technology.",
+      "impact": "Completed the project with <5% budget variance and deployed time benefits in the baseline as required, executing 100% of regulatory mandates."
+    },
+    {
+      "id": "robotics",
+      "title": "Enterprise Robotics Ecosystem",
+      "context": "Designed and coordinated the product lifecycle of robotic products impacting 80% of the company's areas, including taxes, contact center, collections, AML, and HR.",
+      "role": "Product Owner / Architect",
+      "action": "Automated and created new technology solutions for end-to-end processes across the enterprise. Designed 24 automations and solutions from scratch.",
+      "impact": "Generated ~30 to 50 FTEs in saved costs and created new capacity for value-add activities, enabling teams to tackle new assignments."
+    }
+  ],
+  "skills_radar": {
+     "labels": [
+        "Innovation & Product", "Strategy & Value", "Data & Analytics", "Leadership & Change", "Technology & Platforms", "Personal Development", "Processes & Automation", "Risk & Finance", "UX & Client", "Project & Delivery"
+     ],
+     "tooltips": {
+        "Innovation & Product": "Driving digital products from conception to market.",
+        "Strategy & Value": "Bridging business goals with technological execution.",
+        "Data & Analytics": "Leveraging data to make informed strategic decisions.",
+        "Leadership & Change": "Managing teams across diverse geographies and cultures.",
+        "Technology & Platforms": "Architecting solutions using Python, SQL, and APIs.",
+        "Personal Development": "Continuous learning and purposeful habit formation (Kanban framework).",
+        "Processes & Automation": "Automating workflows with RPA and AI (>30 FTEs optimized).",
+        "Risk & Finance": "Navigating regulatory compliance and multi-million dollar budgets ($25M+ CAD).",
+        "UX & Client": "Designing user-centric B2B and B2C digital journeys.",
+        "Project & Delivery": "Delivering complex portfolios with <5% variance."
+     }
+  },
+  "ui": {
+      "download_cv": "Download CV",
+      "contact": "Contact Me",
+      "explore_projects": "Explore Business Cases",
+      "discover_lab": "Discover Sandbox",
+      "skills_detail": "Detailed Skills Breakdown",
+      "projects_title": "Executive Business Cases",
+      "sandbox_title": "Tech R&D & AI Sandbox",
+      "purpose_title": "Personal-Purpose Framework",
+      "impact": "Impact",
+      "action": "Action",
+      "context": "Context",
+      "role": "Role"
+  }
+}

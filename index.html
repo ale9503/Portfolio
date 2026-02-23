@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alejandro Gómez - Estrategia, Innovación & Tecnología</title>
-  <meta name="description" content="Alejandro Gómez. Estrategia, innovación y tecnología. 11+ años en banca y negocios, transformando ideas en resultados con datos y procesos. De la mente al mundo." />
+  <title>Alejandro Gómez - Digital Executive Brief</title>
+  <meta name="description" content="Alejandro Gómez. Estrategia de producto y tecnología. Orquestando transformaciones y escalando negocios con Inteligencia Artificial y FinOps." />
 
   <!-- Performance: preconnect + Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Using Space Grotesk for headers and Inter for body, as requested for 2026 minimal bento -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="prefetch" href="/skills/" />
 </head>
 <body>
   <div class="layout">
@@ -28,84 +28,196 @@
         <a href="https://wa.me/573108195437" class="btn btn--secondary btn--social" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary btn--social" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/ale9503" class="btn btn--secondary btn--social" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:ale.9503@hotmail.com?subject=Contacto%20desde%20tu%20portafolio" class="btn btn--secondary btn--social">Email</a>
-        <a href="Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary btn--social" download>Descargar mi CV</a>
+        <a href="mailto:ale.9503@hotmail.com?subject=Contacto%20desde%20tu%20portafolio" class="btn btn--secondary btn--social" data-i18n="ui.contact">Email</a>
+        <a href="#" class="btn btn--primary btn--social" download data-id="download-cv" data-i18n="ui.download_cv">Descargar CV</a>
       </nav>
 
       <div class="language-switch" role="group" aria-label="Selecciona idioma">
-        <a href="/index.html" class="btn btn--secondary is-active" lang="es">ES</a>
-        <a href="/index.en.html" class="btn btn--secondary" lang="en">EN</a>
+        <button class="btn btn--secondary is-active" onclick="switchLanguage('es')">ES</button>
+        <button class="btn btn--secondary" onclick="switchLanguage('en')">EN</button>
       </div>
     </aside>
 
     <!-- Contenido principal -->
     <main class="main">
-      <header class="hero" role="banner">
-        <h1 class="hero__title">
-          Alejandro Gómez 
-          Estrategia, Innovación & Tecnología
-          <span class="hero__motto">DE LA MENTE AL MUNDO</span>
-        </h1>
-
-        <p class="hero__lede">
-          Estratega en banca, finanzas y tecnología con más de 11 años liderando y llevando a cabo proyectos globales digital hasta por $25M CAD. Conecto visión y ejecución: descompongo problemas complejos y los convierto en soluciones medibles mediante procesos, datos, innovación y tecnología.
-        </p>
-
-        <section class="hero__skills-radar" aria-label="Radar de habilidades estratégicas">
-          <h2 id="skills-radar-heading" class="visually-hidden">Radar de habilidades estratégicas</h2>
-          <div class="skills-radar" role="list" aria-labelledby="skills-radar-heading">
-            <span class="skills-radar__item skills-radar__item--full" role="listitem">Innovación &amp; Producto</span>
-            <span class="skills-radar__item" role="listitem">Estrategia &amp; Creación de Valor</span>
-            <span class="skills-radar__item" role="listitem">Datos &amp; Analítica</span>
-            <span class="skills-radar__break" aria-hidden="true"></span>
-            <span class="skills-radar__item" role="listitem">Liderazgo &amp; Cambio</span>
-            <span class="skills-radar__divider" aria-hidden="true"></span>
-            <span class="skills-radar__item" role="listitem">Tecnología &amp; Plataformas</span>
-            <span class="skills-radar__break" aria-hidden="true"></span>
-            <span class="skills-radar__item" role="listitem">Desarrollo Personal</span>
-            <span class="skills-radar__item" role="listitem">Procesos &amp; Automatización</span>
-            <span class="skills-radar__break" aria-hidden="true"></span>
-            <span class="skills-radar__item" role="listitem">Riesgo &amp; Finanzas</span>
-            <span class="skills-radar__item" role="listitem">UX y Cliente</span>
-            <span class="skills-radar__item" role="listitem">Proyectos &amp; Delivery</span>
-          </div>
-        </section>
-
-        <div class="hero__ctas">
-          <a href="/proyectos/" class="btn btn--primary">Explora mis proyectos</a>
-          <a href="https://www.linkedin.com/company/quantinnovationlab/about/?viewAsMember=true" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
-            Descubre mi laboratorio
-            <span class="ext-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
-                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z" />
-              </svg>
-            </span>
-          </a>
-          <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Contáctame</a>
-          <a href="/skills/" class="btn btn--secondary">
-            ¿Quieres descubrir en detalle mis habilidades?
-          </a>
+      <!-- 1. HERO SECTION -->
+      <header class="hero bento-section" role="banner">
+        <div class="hero__main bento-card">
+            <h1 class="hero__title" data-i18n="hero.title">Alejandro Gómez</h1>
+            <span class="hero__motto" data-i18n="hero.motto">DE LA MENTE AL MUNDO</span>
+            <p class="hero__lede" data-i18n="hero.tagline"></p>
         </div>
-
-        <ul class="stats" aria-label="Métricas destacadas">
-          <li><strong>11+ años</strong> creando valor</li>
-          <li><strong>Innovación</strong> y automatización inteligente</li>
-          <li><strong>Estrategia</strong> y analítica para crear valor</li>
-        </ul>
+        
+        <div class="hero__side bento-grid">
+            <ul class="stats bento-card bento-card--dark" aria-label="Métricas destacadas" data-i18n="hero.metrics">
+                <!-- Populated via app.js -->
+            </ul>
+        </div>
       </header>
-    </main>
 
+      <!-- 2. PILLARS (Authority) -->
+      <section class="pillars bento-section" aria-label="5 Pilares de Autoridad">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="pillars.title">Mis 5 Pilares</h2>
+            <p class="section-subtitle" data-i18n="pillars.description"></p>
+        </div>
+        <div id="pillars-grid" class="bento-grid pillars-grid">
+            <!-- Populated via app.js -->
+        </div>
+      </section>
+
+      <!-- 3. PROJECTS (Business Cases, Proof of Work) -->
+      <section class="projects bento-section">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="ui.projects_title">Casos de Estudio</h2>
+        </div>
+        <div id="projects-grid" class="bento-grid projects-grid">
+            <!-- Populated via app.js -->
+        </div>
+      </section>
+
+      <!-- 4. TECH R&D & AI SANDBOX -->
+      <section class="sandbox bento-section bento-card bento-card--dark">
+        <div class="sandbox-content">
+            <h2 class="section-title section-title--light" data-i18n="ui.sandbox_title">Tech R&D & AI Sandbox</h2>
+            <p class="sandbox-text">I leverage Python, SQL, and Agentic AI flows to prototype and validate architectural designs before scaling. This hands-on R&D ensures high-confidence technical delivery.</p>
+            <a href="https://www.linkedin.com/company/quantinnovationlab/" class="btn btn--primary" target="_blank" rel="noopener noreferrer" data-i18n="ui.discover_lab">Descubre mi Sandbox</a>
+        </div>
+      </section>
+
+      <!-- 5. PERSONAL-PURPOSE FRAMEWORK -->
+      <section class="purpose bento-section">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="ui.purpose_title">Personal-Purpose Framework</h2>
+        </div>
+        <div class="bento-grid purpose-grid">
+            <div class="bento-card">
+                <h3>Kanban for Life</h3>
+                <p>Translating agile product management principles into personal wellness and growth. By tracking constraints, WIP limits, and milestones, I prevent burnout and ensure sustained high-performance execution.</p>
+            </div>
+            <div class="bento-card bento-card--accent">
+                <h3>Human Leadership</h3>
+                <p>Fostering environments where psychological safety meets rigorous accountability. Empathy is not a soft skill; it is the foundation of high-functioning engineering and product teams.</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- 6. SKILLS RADAR (Interactive) -->
+      <section class="skills-radar-section bento-section" aria-label="Radar de habilidades estratégicas">
+        <div class="bento-card radar-card">
+            <div class="radar-interactive-container">
+                <canvas id="skills-radar-chart"></canvas>
+            </div>
+            <div id="radar-tooltip-container" class="radar-tooltip bento-card bento-card--light">
+                <h4 id="radar-tooltip-title">Hover over a skill node</h4>
+                <p id="radar-tooltip-desc">To see the strategic impact detail.</p>
+            </div>
+        </div>
+        <div class="hero__ctas">
+            <a href="/skills/" class="btn btn--secondary" data-i18n="ui.skills_detail">¿Quieres descubrir en detalle mis habilidades?</a>
+        </div>
+      </section>
+
+    </main>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/app.js"></script>
+  <script>
+      // Quick language switcher logic within SPA
+      function switchLanguage(lang) {
+          document.documentElement.lang = lang;
+          loadData(lang);
+          
+          document.querySelectorAll('.language-switch button').forEach(btn => btn.classList.remove('is-active'));
+          event.target.classList.add('is-active');
+      }
+
+      // Radar Chart Implementation
+      let radarChartInstance = null;
+      let currentTooltips = {};
+
+      document.addEventListener('dataLoaded', (e) => {
+          const { data, lang } = e.detail;
+          const radarData = data.skills_radar;
+          currentTooltips = radarData.tooltips;
+
+          renderRadarChart(radarData.labels);
+      });
+
+      function renderRadarChart(labels) {
+          const ctx = document.getElementById('skills-radar-chart').getContext('2d');
+          
+          if (radarChartInstance) {
+              radarChartInstance.data.labels = labels;
+              radarChartInstance.update();
+              return;
+          }
+
+          // Values are arbitrary to create a pleasing outer shape, focus is on tooltips
+          const dataValues = new Array(labels.length).fill(100);
+
+          radarChartInstance = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Strategic Competency',
+                    data: dataValues,
+                    backgroundColor: 'rgba(42, 209, 255, 0.05)',
+                    borderColor: '#0A2540',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#2ad1ff',
+                    pointBorderColor: '#0A2540',
+                    pointHoverBackgroundColor: '#0A2540',
+                    pointHoverBorderColor: '#2ad1ff',
+                    pointRadius: 4,
+                    pointHoverRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0,0,0,0.05)' },
+                        grid: { color: 'rgba(0,0,0,0.05)' },
+                        pointLabels: {
+                            font: { family: 'Inter', size: 12, weight: '600' },
+                            color: '#212529'
+                        },
+                        ticks: { display: false, max: 100 }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        enabled: false, // Turn off default tooltip
+                        external: function(context) {
+                            // Custom tooltip logic to show in the div
+                            const tooltipEl = document.getElementById('radar-tooltip-container');
+                            const titleEl = document.getElementById('radar-tooltip-title');
+                            const descEl = document.getElementById('radar-tooltip-desc');
+                            
+                            const tooltipModel = context.tooltip;
+                            if (tooltipModel.opacity === 0) {
+                                // Keep last state or fade out
+                                return;
+                            }
+                            
+                            if (tooltipModel.body) {
+                                const titleLines = tooltipModel.title || [];
+                                const nodeLabel = titleLines[0];
+                                
+                                titleEl.innerText = nodeLabel;
+                                descEl.innerText = currentTooltips[nodeLabel];
+                            }
+                        }
+                    }
+                }
+            }
+        });
+      }
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
