@@ -20,8 +20,8 @@
       },
       {
         "id": "technology",
-        "name": "Technology & AI",
-        "description": "Leveraging emerging technologies and Artificial Intelligence to architect scalable solutions."
+        "name": "Technology",
+        "description": "Leveraging emerging technologies and Artificial Intelligence (LLMs) to architect scalable solutions."
       },
       {
         "id": "product",
@@ -67,34 +67,58 @@
     }
   ],
   "skills_radar": {
-     "labels": [
-        "Innovation & Product", "Strategy & Value", "Data & Analytics", "Leadership & Change", "Technology & Platforms", "Personal Development", "Processes & Automation", "Risk & Finance", "UX & Client", "Project & Delivery"
-     ],
-     "tooltips": {
-        "Innovation & Product": "Driving digital products from conception to market.",
-        "Strategy & Value": "Bridging business goals with technological execution.",
-        "Data & Analytics": "Leveraging data to make informed strategic decisions.",
-        "Leadership & Change": "Managing teams across diverse geographies and cultures.",
-        "Technology & Platforms": "Architecting solutions using Python, SQL, and APIs.",
-        "Personal Development": "Continuous learning and purposeful habit formation (Kanban framework).",
-        "Processes & Automation": "Automating workflows with RPA and AI (>30 FTEs optimized).",
-        "Risk & Finance": "Navigating regulatory compliance and multi-million dollar budgets ($25M+ CAD).",
-        "UX & Client": "Designing user-centric B2B and B2C digital journeys.",
-        "Project & Delivery": "Delivering complex portfolios with <5% variance."
-     }
+    "labels": [
+      "Innovation & Product",
+      "Strategy & Value",
+      "Data & Analytics",
+      "Leadership & Change",
+      "Technology & Platforms",
+      "Personal Development",
+      "Processes & Automation",
+      "Risk & Finance",
+      "UX & Client",
+      "Project & Delivery"
+    ],
+    "tooltips": {
+      "Innovation & Product": "Driving digital products from conception to market.",
+      "Strategy & Value": "Bridging business goals with technological execution.",
+      "Data & Analytics": "Leveraging data to make informed strategic decisions.",
+      "Leadership & Change": "Managing teams across diverse geographies and cultures.",
+      "Technology & Platforms": "Architecting solutions using Python, SQL, and APIs.",
+      "Personal Development": "Continuous learning and purposeful habit formation (Kanban framework).",
+      "Processes & Automation": "Automating workflows with RPA and AI (>30 FTEs optimized).",
+      "Risk & Finance": "Navigating regulatory compliance and multi-million dollar budgets ($25M+ CAD).",
+      "UX & Client": "Designing user-centric B2B and B2C digital journeys.",
+      "Project & Delivery": "Delivering complex portfolios with <5% variance."
+    }
+  },
+  "sandbox": {
+    "title": "Tech R&D & AI Sandbox",
+    "description": "I leverage Python, SQL, and Agentic AI flows to prototype and validate architectural designs before scaling. This hands-on R&D ensures high-confidence technical delivery."
+  },
+  "purpose": {
+    "title": "Personal-Purpose Framework",
+    "kanban": {
+      "title": "Kanban for Life",
+      "description": "Implemented methodology (e.g., Space Danta) to improve workflows via process mapping. This optimizes delivery, allowing teams to create more value while preserving personal space and time."
+    },
+    "leadership": {
+      "title": "Human Leadership",
+      "description": "A personal development framework combining Ikigai for foundational purpose, Wheel of Life and Bourdieu's Capitals to validate strengths and improvement areas, and SMART methodology to define short (3-6 months) and medium-term (12 months) goals."
+    }
   },
   "ui": {
-      "download_cv": "Download CV",
-      "contact": "Contact Me",
-      "explore_projects": "Explore Business Cases",
-      "discover_lab": "Discover Sandbox",
-      "skills_detail": "Detailed Skills Breakdown",
-      "projects_title": "Executive Business Cases",
-      "sandbox_title": "Tech R&D & AI Sandbox",
-      "purpose_title": "Personal-Purpose Framework",
-      "impact": "Impact",
-      "action": "Action",
-      "context": "Context",
-      "role": "Role"
+    "download_cv": "Download CV",
+    "contact": "Contact Me",
+    "explore_projects": "Explore Business Cases",
+    "discover_lab": "Discover Sandbox",
+    "skills_detail": "Detailed Skills Breakdown",
+    "projects_title": "Executive Business Cases",
+    "sandbox_title": "Tech R&D & AI Sandbox",
+    "purpose_title": "Personal-Purpose Framework",
+    "impact": "Impact",
+    "action": "Action",
+    "context": "Context",
+    "role": "Role"
   }
 }

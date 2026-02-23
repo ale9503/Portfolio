@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
+
 <body>
   <div class="layout">
 
@@ -23,11 +25,15 @@
       <nav class="social">
         <a href="/index.en.html" class="btn btn--secondary">Home</a>
         <a href="/skills/index.en.html" class="btn btn--secondary">Skills</a>
-        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank"
+          rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
         <a href="mailto:ale.9503@hotmail.com?subject=Contact%20about%20projects" class="btn btn--secondary">Email</a>
-        <a href="/Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary btn--social" download>Download my résumé</a>
+        <a href="/Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary btn--social" download>Download my
+          résumé</a>
       </nav>
 
       <div class="language-switch" role="group" aria-label="Choose language">
@@ -39,7 +45,10 @@
     <main class="main">
       <header class="hero">
         <h1 class="hero__title">My Projects <span class="hero__motto">From mind to world</span></h1>
-        <p class="hero__lede">Browse my cases by year. Pick a year, then a project to see context, problem, tools/methodologies, skills, and outcomes.</p>
+        <div class="intro-text-bento">
+          <p class="hero__lede" style="margin: 0;">Browse my cases by year. Pick a year, then a project to see context,
+            problem, tools/methodologies, skills, and outcomes.</p>
+        </div>
       </header>
 
       <section class="case-layout" aria-label="Project details">
@@ -88,211 +97,219 @@
   </div>
 
   <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const lang = (document.documentElement.lang || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
-    const TEXT = {
-      es: {
-        selectPlaceholder: '— Selecciona —',
-        loadError: 'No se pudo cargar la lista de proyectos.',
-        consoleError: 'Error cargando proyectos:'
-      },
-      en: {
-        selectPlaceholder: '— Select —',
-        loadError: 'The project list could not be loaded.',
-        consoleError: 'Error loading projects:'
+    document.addEventListener('DOMContentLoaded', () => {
+      const lang = (document.documentElement.lang || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
+      const TEXT = {
+        es: {
+          selectPlaceholder: '— Selecciona —',
+          loadError: 'No se pudo cargar la lista de proyectos.',
+          consoleError: 'Error cargando proyectos:'
+        },
+        en: {
+          selectPlaceholder: '— Select —',
+          loadError: 'The project list could not be loaded.',
+          consoleError: 'Error loading projects:'
+        }
+      };
+
+      const fields = {
+        year: 'Año',
+        project: 'Proyecto',
+        context: 'Contexto Caso de Uso',
+        problem: 'Problema',
+        tools: 'Herramientas',
+        skills: 'Habilidades',
+        results: 'Resultados'
+      };
+
+      const text = TEXT[lang];
+      const dataUrl = lang === 'en' ? '/DetallePortafolio.en.json' : '/DetallePortafolio.json';
+
+      fetch(dataUrl)
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(data => initProjects(data))
+        .catch(err => {
+          console.error(text.consoleError, err);
+          const main = document.querySelector('main');
+          if (main) main.insertAdjacentHTML('beforeend', `<p style="color:red;">${text.loadError}</p>`);
+        });
+
+      function initProjects(proyectos) {
+        const selYear = document.getElementById('year-select');
+        const selProj = document.getElementById('project-select');
+        const projBar = document.getElementById('project-bar');
+
+        if (selYear?.options?.length) {
+          selYear.options[0].textContent = text.selectPlaceholder;
+        }
+        if (selProj?.options?.length) {
+          selProj.options[0].textContent = text.selectPlaceholder;
+        }
+
+        // Poblar años únicos (desc)
+        const years = [...new Set(proyectos.map(p => p[fields.year]))].sort((a, b) => b - a);
+        years.forEach(y => selYear.add(new Option(String(y), String(y))));
+
+        // Cambio de año
+        selYear.addEventListener('change', () => {
+          const year = selYear.value;
+          clearDetails();
+
+          // Reset de proyectos
+          selProj.innerHTML = '';
+          selProj.add(new Option(text.selectPlaceholder, ''));
+          selProj.disabled = true;
+          projBar.style.opacity = .75;
+
+          if (!year) { return; }
+
+          const proyectosAño = proyectos.filter(p => String(p[fields.year]) === year);
+          const nombresUnicos = [...new Set(proyectosAño.map(p => p[fields.project]))].sort();
+          nombresUnicos.forEach(nombre => selProj.add(new Option(nombre, nombre)));
+
+          selProj.disabled = false;
+          projBar.style.opacity = 1;
+        });
+
+        // Cambio de proyecto
+        selProj.addEventListener('change', () => {
+          const year = selYear.value;
+          const name = selProj.value;
+          if (!year || !name) { clearDetails(); return; }
+
+          const match = proyectos.find(p => p[fields.project] === name && String(p[fields.year]) === year);
+          if (!match) { clearDetails(); return; }
+
+          setDetails(match);
+        });
       }
-    };
 
-    const fields = {
-      year: 'Año',
-      project: 'Proyecto',
-      context: 'Contexto Caso de Uso',
-      problem: 'Problema',
-      tools: 'Herramientas',
-      skills: 'Habilidades',
-      results: 'Resultados'
-    };
+      // ---------- Utilidades visuales ----------
+      function parseHerramientas(txt) {
+        if (!txt) return [];
+        const out = [];
+        const rx = /\[([^\]]+)\]\s*:\s*\{([^}]*)\}/g; // [Clave]: {Valor}
+        let m;
+        while ((m = rx.exec(txt)) !== null) {
+          out.push({ key: m[1].trim(), value: m[2].trim() });
+        }
+        if (out.length) return out;
 
-    const text = TEXT[lang];
-    const dataUrl = lang === 'en' ? '/DetallePortafolio.en.json' : '/DetallePortafolio.json';
-
-    fetch(dataUrl)
-      .then(r => { if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
-      .then(data => initProjects(data))
-      .catch(err => {
-        console.error(text.consoleError, err);
-        const main = document.querySelector('main');
-        if (main) main.insertAdjacentHTML('beforeend', `<p style="color:red;">${text.loadError}</p>`);
-      });
-
-    function initProjects(proyectos){
-      const selYear = document.getElementById('year-select');
-      const selProj = document.getElementById('project-select');
-      const projBar = document.getElementById('project-bar');
-
-      if (selYear?.options?.length){
-        selYear.options[0].textContent = text.selectPlaceholder;
-      }
-      if (selProj?.options?.length){
-        selProj.options[0].textContent = text.selectPlaceholder;
+        // Fallback simple "clave: valor; clave: valor"
+        return txt.split(/;|\n/g).map(s => s.trim()).filter(Boolean).map(pair => {
+          const [k, ...rest] = pair.split(':');
+          return { key: (k || '').trim(), value: (rest.join(':') || '').trim() };
+        });
       }
 
-      // Poblar años únicos (desc)
-      const years = [...new Set(proyectos.map(p => p[fields.year]))].sort((a,b)=>b-a);
-      years.forEach(y => selYear.add(new Option(String(y), String(y))));
+      const GENERIC_ICON = 'mdi:toolbox-outline';
+      const ICONS = {
+        'Python': 'simple-icons:python',
+        'Power BI': 'simple-icons:powerbi',
+        'Power Query': 'simple-icons:powerquery',
+        'Power Automate': 'simple-icons:powerautomate',
+        'SQL': 'mdi:database',
+        'PostgreSQL': 'simple-icons:postgresql',
+        'MySQL': 'simple-icons:mysql',
+        'MongoDB': 'simple-icons:mongodb',
+        'Excel': 'simple-icons:microsoftexcel',
+        'Tableau': 'simple-icons:tableau',
+        'Git': 'simple-icons:git',
+        'GitHub': 'simple-icons:github',
+        'Docker': 'simple-icons:docker',
+        'AWS': 'simple-icons:amazonaws',
+        'GCP': 'simple-icons:googlecloud',
+        'Azure': 'simple-icons:microsoftazure',
+        'R': 'simple-icons:r',
+        'Apache Spark': 'simple-icons:apachespark',
+        'Spark': 'simple-icons:apachespark',
+        'Apache Airflow': 'simple-icons:apacheairflow',
+        'Airflow': 'simple-icons:apacheairflow',
+        'D3.js': 'simple-icons:d3dotjs',
+        'React': 'simple-icons:react',
+        'Node.js': 'simple-icons:nodedotjs',
+        'Linux': 'simple-icons:linux',
+        'Figma': 'simple-icons:figma'
+      };
 
-      // Cambio de año
-      selYear.addEventListener('change', () => {
-        const year = selYear.value;
-        clearDetails();
-
-        // Reset de proyectos
-        selProj.innerHTML = '';
-        selProj.add(new Option(text.selectPlaceholder, ''));
-        selProj.disabled = true;
-        projBar.style.opacity = .75;
-
-        if (!year){ return; }
-
-        const proyectosAño = proyectos.filter(p => String(p[fields.year]) === year);
-        const nombresUnicos = [...new Set(proyectosAño.map(p => p[fields.project]))].sort();
-        nombresUnicos.forEach(nombre => selProj.add(new Option(nombre, nombre)));
-
-        selProj.disabled = false;
-        projBar.style.opacity = 1;
-      });
-
-      // Cambio de proyecto
-      selProj.addEventListener('change', () => {
-        const year = selYear.value;
-        const name = selProj.value;
-        if (!year || !name){ clearDetails(); return; }
-
-        const match = proyectos.find(p => p[fields.project] === name && String(p[fields.year]) === year);
-        if (!match){ clearDetails(); return; }
-
-        setDetails(match);
-      });
-    }
-
-    // ---------- Utilidades visuales ----------
-    function parseHerramientas(txt){
-      if (!txt) return [];
-      const out = [];
-      const rx = /\[([^\]]+)\]\s*:\s*\{([^}]*)\}/g; // [Clave]: {Valor}
-      let m;
-      while ((m = rx.exec(txt)) !== null) {
-        out.push({ key: m[1].trim(), value: m[2].trim() });
+      function normalizeKey(key) {
+        return (key || '')
+          .replace(/^\[|\]$/g, '')
+          .replace(/\(.*?\)/g, '')
+          .replace(/\s{2,}/g, ' ')
+          .trim();
       }
-      if (out.length) return out;
 
-      // Fallback simple "clave: valor; clave: valor"
-      return txt.split(/;|\n/g).map(s => s.trim()).filter(Boolean).map(pair => {
-        const [k, ...rest] = pair.split(':');
-        return { key: (k||'').trim(), value: (rest.join(':')||'').trim() };
-      });
-    }
+      function iconFor(rawKey) {
+        const k = normalizeKey(rawKey);
+        if (ICONS[k]) return ICONS[k];
+        const s = k.toLowerCase();
+        if (s.includes('excel')) return 'simple-icons:microsoftexcel';
+        if (s.includes('power bi')) return 'simple-icons:powerbi';
+        if (s.includes('power query')) return 'simple-icons:powerquery';
+        if (s.includes('power pivot')) return 'mdi:table-pivot';
+        if (s.includes('python')) return 'simple-icons:python';
+        if (s.includes('fastapi')) return 'simple-icons:fastapi';
+        if (s.includes('sqlite')) return 'simple-icons:sqlite';
+        if (s.includes('google cloud')) return 'simple-icons:googlecloud';
+        if (s.includes('github pages')) return 'simple-icons:githubpages';
+        if (s.includes('binance')) return 'simple-icons:binance';
+        if (s.includes('pandas')) return 'simple-icons:pandas';
+        if (s.includes('scikit') || s.includes('sklearn')) return 'simple-icons:scikitlearn';
+        if (s.includes('xgboost')) return 'simple-icons:xgboost';
+        if (s.includes('api')) return 'mdi:api';
+        if (s.includes('rpa') || s.includes('rda')) return 'mdi:robot-outline';
+        if (s.includes('bpmn')) return 'mdi:chart-flow';
+        if (s.includes('base de datos')) return 'mdi:database';
+        if (s.includes('certificado') || s.includes('ssl')) return 'mdi:certificate-outline';
+        return 'mdi:toolbox-outline';
+      }
 
-    const GENERIC_ICON = 'mdi:toolbox-outline';
-    const ICONS = {
-      'Python': 'simple-icons:python',
-      'Power BI': 'simple-icons:powerbi',
-      'Power Query': 'simple-icons:powerquery',
-      'Power Automate': 'simple-icons:powerautomate',
-      'SQL': 'mdi:database',
-      'PostgreSQL': 'simple-icons:postgresql',
-      'MySQL': 'simple-icons:mysql',
-      'MongoDB': 'simple-icons:mongodb',
-      'Excel': 'simple-icons:microsoftexcel',
-      'Tableau': 'simple-icons:tableau',
-      'Git': 'simple-icons:git',
-      'GitHub': 'simple-icons:github',
-      'Docker': 'simple-icons:docker',
-      'AWS': 'simple-icons:amazonaws',
-      'GCP': 'simple-icons:googlecloud',
-      'Azure': 'simple-icons:microsoftazure',
-      'R': 'simple-icons:r',
-      'Apache Spark': 'simple-icons:apachespark',
-      'Spark': 'simple-icons:apachespark',
-      'Apache Airflow': 'simple-icons:apacheairflow',
-      'Airflow': 'simple-icons:apacheairflow',
-      'D3.js': 'simple-icons:d3dotjs',
-      'React': 'simple-icons:react',
-      'Node.js': 'simple-icons:nodedotjs',
-      'Linux': 'simple-icons:linux',
-      'Figma': 'simple-icons:figma'
-    };
+      function renderHerramientasIconify(txt) {
+        const host = document.getElementById('detail-herramientas');
+        if (!host) return;
+        host.innerHTML = '';
+        const items = parseHerramientas(txt);
+        items.forEach(({ key, value }) => {
+          const wrap = document.createElement('span');
+          wrap.className = 'tool-chip';
+          const nk = normalizeKey(key);
+          const tip = `${nk}${value ? ': ' + value : ''}`;
+          wrap.title = tip;
+          wrap.setAttribute('aria-label', tip);
 
-    function normalizeKey(key){
-      return (key || '')
-        .replace(/^\[|\]$/g, '')
-        .replace(/\(.*?\)/g, '')
-        .replace(/\s{2,}/g, ' ')
-        .trim();
-    }
+          const ic = document.createElement('iconify-icon');
+          ic.setAttribute('icon', iconFor(key));
+          wrap.appendChild(ic);
 
-    function iconFor(rawKey){
-      const k = normalizeKey(rawKey);
-      if (ICONS[k]) return ICONS[k];
-      const s = k.toLowerCase();
-      if (s.includes('excel')) return 'simple-icons:microsoftexcel';
-      if (s.includes('power bi')) return 'simple-icons:powerbi';
-      if (s.includes('power query')) return 'simple-icons:powerquery';
-      if (s.includes('power pivot')) return 'mdi:table-pivot';
-      if (s.includes('python')) return 'simple-icons:python';
-      if (s.includes('fastapi')) return 'simple-icons:fastapi';
-      if (s.includes('sqlite')) return 'simple-icons:sqlite';
-      if (s.includes('google cloud')) return 'simple-icons:googlecloud';
-      if (s.includes('github pages')) return 'simple-icons:githubpages';
-      if (s.includes('binance')) return 'simple-icons:binance';
-      if (s.includes('pandas')) return 'simple-icons:pandas';
-      if (s.includes('scikit') || s.includes('sklearn')) return 'simple-icons:scikitlearn';
-      if (s.includes('xgboost')) return 'simple-icons:xgboost';
-      if (s.includes('api')) return 'mdi:api';
-      if (s.includes('rpa') || s.includes('rda')) return 'mdi:robot-outline';
-      if (s.includes('bpmn')) return 'mdi:chart-flow';
-      if (s.includes('base de datos')) return 'mdi:database';
-      if (s.includes('certificado') || s.includes('ssl')) return 'mdi:certificate-outline';
-      return 'mdi:toolbox-outline';
-    }
+          const lbl = document.createElement('span');
+          lbl.style.fontWeight = '500';
+          lbl.style.color = 'var(--brand-core)';
+          lbl.textContent = `- ${nk}`;
+          wrap.appendChild(lbl);
 
-    function renderHerramientasIconify(txt){
-      const host = document.getElementById('detail-herramientas');
-      if (!host) return;
-      host.innerHTML = '';
-      const items = parseHerramientas(txt);
-      items.forEach(({key, value}) => {
-        const wrap = document.createElement('span');
-        wrap.className = 'tool-chip';
-        const nk = normalizeKey(key);
-        const tip = `${nk}${value ? ': ' + value : ''}`;
-        wrap.title = tip;
-        wrap.setAttribute('aria-label', tip);
+          host.appendChild(wrap);
+        });
+      }
 
-        const ic = document.createElement('iconify-icon');
-        ic.setAttribute('icon', iconFor(key));
-        wrap.appendChild(ic);
-        host.appendChild(wrap);
-      });
-    }
+      function setDetails(item) {
+        document.getElementById('detail-context').innerText = item[fields.context] || '';
+        document.getElementById('detail-problema').innerText = item[fields.problem] || '';
+        renderHerramientasIconify(item[fields.tools]);
+        document.getElementById('detail-habilidades').innerText = item[fields.skills] || '';
+        document.getElementById('detail-resultados').innerText = item[fields.results] || '';
+      }
 
-    function setDetails(item){
-      document.getElementById('detail-context').innerText     = item[fields.context] || '';
-      document.getElementById('detail-problema').innerText    = item[fields.problem] || '';
-      renderHerramientasIconify(item[fields.tools]);
-      document.getElementById('detail-habilidades').innerText = item[fields.skills] || '';
-      document.getElementById('detail-resultados').innerText  = item[fields.results] || '';
-    }
-
-    function clearDetails(){
-      document.getElementById('detail-context').innerText     = '';
-      document.getElementById('detail-problema').innerText    = '';
-      const host = document.getElementById('detail-herramientas');
-      if (host) host.innerHTML = '';
-      document.getElementById('detail-habilidades').innerText = '';
-      document.getElementById('detail-resultados').innerText  = '';
-    }
-  });
+      function clearDetails() {
+        document.getElementById('detail-context').innerText = '';
+        document.getElementById('detail-problema').innerText = '';
+        const host = document.getElementById('detail-herramientas');
+        if (host) host.innerHTML = '';
+        document.getElementById('detail-habilidades').innerText = '';
+        document.getElementById('detail-resultados').innerText = '';
+      }
+    });
   </script>
 </body>
+
 </html>

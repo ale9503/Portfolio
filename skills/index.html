@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,6 +13,7 @@
 
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
+
 <body>
   <div class="layout">
     <aside class="sidebar" aria-label="Navegación principal">
@@ -21,9 +23,12 @@
       <nav class="social">
         <a href="/" class="btn btn--secondary">Home</a>
         <a href="/proyectos/" class="btn btn--secondary">Proyectos</a>
-        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://wa.me/573108195437" class="btn btn--secondary" target="_blank"
+          rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://linkedin.com/in/nalejob" class="btn btn--secondary" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ale9503" class="btn btn--secondary" target="_blank"
+          rel="noopener noreferrer">GitHub</a>
         <a href="mailto:ale.9503@hotmail.com?subject=Contacto%20por%20skills" class="btn btn--secondary">Email</a>
         <a href="/Files/CVNestorAlejandroGomezRamirez.pdf" class="btn btn--secondary" download>Descargar mi CV</a>
       </nav>
@@ -37,10 +42,13 @@
     <main class="main">
       <header class="hero" role="banner">
         <h1 class="hero__title">Mapa de habilidades <span class="hero__motto">Aprendizaje continuo</span></h1>
-        <p class="hero__lede">
-          Este repositorio muestra la evolución de mi práctica profesional. Filtra por año para conocer qué herramientas, metodologías
-          y habilidades he ido adquiriendo a lo largo del tiempo, junto con el contexto de cada aprendizaje.
-        </p>
+        <div class="intro-text-bento">
+          <p class="hero__lede" style="margin: 0;">
+            Este repositorio muestra la evolución de mi práctica profesional. Filtra por año para conocer qué
+            herramientas, metodologías
+            y habilidades he ido adquiriendo a lo largo del tiempo, junto con el contexto de cada aprendizaje.
+          </p>
+        </div>
       </header>
 
       <section class="skills-overview" aria-labelledby="skills-overview-title">
@@ -51,16 +59,17 @@
         <div class="insights-grid" data-insights-grid></div>
       </section>
 
-      <section class="skills-treemap" aria-labelledby="skills-treemap-title">
-        <h2 class="section-title" id="skills-treemap-title">Mapa visual de habilidades</h2>
-        <p class="skills-treemap__description">
-          Esta sección mostrará una visualización interactiva con la distribución de habilidades por categorías, enfoques de
-          aprendizaje y herramientas clave.
-        </p>
-        <div id="treemap-skills" role="img">El mapa se cargará automáticamente cuando JavaScript esté disponible.</div>
-        <div id="treemap-legend"></div>
-        <!-- Futuro script: cargar datos desde ./files/skills_details.json.
-             Actualmente los documentos viven en /Files/ para ajustar el cargador según el entorno de despliegue. -->
+      <section class="skills-radar-section bento-section" aria-label="Radar de habilidades estratégicas">
+        <h2 class="section-title">Radar de Habilidades Estratégicas</h2>
+        <div class="bento-card radar-card">
+          <div class="radar-interactive-container">
+            <canvas id="skills-radar-chart"></canvas>
+          </div>
+          <div id="radar-tooltip-container" class="radar-tooltip bento-card bento-card--light">
+            <h4 id="radar-tooltip-title">Pasa el cursor sobre un nodo</h4>
+            <p id="radar-tooltip-desc">Para ver el impacto estratégico derivado de la competencia.</p>
+          </div>
+        </div>
       </section>
 
       <section class="skills-controls" aria-label="Filtrar habilidades por año y categoría">
@@ -83,7 +92,8 @@
 
       <section class="skills-table-section" aria-labelledby="skills-table-title">
         <h2 class="section-title" id="skills-table-title">Detalle completo de habilidades</h2>
-        <p class="skills-table__hint" id="skills-table-hint">Usa los filtros de año y categoría para explorar los aprendizajes registrados en cada periodo.</p>
+        <p class="skills-table__hint" id="skills-table-hint">Usa los filtros de año y categoría para explorar los
+          aprendizajes registrados en cada periodo.</p>
         <div class="table-wrapper" aria-live="polite">
           <table class="skills-table" aria-describedby="skills-table-hint">
             <thead>
@@ -108,5 +118,81 @@
   </div>
 
   <script type="module" src="/skills/skills.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Radar Chart Implementation directly embedded for immediate UX feedback
+    document.addEventListener('DOMContentLoaded', () => {
+      const lang = document.documentElement.lang || 'es';
+      fetch(`/data/data.${lang}.json`)
+        .then(res => res.json())
+        .then(data => {
+          const radarData = data.skills_radar;
+          if (radarData) {
+            renderRadarChart(radarData.labels, radarData.tooltips);
+          }
+        })
+        .catch(err => console.error("Could not load radar data", err));
+    });
+
+    function renderRadarChart(labels, tooltips) {
+      const ctx = document.getElementById('skills-radar-chart').getContext('2d');
+      const dataValues = new Array(labels.length).fill(100);
+
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Competencia Estratégica',
+            data: dataValues,
+            backgroundColor: 'rgba(42, 209, 255, 0.05)',
+            borderColor: '#0A2540',
+            borderWidth: 2,
+            pointBackgroundColor: '#2ad1ff',
+            pointBorderColor: '#0A2540',
+            pointHoverBackgroundColor: '#0A2540',
+            pointHoverBorderColor: '#2ad1ff',
+            pointRadius: 4,
+            pointHoverRadius: 8
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              angleLines: { color: 'rgba(0,0,0,0.05)' },
+              grid: { color: 'rgba(0,0,0,0.05)' },
+              pointLabels: {
+                font: { family: 'Inter', size: 12, weight: '600' },
+                color: '#212529'
+              },
+              ticks: { display: false, max: 100 }
+            }
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              enabled: false,
+              external: function (context) {
+                const titleEl = document.getElementById('radar-tooltip-title');
+                const descEl = document.getElementById('radar-tooltip-desc');
+                const tooltipModel = context.tooltip;
+
+                if (tooltipModel.opacity === 0) return;
+
+                if (tooltipModel.body) {
+                  const nodeLabel = tooltipModel.title[0];
+                  titleEl.innerText = nodeLabel;
+                  descEl.innerText = tooltips[nodeLabel];
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+  </script>
 </body>
+
 </html>
