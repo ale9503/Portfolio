@@ -143,7 +143,7 @@
             const maxCount = Math.max(...Object.values(categoryCounts), 1);
 
             const calculatedValues = radarData.labels.map(label => {
-              const searchKey = label.split(' ')[0];
+              const searchKey = label.split(' ')[0]; // E.g., 'Producto', 'Estrategia'
               const mappedKey = Object.keys(categoryCounts).find(k => k.includes(searchKey));
               const count = mappedKey ? categoryCounts[mappedKey] : 0;
               return Math.min(100, Math.round((count / maxCount) * 80) + 20);
@@ -188,7 +188,7 @@
                 font: { family: 'Inter', size: 12, weight: '600' },
                 color: '#212529'
               },
-              ticks: { display: false, max: 100 }
+              ticks: { display: false, min: 0, max: 100 }
             }
           },
           plugins: {
@@ -198,15 +198,18 @@
               external: function (context) {
                 const titleEl = document.getElementById('radar-tooltip-title');
                 const descEl = document.getElementById('radar-tooltip-desc');
-                const tooltipModel = context.tooltip;
 
-                if (tooltipModel.opacity === 0) return;
-
-                if (tooltipModel.body) {
-                  const nodeLabel = tooltipModel.title[0];
-                  titleEl.innerText = nodeLabel;
-                  descEl.innerText = tooltips[nodeLabel];
+                if (context.tooltip.opacity === 0) {
+                  titleEl.textContent = 'Pasa el cursor sobre un nodo';
+                  descEl.textContent = 'Para ver el impacto estratégico derivado de la competencia.';
+                  return;
                 }
+
+                const dataIndex = context.tooltip.dataPoints[0].dataIndex;
+                const tooltipText = tooltips[dataIndex] || "Descripción no disponible.";
+
+                titleEl.textContent = context.tooltip.title[0];
+                descEl.textContent = tooltipText;
               }
             }
           }

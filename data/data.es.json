@@ -68,14 +68,14 @@
     ],
     "skills_radar": {
         "labels": [
-            "Innovación & Producto",
-            "Estrategia & Valor",
+            "Producto & Innovación",
+            "Estrategia & Valor del Negocio",
             "Datos & Analítica",
-            "Liderazgo & Cambio",
-            "Desarrollo Personal",
-            "Procesos & Automatización",
-            "Riesgo & Finanzas",
-            "Proyectos & Delivery"
+            "Liderazgo & Cultura",
+            "Desarrollo & Crecimiento",
+            "Automatización & Procesos",
+            "Riesgo & Cumplimiento",
+            "Delivery & Proyectos Ágiles"
         ],
         "values": [
             100,
@@ -88,15 +88,19 @@
             85
         ],
         "tooltips": [
-            "Capacidad para idear, validar y escalar soluciones tecnológicas centradas en el usuario.",
-            "Alineación de iniciativas con objetivos de negocio para maximizar el retorno de inversión.",
-            "Uso de datos para modelado, predicción y toma de decisiones táctico-estratégicas.",
-            "Gestión del cambio cultural y estructuración de equipos de alto rendimiento.",
-            "Crecimiento continuo interdisciplinario para adaptarse a mercados volátiles.",
-            "Identificación de cuellos de botella y diseño de flujos operativos eficientes.",
-            "Evaluación de viabilidad, estructuración de business cases y mitigación de riesgos.",
-            "Ejecución ágil y tradicional para asegurar lanzamientos en tiempo y presupuesto."
+            "Concepción, descubrimiento y desarrollo de productos tecnológicos y flujos de usuario.",
+            "Alineación con OKRs, evaluación de ROI y estrategias transformacionales.",
+            "Uso de datos (SQL, Python, ML) y BI para habilitar decisiones informadas.",
+            "Gestión del cambio, transformación organizacional e influencia de stakeholders.",
+            "Liderazgo consciente, optimización de tiempo e implementación de herramientas de vida.",
+            "Auditoría y automatización técnica de flujos mediante ecosistemas RPA y Low-Code.",
+            "Regulaciones corporativas, AML, control financiero y gobernanza de datos.",
+            "Ejecución en marcos de trabajo ágiles y tradicionales (Scrum, Kanban, PMBOK)."
         ]
+    },
+    "sandbox": {
+        "title": "Laboratorio I+D & Pruebas IA",
+        "description": "Utilizo flujos de IA Agéntica, Python y SQL para prototipar y validar diseños arquitectónicos antes de escalarlos. Este laboratorio de experimentación continua asegura entregas técnicas de alta confianza."
     },
     "ui": {
         "download_cv": "Descargar CV",

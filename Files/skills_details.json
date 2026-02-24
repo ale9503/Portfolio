@@ -6,7 +6,8 @@
     "Record Date (DD/MM/YYYY)": "1/03/2025",
     "Description": "Gracias a la clase de analitica predictiva, junto con las clases de mobile and apps, formalice y estructure mis bases de pensamiento computacional para proyectos, productos y negocios con base digital",
     "Categoria": [
-      "Gestión de Proyectos & Delivery"
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación"
     ]
   },
   {
@@ -16,7 +17,7 @@
     "Record Date (DD/MM/YYYY)": "24/05/2025",
     "Description": "He tomado una clase de 7 horas practicas donde se monta un servicio backend (sin front) usando python como lenguaje de programacion, Fast API como libreria de creacion de APIs, uvicorn como gestor de servidor local host para pruebas, mongodb (capa local) para hacer pruebas en bases de datos locales noSQL . Mongo ATLAS para hacer despliegue en bases noSQL online y DETA para montar el servidor en la web para despliegue.",
     "Categoria": [
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -26,8 +27,8 @@
     "Record Date (DD/MM/YYYY)": "20/02/2024",
     "Description": "La clase de Delio me abrio los ojos con respecto a como se gestiona el conocimiento en cada lado. Tambien, reforzo mi habilidad de creacion de conocimiento y datos para ser usados de una forma practica bajo las diferentes modalidades de la gestion del conocimiento. Por ultimo, la herramienta de HBR ayuda a evaluar que tanto se gestiona el conocimiento en una empresa",
     "Categoria": [
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Datos & Analítica",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -37,7 +38,7 @@
     "Record Date (DD/MM/YYYY)": "15/03/2024",
     "Description": "Durante la clase de Catatalina tuve la oportunidad de profundizar y practicas las herramientas mencionadas en diferentes productos a desarrollar en figma. Hasta el punto que se refinaron varios comentarios que mejoraron productos finales para los usuarios",
     "Categoria": [
-      "Innovación & Producto"
+      "Producto & Innovación"
     ]
   },
   {
@@ -47,7 +48,8 @@
     "Record Date (DD/MM/YYYY)": "30/03/2024",
     "Description": "La clase abordo diferentes tecnologias que a su vez mediante los cuadrantes de liderazgo de tecnologia y hypes permiten identificar si una tecnologia es la apropiada para la empresa a la que se esta evaluando",
     "Categoria": [
-      "Liderazgo & Cambio"
+      "Estrategia & Valor del Negocio",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -57,9 +59,7 @@
     "Record Date (DD/MM/YYYY)": "4/04/2024",
     "Description": "La clase y el curso intensivo que se abordo permitio esbozar como abordar las finanzas en proyectos de transformacion Digital. Particulamente el curso mostro como analizar la finanzas de una empresa y proyecto en detalle hasta llegar a analisis de valor ganado y valorizacion.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "Gestión de Proyectos & Delivery"
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -69,8 +69,7 @@
     "Record Date (DD/MM/YYYY)": "15/05/2024",
     "Description": "Aprendi a aplicar el modelo joharis usando los 4 cuadrantes y como accionar cada uno de ellos (libre = ampliar, ciega = estudiar el feedback, oculta = vender lo oculto y desconocida = hacer el reto). Tambien reforce mi modelado de objetivos siguiento SMART. Tambien entendi el triangulo del drama para pasar de victima o salvador o victimario a responsable. Entendi y aplique el modelo FLOW (desafio y habilidad) para organizar equipos correctamente asignados en tareas que balanceen el desafio y habilidades. Tambien reforce la matrix de actitud VS aptitud para identificar en donde esta cada persona (baja ac y baja ap = reubicar, alta ac y baja ap = capacitar, baja ac y alta ap = motivar y alta ac y baja ap = fortalecer. Finalmente aborde el modelo Tuckman para entender el momento de los equipos (forming, storming, norming y performing)",
     "Categoria": [
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -80,8 +79,9 @@
     "Record Date (DD/MM/YYYY)": "30/05/2025",
     "Description": "Cree un marco de desarrollo personal para aplicar a cualquier persona que busque desarrollo personal, encaminarse en su proposito y volverlo materializado (planear el futuro centrandose en el presente. Para ello identifique que la herramienta ikigai permite conocer los aspectos individuales importante de la persona, luego de analizarlos se clasifican en categorias/segmentos importantes y proposito de la persona. Con esos segmentos se utilizan los capitales de burdeu y se clasifican en los mismos, el objetivo de esto es balancear los segmentos resultante de ikigai en los capitales; aqui pueden surgir nuevos segmentos. Una vez balanceados, se usa la rueda de la vida para definir el estado actual del segmento y luego se califica donde quiere esta en el corto, mediano y largo plazo; con las diferencias encontradas, el objetivo de la Rueda de La Vida es saber donde la persona debe trabajar con respecto a lo que es importante de su proposito, a partir de ese punto se crean las acciones concretas para hacer y dar seguimiento. Hay muchas herramientas para hacer seguimiento a estas actividades como: motion, planner, trello, kanban, gantt, 4ds; todas ellas probadas por mi a lo largo de 5 años.",
     "Categoria": [
-      "Innovación & Producto",
-      "Datos & Analítica"
+      "Desarrollo & Crecimiento",
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -91,8 +91,7 @@
     "Record Date (DD/MM/YYYY)": "30/05/2024",
     "Description": "Enfoque flexible para acompañar procesos de cambio cultural en organizaciones orientadas a tecnología y transformación digital. Combino herramientas como el test de Ikanos (para diagnosticar competencias digitales), entrevistas situacionales 1:1 (para entender percepciones y resistencias) y la matriz de tipos de cultura de Cameron y Quinn (para mapear el perfil cultural actual y el deseado). Estas herramientas, sin un orden rígido, se articulan según el contexto para identificar brechas, activar mecanismos de cambio y dar seguimiento con el método Lean Change Management, que permite implementar ajustes de forma iterativa. El objetivo es abordar el cambio cultural, estratégico y estructural de forma integrada, con acciones concretas y adaptadas al entorno. Todo este enfoque ha sido probado por mí en diferentes contextos reales de transformación digital.",
     "Categoria": [
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -102,9 +101,9 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Permite diseñar y validar modelos de negocio centrados en el cliente, probar hipótesis rápidamente, y alinear equipos en torno a un indicador clave para el crecimiento sostenible.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "Datos & Analítica"
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -114,8 +113,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Facilita la definición de objetivos, Tacticale el rendimiento financiero y de adquisición de clientes, fomenta iteración basada en datos, y orienta acción estratégica.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -125,8 +124,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Estimula la generación sistemática de ideas, fomenta cultura de prueba rápida y creatividad dirigida a solución de problemas reales.",
     "Categoria": [
-      "Datos & Analítica",
-      "Liderazgo & Cambio"
+      "Producto & Innovación",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -136,7 +135,8 @@
     "Record Date (DD/MM/YYYY)": "7/07/2024",
     "Description": "Competencia crítica para gestionar entornos de cambio constante. Alineado con tendencias de McKinsey sobre liderazgo adaptativo y gestión de cambio ágil en entornos complejos.",
     "Categoria": [
-      "Liderazgo & Cambio"
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -146,9 +146,7 @@
     "Record Date (DD/MM/YYYY)": "7/07/2024",
     "Description": "Diseñar culturas organizacionales resilientes y adaptativas. Apoya la visión de Gartner sobre transformación cultural como factor de éxito en iniciativas digitales y de talento.",
     "Categoria": [
-      "Procesos & Eficiencia",
-      "Liderazgo & Cambio",
-      "Gestión de Proyectos & Delivery"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -158,7 +156,8 @@
     "Record Date (DD/MM/YYYY)": "7/07/2024",
     "Description": "Herramienta clave para innovación centrada en impacto. Alineada con BID y McKinsey sobre uso de datos y estructuras ágiles para maximizar valor y minimizar desperdicio en organizaciones.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Datos & Analítica",
+      "Producto & Innovación"
     ]
   },
   {
@@ -168,8 +167,7 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Aprendí a evaluar la fuerza de la relación entre variables usando regresión con rezagos temporales (T-1, T-2, T-3)",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -179,8 +177,7 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Detectar si las series temporales son estacionarias evaluando la simetría de la mediana a través del tiempo",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -190,8 +187,7 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Aprendí a interpretar y comparar la dispersión de variables y su grado de homogeneidad",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -201,7 +197,7 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Evaluar si una distribución tiene colas pesadas (leptocúrtica) o ligeras (platicúrtica)",
     "Categoria": [
-      "Datos & Analítica"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -211,8 +207,7 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Interpretar la dirección y fuerza de la relación lineal entre variables",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -222,7 +217,8 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Aplicaciones como predicción de demanda, análisis de sentimiento, detección de fraude",
     "Categoria": [
-      "Datos & Analítica"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -252,8 +248,7 @@
     "Record Date (DD/MM/YYYY)": "5/07/2024",
     "Description": "Entender cómo media, varianza, asimetría y curtosis resumen una distribución",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -263,8 +258,8 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Estructurar la visión en objetivos SMART, definir KPIs y lanzar iniciativas de forma iterativa para maximizar valor.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Procesos & Eficiencia"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -274,7 +269,8 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Diseñar modelos escalables y singulares mediante tecnologías exponenciales, efectos de red y economías de escala.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
     ]
   },
   {
@@ -284,8 +280,8 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Mapear trabajos, dolores y beneficios del cliente y comunicar la ventaja competitiva en un pitch claro.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
     ]
   },
   {
@@ -295,7 +291,7 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Validar hipótesis de negocio rápidamente y adaptar estructuras organizativas para el entorno digital.",
     "Categoria": [
-      "Gestión de Proyectos & Delivery"
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -305,8 +301,8 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Traducir la estrategia en objetivos medibles, alinear la organización y hacer seguimiento continuo.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -316,7 +312,8 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Conducir el cambio cultural y de procesos mediante datos, metodologías ágiles y herramientas de engagement.",
     "Categoria": [
-      "Liderazgo & Cambio"
+      "Datos & Analítica",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -326,8 +323,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Modelé AS-IS y TO-BE con BPMN, identifiqué cuellos de botella y definí KPIs para medir mejoras, estableciendo la visión futura del proceso.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Procesos & Eficiencia"
+      "Datos & Analítica",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -337,9 +334,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Extraje logs de eventos, analicé variantes y conforTacticalad, benchmarkeé rutas críticas y prioricé mejoras basadas en métricas de eficiencia y cumplimiento.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Procesos & Eficiencia",
-      "Innovación & Producto"
+      "Automatización & Procesos",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -349,8 +345,7 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Desarrollé y desplegué robots UI-driven para front, Tacticaldle y back office, gestioné excepciones y administré colas de trabajo bajo un marco de gobernanza corporativa. No solo en clase sino tambien en mi rol de PO en Scotia",
     "Categoria": [
-      "Innovación & Producto",
-      "Procesos & Eficiencia"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -360,8 +355,10 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Elaboré Business Case con análisis de costos/beneficios y riesgos, calculé retorno de inversión tangible e intangible, y gestioné stakeholders con metodologías ágiles.",
     "Categoria": [
-      "Gestión de Proyectos & Delivery",
-      "Finanzas & Riesgo & Cumplimiento"
+      "Datos & Analítica",
+      "Delivery & Proyectos Ágiles",
+      "Estrategia & Valor del Negocio",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -371,8 +368,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Diseñé la estrategia de análisis alineada a la propuesta de valor digital, realicé benchmarking de competidores y definí hipótesis de valor.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
     ]
   },
   {
@@ -382,7 +379,7 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Realicé análisis macro y micro de mercado, evalué competidores directos e indirectos, e identifiqué oportunidades estratégicas de posicionamiento.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Datos & Analítica"
     ]
   },
   {
@@ -392,8 +389,6 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Definí y configuré KPIs de tráfico, conversión y comportamiento, construí dashboards y establecí alertas de desviación para mejora continua.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto",
       "Datos & Analítica"
     ]
   },
@@ -414,9 +409,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Internalicé los valores y principios de Agile, practiqué “desaprender para aprender” y conduje workshops colaborativos para fomentar mindset VUCA.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -426,9 +420,7 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Gestioné sprints completos: planifiqué, ejecuté dailies, reviews y retros, redacté historias INVEST y medí desempeño con burndowns.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto",
-      "Gestión de Proyectos & Delivery"
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -438,8 +430,10 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Identifiqué y evalué riesgos en cada sprint, apliqué estrategias Transferir, Mitigar y Explotar, y mantuve comunicación continua con stakeholders.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Finanzas & Riesgo & Cumplimiento"
+      "Delivery & Proyectos Ágiles",
+      "Riesgo & Cumplimiento",
+      "Estrategia & Valor del Negocio",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -449,8 +443,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Diseñé tableros Kanban efectivos con políticas explícitas y limité WIP; formulé OKR’s trimestrales y di seguimiento consensuado a los resultados.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Delivery & Proyectos Ágiles",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -460,8 +454,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Monitoricé velocidad y KPI’s de entrega, implementé PI Planning y ajusté roadmap de features según data de burndown y feedback continuo.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Gestión de Proyectos & Delivery"
+      "Datos & Analítica",
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -471,8 +465,7 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Diseñé un plan integral con análisis DAFO, segmentación, buyer personas, calendario y budget, alineado al funnel AIDA y con métricas de control.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -482,7 +475,7 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Configuré campañas SEM optimizadas por puja y keywords, e implementé buenas prácticas SEO on-page y off-page para mejorar el ranking y la visibilidad.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -492,8 +485,7 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Estructuré la compra programática y campañas display/video, definiendo mix de medios, límites de CPM/CPC y segmentación en DSP para optimizar el reach.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -503,8 +495,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Realicé EDA completo, limpié datos, creé variables derivadas y validé calidad de las bases antes del modelado.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -514,7 +505,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Implementé y validé modelos de clasificación, usé matriz de confusión y métricas para identificar drivers clave en ventas de vinos.",
     "Categoria": [
-      "Datos & Analítica"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -524,7 +515,6 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Construí regresiones lineales múltiples, generé variables dummy, verifiqué supuestos y evalué R²/ajustado para predicción de precios de vivienda.",
     "Categoria": [
-      "Innovación & Producto",
       "Datos & Analítica"
     ]
   },
@@ -535,7 +525,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Apliqué modelos econométricos a series semanales, calculé ROIm y simulé escenarios de reducción de presupuesto publicitario para InsurCar y Beauty.",
     "Categoria": [
-      "Datos & Analítica"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -545,8 +536,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Analicé significancia de coeficientes, preparé reportes ejecutivos y recomendé ajustes de inversión basados en insights.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -556,7 +546,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Automatizé flujos de análisis, documenté scripts, integré versiones de código y aseguré reproducibilidad de los modelos.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Datos & Analítica",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -566,8 +557,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Estructuré y refiné casos de uso alineados a KPIs estratégicos, employando Design Thinking y frameworks de éxito para priorizar iniciativas de IA.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Datos & Analítica",
+      "Producto & Innovación"
     ]
   },
   {
@@ -577,8 +568,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Implementé OLS, validé supuestos, interprete coeficientes y evalué R² y error estándar para predecir variables continuas.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -588,7 +578,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Ajusté logit binomial y multinomial, apliqué KNN con validación cruzada y medí performance con ROC-AUC y matriz de confusión.",
     "Categoria": [
-      "Datos & Analítica"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -598,8 +589,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Construí y podé árboles de regresión y clasificación",
     "Categoria": [
-      "Innovación & Producto",
-      "Datos & Analítica"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -619,7 +610,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Desarrollé pipelines reproducibles en Python, gestioné versiones con Git y estructuré notebooks limpios para ETL, modelado y despliegue de modelos.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Datos & Analítica"
     ]
   },
   {
@@ -629,8 +620,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Comprendí el valor y retos de Big Data, identifiqué tipos de datos y definí estrategias de datos alineadas al negocio.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Datos & Analítica"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -640,8 +631,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Dimensioné y configuré un clúster Hadoop con tolerancia a fallos, políticas de replicación y nodos master/esclavo/edge.",
     "Categoria": [
-      "Innovación & Producto",
-      "Datos & Analítica"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -651,7 +642,6 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Implementé pipelines MapReduce y jobs Spark en clúster, optimicé tareas paralelas y reduje tiempos de procesamiento.",
     "Categoria": [
-      "Innovación & Producto",
       "Datos & Analítica"
     ]
   },
@@ -663,8 +653,7 @@
     "Description": "Orquesté flujos batch con NiFi y capturé eventos en tiempo real con Kafka, construyendo un pipeline end-to-end.",
     "Categoria": [
       "Datos & Analítica",
-      "Innovación & Producto",
-      "Procesos & Eficiencia"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -674,8 +663,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Modelé y consulté datos en Hive, ejecuté queries SQL sobre HDFS y exploré Data Warehouses en la nube para análisis estructurado.",
     "Categoria": [
-      "Datos & Analítica",
-      "Innovación & Producto"
+      "Datos & Analítica"
     ]
   },
   {
@@ -686,7 +674,7 @@
     "Description": "Implementé CI/CD para pipelines de datos, documenté linaje y definí políticas de acceso y encriptación para datos sensibles.",
     "Categoria": [
       "Datos & Analítica",
-      "Innovación & Producto"
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -696,7 +684,8 @@
     "Record Date (DD/MM/YYYY)": "7/07/2025",
     "Description": "Manejo de pipelines de datos, entendimiento, estrategia e implementacion de agentes de IA especializados en pipelines de datos",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -706,8 +695,7 @@
     "Record Date (DD/MM/YYYY)": "12/05/2024",
     "Description": "Lideré proyectos globales de tecnología con presupuestos ? 25 M CAD y variación financiera < 10 %, aplicando cambios regulatorios y estándares PM bajo el rol de Senior Project Coordinator",
     "Categoria": [
-      "Innovación & Producto",
-      "Gestión de Proyectos & Delivery"
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -717,8 +705,8 @@
     "Record Date (DD/MM/YYYY)": "8/09/2022",
     "Description": "Diseñé e implementé soluciones robóticas y un orquestador de recursos, liberando capacidad operativa y procesando 5 000 transacciones/mes bajo el rol de Product Owner",
     "Categoria": [
-      "Innovación & Producto",
-      "Procesos & Eficiencia"
+      "Datos & Analítica",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -728,8 +716,9 @@
     "Record Date (DD/MM/YYYY)": "22/03/2019",
     "Description": "Investigué alertas de lavado de dinero, reestructuré el modelo de calificación de riesgo y creé un DataMart para gestionar accesos lógicos bajo el rol de analista senior de AML",
     "Categoria": [
-      "Gestión de Proyectos & Delivery",
-      "Finanzas & Riesgo & Cumplimiento"
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -739,8 +728,10 @@
     "Record Date (DD/MM/YYYY)": "30/06/2023",
     "Description": "Coordiné más de 100 miembros en equipos internos y offshore en 6 jurisdicciones, asegurando entregas bajo estándares de calidad y tiempo bajo el rol de analista senior de AML",
     "Categoria": [
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Datos & Analítica",
+      "Delivery & Proyectos Ágiles",
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -750,9 +741,8 @@
     "Record Date (DD/MM/YYYY)": "15/11/2021",
     "Description": "Domine la suite de Power Platform y Pega para automatizar flujos de trabajo, crear dashboards y optimizar reportes de gestión.",
     "Categoria": [
-      "Innovación & Producto",
       "Datos & Analítica",
-      "Procesos & Eficiencia"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -762,7 +752,9 @@
     "Record Date (DD/MM/YYYY)": "1/10/2020",
     "Description": "Elaboré documentos de requerimientos (BRD), gestioné solicitudes de cambio y presenté resultados a alta dirección, remediando hallazgos de auditoría.",
     "Categoria": [
-      "Estrategia & Creación de Valor"
+      "Estrategia & Valor del Negocio",
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -772,8 +764,9 @@
     "Record Date (DD/MM/YYYY)": "1/04/2019",
     "Description": "Participé en el equipo de Smart Automation implementando bots y optimizando flujos de trabajo, lo que permitió superar en un 20 % la capacidad esperada bajo el rol de analista senior de AML.",
     "Categoria": [
-      "Innovación & Producto",
-      "Procesos & Eficiencia"
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -783,9 +776,9 @@
     "Record Date (DD/MM/YYYY)": "15/06/2019",
     "Description": "Diseñé y estabilicé la gestión de accesos lógicos mediante la creación de un DataMart, definición de procesos y automatización de tareas clave bajo el rol de analista senior de AML.",
     "Categoria": [
-      "Innovación & Producto",
-      "Procesos & Eficiencia",
-      "Finanzas & Riesgo & Cumplimiento"
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -795,7 +788,9 @@
     "Record Date (DD/MM/YYYY)": "1/08/2019",
     "Description": "Lideré el desarrollo de Smart Forms en un programa de internado, coordinando idiomas y frameworks para convertir prototipos en productos de producción bajo el rol de analista senior de AML.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Datos & Analítica",
+      "Producto & Innovación",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -805,7 +800,8 @@
     "Record Date (DD/MM/YYYY)": "31/03/2020",
     "Description": "Optimización de procesos y análisis de datos para la toma de decisiones basadas en insights.",
     "Categoria": [
-      "Procesos & Eficiencia"
+      "Datos & Analítica",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -816,8 +812,7 @@
     "Description": "Desarrollo e implementación de modelos de IA y automatización inteligente para mejorar procesos y generar valor.",
     "Categoria": [
       "Datos & Analítica",
-      "Innovación & Producto",
-      "Procesos & Eficiencia"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -827,7 +822,7 @@
     "Record Date (DD/MM/YYYY)": "7/10/2023",
     "Description": "Gestión ágil de proyectos aplicando Scrum y Kanban, definición de roles y control de entregas.",
     "Categoria": [
-      "Gestión de Proyectos & Delivery"
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -837,8 +832,7 @@
     "Record Date (DD/MM/YYYY)": "9/04/2024",
     "Description": "Implementación y gestión de soluciones de automatización y accesos remotos en entornos corporativos.",
     "Categoria": [
-      "Innovación & Producto",
-      "Procesos & Eficiencia"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -848,7 +842,7 @@
     "Record Date (DD/MM/YYYY)": "9/04/2024",
     "Description": "Diseño de entornos digitales inclusivos siguiendo estándares de accesibilidad y buenas prácticas UX.",
     "Categoria": [
-      "Innovación & Producto"
+      "Producto & Innovación"
     ]
   },
   {
@@ -858,8 +852,7 @@
     "Record Date (DD/MM/YYYY)": null,
     "Description": "Estrategias de atención al cliente y marketing digital centradas en experiencia y resultados.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -869,8 +862,8 @@
     "Record Date (DD/MM/YYYY)": null,
     "Description": "Desarrollo de habilidades interpersonales, liderazgo y gestión efectiva de equipos multiculturales.",
     "Categoria": [
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Estrategia & Valor del Negocio",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -880,7 +873,7 @@
     "Record Date (DD/MM/YYYY)": null,
     "Description": "Mejora de la productividad personal y gestión del estrés mediante metodologías de organización y mindfulness.",
     "Categoria": [
-      "Desarrollo Personal & Productividad"
+      "Desarrollo & Crecimiento"
     ]
   },
   {
@@ -890,7 +883,8 @@
     "Record Date (DD/MM/YYYY)": "2018",
     "Description": "Capacidades en análisis económico, investigación de mercados, toma de decisiones financieras y gestión de proyectos de internacionalización.",
     "Categoria": [
-      "Gestión de Proyectos & Delivery"
+      "Datos & Analítica",
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -900,7 +894,7 @@
     "Record Date (DD/MM/YYYY)": "2018",
     "Description": "Competencias en diplomacia preventiva, negociación entre Estados, gestión de la diversidad cultural y formulación de políticas internacionales.",
     "Categoria": [
-      "Liderazgo & Cambio"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -910,9 +904,8 @@
     "Record Date (DD/MM/YYYY)": "2020",
     "Description": "Habilidades en planificar, formular, controlar y medir proyectos, gestionar recursos y presupuestos, y liderar iniciativas corporativas.",
     "Categoria": [
-      "Estrategia & Creación de Valor",
       "Datos & Analítica",
-      "Innovación & Producto"
+      "Delivery & Proyectos Ágiles"
     ]
   },
   {
@@ -922,8 +915,8 @@
     "Record Date (DD/MM/YYYY)": "2020",
     "Description": "Dominio de técnicas y herramientas para prevenir, detectar e investigar lavado de activos y financiación del terrorismo con analítica avanzada.",
     "Categoria": [
-      "Gestión de Proyectos & Delivery",
-      "Finanzas & Riesgo & Cumplimiento"
+      "Datos & Analítica",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -933,7 +926,8 @@
     "Record Date (DD/MM/YYYY)": "2/09/2025",
     "Description": "Curso “Panorámica de amenazas a la ciberseguridad” (PMI R.E.P.). PDUs: 1.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Estrategia & Valor del Negocio",
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -943,7 +937,7 @@
     "Record Date (DD/MM/YYYY)": "8/09/2025",
     "Description": "Curso “Cybersecurity Awareness: Cybersecurity Terminology” (PMI R.E.P.). PDUs: 0.5.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -953,8 +947,7 @@
     "Record Date (DD/MM/YYYY)": "9/10/2025",
     "Description": "Curso “DevOps Foundations” (PMI R.E.P.). PDUs: 3.",
     "Categoria": [
-      "Innovación & Producto",
-      "Liderazgo & Cambio"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -964,8 +957,8 @@
     "Record Date (DD/MM/YYYY)": "25/08/2025",
     "Description": "Curso “UX Research Methods: Interviewing”.",
     "Categoria": [
-      "Innovación & Producto",
-      "Datos & Analítica"
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
     ]
   },
   {
@@ -995,7 +988,7 @@
     "Record Date (DD/MM/YYYY)": "20/10/2025",
     "Description": "CoE de Ciberseguridad y IA – módulo de AI Security.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -1005,7 +998,7 @@
     "Record Date (DD/MM/YYYY)": "20/10/2025",
     "Description": "CoE de Ciberseguridad y IA – fundamentos de nube y AI.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -1015,7 +1008,7 @@
     "Record Date (DD/MM/YYYY)": "25/11/2025",
     "Description": "El curso permitió comprender, con estructura clara, los principales patrones de arquitectura utilizados en la industria. Se abordó el contexto general de la arquitectura de software, diferencias con los design patterns y las categorías clave. Se estudiaron patrones de sistemas (monolitos, n-tier, SOA, microservicios, serverless, distribuidos y P2P), patrones de aplicación (por capas, onion, hexagonal/ports and adapters, microkernel, modular monolith, CQRS, Event Sourcing y cómo combinarlos) y patrones de UI (MVC, MVP, MVVM y sus diferencias). En conjunto, el aprendizaje ofreció una visión ordenada de cómo seleccionar y combinar patrones según necesidades técnicas y de negocio.",
     "Categoria": [
-      "Innovación & Producto"
+      "Estrategia & Valor del Negocio"
     ]
   },
   {
@@ -1025,7 +1018,7 @@
     "Record Date (DD/MM/YYYY)": "19/01/2026",
     "Description": "Curso “IT and Cybersecurity Risk Management Essential Training” (LinkedIn Learning). Nivel: básico/basic (high-level). Duración: 1h 52m. Fecha de finalización: 19/01/2026.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento"
     ]
   },
   {
@@ -1035,7 +1028,7 @@
     "Record Date (DD/MM/YYYY)": "19/01/2026",
     "Description": "Curso “IT and Cybersecurity Risk Management Essential Training” (LinkedIn Learning). Nivel: básico/basic (high-level). Duración: 1h 52m. Fecha de finalización: 19/01/2026.",
     "Categoria": [
-      "Finanzas & Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento"
     ]
   }
 ]

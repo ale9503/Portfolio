@@ -143,16 +143,14 @@
 
             // Map the English labels to the original Spanish categories in JSON
             const labelMapping = {
-              "Innovation & Product": "Innovación & Producto",
-              "Strategy & Value": "Estrategia",
+              "Product & Innovation": "Producto",
+              "Strategy & Business Value": "Estrategia",
               "Data & Analytics": "Datos",
-              "Leadership & Change": "Liderazgo",
-              "Technology & Platforms": "Tecnología",
-              "Personal Development": "Desarrollo",
-              "Processes & Automation": "Procesos",
-              "Risk & Finance": "Finanzas",
-              "UX & Client": "UX",
-              "Project & Delivery": "Gestión"
+              "Leadership & Culture": "Liderazgo",
+              "Personal & Team Growth": "Desarrollo",
+              "Automation & Processes": "Automatización",
+              "Risk & Compliance": "Riesgo",
+              "Agile Delivery & Projects": "Delivery"
             };
 
             const calculatedValues = radarData.labels.map(label => {
@@ -201,7 +199,7 @@
                 font: { family: 'Inter', size: 12, weight: '600' },
                 color: '#212529'
               },
-              ticks: { display: false, max: 100 }
+              ticks: { display: false, min: 0, max: 100 }
             }
           },
           plugins: {
@@ -211,14 +209,21 @@
               external: function (context) {
                 const titleEl = document.getElementById('radar-tooltip-title');
                 const descEl = document.getElementById('radar-tooltip-desc');
+
+                if (context.tooltip.opacity === 0) {
+                  titleEl.textContent = 'Hover over a node';
+                  descEl.textContent = 'To see the strategic impact derived from the competency.';
+                  return;
+                }
+
                 const tooltipModel = context.tooltip;
-
-                if (tooltipModel.opacity === 0) return;
-
                 if (tooltipModel.body) {
+                  const dataIndex = tooltipModel.dataPoints[0].dataIndex;
                   const nodeLabel = tooltipModel.title[0];
+                  const tooltipText = tooltips[dataIndex] || "Description unavailable.";
+
                   titleEl.innerText = nodeLabel;
-                  descEl.innerText = tooltips[nodeLabel];
+                  descEl.innerText = tooltipText;
                 }
               }
             }

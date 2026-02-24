@@ -68,39 +68,39 @@
   ],
   "skills_radar": {
     "labels": [
-      "Innovation & Product",
-      "Strategy & Value",
+      "Product & Innovation",
+      "Strategy & Business Value",
       "Data & Analytics",
-      "Leadership & Change",
-      "Personal Development",
-      "Processes & Automation",
-      "Risk & Finance",
-      "Project & Delivery"
+      "Leadership & Culture",
+      "Personal & Team Growth",
+      "Automation & Processes",
+      "Risk & Compliance",
+      "Agile Delivery & Projects"
     ],
     "values": [
+      100,
+      85,
       90,
-      85,
       80,
-      85,
-      95,
-      85,
+      75,
       80,
-      90
+      70,
+      85
     ],
-    "tooltips": {
-      "Innovation & Product": "Driving digital products from conception to market.",
-      "Strategy & Value": "Bridging business goals with technological execution.",
-      "Data & Analytics": "Leveraging data to make informed strategic decisions.",
-      "Leadership & Change": "Managing teams across diverse geographies and cultures.",
-      "Personal Development": "Continuous learning and purposeful habit formation (Kanban framework).",
-      "Processes & Automation": "Automating workflows with RPA and AI (>30 FTEs optimized).",
-      "Risk & Finance": "Navigating regulatory compliance and multi-million dollar budgets ($25M+ CAD).",
-      "Project & Delivery": "Delivering complex portfolios with <5% variance."
-    }
+    "tooltips": [
+      "Conception, discovery, and development of technology products and user journeys.",
+      "Alignment with OKRs, ROI evaluation, and transformational strategies.",
+      "Leveraging data (SQL, Python, ML) and BI for informed decision making.",
+      "Change management, organizational transformation, and stakeholder influence.",
+      "Conscious leadership, time optimization, and implementation of life-management tools.",
+      "Audit and technical automation of end-to-end workflows via RPA and Low-Code.",
+      "Corporate regulations, AML compliance, financial control, and data governance.",
+      "Execution across Agile and traditional frameworks (Scrum, Kanban, PMBOK)."
+    ]
   },
   "sandbox": {
-    "title": "Tech R&D & AI Sandbox",
-    "description": "I leverage Python, SQL, and Agentic AI flows to prototype and validate architectural designs before scaling. This hands-on R&D ensures high-confidence technical delivery."
+    "title": "Tech R&D & AI Laboratory",
+    "description": "I leverage Agentic AI flows, Python, and SQL to prototype and validate architectural designs prior to scaling. This continuous experimentation laboratory ensures high-confidence technical delivery."
   },
   "purpose": {
     "title": "Personal-Purpose Framework",
