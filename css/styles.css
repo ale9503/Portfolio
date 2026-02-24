@@ -218,6 +218,30 @@ img {
 ========================================================= */
 
 /* Hero */
+#detail-herramientas {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(min-content, 1fr);
+    gap: 8px 16px;
+    align-items: start;
+    margin-top: 12px;
+}
+
+.tool-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: var(--surface-light);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    transition: var(--transition-fast);
+}
+
 .hero {
     display: grid;
     grid-template-columns: 2fr 1fr;

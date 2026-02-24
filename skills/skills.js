@@ -89,12 +89,14 @@ async function init() {
   const treemapContainer = document.getElementById('treemap-skills');
   const legendContainer = document.getElementById('treemap-legend');
 
-  if (!tableBody || !insightsGrid || !selectYear || !selectCategory || !countLabel || !emptyState || !treemapContainer || !legendContainer) {
+  if (!tableBody || !insightsGrid || !selectYear || !selectCategory || !countLabel || !emptyState) {
     console.warn(t('missingElements'));
     return;
   }
 
-  treemapContainer.dataset.placeholder = treemapContainer.textContent.trim() || t('treemapPlaceholder');
+  if (treemapContainer) {
+    treemapContainer.dataset.placeholder = treemapContainer.textContent.trim() || t('treemapPlaceholder');
+  }
 
   try {
     const dataset = await loadSkillsData(undefined, localeConfig.lang);

@@ -122,12 +122,47 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const lang = document.documentElement.lang || 'en';
-      fetch(`/data/data.${lang}.json`)
-        .then(res => res.json())
-        .then(data => {
-          const radarData = data.skills_radar;
+      Promise.all([
+        fetch(`/data/data.${lang}.json`).then(res => res.json()),
+        fetch(`/Files/skills_details.json`).then(res => res.json())
+      ])
+        .then(([uiData, rawSkills]) => {
+          const radarData = uiData.skills_radar;
           if (radarData) {
-            renderRadarChart(radarData.labels, radarData.tooltips, radarData.values);
+            const categoryCounts = {};
+            rawSkills.forEach(item => {
+              const cats = item["Categoria"];
+              if (cats && Array.isArray(cats)) {
+                cats.forEach(c => {
+                  categoryCounts[c] = (categoryCounts[c] || 0) + 1;
+                });
+              }
+            });
+
+            const maxCount = Math.max(...Object.values(categoryCounts), 1);
+
+            // Map the English labels to the original Spanish categories in JSON
+            const labelMapping = {
+              "Innovation & Product": "Innovación & Producto",
+              "Strategy & Value": "Estrategia",
+              "Data & Analytics": "Datos",
+              "Leadership & Change": "Liderazgo",
+              "Technology & Platforms": "Tecnología",
+              "Personal Development": "Desarrollo",
+              "Processes & Automation": "Procesos",
+              "Risk & Finance": "Finanzas",
+              "UX & Client": "UX",
+              "Project & Delivery": "Gestión"
+            };
+
+            const calculatedValues = radarData.labels.map(label => {
+              const searchKey = labelMapping[label] || label.split(' ')[0];
+              const mappedKey = Object.keys(categoryCounts).find(k => k.includes(searchKey));
+              const count = mappedKey ? categoryCounts[mappedKey] : 0;
+              return Math.min(100, Math.round((count / maxCount) * 80) + 20);
+            });
+
+            renderRadarChart(radarData.labels, radarData.tooltips, calculatedValues);
           }
         })
         .catch(err => console.error("Could not load radar data", err));
