@@ -16,7 +16,7 @@
     "Record Date (DD/MM/YYYY)": "24/05/2025",
     "Description": "He tomado una clase de 7 horas practicas donde se monta un servicio backend (sin front) usando python como lenguaje de programacion, Fast API como libreria de creacion de APIs, uvicorn como gestor de servidor local host para pruebas, mongodb (capa local) para hacer pruebas en bases de datos locales noSQL . Mongo ATLAS para hacer despliegue en bases noSQL online y DETA para montar el servidor en la web para despliegue.",
     "Categoria": [
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -27,7 +27,6 @@
     "Description": "La clase de Delio me abrio los ojos con respecto a como se gestiona el conocimiento en cada lado. Tambien, reforzo mi habilidad de creacion de conocimiento y datos para ser usados de una forma practica bajo las diferentes modalidades de la gestion del conocimiento. Por ultimo, la herramienta de HBR ayuda a evaluar que tanto se gestiona el conocimiento en una empresa",
     "Categoria": [
       "Innovación & Producto",
-      "UX & Cliente",
       "Liderazgo & Cambio"
     ]
   },
@@ -38,8 +37,7 @@
     "Record Date (DD/MM/YYYY)": "15/03/2024",
     "Description": "Durante la clase de Catatalina tuve la oportunidad de profundizar y practicas las herramientas mencionadas en diferentes productos a desarrollar en figma. Hasta el punto que se refinaron varios comentarios que mejoraron productos finales para los usuarios",
     "Categoria": [
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -60,7 +58,7 @@
     "Description": "La clase y el curso intensivo que se abordo permitio esbozar como abordar las finanzas en proyectos de transformacion Digital. Particulamente el curso mostro como analizar la finanzas de una empresa y proyecto en detalle hasta llegar a analisis de valor ganado y valorizacion.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Gestión de Proyectos & Delivery"
     ]
   },
@@ -72,7 +70,6 @@
     "Description": "Aprendi a aplicar el modelo joharis usando los 4 cuadrantes y como accionar cada uno de ellos (libre = ampliar, ciega = estudiar el feedback, oculta = vender lo oculto y desconocida = hacer el reto). Tambien reforce mi modelado de objetivos siguiento SMART. Tambien entendi el triangulo del drama para pasar de victima o salvador o victimario a responsable. Entendi y aplique el modelo FLOW (desafio y habilidad) para organizar equipos correctamente asignados en tareas que balanceen el desafio y habilidades. Tambien reforce la matrix de actitud VS aptitud para identificar en donde esta cada persona (baja ac y baja ap = reubicar, alta ac y baja ap = capacitar, baja ac y alta ap = motivar y alta ac y baja ap = fortalecer. Finalmente aborde el modelo Tuckman para entender el momento de los equipos (forming, storming, norming y performing)",
     "Categoria": [
       "Innovación & Producto",
-      "UX & Cliente",
       "Liderazgo & Cambio"
     ]
   },
@@ -84,8 +81,7 @@
     "Description": "Cree un marco de desarrollo personal para aplicar a cualquier persona que busque desarrollo personal, encaminarse en su proposito y volverlo materializado (planear el futuro centrandose en el presente. Para ello identifique que la herramienta ikigai permite conocer los aspectos individuales importante de la persona, luego de analizarlos se clasifican en categorias/segmentos importantes y proposito de la persona. Con esos segmentos se utilizan los capitales de burdeu y se clasifican en los mismos, el objetivo de esto es balancear los segmentos resultante de ikigai en los capitales; aqui pueden surgir nuevos segmentos. Una vez balanceados, se usa la rueda de la vida para definir el estado actual del segmento y luego se califica donde quiere esta en el corto, mediano y largo plazo; con las diferencias encontradas, el objetivo de la Rueda de La Vida es saber donde la persona debe trabajar con respecto a lo que es importante de su proposito, a partir de ese punto se crean las acciones concretas para hacer y dar seguimiento. Hay muchas herramientas para hacer seguimiento a estas actividades como: motion, planner, trello, kanban, gantt, 4ds; todas ellas probadas por mi a lo largo de 5 años.",
     "Categoria": [
       "Innovación & Producto",
-      "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Datos & Analítica"
     ]
   },
   {
@@ -96,7 +92,6 @@
     "Description": "Enfoque flexible para acompañar procesos de cambio cultural en organizaciones orientadas a tecnología y transformación digital. Combino herramientas como el test de Ikanos (para diagnosticar competencias digitales), entrevistas situacionales 1:1 (para entender percepciones y resistencias) y la matriz de tipos de cultura de Cameron y Quinn (para mapear el perfil cultural actual y el deseado). Estas herramientas, sin un orden rígido, se articulan según el contexto para identificar brechas, activar mecanismos de cambio y dar seguimiento con el método Lean Change Management, que permite implementar ajustes de forma iterativa. El objetivo es abordar el cambio cultural, estratégico y estructural de forma integrada, con acciones concretas y adaptadas al entorno. Todo este enfoque ha sido probado por mí en diferentes contextos reales de transformación digital.",
     "Categoria": [
       "Innovación & Producto",
-      "UX & Cliente",
       "Liderazgo & Cambio"
     ]
   },
@@ -120,8 +115,7 @@
     "Description": "Facilita la definición de objetivos, Tacticale el rendimiento financiero y de adquisición de clientes, fomenta iteración basada en datos, y orienta acción estratégica.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -175,7 +169,7 @@
     "Description": "Aprendí a evaluar la fuerza de la relación entre variables usando regresión con rezagos temporales (T-1, T-2, T-3)",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -186,7 +180,7 @@
     "Description": "Detectar si las series temporales son estacionarias evaluando la simetría de la mediana a través del tiempo",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -197,7 +191,7 @@
     "Description": "Aprendí a interpretar y comparar la dispersión de variables y su grado de homogeneidad",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -218,7 +212,7 @@
     "Description": "Interpretar la dirección y fuerza de la relación lineal entre variables",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -259,7 +253,7 @@
     "Description": "Entender cómo media, varianza, asimetría y curtosis resumen una distribución",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -291,7 +285,7 @@
     "Description": "Mapear trabajos, dolores y beneficios del cliente y comunicar la ventaja competitiva en un pitch claro.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -312,8 +306,7 @@
     "Description": "Traducir la estrategia en objetivos medibles, alinear la organización y hacer seguimiento continuo.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -346,7 +339,7 @@
     "Categoria": [
       "Estrategia & Creación de Valor",
       "Procesos & Eficiencia",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -357,7 +350,6 @@
     "Description": "Desarrollé y desplegué robots UI-driven para front, Tacticaldle y back office, gestioné excepciones y administré colas de trabajo bajo un marco de gobernanza corporativa. No solo en clase sino tambien en mi rol de PO en Scotia",
     "Categoria": [
       "Innovación & Producto",
-      "Tecnología & Plataformas",
       "Procesos & Eficiencia"
     ]
   },
@@ -380,8 +372,7 @@
     "Description": "Diseñé la estrategia de análisis alineada a la propuesta de valor digital, realicé benchmarking de competidores y definí hipótesis de valor.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -424,7 +415,7 @@
     "Description": "Internalicé los valores y principios de Agile, practiqué “desaprender para aprender” y conduje workshops colaborativos para fomentar mindset VUCA.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Liderazgo & Cambio"
     ]
   },
@@ -436,7 +427,7 @@
     "Description": "Gestioné sprints completos: planifiqué, ejecuté dailies, reviews y retros, redacté historias INVEST y medí desempeño con burndowns.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Gestión de Proyectos & Delivery"
     ]
   },
@@ -459,8 +450,7 @@
     "Description": "Diseñé tableros Kanban efectivos con políticas explícitas y limité WIP; formulé OKR’s trimestrales y di seguimiento consensuado a los resultados.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -482,8 +472,7 @@
     "Description": "Diseñé un plan integral con análisis DAFO, segmentación, buyer personas, calendario y budget, alineado al funnel AIDA y con métricas de control.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -504,7 +493,7 @@
     "Description": "Estructuré la compra programática y campañas display/video, definiendo mix de medios, límites de CPM/CPC y segmentación en DSP para optimizar el reach.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -515,7 +504,7 @@
     "Description": "Realicé EDA completo, limpié datos, creé variables derivadas y validé calidad de las bases antes del modelado.",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -536,8 +525,7 @@
     "Description": "Construí regresiones lineales múltiples, generé variables dummy, verifiqué supuestos y evalué R²/ajustado para predicción de precios de vivienda.",
     "Categoria": [
       "Innovación & Producto",
-      "Datos & Analítica",
-      "UX & Cliente"
+      "Datos & Analítica"
     ]
   },
   {
@@ -558,7 +546,7 @@
     "Description": "Analicé significancia de coeficientes, preparé reportes ejecutivos y recomendé ajustes de inversión basados en insights.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -579,8 +567,7 @@
     "Description": "Estructuré y refiné casos de uso alineados a KPIs estratégicos, employando Design Thinking y frameworks de éxito para priorizar iniciativas de IA.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -591,7 +578,7 @@
     "Description": "Implementé OLS, validé supuestos, interprete coeficientes y evalué R² y error estándar para predecir variables continuas.",
     "Categoria": [
       "Datos & Analítica",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -612,8 +599,7 @@
     "Description": "Construí y podé árboles de regresión y clasificación",
     "Categoria": [
       "Innovación & Producto",
-      "Datos & Analítica",
-      "UX & Cliente"
+      "Datos & Analítica"
     ]
   },
   {
@@ -655,8 +641,7 @@
     "Description": "Dimensioné y configuré un clúster Hadoop con tolerancia a fallos, políticas de replicación y nodos master/esclavo/edge.",
     "Categoria": [
       "Innovación & Producto",
-      "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Datos & Analítica"
     ]
   },
   {
@@ -667,8 +652,7 @@
     "Description": "Implementé pipelines MapReduce y jobs Spark en clúster, optimicé tareas paralelas y reduje tiempos de procesamiento.",
     "Categoria": [
       "Innovación & Producto",
-      "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Datos & Analítica"
     ]
   },
   {
@@ -679,7 +663,7 @@
     "Description": "Orquesté flujos batch con NiFi y capturé eventos en tiempo real con Kafka, construyendo un pipeline end-to-end.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Procesos & Eficiencia"
     ]
   },
@@ -691,7 +675,7 @@
     "Description": "Modelé y consulté datos en Hive, ejecuté queries SQL sobre HDFS y exploré Data Warehouses en la nube para análisis estructurado.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -702,7 +686,7 @@
     "Description": "Implementé CI/CD para pipelines de datos, documenté linaje y definí políticas de acceso y encriptación para datos sensibles.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -722,7 +706,7 @@
     "Record Date (DD/MM/YYYY)": "12/05/2024",
     "Description": "Lideré proyectos globales de tecnología con presupuestos ? 25 M CAD y variación financiera < 10 %, aplicando cambios regulatorios y estándares PM bajo el rol de Senior Project Coordinator",
     "Categoria": [
-      "UX & Cliente",
+      "Innovación & Producto",
       "Gestión de Proyectos & Delivery"
     ]
   },
@@ -733,7 +717,7 @@
     "Record Date (DD/MM/YYYY)": "8/09/2022",
     "Description": "Diseñé e implementé soluciones robóticas y un orquestador de recursos, liberando capacidad operativa y procesando 5 000 transacciones/mes bajo el rol de Product Owner",
     "Categoria": [
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Procesos & Eficiencia"
     ]
   },
@@ -756,7 +740,6 @@
     "Description": "Coordiné más de 100 miembros en equipos internos y offshore en 6 jurisdicciones, asegurando entregas bajo estándares de calidad y tiempo bajo el rol de analista senior de AML",
     "Categoria": [
       "Innovación & Producto",
-      "UX & Cliente",
       "Liderazgo & Cambio"
     ]
   },
@@ -790,7 +773,6 @@
     "Description": "Participé en el equipo de Smart Automation implementando bots y optimizando flujos de trabajo, lo que permitió superar en un 20 % la capacidad esperada bajo el rol de analista senior de AML.",
     "Categoria": [
       "Innovación & Producto",
-      "Tecnología & Plataformas",
       "Procesos & Eficiencia"
     ]
   },
@@ -801,7 +783,7 @@
     "Record Date (DD/MM/YYYY)": "15/06/2019",
     "Description": "Diseñé y estabilicé la gestión de accesos lógicos mediante la creación de un DataMart, definición de procesos y automatización de tareas clave bajo el rol de analista senior de AML.",
     "Categoria": [
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Procesos & Eficiencia",
       "Finanzas & Riesgo & Cumplimiento"
     ]
@@ -834,7 +816,7 @@
     "Description": "Desarrollo e implementación de modelos de IA y automatización inteligente para mejorar procesos y generar valor.",
     "Categoria": [
       "Datos & Analítica",
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Procesos & Eficiencia"
     ]
   },
@@ -855,7 +837,7 @@
     "Record Date (DD/MM/YYYY)": "9/04/2024",
     "Description": "Implementación y gestión de soluciones de automatización y accesos remotos en entornos corporativos.",
     "Categoria": [
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Procesos & Eficiencia"
     ]
   },
@@ -866,8 +848,7 @@
     "Record Date (DD/MM/YYYY)": "9/04/2024",
     "Description": "Diseño de entornos digitales inclusivos siguiendo estándares de accesibilidad y buenas prácticas UX.",
     "Categoria": [
-      "Innovación & Producto",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -878,7 +859,7 @@
     "Description": "Estrategias de atención al cliente y marketing digital centradas en experiencia y resultados.",
     "Categoria": [
       "Estrategia & Creación de Valor",
-      "UX & Cliente"
+      "Innovación & Producto"
     ]
   },
   {
@@ -889,7 +870,6 @@
     "Description": "Desarrollo de habilidades interpersonales, liderazgo y gestión efectiva de equipos multiculturales.",
     "Categoria": [
       "Innovación & Producto",
-      "UX & Cliente",
       "Liderazgo & Cambio"
     ]
   },
@@ -932,7 +912,7 @@
     "Categoria": [
       "Estrategia & Creación de Valor",
       "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {
@@ -973,7 +953,7 @@
     "Record Date (DD/MM/YYYY)": "9/10/2025",
     "Description": "Curso “DevOps Foundations” (PMI R.E.P.). PDUs: 3.",
     "Categoria": [
-      "Tecnología & Plataformas",
+      "Innovación & Producto",
       "Liderazgo & Cambio"
     ]
   },
@@ -985,8 +965,7 @@
     "Description": "Curso “UX Research Methods: Interviewing”.",
     "Categoria": [
       "Innovación & Producto",
-      "Datos & Analítica",
-      "Tecnología & Plataformas"
+      "Datos & Analítica"
     ]
   },
   {
@@ -1036,7 +1015,7 @@
     "Record Date (DD/MM/YYYY)": "25/11/2025",
     "Description": "El curso permitió comprender, con estructura clara, los principales patrones de arquitectura utilizados en la industria. Se abordó el contexto general de la arquitectura de software, diferencias con los design patterns y las categorías clave. Se estudiaron patrones de sistemas (monolitos, n-tier, SOA, microservicios, serverless, distribuidos y P2P), patrones de aplicación (por capas, onion, hexagonal/ports and adapters, microkernel, modular monolith, CQRS, Event Sourcing y cómo combinarlos) y patrones de UI (MVC, MVP, MVVM y sus diferencias). En conjunto, el aprendizaje ofreció una visión ordenada de cómo seleccionar y combinar patrones según necesidades técnicas y de negocio.",
     "Categoria": [
-      "Tecnología & Plataformas"
+      "Innovación & Producto"
     ]
   },
   {

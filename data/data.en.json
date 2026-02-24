@@ -72,11 +72,9 @@
       "Strategy & Value",
       "Data & Analytics",
       "Leadership & Change",
-      "Technology & Platforms",
       "Personal Development",
       "Processes & Automation",
       "Risk & Finance",
-      "UX & Client",
       "Project & Delivery"
     ],
     "values": [
@@ -84,11 +82,9 @@
       85,
       80,
       85,
-      75,
       95,
       85,
       80,
-      70,
       90
     ],
     "tooltips": {
@@ -96,11 +92,9 @@
       "Strategy & Value": "Bridging business goals with technological execution.",
       "Data & Analytics": "Leveraging data to make informed strategic decisions.",
       "Leadership & Change": "Managing teams across diverse geographies and cultures.",
-      "Technology & Platforms": "Architecting solutions using Python, SQL, and APIs.",
       "Personal Development": "Continuous learning and purposeful habit formation (Kanban framework).",
       "Processes & Automation": "Automating workflows with RPA and AI (>30 FTEs optimized).",
       "Risk & Finance": "Navigating regulatory compliance and multi-million dollar budgets ($25M+ CAD).",
-      "UX & Client": "Designing user-centric B2B and B2C digital journeys.",
       "Project & Delivery": "Delivering complex portfolios with <5% variance."
     }
   },

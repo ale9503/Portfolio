@@ -72,37 +72,31 @@
             "Estrategia & Valor",
             "Datos & Analítica",
             "Liderazgo & Cambio",
-            "Tecnología & Plataformas",
             "Desarrollo Personal",
             "Procesos & Automatización",
             "Riesgo & Finanzas",
-            "UX & Cliente",
             "Proyectos & Delivery"
         ],
         "values": [
+            100,
+            85,
             90,
-            85,
             80,
-            85,
             75,
-            95,
-            85,
             80,
             70,
-            90
+            85
         ],
-        "tooltips": {
-            "Innovación & Producto": "Llevando soluciones digitales desde la concepción hasta el mercado.",
-            "Estrategia & Valor": "Conectando objetivos de negocio con arquitectura tecnológica.",
-            "Datos & Analítica": "Usando SQL, Python y BI para decisiones informadas.",
-            "Liderazgo & Cambio": "Gestionando equipos multiculturales (>300 FTEs) globalmente.",
-            "Tecnología & Plataformas": "Despliegues ágiles en ecosistemas complejos.",
-            "Desarrollo Personal": "Liderazgo consciente e implementación de Kanban personal.",
-            "Procesos & Automatización": "Arquitectura RPA que libera capacidad (+50 FTEs).",
-            "Riesgo & Finanzas": "Gobernanza de presupuestos ejecutivos (>$25M CAD).",
-            "UX & Cliente": "Jornadas de usuario centradas en la fluidez e intuición.",
-            "Proyectos & Delivery": "Ejecución precisa con variación presupuestal <5%."
-        }
+        "tooltips": [
+            "Capacidad para idear, validar y escalar soluciones tecnológicas centradas en el usuario.",
+            "Alineación de iniciativas con objetivos de negocio para maximizar el retorno de inversión.",
+            "Uso de datos para modelado, predicción y toma de decisiones táctico-estratégicas.",
+            "Gestión del cambio cultural y estructuración de equipos de alto rendimiento.",
+            "Crecimiento continuo interdisciplinario para adaptarse a mercados volátiles.",
+            "Identificación de cuellos de botella y diseño de flujos operativos eficientes.",
+            "Evaluación de viabilidad, estructuración de business cases y mitigación de riesgos.",
+            "Ejecución ágil y tradicional para asegurar lanzamientos en tiempo y presupuesto."
+        ]
     },
     "ui": {
         "download_cv": "Descargar CV",
