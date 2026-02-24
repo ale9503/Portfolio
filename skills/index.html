@@ -128,15 +128,15 @@
         .then(data => {
           const radarData = data.skills_radar;
           if (radarData) {
-            renderRadarChart(radarData.labels, radarData.tooltips);
+            renderRadarChart(radarData.labels, radarData.tooltips, radarData.values);
           }
         })
         .catch(err => console.error("Could not load radar data", err));
     });
 
-    function renderRadarChart(labels, tooltips) {
+    function renderRadarChart(labels, tooltips, values) {
       const ctx = document.getElementById('skills-radar-chart').getContext('2d');
-      const dataValues = new Array(labels.length).fill(100);
+      const dataValues = values || new Array(labels.length).fill(100);
 
       new Chart(ctx, {
         type: 'radar',
