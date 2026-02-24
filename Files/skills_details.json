@@ -1,13 +1,631 @@
 [
   {
+    "What did I learn?": "Microsoft Enterprise Product Management Fundamentals",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Agile, SAFe, Design Thinking, SWOT, Porter's 5 Forces, PESTEL, Ansoff Matrix, Value Proposition Canvas, MoSCoW, RICE, Kano Model, MRD/PRD, Asana, JIRA, Power BI",
+    "Record Date (DD/MM/YYYY)": "23/02/2026",
+    "Description": "Adquirí una visión integral del ciclo de vida del producto a nivel corporativo. Aprendí a alinear la visión y estrategia utilizando marcos como Ansoff, PESTEL y el Value Proposition Canvas. Profundicé en la creación y priorización de roadmaps (MoSCoW, RICE, Kano), gestión de stakeholders, e investigación de mercado basada en datos (KPIs, A/B testing). Además, reforcé la integración de metodologías ágiles y tradicionales (SAFe, Scrum, Waterfall) junto con la gestión proactiva de riesgos y el cumplimiento regulatorio desde la fase de diseño (Security by Design).",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
+      "Datos & Analítica",
+      "Producto & Innovación",
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 52
+  },
+  {
+    "What did I learn?": "Interpretación de resultados y toma de decisiones",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "PowerPoint, Jupyter notebooks",
+    "Record Date (DD/MM/YYYY)": "20/01/2025",
+    "Description": "Analicé significancia de coeficientes, preparé reportes ejecutivos y recomendé ajustes de inversión basados en insights.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 51
+  },
+  {
+    "What did I learn?": "Marketing Mix Modelling (Analítica Prescriptiva)",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Python (statsmodels), Excel",
+    "Record Date (DD/MM/YYYY)": "20/01/2025",
+    "Description": "Apliqué modelos econométricos a series semanales, calculé ROIm y simulé escenarios de reducción de presupuesto publicitario para InsurCar y Beauty.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 50
+  },
+  {
+    "What did I learn?": "Modelos de regresión",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "statsmodels, scikit-learn, Excel",
+    "Record Date (DD/MM/YYYY)": "20/01/2025",
+    "Description": "Construí regresiones lineales múltiples, generé variables dummy, verifiqué supuestos y evalué R²/ajustado para predicción de precios de vivienda.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 49
+  },
+  {
+    "What did I learn?": "Modelos de clasificación supervisada",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "scikit-learn (KNN, Decision Trees, LogisticRegression)",
+    "Record Date (DD/MM/YYYY)": "20/01/2025",
+    "Description": "Implementé y validé modelos de clasificación, usé matriz de confusión y métricas para identificar drivers clave en ventas de vinos.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 48
+  },
+  {
+    "What did I learn?": "Tratamiento y exploración de datos",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Python (pandas), Excel, Jupyter",
+    "Record Date (DD/MM/YYYY)": "20/01/2025",
+    "Description": "Realicé EDA completo, limpié datos, creé variables derivadas y validé calidad de las bases antes del modelado.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 47
+  },
+  {
+    "What did I learn?": "Planificación de Medios Digitales",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "DV360, Google Ad Manager, The Trade Desk",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Estructuré la compra programática y campañas display/video, definiendo mix de medios, límites de CPM/CPC y segmentación en DSP para optimizar el reach.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 46
+  },
+  {
+    "What did I learn?": "SEO y SEM",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Google Ads (Search/Display), Google Search Console, SEMrush, PageSpeed Insights",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Configuré campañas SEM optimizadas por puja y keywords, e implementé buenas prácticas SEO on-page y off-page para mejorar el ranking y la visibilidad.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 45
+  },
+  {
+    "What did I learn?": "Plan de Marketing Digital",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "SOSTAC, DAFO, TAM/SAM/SOM, Excel, Google Analytics 4, CRM, Salesforce, Smile.io, SurveyMonkey, HubSpot, Marketo, WordPress, Zapier, Google Optimize, Hotjar, Unbounce, GA Goals, Meta Business Suite, Hootsuite, Brandwatch, Sprout Social",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Diseñé un plan integral con análisis DAFO, segmentación, buyer personas, calendario y budget, alineado al funnel AIDA y con métricas de control.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 44
+  },
+  {
+    "What did I learn?": "Métricas y performance Ágil",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Jira dashboards, Excel PI roadmap, burndown/burnup charts",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Monitoricé velocidad y KPI’s de entrega, implementé PI Planning y ajusté roadmap de features según data de burndown y feedback continuo.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
+      "Datos & Analítica"
+    ],
+    "N°": 43
+  },
+  {
+    "What did I learn?": "Kanban & OKR’s",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Tableros Kanban (WIP Limits), plantillas OKR",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Diseñé tableros Kanban efectivos con políticas explícitas y limité WIP; formulé OKR’s trimestrales y di seguimiento consensuado a los resultados.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles"
+    ],
+    "N°": 42
+  },
+  {
+    "What did I learn?": "Gestión de riesgos en Agile",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Risk Register, TAMEE/CAMEE matrices",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Identifiqué y evalué riesgos en cada sprint, apliqué estrategias Transferir, Mitigar y Explotar, y mantuve comunicación continua con stakeholders.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación",
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 41
+  },
+  {
+    "What did I learn?": "Scrum Framework",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Product/Sprint Backlog, Burndown Chart, Planning Poker, INVEST, Scrum Board",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Gestioné sprints completos: planifiqué, ejecuté dailies, reviews y retros, redacté historias INVEST y medí desempeño con burndowns.",
+    "Categoria": [
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación"
+    ],
+    "N°": 40
+  },
+  {
+    "What did I learn?": "Mentalidad Agile y cultura",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Manifiesto Agile, SBOK",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Internalicé los valores y principios de Agile, practiqué “desaprender para aprender” y conduje workshops colaborativos para fomentar mindset VUCA.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 39
+  },
+  {
+    "What did I learn?": "Proceso Business Analytics",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Metodologia para llevar a cabo business analytics",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "1. identificar problema\n2. recoleccion de datos\n3. procesamiento y limpieza\n4. analisis exploratorio de datos (EDA)\n5. modelado analitico (descriptivo, predictivo, prescriptivo)\n6. interpretacion y presentacion de resultados\n7. toma de decisiones y retroalimentacion",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 38
+  },
+  {
+    "What did I learn?": "Gestión de métricas y KPIs",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Google Analytics 4, Power BI",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Definí y configuré KPIs de tráfico, conversión y comportamiento, construí dashboards y establecí alertas de desviación para mejora continua.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 37
+  },
+  {
+    "What did I learn?": "Análisis de competencia",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Excel avanzado, Google Trends, Porter’s Five Forces",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Realicé análisis macro y micro de mercado, evalué competidores directos e indirectos, e identifiqué oportunidades estratégicas de posicionamiento.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 36
+  },
+  {
+    "What did I learn?": "Estrategia analítica de clientes",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Plantillas de propuesta de valor, Customer Journey Mapping, matrices competitivas",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Diseñé la estrategia de análisis alineada a la propuesta de valor digital, realicé benchmarking de competidores y definí hipótesis de valor.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Datos & Analítica",
+      "Producto & Innovación"
+    ],
+    "N°": 35
+  },
+  {
+    "What did I learn?": "Gestión de proyectos y cálculo de ROI",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Plantillas Excel para ROI y TCO",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Elaboré Business Case con análisis de costos/beneficios y riesgos, calculé retorno de inversión tangible e intangible, y gestioné stakeholders con metodologías ágiles.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 34
+  },
+  {
+    "What did I learn?": "Automatización de tareas con RPA",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "UiPath, Pega RPA, consolas de orquestación, Power Automate",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Desarrollé y desplegué robots UI-driven para front, Tacticaldle y back office, gestioné excepciones y administré colas de trabajo bajo un marco de gobernanza corporativa. No solo en clase sino tambien en mi rol de PO en Scotia",
+    "Categoria": [
+      "Riesgo & Cumplimiento",
+      "Producto & Innovación",
+      "Automatización & Procesos"
+    ],
+    "N°": 33
+  },
+  {
+    "What did I learn?": "Minería de procesos y optimización",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Celonis",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Extraje logs de eventos, analicé variantes y conforTacticalad, benchmarkeé rutas críticas y prioricé mejoras basadas en métricas de eficiencia y cumplimiento.",
+    "Categoria": [
+      "Riesgo & Cumplimiento",
+      "Automatización & Procesos"
+    ],
+    "N°": 32
+  },
+  {
+    "What did I learn?": "Análisis y mapeo de procesos",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "BPMN, Value Stream Mapping, Bizagi, Visio",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Modelé AS-IS y TO-BE con BPMN, identifiqué cuellos de botella y definí KPIs para medir mejoras, estableciendo la visión futura del proceso.",
+    "Categoria": [
+      "Automatización & Procesos"
+    ],
+    "N°": 31
+  },
+  {
+    "What did I learn?": "Liderazgo de la transformación digital y toma de decisiones basada en datos",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "BI (tableros, algoritmos); Interfaces personalizadas; Tecnologías sociales; Gestión del cambio ágil",
+    "Record Date (DD/MM/YYYY)": "4/07/2024",
+    "Description": "Conducir el cambio cultural y de procesos mediante datos, metodologías ágiles y herramientas de engagement.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Liderazgo & Cultura",
+      "Automatización & Procesos"
+    ],
+    "N°": 30
+  },
+  {
+    "What did I learn?": "Gestión y ejecución de la estrategia",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "OKR; Balanced Scorecard; Dashboards en tiempo real; KPIs; Tableros de instrumentos",
+    "Record Date (DD/MM/YYYY)": "4/07/2024",
+    "Description": "Traducir la estrategia en objetivos medibles, alinear la organización y hacer seguimiento continuo.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Datos & Analítica"
+    ],
+    "N°": 29
+  },
+  {
+    "What did I learn?": "Modelado y ajuste de modelos de negocio tradicionales y digitales",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Business Model Canvas; Lean Canvas; Metodologías ágiles (Scrum/Kanban); Diseño de plataformas y ecosistemas",
+    "Record Date (DD/MM/YYYY)": "4/07/2024",
+    "Description": "Validar hipótesis de negocio rápidamente y adaptar estructuras organizativas para el entorno digital.",
+    "Categoria": [
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación"
+    ],
+    "N°": 28
+  },
+  {
+    "What did I learn?": "Diseño de la propuesta de valor y experiencia del cliente",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Value Proposition Canvas; Curva de Valor; Mapas de Segmento–Producto/Servicio; Storytelling estratégico",
+    "Record Date (DD/MM/YYYY)": "4/07/2024",
+    "Description": "Mapear trabajos, dolores y beneficios del cliente y comunicar la ventaja competitiva en un pitch claro.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
+    ],
+    "N°": 27
+  },
+  {
+    "What did I learn?": "Innovación y disrupción del modelo de negocio",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "ExO (MTP + SCALE/IDEAS); 6 D de la Disrupción; “De Cero a Uno” (Peter Thiel); Explorar vs. Explotar (Osterwalder)",
+    "Record Date (DD/MM/YYYY)": "4/07/2024",
+    "Description": "Diseñar modelos escalables y singulares mediante tecnologías exponenciales, efectos de red y economías de escala.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
+    ],
+    "N°": 26
+  },
+  {
+    "What did I learn?": "Análisis y formulación de estrategias de crecimiento y competitivas",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Matriz Ansoff; Modelo Delta (Hax); Checklist de Estrategia; OKR; Balanced Scorecard",
+    "Record Date (DD/MM/YYYY)": "4/07/2024",
+    "Description": "Estructurar la visión en objetivos SMART, definir KPIs y lanzar iniciativas de forma iterativa para maximizar valor.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 25
+  },
+  {
+    "What did I learn?": "Momentos estadísticos y su interpretación",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Momentos estadísticos (1º al 4º) , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Entender cómo media, varianza, asimetría y curtosis resumen una distribución",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 24
+  },
+  {
+    "What did I learn?": "Evaluación de modelos de predicción",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Matriz de confusión , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Usar matriz de confusión para calcular precisión del modelo sobre datos reales vs estimados",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 23
+  },
+  {
+    "What did I learn?": "Preparación de datos para modelos",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Data cleaning, balancing, oversampling, undersampling , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Aprendí a procesar datos eliminando inconsistencias, balanceando clases y generating datasets para entrenamiento/prueba",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 22
+  },
+  {
+    "What did I learn?": "Motivaciones y usos del análisis de datos",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Data-driven decision making , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Aplicaciones como predicción de demanda, análisis de sentimiento, detección de fraude",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 21
+  },
+  {
+    "What did I learn?": "Correlación y covarianza entre variables",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Pearson Correlation, Covariance , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Interpretar la dirección y fuerza de la relación lineal entre variables",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 20
+  },
+  {
+    "What did I learn?": "Kurtosis como medida de apuntamiento",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Curtosis , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Evaluar si una distribución tiene colas pesadas (leptocúrtica) o ligeras (platicúrtica)",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 19
+  },
+  {
+    "What did I learn?": "Medidas de dispersión y variabilidad",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Desviación estándar, Varianza, Coeficiente de variación , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Aprendí a interpretar y comparar la dispersión de variables y su grado de homogeneidad",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 18
+  },
+  {
+    "What did I learn?": "Identificar estacionaridad mediante diagramas de caja",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Boxplot , Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Detectar si las series temporales son estacionarias evaluando la simetría de la mediana a través del tiempo",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 17
+  },
+  {
+    "What did I learn?": "Conceptos de regresión lineal con rezagos",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "R² - Coeficiente de determinación, Jamovi, R y R Studio",
+    "Record Date (DD/MM/YYYY)": "5/07/2024",
+    "Description": "Aprendí a evaluar la fuerza de la relación entre variables usando regresión con rezagos temporales (T-1, T-2, T-3)",
+    "Categoria": [
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 16
+  },
+  {
+    "What did I learn?": "Strategic Decision-Making Tools",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Matriz de priorización de iniciativas (Cost vs Value Matrix), categorización de opciones",
+    "Record Date (DD/MM/YYYY)": "7/07/2024",
+    "Description": "Herramienta clave para innovación centrada en impacto. Alineada con BID y McKinsey sobre uso de datos y estructuras ágiles para maximizar valor y minimizar desperdicio en organizaciones.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Datos & Analítica",
+      "Producto & Innovación"
+    ],
+    "N°": 15
+  },
+  {
+    "What did I learn?": "Transformational Culture Design",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Roadmap de transformación cultural, modelo iceberg, valores clave digitales",
+    "Record Date (DD/MM/YYYY)": "7/07/2024",
+    "Description": "Diseñar culturas organizacionales resilientes y adaptativas. Apoya la visión de Gartner sobre transformación cultural como factor de éxito en iniciativas digitales y de talento.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 14
+  },
+  {
+    "What did I learn?": "Agile Change Leadership",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Lean Change Management, Kotter 8 Steps, ADKAR (Awareness, Desire, Knowledge, Ability, Reinforcement)",
+    "Record Date (DD/MM/YYYY)": "7/07/2024",
+    "Description": "Competencia crítica para gestionar entornos de cambio constante. Alineado con tendencias de McKinsey sobre liderazgo adaptativo y gestión de cambio ágil en entornos complejos.",
+    "Categoria": [
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 13
+  },
+  {
+    "What did I learn?": "Herramientas de innovación",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "– Rueda de la innovación",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Estimula la generación sistemática de ideas, fomenta cultura de prueba rápida y creatividad dirigida a solución de problemas reales.",
+    "Categoria": [
+      "Liderazgo & Cultura",
+      "Producto & Innovación"
+    ],
+    "N°": 12
+  },
+  {
+    "What did I learn?": "Métricas y frameworks",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "– OKRs (Objectives and Key Results, Objetivos y Resultados Clave)– LTV/CAC (Lifetime Value / Customer Acquisition Cost)– Métricas de retención– NSM– North Star Framework",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Facilita la definición de objetivos, Tacticale el rendimiento financiero y de adquisición de clientes, fomenta iteración basada en datos, y orienta acción estratégica.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Producto & Innovación"
+    ],
+    "N°": 11
+  },
+  {
+    "What did I learn?": "Emprendimiento",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "– Business Model Canvas – Lean Startup – Microexperimentos (Rueda de experimentación) – North Star Metric (NSM, Métrica Estrella del Norte) – North Star Framework (Marco Estrella del Norte) – Product–Market Fit (Ajuste Producto-Mercado)",
+    "Record Date (DD/MM/YYYY)": "6/06/2024",
+    "Description": "Permite diseñar y validar modelos de negocio centrados en el cliente, probar hipótesis rápidamente, y alinear equipos en torno a un indicador clave para el crecimiento sostenible.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Liderazgo & Cultura",
+      "Producto & Innovación"
+    ],
+    "N°": 10
+  },
+  {
+    "What did I learn?": "Cultura organizacional y gestion del cambio",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Test de Ikanos, entrevistas situacionales, 1:1,  matriz de tipos de cultura (cameron y quinn), metodo lean change management",
+    "Record Date (DD/MM/YYYY)": "30/05/2024",
+    "Description": "Enfoque flexible para acompañar procesos de cambio cultural en organizaciones orientadas a tecnología y transformación digital. Combino herramientas como el test de Ikanos (para diagnosticar competencias digitales), entrevistas situacionales 1:1 (para entender percepciones y resistencias) y la matriz de tipos de cultura de Cameron y Quinn (para mapear el perfil cultural actual y el deseado). Estas herramientas, sin un orden rígido, se articulan según el contexto para identificar brechas, activar mecanismos de cambio y dar seguimiento con el método Lean Change Management, que permite implementar ajustes de forma iterativa. El objetivo es abordar el cambio cultural, estratégico y estructural de forma integrada, con acciones concretas y adaptadas al entorno. Todo este enfoque ha sido probado por mí en diferentes contextos reales de transformación digital.",
+    "Categoria": [
+      "Liderazgo & Cultura",
+      "Automatización & Procesos"
+    ],
+    "N°": 9
+  },
+  {
+    "What did I learn?": "Desarrollo de personal, Liderazgo y Definicion de propositos",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Ikigai, capitales de burdeau, Rueda de la Vida, motion, planner, Trello, kanban, gantt, 4ds",
+    "Record Date (DD/MM/YYYY)": "30/05/2025",
+    "Description": "Cree un marco de desarrollo personal para aplicar a cualquier persona que busque desarrollo personal, encaminarse en su proposito y volverlo materializado (planear el futuro centrandose en el presente. Para ello identifique que la herramienta ikigai permite conocer los aspectos individuales importante de la persona, luego de analizarlos se clasifican en categorias/segmentos importantes y proposito de la persona. Con esos segmentos se utilizan los capitales de burdeu y se clasifican en los mismos, el objetivo de esto es balancear los segmentos resultante de ikigai en los capitales; aqui pueden surgir nuevos segmentos. Una vez balanceados, se usa la rueda de la vida para definir el estado actual del segmento y luego se califica donde quiere esta en el corto, mediano y largo plazo; con las diferencias encontradas, el objetivo de la Rueda de La Vida es saber donde la persona debe trabajar con respecto a lo que es importante de su proposito, a partir de ese punto se crean las acciones concretas para hacer y dar seguimiento. Hay muchas herramientas para hacer seguimiento a estas actividades como: motion, planner, trello, kanban, gantt, 4ds; todas ellas probadas por mi a lo largo de 5 años.",
+    "Categoria": [
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
+    ],
+    "N°": 8
+  },
+  {
+    "What did I learn?": "Liderazgo para equipos digitales y que buscan transformacion digital",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Modelo Joharis para habilidades poderosas, Modelo Smart para creacion de objetivos, Triengulo del drama (posiciones del ser), modelo flow, matriz de actitud VS aptitud. Modelo Tuckman",
+    "Record Date (DD/MM/YYYY)": "15/05/2024",
+    "Description": "Aprendi a aplicar el modelo joharis usando los 4 cuadrantes y como accionar cada uno de ellos (libre = ampliar, ciega = estudiar el feedback, oculta = vender lo oculto y desconocida = hacer el reto). Tambien reforce mi modelado de objetivos siguiento SMART. Tambien entendi el triangulo del drama para pasar de victima o salvador o victimario a responsable. Entendi y aplique el modelo FLOW (desafio y habilidad) para organizar equipos correctamente asignados en tareas que balanceen el desafio y habilidades. Tambien reforce la matrix de actitud VS aptitud para identificar en donde esta cada persona (baja ac y baja ap = reubicar, alta ac y baja ap = capacitar, baja ac y alta ap = motivar y alta ac y baja ap = fortalecer. Finalmente aborde el modelo Tuckman para entender el momento de los equipos (forming, storming, norming y performing)",
+    "Categoria": [
+      "Liderazgo & Cultura"
+    ],
+    "N°": 7
+  },
+  {
+    "What did I learn?": "Analisis Financiero",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Analisis Financiero de Proyectos, Formulacion Financiera de Proyectos, Analisis de Valor Ganado, Analisis de Toma de Decisiones, Analisis de Valorizacion de empresa",
+    "Record Date (DD/MM/YYYY)": "4/04/2024",
+    "Description": "La clase y el curso intensivo que se abordo permitio esbozar como abordar las finanzas en proyectos de transformacion Digital. Particulamente el curso mostro como analizar la finanzas de una empresa y proyecto en detalle hasta llegar a analisis de valor ganado y valorizacion.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles"
+    ],
+    "N°": 6
+  },
+  {
+    "What did I learn?": "Identificacion de Transformacion Digital",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Clasificacion Tecnologica (Gartner)",
+    "Record Date (DD/MM/YYYY)": "30/03/2024",
+    "Description": "La clase abordo diferentes tecnologias que a su vez mediante los cuadrantes de liderazgo de tecnologia y hypes permiten identificar si una tecnologia es la apropiada para la empresa a la que se esta evaluando",
+    "Categoria": [
+      "Liderazgo & Cultura"
+    ],
+    "N°": 5
+  },
+  {
+    "What did I learn?": "User Experience (UI/UX)",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Mapa de Empatia, Customer Journey, Design Sprint, User Story Mapping, Figma",
+    "Record Date (DD/MM/YYYY)": "15/03/2024",
+    "Description": "Durante la clase de Catatalina tuve la oportunidad de profundizar y practicas las herramientas mencionadas en diferentes productos a desarrollar en figma. Hasta el punto que se refinaron varios comentarios que mejoraron productos finales para los usuarios",
+    "Categoria": [
+      "Producto & Innovación"
+    ],
+    "N°": 4
+  },
+  {
+    "What did I learn?": "Gestion del conocimiento",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Espiral del Conocimiento y sus procesos, Herramienta HBR - Building Blocks (entorno,, procesos/practicas y liderazgo)",
+    "Record Date (DD/MM/YYYY)": "20/02/2024",
+    "Description": "La clase de Delio me abrio los ojos con respecto a como se gestiona el conocimiento en cada lado. Tambien, reforzo mi habilidad de creacion de conocimiento y datos para ser usados de una forma practica bajo las diferentes modalidades de la gestion del conocimiento. Por ultimo, la herramienta de HBR ayuda a evaluar que tanto se gestiona el conocimiento en una empresa",
+    "Categoria": [
+      "Datos & Analítica",
+      "Liderazgo & Cultura",
+      "Automatización & Procesos"
+    ],
+    "N°": 3
+  },
+  {
+    "What did I learn?": "Desarrollo Backend",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Python, FASTAPI, Uvicorn, MongoDB, Mongo ATLAS, DETA",
+    "Record Date (DD/MM/YYYY)": "24/05/2025",
+    "Description": "He tomado una clase de 7 horas practicas donde se monta un servicio backend (sin front) usando python como lenguaje de programacion, Fast API como libreria de creacion de APIs, uvicorn como gestor de servidor local host para pruebas, mongodb (capa local) para hacer pruebas en bases de datos locales noSQL . Mongo ATLAS para hacer despliegue en bases noSQL online y DETA para montar el servidor en la web para despliegue.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 2
+  },
+  {
     "What did I learn?": "Pensamiento computacional",
     "Learning Type*": "Deep Level",
     "Skill/Tool": null,
     "Record Date (DD/MM/YYYY)": "1/03/2025",
     "Description": "Gracias a la clase de analitica predictiva, junto con las clases de mobile and apps, formalice y estructure mis bases de pensamiento computacional para proyectos, productos y negocios con base digital",
     "Categoria": [
-      "Producto & Innovación",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Datos & Analítica",
+      "Producto & Innovación"
+    ],
+    "N°": 1
+  },
+  {
+    "What did I learn?": "Pensamiento computacional",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": null,
+    "Record Date (DD/MM/YYYY)": "1/03/2025",
+    "Description": "Gracias a la clase de analitica predictiva, junto con las clases de mobile and apps, formalice y estructure mis bases de pensamiento computacional para proyectos, productos y negocios con base digital",
+    "Categoria": [
+      "Delivery & Proyectos Ágiles",
+      "Datos & Analítica",
+      "Producto & Innovación"
     ]
   },
   {
@@ -28,8 +646,8 @@
     "Description": "La clase de Delio me abrio los ojos con respecto a como se gestiona el conocimiento en cada lado. Tambien, reforzo mi habilidad de creacion de conocimiento y datos para ser usados de una forma practica bajo las diferentes modalidades de la gestion del conocimiento. Por ultimo, la herramienta de HBR ayuda a evaluar que tanto se gestiona el conocimiento en una empresa",
     "Categoria": [
       "Datos & Analítica",
-      "Automatización & Procesos",
-      "Liderazgo & Cultura"
+      "Liderazgo & Cultura",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -80,8 +698,8 @@
     "Record Date (DD/MM/YYYY)": "30/05/2025",
     "Description": "Cree un marco de desarrollo personal para aplicar a cualquier persona que busque desarrollo personal, encaminarse en su proposito y volverlo materializado (planear el futuro centrandose en el presente. Para ello identifique que la herramienta ikigai permite conocer los aspectos individuales importante de la persona, luego de analizarlos se clasifican en categorias/segmentos importantes y proposito de la persona. Con esos segmentos se utilizan los capitales de burdeu y se clasifican en los mismos, el objetivo de esto es balancear los segmentos resultante de ikigai en los capitales; aqui pueden surgir nuevos segmentos. Una vez balanceados, se usa la rueda de la vida para definir el estado actual del segmento y luego se califica donde quiere esta en el corto, mediano y largo plazo; con las diferencias encontradas, el objetivo de la Rueda de La Vida es saber donde la persona debe trabajar con respecto a lo que es importante de su proposito, a partir de ese punto se crean las acciones concretas para hacer y dar seguimiento. Hay muchas herramientas para hacer seguimiento a estas actividades como: motion, planner, trello, kanban, gantt, 4ds; todas ellas probadas por mi a lo largo de 5 años.",
     "Categoria": [
-      "Liderazgo & Cultura",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -136,8 +754,8 @@
     "Record Date (DD/MM/YYYY)": "7/07/2024",
     "Description": "Competencia crítica para gestionar entornos de cambio constante. Alineado con tendencias de McKinsey sobre liderazgo adaptativo y gestión de cambio ágil en entornos complejos.",
     "Categoria": [
-      "Liderazgo & Cultura",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -148,6 +766,7 @@
     "Description": "Diseñar culturas organizacionales resilientes y adaptativas. Apoya la visión de Gartner sobre transformación cultural como factor de éxito en iniciativas digitales y de talento.",
     "Categoria": [
       "Estrategia & Valor del Negocio",
+      "Delivery & Proyectos Ágiles",
       "Liderazgo & Cultura"
     ]
   },
@@ -292,8 +911,8 @@
     "Record Date (DD/MM/YYYY)": "4/07/2024",
     "Description": "Validar hipótesis de negocio rápidamente y adaptar estructuras organizativas para el entorno digital.",
     "Categoria": [
-      "Producto & Innovación",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación"
     ]
   },
   {
@@ -315,8 +934,8 @@
     "Description": "Conducir el cambio cultural y de procesos mediante datos, metodologías ágiles y herramientas de engagement.",
     "Categoria": [
       "Datos & Analítica",
-      "Automatización & Procesos",
-      "Liderazgo & Cultura"
+      "Liderazgo & Cultura",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -336,8 +955,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Extraje logs de eventos, analicé variantes y conforTacticalad, benchmarkeé rutas críticas y prioricé mejoras basadas en métricas de eficiencia y cumplimiento.",
     "Categoria": [
-      "Automatización & Procesos",
-      "Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -347,9 +966,9 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Desarrollé y desplegué robots UI-driven para front, Tacticaldle y back office, gestioné excepciones y administré colas de trabajo bajo un marco de gobernanza corporativa. No solo en clase sino tambien en mi rol de PO en Scotia",
     "Categoria": [
-      "Automatización & Procesos",
+      "Riesgo & Cumplimiento",
       "Producto & Innovación",
-      "Riesgo & Cumplimiento"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -360,9 +979,9 @@
     "Description": "Elaboré Business Case con análisis de costos/beneficios y riesgos, calculé retorno de inversión tangible e intangible, y gestioné stakeholders con metodologías ágiles.",
     "Categoria": [
       "Estrategia & Valor del Negocio",
-      "Liderazgo & Cultura",
+      "Delivery & Proyectos Ágiles",
       "Riesgo & Cumplimiento",
-      "Delivery & Proyectos Ágiles"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -415,8 +1034,8 @@
     "Description": "Internalicé los valores y principios de Agile, practiqué “desaprender para aprender” y conduje workshops colaborativos para fomentar mindset VUCA.",
     "Categoria": [
       "Estrategia & Valor del Negocio",
-      "Liderazgo & Cultura",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -426,8 +1045,8 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Gestioné sprints completos: planifiqué, ejecuté dailies, reviews y retros, redacté historias INVEST y medí desempeño con burndowns.",
     "Categoria": [
-      "Producto & Innovación",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación"
     ]
   },
   {
@@ -437,11 +1056,11 @@
     "Record Date (DD/MM/YYYY)": "6/06/2024",
     "Description": "Identifiqué y evalué riesgos en cada sprint, apliqué estrategias Transferir, Mitigar y Explotar, y mantuve comunicación continua con stakeholders.",
     "Categoria": [
-      "Liderazgo & Cultura",
-      "Delivery & Proyectos Ágiles",
-      "Riesgo & Cumplimiento",
       "Estrategia & Valor del Negocio",
-      "Producto & Innovación"
+      "Delivery & Proyectos Ágiles",
+      "Producto & Innovación",
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -463,8 +1082,8 @@
     "Description": "Monitoricé velocidad y KPI’s de entrega, implementé PI Planning y ajusté roadmap de features según data de burndown y feedback continuo.",
     "Categoria": [
       "Estrategia & Valor del Negocio",
-      "Datos & Analítica",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Datos & Analítica"
     ]
   },
   {
@@ -565,7 +1184,7 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Estructuré y refiné casos de uso alineados a KPIs estratégicos, employando Design Thinking y frameworks de éxito para priorizar iniciativas de IA.",
     "Categoria": [
-      "Estrategia & Valor del Negocio"
+      "Producto & Innovación"
     ]
   },
   {
@@ -677,8 +1296,8 @@
     "Record Date (DD/MM/YYYY)": "20/01/2025",
     "Description": "Implementé CI/CD para pipelines de datos, documenté linaje y definí políticas de acceso y encriptación para datos sensibles.",
     "Categoria": [
-      "Datos & Analítica",
-      "Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento",
+      "Datos & Analítica"
     ]
   },
   {
@@ -699,8 +1318,8 @@
     "Record Date (DD/MM/YYYY)": "12/05/2024",
     "Description": "Lideré proyectos globales de tecnología con presupuestos ? 25 M CAD y variación financiera < 10 %, aplicando cambios regulatorios y estándares PM bajo el rol de Senior Project Coordinator",
     "Categoria": [
-      "Liderazgo & Cultura",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -731,9 +1350,9 @@
     "Record Date (DD/MM/YYYY)": "30/06/2023",
     "Description": "Coordiné más de 100 miembros en equipos internos y offshore en 6 jurisdicciones, asegurando entregas bajo estándares de calidad y tiempo bajo el rol de analista senior de AML",
     "Categoria": [
-      "Liderazgo & Cultura",
+      "Delivery & Proyectos Ágiles",
       "Riesgo & Cumplimiento",
-      "Delivery & Proyectos Ágiles"
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -754,8 +1373,8 @@
     "Record Date (DD/MM/YYYY)": "1/10/2020",
     "Description": "Elaboré documentos de requerimientos (BRD), gestioné solicitudes de cambio y presenté resultados a alta dirección, remediando hallazgos de auditoría.",
     "Categoria": [
-      "Liderazgo & Cultura",
-      "Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento",
+      "Liderazgo & Cultura"
     ]
   },
   {
@@ -765,8 +1384,8 @@
     "Record Date (DD/MM/YYYY)": "1/04/2019",
     "Description": "Participé en el equipo de Smart Automation implementando bots y optimizando flujos de trabajo, lo que permitió superar en un 20 % la capacidad esperada bajo el rol de analista senior de AML.",
     "Categoria": [
-      "Automatización & Procesos",
-      "Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento",
+      "Automatización & Procesos"
     ]
   },
   {
@@ -776,9 +1395,9 @@
     "Record Date (DD/MM/YYYY)": "15/06/2019",
     "Description": "Diseñé y estabilicé la gestión de accesos lógicos mediante la creación de un DataMart, definición de procesos y automatización de tareas clave bajo el rol de analista senior de AML.",
     "Categoria": [
+      "Riesgo & Cumplimiento",
       "Datos & Analítica",
-      "Automatización & Procesos",
-      "Riesgo & Cumplimiento"
+      "Automatización & Procesos"
     ]
   },
   {
@@ -822,9 +1441,9 @@
     "Record Date (DD/MM/YYYY)": "7/10/2023",
     "Description": "Gestión ágil de proyectos aplicando Scrum y Kanban, definición de roles y control de entregas.",
     "Categoria": [
+      "Delivery & Proyectos Ágiles",
       "Liderazgo & Cultura",
-      "Producto & Innovación",
-      "Delivery & Proyectos Ágiles"
+      "Producto & Innovación"
     ]
   },
   {
@@ -865,6 +1484,7 @@
     "Record Date (DD/MM/YYYY)": null,
     "Description": "Desarrollo de habilidades interpersonales, liderazgo y gestión efectiva de equipos multiculturales.",
     "Categoria": [
+      "Estrategia & Valor del Negocio",
       "Liderazgo & Cultura"
     ]
   },
@@ -886,8 +1506,8 @@
     "Description": "Capacidades en análisis económico, investigación de mercados, toma de decisiones financieras y gestión de proyectos de internacionalización.",
     "Categoria": [
       "Estrategia & Valor del Negocio",
-      "Datos & Analítica",
-      "Delivery & Proyectos Ágiles"
+      "Delivery & Proyectos Ágiles",
+      "Datos & Analítica"
     ]
   },
   {
@@ -917,8 +1537,8 @@
     "Record Date (DD/MM/YYYY)": "2020",
     "Description": "Dominio de técnicas y herramientas para prevenir, detectar e investigar lavado de activos y financiación del terrorismo con analítica avanzada.",
     "Categoria": [
-      "Datos & Analítica",
-      "Riesgo & Cumplimiento"
+      "Riesgo & Cumplimiento",
+      "Datos & Analítica"
     ]
   },
   {
