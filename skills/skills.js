@@ -313,12 +313,7 @@ function buildToolsList(tools) {
     return wrapper;
   }
 
-  tools.forEach(tool => {
-    const tag = document.createElement('span');
-    tag.className = 'tool-tag';
-    tag.textContent = tool;
-    wrapper.appendChild(tag);
-  });
+  wrapper.textContent = tools.join('; ');
 
   return wrapper;
 }
@@ -333,13 +328,7 @@ function buildCategoriesList(categories) {
   }
 
   const uniqueCategories = [...new Set(categories.map(category => category || labels.noCategory))];
-
-  uniqueCategories.forEach(category => {
-    const tag = document.createElement('span');
-    tag.className = 'category-tag';
-    tag.textContent = category;
-    wrapper.appendChild(tag);
-  });
+  wrapper.textContent = uniqueCategories.join('; ');
 
   return wrapper;
 }
