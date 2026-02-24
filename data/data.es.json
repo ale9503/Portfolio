@@ -79,6 +79,18 @@
             "UX & Cliente",
             "Proyectos & Delivery"
         ],
+        "values": [
+            90,
+            85,
+            80,
+            85,
+            75,
+            95,
+            85,
+            80,
+            70,
+            90
+        ],
         "tooltips": {
             "Innovación & Producto": "Llevando soluciones digitales desde la concepción hasta el mercado.",
             "Estrategia & Valor": "Conectando objetivos de negocio con arquitectura tecnológica.",
