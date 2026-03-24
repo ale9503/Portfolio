@@ -1,5 +1,42 @@
 [
   {
+    "What did I learn?": "Market Research and Competitive Analysis (Microsoft AI PM Specialization)",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Market Research, Competitive Analysis, B2B Research, Buyer Personas, Customer Segmentation, Microsoft Tools, AI Product Market Dynamics",
+    "Record Date (DD/MM/YYYY)": "24/03/2026",
+    "Description": "Adquirí habilidades para recopilar e interpretar datos de mercado, evaluar el panorama competitivo e identificar oportunidades de producto. Apliqué metodologías de investigación B2B con herramientas Microsoft, analicé necesidades de clientes enterprise y tendencias de mercado, trabajé segmentación de consumidores y creación de buyer personas. Exploré las dinámicas del mercado de productos de IA, incluyendo ecosistemas de datos e influencias regulatorias. Parte del path Microsoft AI Product Manager Specialization.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación",
+      "Datos & Analítica"
+    ],
+    "N°": 55
+  },
+  {
+    "What did I learn?": "Databricks Fundamentals",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Databricks, Data Lakehouse, Delta Lake, Apache Spark, Unity Catalog, MLflow",
+    "Record Date (DD/MM/YYYY)": "20/03/2026",
+    "Description": "Exploré los conceptos clave detrás de la Databricks Data Intelligence Platform: arquitectura data lakehouse, Delta Lake, Unity Catalog y la integración de IA en plataformas de datos. Comprendí cómo Databricks unifica analítica e ingeniería de datos con capacidades de machine learning a escala.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Tecnología"
+    ],
+    "N°": 54
+  },
+  {
+    "What did I learn?": "Data Literacy: Exploring and Describing Data",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Data Analysis, Statistics, Data Visualization, Probability, Inference",
+    "Record Date (DD/MM/YYYY)": "20/03/2026",
+    "Description": "Reforcé los fundamentos de la alfabetización en datos: preparación y adaptación de datos, exploración visual mediante gráficos y descripción estadística. Cubrí probabilidad e inferencia, ética de datos e IA explicable. Curso enfocado en desarrollar criterio analítico para la toma de decisiones basada en datos, sin dependencia de herramientas específicas.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 53
+  },
+  {
     "What did I learn?": "Microsoft Enterprise Product Management Fundamentals",
     "Learning Type*": "Deep Level",
     "Skill/Tool": "Agile, SAFe, Design Thinking, SWOT, Porter's 5 Forces, PESTEL, Ansoff Matrix, Value Proposition Canvas, MoSCoW, RICE, Kano Model, MRD/PRD, Asana, JIRA, Power BI",
