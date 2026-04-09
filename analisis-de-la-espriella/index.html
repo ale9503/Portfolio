@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abelardo De la Espriella 2026 — Radiografía Presidencial</title>
+<meta name="description" content="Análisis político independiente de Abelardo De la Espriella. Plan Patria Milagro. Análisis microeconómico focalizado en perfiles DINK / Estrato 4. Colombia 2026.">
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0a;
+    --bg2: #111111;
+    --bg3: #1a1a1a;
+    --line: #2a2a2a;
+    --red: #c0392b;
+    --red-dim: #7a1f16;
+    --amber: #d4780a;
+    --amber-dim: #7a450a;
+    --green: #1a6630;
+    --green-bright: #2e8b4e;
+    --green-dim: #0d3a1a;
+    --text: #e8e8e0;
+    --text-dim: #888880;
+    --text-muted: #555550;
+    --accent: #c0392b;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --display: 'Bebas Neue', sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  .page { max-width: 1000px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* ── COVER ── */
+  .cover {
+    border-bottom: 1px solid var(--line);
+    padding: 60px 0 48px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: end;
+  }
+  .cover-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--red);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .cover-title {
+    font-family: var(--display);
+    font-size: clamp(52px, 8vw, 96px);
+    line-height: 0.92;
+    letter-spacing: 0.01em;
+    color: var(--text);
+  }
+  .cover-title span { color: var(--red); }
+  .cover-subtitle {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 20px;
+    border-left: 2px solid var(--red);
+    padding-left: 12px;
+    line-height: 1.8;
+  }
+  .cover-meta {
+    text-align: right;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    line-height: 2;
+  }
+  .cover-meta strong { color: var(--text-dim); font-weight: 600; display: block; }
+
+  /* ── SECTION HEADERS ── */
+  .section { padding: 48px 0 0; }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 12px;
+  }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--red);
+    letter-spacing: 0.1em;
+    min-width: 24px;
+  }
+  .section-title {
+    font-family: var(--display);
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    color: var(--text);
+  }
+
+  /* ── PROFILE GRID ── */
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .profile-cell {
+    background: var(--bg2);
+    padding: 20px;
+  }
+  .profile-cell .label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .profile-cell .value {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .profile-cell .value.tag {
+    font-family: var(--display);
+    font-size: 28px;
+    color: var(--red);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── ATTR BARS ── */
+  .attr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 40px;
+    margin-top: 4px;
+  }
+  .attr-row { display: flex; flex-direction: column; gap: 6px; }
+  .attr-label {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  .attr-label span:last-child { color: var(--text); font-weight: 600; }
+  .bar-track {
+    height: 3px;
+    background: var(--bg3);
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    background: var(--red);
+    transition: width 0.6s ease;
+  }
+  .bar-fill.low { background: var(--amber); }
+  .bar-fill.very-low { background: var(--text-muted); }
+
+  /* ── DISCOURSE AXES ── */
+  .axes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .axis-cell {
+    background: var(--bg2);
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .axis-pct {
+    font-family: var(--display);
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .axis-pct.high { color: var(--red); }
+  .axis-pct.mid { color: var(--amber); }
+  .axis-pct.low { color: var(--text-muted); }
+  .axis-name {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+
+  /* ── PROPOSALS ── */
+  .proposals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .proposal-card {
+    background: var(--bg2);
+    padding: 20px;
+  }
+  .proposal-num {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .proposal-name {
+    font-family: var(--display);
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .pro-con { display: flex; flex-direction: column; gap: 6px; }
+  .pro, .con {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-dim);
+    align-items: flex-start;
+  }
+  .pro::before {
+    content: '+';
+    font-family: var(--mono);
+    font-weight: 600;
+    color: var(--green);
+    min-width: 12px;
+    margin-top: 1px;
+  }
+  .con::before {
+    content: '−';
+    font-family: var(--mono);
+    font-weight: 600;
+    color: var(--red);
+    min-width: 12px;
+    margin-top: 1px;
+  }
+
+  /* ── DAFO ── */
+  .dafo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .dafo-cell {
+    background: var(--bg2);
+    padding: 24px;
+  }
+  .dafo-cell.f { border-top: 3px solid #1a6630; }
+  .dafo-cell.d { border-top: 3px solid var(--red); }
+  .dafo-cell.o { border-top: 3px solid var(--amber); }
+  .dafo-cell.a { border-top: 3px solid #7a1f16; }
+  .dafo-label {
+    font-family: var(--display);
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+  .dafo-cell.f .dafo-label { color: #1a6630; }
+  .dafo-cell.d .dafo-label { color: var(--red); }
+  .dafo-cell.o .dafo-label { color: var(--amber); }
+  .dafo-cell.a .dafo-label { color: #7a1f16; }
+  .dafo-item {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  .dafo-item::before {
+    content: '›';
+    font-family: var(--mono);
+    font-size: 14px;
+    min-width: 10px;
+    color: var(--text-muted);
+    margin-top: 1px;
+  }
+  .dafo-item strong { color: var(--text); font-weight: 600; }
+
+  /* ── CONCLUSION ── */
+  .conclusion-box {
+    background: var(--bg2);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--red);
+    padding: 28px 32px;
+    margin-top: 32px;
+  }
+  .conclusion-box p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+  .conclusion-box p:last-child { margin-bottom: 0; }
+  .conclusion-box strong { color: var(--text); font-weight: 600; }
+
+  /* ── VERDICT ── */
+  .verdict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 24px;
+  }
+  .verdict-cell { background: var(--bg2); padding: 20px 16px; }
+  .verdict-cell .v-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .verdict-cell .v-val {
+    font-family: var(--display);
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+  }
+  .v-red { color: var(--red); }
+  .v-amber { color: var(--amber); }
+  .v-green { color: var(--green-bright); }
+
+  /* ── FOOTER ── */
+  .footer {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 680px) {
+    .cover { grid-template-columns: 1fr; }
+    .profile-grid { grid-template-columns: 1fr; }
+    .proposals-grid { grid-template-columns: 1fr; }
+    .dafo-grid { grid-template-columns: 1fr; }
+    .axes-grid { grid-template-columns: repeat(2, 1fr); }
+    .verdict-grid { grid-template-columns: 1fr; }
+    .attr-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- COVER -->
+  <header class="cover">
+    <div>
+      <div class="cover-tag">// ANÁLISIS POLÍTICO · COLOMBIA 2026 · USO RESTRINGIDO</div>
+      <h1 class="cover-title">ABELARDO<br>DE LA <span>ESPRIELLA</span></h1>
+      <div class="cover-subtitle">
+        RADIOGRAFÍA PRESIDENCIAL · PLAN PATRIA MILAGRO<br>
+        Análisis microeconómico focalizado en perfiles DINK / Estrato 4<br>
+        Sectores: B2B · Banca · Tecnología · RRHH · Agencia Pública
+      </div>
+    </div>
+    <div class="cover-meta">
+      <strong>CLASIFICACIÓN</strong>
+      ANÁLISIS INDEPENDIENTE<br>
+      <strong>CANDIDATO</strong>
+      OUTSIDER EXTREMA DERECHA<br>
+      <strong>PROPUESTAS</strong>
+      13 PUNTOS CLAVE<br>
+      <strong>PERFIL FOCAL</strong>
+      ~30 AÑOS / SIN HIJOS
+    </div>
+  </header>
+
+  <!-- PERFIL -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">PERFIL DEL CANDIDATO</h2>
+    </div>
+    <div class="profile-grid">
+      <div class="profile-cell">
+        <div class="label">Alias</div>
+        <div class="value tag">"EL TIGRE"</div>
+      </div>
+      <div class="profile-cell">
+        <div class="label">Trayectoria</div>
+        <div class="value">Abogado penalista &amp; empresario internacional. <strong>Cero</strong> experiencia ejecutiva en administración pública.</div>
+      </div>
+      <div class="profile-cell">
+        <div class="label">Posición política</div>
+        <div class="value">Extrema derecha. Independencia financiera vía conglomerado empresarial (firmas legales, bienes raíces, marcas de consumo).</div>
+      </div>
+      <div class="profile-cell" style="grid-column: span 3">
+        <div class="label">Narrativa central</div>
+        <div class="value">Discurso marcial y polarizante. Promete "orden" mediante represión estatal + hiper-capitalismo de libre mercado. Capitaliza el descontento ciudadano por fuera de las maquinarias políticas tradicionales.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATRIBUTOS -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">ATRIBUTOS PERCIBIDOS (0–100)</h2>
+    </div>
+    <div class="attr-grid">
+      <div class="attr-row">
+        <div class="attr-label"><span>Éxito financiero</span><span>95</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="attr-row">
+        <div class="attr-label"><span>Autoridad percibida</span><span>88</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+      </div>
+      <div class="attr-row">
+        <div class="attr-label"><span>Outsider independiente</span><span>75</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
+      </div>
+      <div class="attr-row">
+        <div class="attr-label"><span>Empatía social</span><span>25</span></div>
+        <div class="bar-track"><div class="bar-fill low" style="width:25%"></div></div>
+      </div>
+      <div class="attr-row" style="grid-column: span 2">
+        <div class="attr-label"><span>Experiencia pública</span><span>10</span></div>
+        <div class="bar-track"><div class="bar-fill very-low" style="width:10%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EJES DE DISCURSO -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">EJES DEL DISCURSO</h2>
+    </div>
+    <div class="axes-grid">
+      <div class="axis-cell">
+        <div class="axis-pct high">95%</div>
+        <div class="axis-name">Seguridad<br>y Orden</div>
+      </div>
+      <div class="axis-cell">
+        <div class="axis-pct high">90%</div>
+        <div class="axis-name">Desarrollo Privado<br>/ Libre Mercado</div>
+      </div>
+      <div class="axis-cell">
+        <div class="axis-pct mid">85%</div>
+        <div class="axis-name">Reforma<br>Judicial Punitiva</div>
+      </div>
+      <div class="axis-cell">
+        <div class="axis-pct low">30%</div>
+        <div class="axis-name">Política<br>Social</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPUESTAS -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">13 PROPUESTAS — PLAN PATRIA MILAGRO</h2>
+    </div>
+    <div class="proposals-grid">
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 01</div>
+        <div class="proposal-name">Erradicación Total</div>
+        <div class="pro-con">
+          <div class="pro">Vías seguras. Beneficia turismo, ciclismo e inversión corporativa.</div>
+          <div class="con">Riesgo de paros armados y bloqueos logísticos → inflación en alimentos urbanos.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 02</div>
+        <div class="proposal-name">Bloque Antiextorsión</div>
+        <div class="pro-con">
+          <div class="pro">Protege vida nocturna, restaurantes y negocios contra vacunas.</div>
+          <div class="con">Represión desmedida → estallidos sociales y ruptura de estabilidad laboral.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 03</div>
+        <div class="proposal-name">Educación en Valores</div>
+        <div class="pro-con">
+          <div class="pro">Impacto económico nulo en perfil DINK (sin dependientes escolarizados).</div>
+          <div class="con">Sesgo conservador. Amenaza de censura vs. libertades civiles de profesionales.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 04</div>
+        <div class="proposal-name">País de Propietarios</div>
+        <div class="pro-con">
+          <div class="pro">Créditos hipotecarios al 2% anual: mayor atractivo patrimonial y apalancamiento.</div>
+          <div class="con">Inviabilidad fiscal absoluta → reformas tributarias severas sobre clase media.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 05</div>
+        <div class="proposal-name">Cosecha Solidaria</div>
+        <div class="pro-con">
+          <div class="pro">Potencial estabilización de precios en canasta básica y sector restauración.</div>
+          <div class="con">Estado como comercializador masivo → ineficiencia garantizada + corrupción logística.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 06</div>
+        <div class="proposal-name">Soberanía Energética</div>
+        <div class="pro-con">
+          <div class="pro">Reducción de tarifas eléctricas (estrato 4) e impulso a ventas B2B corporativas.</div>
+          <div class="con">Pasivo ambiental irreversible. Amenaza acuíferos y destruye concepto de fincas eco-sostenibles.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 07</div>
+        <div class="proposal-name">Reducción del Estado</div>
+        <div class="pro-con">
+          <div class="pro">Elimina el 4x1000 → mayor liquidez de nóminas privadas para inversiones y negocios.</div>
+          <div class="con">Desempleo inminente para trabajadores de agencias estatales y sector público.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 08</div>
+        <div class="proposal-name">Protección a la Mujer</div>
+        <div class="pro-con">
+          <div class="pro">Entorno civil más seguro. Rutas judiciales exprés en 72h → equidad de género.</div>
+          <div class="con">Materialmente imposible sin ampliar la Fiscalía. Contradice directamente el recorte estatal.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 09</div>
+        <div class="proposal-name">Reforma Carcelaria</div>
+        <div class="pro-con">
+          <div class="pro">Frena extorsiones y fraudes bancarios telefónicos que atacan el patrimonio privado.</div>
+          <div class="con">Prisiones militares → desgaste constitucional y demandas internacionales.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 10</div>
+        <div class="proposal-name">Reactivación Económica</div>
+        <div class="pro-con">
+          <div class="pro">Atracción multinacional → inflación de presupuestos B2B y vacantes en Tech/RRHH.</div>
+          <div class="con">Riesgo latente de flexibilización laboral severa para atraer capital extranjero.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 11</div>
+        <div class="proposal-name">Defensa de la Infancia</div>
+        <div class="pro-con">
+          <div class="pro">Satisface reclamo ético colectivo. Impacto financiero neutro en perfil DINK.</div>
+          <div class="con">La Corte Constitucional bloqueará los referendos por violar tratados internacionales.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card">
+        <div class="proposal-num">PROP 12</div>
+        <div class="proposal-name">Bienestar Animal Integral</div>
+        <div class="pro-con">
+          <div class="pro">Traslada altos costos veterinarios al Estado → alivio al flujo de caja personal.</div>
+          <div class="con">Contradicción grave: sanidad animal universal + recorte del 40% estatal = inviable.</div>
+        </div>
+      </div>
+
+      <div class="proposal-card" style="grid-column: span 2">
+        <div class="proposal-num">PROP 13</div>
+        <div class="proposal-name">Relaciones Internacionales — Alianza EE.UU. / Israel / Ruptura Regional</div>
+        <div class="pro-con">
+          <div class="pro">Facilita transferencias tecnológicas bancarias, visas corporativas y networking global.</div>
+          <div class="con">Aislamiento diplomático encarece vuelos sudamericanos y cierra mercados regionales a pequeñas empresas.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DAFO -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">MATRIZ DAFO — PERFIL DINK / ESTRATO 4</h2>
+    </div>
+    <div class="dafo-grid">
+      <div class="dafo-cell f">
+        <div class="dafo-label">FORTALEZAS</div>
+        <div class="dafo-item"><strong>Hipoteca al 2%:</strong> mayor acelerador para consolidar finca raíz.</div>
+        <div class="dafo-item"><strong>Fin del 4x1000:</strong> mueve capitales e invierte sin castigo fiscal.</div>
+        <div class="dafo-item"><strong>Entorno marcial:</strong> protege vida nocturna, bienes de lujo y negocios.</div>
+      </div>
+      <div class="dafo-cell d">
+        <div class="dafo-label">DEBILIDADES</div>
+        <div class="dafo-item"><strong>Inviabilidad Matemática:</strong> prometer hipotecas al 2% y eliminar impuestos con un déficit fiscal en niveles históricos máximos es financieramente imposible. Conducirá a un riesgo de emisión o devaluación severa.</div>
+        <div class="dafo-item"><strong>Acelerador de Desindustrialización:</strong> la ruptura con LATAM elimina el mercado exportador natural, agravando la pérdida de participación del sector manufacturero frente a servicios de bajo valor.</div>
+        <div class="dafo-item"><strong>Inexperiencia constitucional:</strong> promesas inconstitucionales = 4 años de estancamiento legislativo.</div>
+      </div>
+      <div class="dafo-cell o">
+        <div class="dafo-label">OPORTUNIDADES</div>
+        <div class="dafo-item"><strong>Boom B2B/Tech:</strong> flujo de dólares EE.UU./Israel infla cuotas, sueldos tech y reclutamiento.</div>
+        <div class="dafo-item"><strong>Independencia de clanes:</strong> autofinanciamiento → tecnócratas en ministerios en lugar de políticos.</div>
+      </div>
+      <div class="dafo-cell a">
+        <div class="dafo-label">AMENAZAS</div>
+        <div class="dafo-item"><strong>Choque de Desempleo Inmediato:</strong> el empleo actual depende críticamente de la expansión de servicios. Recortar el 40% del Estado generará desempleo masivo que el sector privado no absorberá, dado que la inversión privada cayó del 22% al 16%.</div>
+        <div class="dafo-item"><strong>Efecto Desplazamiento (Crowding-out):</strong> financiar este plan inflará la deuda pública, presionando las tasas de interés al alza y encareciendo dramáticamente el crédito para el desarrollo corporativo.</div>
+        <div class="dafo-item"><strong>Guerra asimétrica:</strong> erradicación forzosa paraliza carreteras → destruye turismo rural.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSIÓN -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">CONCLUSIONES</h2>
+    </div>
+    <div class="conclusion-box">
+      <p>Para este grupo específico de profesionales, el plan de gobierno de De la Espriella representa una <strong>propuesta de altísimo riesgo con incentivos asimétricos y fallas estructurales graves</strong>.</p>
+      <p>Es un <strong>modelo de choque</strong>. A corto plazo, su discurso seduce al prometer la facilitación de patrimonio, eliminación de cargas tributarias y un entorno marcial que protege la propiedad. Sin embargo, el plan agudiza el dilema actual de la economía colombiana: prioriza un bienestar presente a costa de liquidar la capacidad de crecimiento futuro.</p>
+      <p>La <strong>matemática fiscal es incompatible con la realidad</strong>. Implementar un recorte masivo del Estado y subsidios universales en un entorno donde la inversión productiva está en desplome y la productividad laboral sufre una caída abrupta, empujará al país de su actual equilibrio de "bajo crecimiento" hacia una recesión severa o una crisis de deuda soberana.</p>
+    </div>
+
+    <div class="verdict-grid">
+      <div class="verdict-cell">
+        <div class="v-label">Veredicto Patrimonio</div>
+        <div class="v-val v-amber">ALTO RIESGO<br>CORTO PLAZO ↑</div>
+      </div>
+      <div class="verdict-cell">
+        <div class="v-label">Veredicto Empleo Público y Servicios</div>
+        <div class="v-val v-red">CHOQUE RECESIVO<br>CAÍDA DEMANDA</div>
+      </div>
+      <div class="verdict-cell">
+        <div class="v-label">Veredicto Fiscal / Macro</div>
+        <div class="v-val v-red">RIESGO DE DEFAULT<br>ESTANCAMIENTO</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>ANÁLISIS INDEPENDIENTE · NO OFICIAL · SIN FILIACIÓN PARTIDISTA</span>
+    <span>COLOMBIA 2026 · GRUPO FOCAL: DINK / ESTRATO 4</span>
+  </footer>
+
+</div>
+</body>
+</html>
