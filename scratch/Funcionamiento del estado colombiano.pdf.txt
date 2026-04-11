@@ -1,0 +1,1058 @@
+Análisis Estructural, Normativo y 
+Operativo del Estado Colombiano: 
+Instituciones, Reformas y Limitaciones 
+Legales en 2026  
+El Estado colombiano opera bajo el diseño arquitectónico de la Constitución Política de 1991, la 
+cual instauró un modelo de Estado Social de Derecho organizado en forma de república 
+unitaria, descentralizada, con autonomía de sus entidades territoriales, d emocrática, 
+participativa y pluralista. En el año 2026, el funcionamiento de este aparato estatal se 
+encuentra atravesando una coyuntura de profundas transformaciones jurídicas, institucionales 
+y políticas. La convergencia del ciclo electoral para la renov ación del Congreso y la Presidencia 
+de la República, sumada a la implementación de reformas estructurales en los sistemas de 
+salud y pensiones, y la expedición de decretos de emergencia económica y ecológica, exigen 
+una comprensión exhaustiva de las reglas  de juego institucionales. El presente informe detalla 
+en profundidad el funcionamiento del Estado colombiano, desglosando sus ramas de poder, 
+su sistema político y de participación ciudadana, la administración de ministerios y entidades 
+públicas, el régim en de contratación estatal, la estructura tributaria y las políticas de seguridad 
+social. A través de este análisis, se establece un mapa preciso sobre las facultades, 
+competencias, restricciones y prohibiciones que rigen tanto para las autoridades 
+guberna mentales como para la ciudadanía, delimitando con exactitud qué acciones están 
+permitidas y cuáles se encuentran proscritas por el ordenamiento jurídico vigente.  
+1. Fundamentos Constitucionales y Dogmática del 
+Estado  
+La Constitución Política de 1991 constituye el eje rector de toda la actividad estatal y ciudadana 
+en Colombia. Desde su preámbulo, la carta magna establece que el propósito de la Nación es 
+fortalecer la unidad y asegurar a sus integrantes la vida, la conv ivencia, el trabajo, la justicia, la 
+igualdad, el conocimiento, la libertad y la paz, enmarcados en un orden político, económico y 
+social justo.1 
+1.1. Soberanía, Supremacía Constitucional y Derechos Lingüísticos  
+El funcionamiento de toda institución pública emana del principio inalienable de la soberanía 
+popular. El Artículo 3 de la Constitución dicta que la soberanía reside exclusivamente en el 
+pueblo, siendo esta la única fuente legítima del poder público. Los c iudadanos ejercen esta 
+soberanía ya sea de forma directa, mediante mecanismos de participación, o a través de sus 
+representantes electos en las corporaciones públicas.2 En el plano jerárquico, el Estado 
+colombiano opera bajo el principio de supremacía constitucional consagrado en el Artículo 4. 
+La Constitución es la norma de normas, lo que implica que ninguna autoridad puede actuar por 
+fuera de sus linderos. Ante cualqui er incompatibilidad entre una ley expedida por el Congreso, 
+un decreto del Ejecutivo o una resolución administrativa frente a los mandatos 
+constitucionales, las autoridades tienen la obligación ineludible de aplicar las disposiciones 
+constitucionales media nte la figura de la excepción de inconstitucionalidad.2 
+El Estado también reconoce y protege la diversidad étnica y cultural de la nación. De acuerdo 
+con el Artículo 10, si bien el castellano es el idioma oficial de Colombia, las lenguas y dialectos 
+de los grupos étnicos ostentan la categoría de idiomas oficial es dentro de sus respectivos 
+territorios. Esto impone una obligación directa al Estado: la educación y la enseñanza impartida 
+en comunidades con tradiciones lingüísticas propias no puede ser monolingüe, sino que debe 
+ser estructurada de manera obligatoriam ente bilingüe para preservar el patrimonio cultural 
+inmaterial.3 
+1.2. Derechos Fundamentales, Debido Proceso y Límites al Poder 
+Punitivo  
+El ordenamiento jurídico colombiano impone límites severos al poder punitivo y coercitivo del 
+Estado para proteger la libertad y la dignidad humana. En el marco del Título II de la 
+Constitución, el Estado tiene expresamente prohibido establecer la prisión,  el arresto o 
+cualquier tipo de detención motivada por el incumplimiento de deudas de carácter civil o 
+comercial.2 Asimismo, el legislador no puede crear, ni los jueces imponer, penas o medidas de 
+seguridad que sean imprescriptibles, garantizando que ninguna condena tenga un carácter 
+vitalicio absoluto sin posibilidad de revisión temporal.2 
+El Artículo 29 extiende la garantía del debido proceso a toda clase de actuaciones, no solo 
+judiciales, sino también administrativas. Esto significa que las entidades públicas, al imponer 
+multas, revocar licencias o sancionar disciplinariamente a un funcio nario, deben respetar el 
+derecho a la defensa, la presunción de inocencia y la contradicción probatoria. En el ámbito 
+penal, el Estado no puede privar de la libertad a un individuo de forma arbitraria o indefinida en 
+la fase preventiva. Cualquier persona q ue sea detenida preventivamente tiene el derecho 
+inalienable de ser puesta a disposición del juez competente dentro de un término máximo e 
+improrrogable de treinta y seis (36) horas siguientes a su aprehensión. Vencido este plazo, si 
+no se ha legalizado la  captura, la persona debe ser puesta en libertad inmediatamente.2 
+1.3. Deberes de la Ciudadanía frente a la Administración Pública  
+La relación entre el Estado y los ciudadanos no se basa únicamente en la exigibilidad de 
+derechos, sino en el cumplimiento de deberes cívicos y responsabilidades. El ordenamiento, 
+complementado por los manuales de servicio a la ciudadanía del Distrito Capi tal y otras 
+entidades, estipula que los ciudadanos tienen la obligación de obrar conforme al principio de 
+solidaridad social, responder con acciones humanitarias ante situaciones que pongan en 
+peligro la vida o la salud de las personas, y respetar a las autoridades.5 
+En el ámbito electoral y democrático, los ciudadanos tienen el deber fundamental de elegir a 
+sus gobernantes de acuerdo con su conciencia, capacitándose con seriedad para asumir los 
+debates sobre el destino del país. La normativa exige a los ciudadanos com prometerse con las 
+soluciones a los problemas políticos y sociales, rechazar cualquier intento de agresión y 
+violencia contra la dignidad humana, y defender las instituciones que soportan la democracia.6 
+Por su parte, la administración pública tiene el deber correlativo de garantizar el acceso a la 
+información bajo la Ley 1712 de 2014, responder oportunamente los derechos de petición 
+regulados por la Ley 1755 de 2015, y emplear un lenguaje claro e incluye nte en todas sus 
+comunicaciones, eliminando barreras arquitectónicas y digitales para la interacción 
+ciudadana.5 
+2. Estructura y Ramas del Poder Público  
+El diseño institucional de Colombia se fundamenta en la separación funcional de poderes, 
+distribuyendo las competencias del Estado en tres ramas principales, las cuales deben 
+colaborar armónicamente para la consecución de los fines estatales.8 
+2.1. La Rama Legislativa y la Rama Judicial  
+La Rama Legislativa está conformada por el Congreso de la República, el cual tiene una 
+estructura bicameral. Está compuesto por el Senado de la República, elegido por 
+circunscripción nacional, y la Cámara de Representantes, elegida mediante circunscripcion es 
+territoriales y especiales. El Congreso tiene la facultad exclusiva de reformar la Constitución, 
+tramitar y expedir las leyes de la república, y ejercer el control político continuo sobre el 
+gobierno y la administración pública.9 
+La Rama Judicial es la encargada de administrar justicia, dirimir los conflictos entre los 
+ciudadanos, y entre estos y el Estado, y decidir sobre las cuestiones jurídicas controvertidas. 
+Su estructura en las altas cortes refleja una especialización por jur isdicciones. El Capítulo IV de 
+la Constitución (Artículos 239 a 241) rige a la Corte Constitucional, cuya función primordial es 
+salvaguardar la supremacía e integridad de la Carta Magna, revisando la constitucionalidad de 
+las leyes, los decretos legislativ os de emergencia y las acciones de tutela.10 Por su parte, el 
+Capítulo II (Artículos 234 y 235) organiza la Corte Suprema de Justicia, erigiéndola como el 
+máximo tribunal de la jurisdicción ordinaria civil, penal y laboral.10 Adicionalmente, el Consejo 
+de Estado actúa como tribunal supremo de la jurisdicción contencioso -administrativa, 
+resolviendo los litigios que involucran a las entidades estatales, mientras que el Consejo 
+Superior de la Judicatura administra los recursos de  la rama y ejerce la función disciplinaria 
+sobre jueces y abogados.11 
+2.2. La Rama Ejecutiva: Ministerios y Entidades Públicas  
+La Rama Ejecutiva es la responsable de gestionar las políticas públicas, ejecutar el presupuesto 
+y administrar el aparato estatal de manera permanente. Se organiza en tres niveles 
+territoriales: el orden nacional, el orden departamental (encabezado por los  gobernadores) y el 
+orden municipal (encabezado por los alcaldes).9 
+En el orden nacional, el Gobierno está conformado por el Presidente de la República, los 
+Ministros del Despacho y los Directores de Departamentos Administrativos. Para el año 2026, 
+el gabinete ministerial abarca sectores estratégicos e históricos. Por ejem plo, el Ministerio de 
+Hacienda y Crédito Público, cuyas raíces se remontan a 1863, coordina la política 
+macroeconómica y fiscal.12 Otros ministerios fundamentales incluyen el Ministerio del Interior, 
+Relaciones Exteriores, Justicia, Salud, Minas y Energía, Comercio, Industria y Turismo, 
+Tecnologías de la Información y las Comunicaciones (TIC), Educación, Cultura, Agricultura, 
+Ambient e y Transporte.12 Cada ministerio tiene funciones delimitadas; por ejemplo, el 
+Ministerio TIC lidera en 2026 la "Estrategia Nacional Digital de Colombia", focalizándose en la 
+digitalización de trámites, la masificación de servicios digitales ciudadanos y la transformación 
+digital de la justicia, implementando normativas de gobernanza de datos a nivel nacional.13 
+Rama del Poder 
+Público  Entidades 
+Principales  Función Primordial  Nivel Territorial  
+Rama Legislativa  Senado de la 
+República, Cámara 
+de Representantes  Expedición de 
+leyes, reforma 
+constitucional, 
+control político  Nacional  
+Rama Ejecutiva  Presidencia, 
+Ministerios, 
+Departamentos 
+Administrativos, 
+Gobernaciones, 
+Alcaldías  Administración del 
+Estado, ejecución 
+presupuestal, 
+diseño de políticas 
+públicas  Nacional, 
+Departamental, 
+Municipal  
+Rama Judicial  Corte 
+Constitucional, Administración de 
+justicia, control de Nacional (con 
+juzgados y 
+Corte Suprema, 
+Consejo de Estado  constitucionalidad y 
+legalidad  tribunales locales)  
+2.3. Limitaciones, Prohibiciones e Incompatibilidades en el Ejecutivo  
+Para garantizar la imparcialidad, la transparencia y evitar la concentración de poder o la 
+interferencia de intereses privados, el ordenamiento jurídico impone severas restricciones a 
+quienes ocupan altos cargos en la Rama Ejecutiva, particularmente a los ministros y directores 
+de entidades.  
+Los ministros de despacho se encuentran sujetos a un régimen de incompatibilidades que les 
+prohíbe ejercer simultáneamente funciones en otras ramas del poder. Un ciudadano no puede 
+ser ministro y, al mismo tiempo, fungir como senador o representante a la C ámara. Si un 
+congresista es designado como ministro, debe presentar su dimisión absoluta al escaño 
+legislativo antes de tomar posesión del cargo ejecutivo.15 
+Asimismo, existen prohibiciones estrictas basadas en el nepotismo y los conflictos de interés 
+pecuniarios. Tienen expresamente prohibido ser nombrados como ministros del Estado los 
+parientes del Presidente de la República, del Vicepresidente, o los parient es de cualquier otro 
+ministro en ejercicio que se encuentren dentro del cuarto grado de consanguinidad y el 
+segundo de afinidad.15 Adicionalmente, el Estado no puede nombrar en estos altos cargos a 
+personas que ostenten la calidad de contratistas de obras financiadas con fondos estatales o 
+municipales, ni a sus fiadores, especialmente si mantienen reclamaciones o litigios pendientes 
+contra el Estado por la ejecución de dichos negocios. Tampoco pueden asumir ministerios o 
+secretarías de Estado quienes hayan sido condenados en juicios de responsabilidad fiscal, 
+quienes hayan recaudado caudales públicos sin haber obtenido el finiquito de  solvencia, ni los 
+deudores morosos comprobados de la Hacienda Pública.15 
+En su relación con el Congreso, los ministros no poseen un fuero que los exima del escrutinio 
+público. Por el contrario, la Constitución consagra la obligatoriedad de la rendición de cuentas. 
+Las cámaras legislativas y sus comisiones permanentes tienen la facultad constitucional de 
+requerir la asistencia obligatoria de los ministros, viceministros, directores de departamentos 
+administrativos, el Gerente del Banco de la República y los presidentes de entidades 
+descentralizadas. Si son citados a debates de co ntrol político, estos funcionarios no pueden 
+negarse a asistir, y deben responder a los cuestionarios formulados por los congresistas sobre 
+el desarrollo de sus carteras.16 
+3. Sistema Político y Electoral: Partidos, Oposición y 
+Participación  
+El sistema político colombiano opera mediante un ecosistema multipartidista regulado para 
+fomentar la democracia interna, la equidad de género, y el control de la financiación. La 
+arquitectura electoral descansa sobre dos pilares: la Registraduría Nacional  del Estado Civil 
+(RNEC), encargada de la logística electoral, el diseño de calendarios y la administración del 
+Censo Nacional Electoral; y el Consejo Nacional Electoral (CNE), un tribunal administrativo 
+especializado en el control de las organizaciones po líticas, la vigilancia de campañas y el 
+reconocimiento de personerías jurídicas.11 A estos se suman instancias de coordinación 
+operativa como la Unidad de Recepción Inmediata para la Transparencia Electoral (URIEL), que 
+canaliza las denuncias ciudadanas por delitos electorales.11 
+3.1. Requisitos para Partidos Políticos y Estatuto de la Oposición  
+Para que una agrupación política exista legalmente y pueda acceder a financiación estatal y 
+espacios en medios de comunicación, el CNE debe reconocerle personería jurídica. El requisito 
+fundamental que la ley exige para otorgar y mantener este estatus es q ue el partido, 
+movimiento político o grupo significativo de ciudadanos obtenga una votación no inferior al 
+tres por ciento (3%) del total de los votos válidos emitidos a nivel nacional en las elecciones 
+periódicas para el Senado de la República o la Cámara  de Representantes.11 Si un partido 
+fracasa en alcanzar este umbral en dichos comicios legislativos, el CNE tiene la obligación de 
+revocar su personería jurídica, lo que implica su desaparición legal como actor político formal. 
+La única excepción permitida a esta regla del umb ral aplica para el régimen de minorías étnicas 
+y políticas; a estas agrupaciones les basta con obtener al menos una curul de representación 
+en el Congreso para conservar su personería jurídica, reconociendo la necesidad de proteger 
+la voz de sectores minor itarios.11 
+Tras las elecciones presidenciales y la conformación del gobierno, el sistema político exige 
+claridad programática e institucional. Bajo el mandato del Estatuto de la Oposición, todas las 
+organizaciones políticas con representación en corporaciones pública s tienen el deber 
+ineludible de formular una declaración política expresa dentro del mes siguiente al inicio del 
+periodo de gobierno. Deben declararse oficialmente como integrantes de la coalición de 
+Gobierno, como partidos Independientes, o como partidos de Oposición. El derecho a la 
+oposición es un derecho fundamental autónomo que garantiza a los contradictores el espacio 
+para proponer alternativas, disentir, criticar y ejercer control político sin sufrir persecución 
+institucional. Para garantizar la esta bilidad legislativa, esta declaración de postura política solo 
+puede ser modificada por el partido una sola vez durante el respectivo cuatrienio 
+gubernamental.11 
+3.2. Prohibiciones de Doble Militancia y Responsabilidad Partidista  
+La Constitución Política de Colombia, a través de la modificación de su Artículo 107, instauró 
+reglas severas para disciplinar el comportamiento de los políticos y erradicar el transfuguismo. 
+El marco normativo prohíbe tajantemente la doble militancia: en ningún caso se permite a un 
+ciudadano pertenecer simultáneamente a más de un partido o movimiento político con 
+personería jurídica.18 
+Esta prohibición se extiende a la mecánica de las consultas populares o interpartidistas para la 
+escogencia de candidatos. Quien participe como precandidato o votante registrado en la 
+consulta interna de un partido político específico, tiene prohibido insc ribirse como candidato 
+por otra colectividad diferente en el mismo proceso electoral.18 El resultado de estas consultas 
+populares es de carácter estrictamente obligatorio, lo que significa que el partido no puede 
+desconocer la voluntad expresada en las urnas por sus afiliados para imponer candidatos a 
+dedo.18 
+Cuando un ciudadano es electo para un cargo de corporación pública (Senado, Cámara, 
+Asamblea o Concejo) bajo el aval de un partido, reconoce que las curules pertenecen 
+jurídicamente a las organizaciones políticas, no a los individuos. Por consiguiente, el 
+funcionario electo no puede renunciar a su militancia o filiación política mientras ostente la 
+credencial del partido. Si un servidor público desea abandonar la colectividad que lo avaló sin 
+incurrir en sanciones por doble militancia, debe renunciar formal mente a la corporación 
+pública o cargo uninominal antes de tramitar su renuncia a la militancia partidista.19 
+Adicionalmente, los partidos políticos enfrentan un régimen de responsabilidad objetiva. 
+Tienen prohibido avalar a personas con antecedentes por delitos contra la administración 
+pública, nexos con grupos armados ilegales o narcotráfico. Si un partido otorg a el aval a un 
+candidato para un cargo de elección popular, y este es condenado durante el ejercicio de su 
+mandato mediante sentencia ejecutoriada proferida en Colombia o en el exterior, el partido 
+deberá responder patrimonialmente y con sanciones política s que pueden incluir la pérdida del 
+derecho a presentar candidatos en las siguientes elecciones para esa misma circunscripción.18 
+3.3. Régimen de Participación Ciudadana y Cabildos Abiertos  
+La Constitución y las Leyes Estatutarias 134 de 1994 y 1757 de 2015 dotan a la ciudadanía de 
+herramientas directas para intervenir en la gestión pública, incluyendo el referendo, el 
+plebiscito, la consulta popular, la iniciativa legislativa y normativa, la  revocatoria del mandato y 
+el cabildo abierto.20 
+El funcionamiento del Cabildo Abierto  ejemplifica detalladamente el equilibrio entre la 
+voluntad popular y el orden procedimental. Este mecanismo consiste en una reunión pública 
+de los concejos municipales, distritales, juntas administradoras locales (JAL) o asambleas 
+departamentales, en la c ual los habitantes pueden participar directamente para discutir 
+asuntos de interés para la comunidad.21 
+● Lo que se debe hacer para convocarlo:  Para que la corporación pública esté obligada a 
+realizar un cabildo abierto, los ciudadanos promotores deben presentar una solicitud 
+formal ante la Registraduría Nacional del Estado Civil. Esta solicitud debe estar respaldada 
+por la recolección de firmas o apoyos de un número de ciudadanos no inferior al cinco 
+por mil (0.5%) de los inscritos en el censo electoral de la respectiva circun scripción 
+(departamento, municipio o localidad).24 
+● Procedimiento y Tiempos:  Una vez radicadas las firmas, la Registraduría dispone de un 
+plazo máximo de 45 días para realizar la verificación grafológica y técnica. Si se certifica el 
+cumplimiento del umbral, se presenta el certificado ante la secretaría de la corporación 
+pública. La ley exige que el cabildo abierto se celebre a más tardar un mes después de la 
+radicación de la petición validada.24 
+● Asistencia Obligatoria:  Es imperativo que asistan los ediles, concejales o diputados 
+correspondientes. Además, el alcalde o gobernador tiene la obligación indelegable de 
+asistir al cabildo abierto, y se puede citar a funcionarios específicos de la administración 
+territorial para  que respondan públicamente sobre los temas del cuestionario, el cual 
+debe versar exclusivamente sobre asuntos de su competencia.24 
+● Lo que está prohibido:  De acuerdo con la Ley 1757, el cabildo abierto es un mecanismo 
+estrictamente de origen popular. Por tanto, las corporaciones públicas (asambleas, 
+concejos, JAL) tienen prohibido auto -convocar un cabildo abierto por iniciativa propia.27 
+Aún más importante, la ley prohíbe taxativamente que durante el desarrollo del cabildo 
+abierto se presenten iniciativas de ordenanza, acuerdos o resoluciones locales. Esto 
+significa que el mecanismo está diseñado como un espacio de deliberación, control s ocial 
+y debate de problemas comunitarios, pero no puede ser utilizado como una vía directa 
+para la aprobación intempestiva de normas jurídicas, preservando así el trámite legislativo 
+ordinario.24 
+ 
+Mecanismo de 
+Participación  Base Normativa  Regla Principal de 
+Origen  Restricción Clave  
+Cabildo Abierto  Ley 134/1994, Ley 
+1757/2015  Requiere firmas 
+equivalentes al 5 
+por 1000 del censo 
+electoral local 25 Prohibida la 
+presentación de 
+iniciativas 
+normativas u 
+ordenanzas 
+durante su 
+desarrollo 26 
+Plebiscito / 
+Referendo  Ley 134/1994, Ley 
+1757/2015  Iniciativa 
+gubernamental o 
+ciudadana según el Sujetos a umbrales 
+de participación y 
+revisión 
+tipo 20 constitucional 
+previa de la 
+pregunta 20 
+3.4. Ley de Garantías Electorales y Restricciones a la Función Pública 
+en 2026  
+Con ocasión de las elecciones al Congreso de la República y la Presidencia en 2026, entra en 
+pleno vigor la Ley 996 de 2005, conocida como la Ley de Garantías Electorales. Esta legislación 
+actúa como un "freno de mano" administrativo diseñado para blindar la transparencia del 
+debate democrático, impidiendo que los funcionarios en ejercicio utilicen los recursos del 
+presupuesto, la burocracia estatal o la contratación pública para favorecer campañas políticas, 
+inclinar la balanza a favor de ciertos candidato s, o manipular la voluntad del electorado 
+mediante clientelismo.28 
+Restricciones a la Contratación Estatal y Convenios:  La Ley de Garantías impone parálisis 
+temporales en modalidades específicas de contratación, gestionadas y vigiladas de cerca por 
+la agencia Colombia Compra Eficiente mediante instrumentos como la Circular Externa 006 de 
+2025.31 
+1. Convenios Interadministrativos:  A partir del 8 de noviembre de 2025 (cuatro meses 
+antes de las elecciones legislativas), queda absolutamente prohibido para las entidades 
+territoriales (gobernaciones, alcaldías) y sus entes descentralizados celebrar convenios 
+interadministrativos que inv olucren la ejecución de recursos públicos.28 
+2. Contratación Directa:  La restricción se endurece a partir del 31 de enero de 2026 
+(cuatro meses antes de la primera vuelta presidencial). Desde esta fecha, la prohibición 
+de celebrar contratos bajo la modalidad de contratación directa se extiende a todas las 
+entidades estatale s en el nivel nacional y territorial. Ambas restricciones se mantienen 
+vigentes e inamovibles hasta el 31 de mayo de 2026, o hasta el 21 de junio si el proceso 
+presidencial requiere una segunda vuelta definitiva.31 Durante este periodo, las entidades 
+solo pueden satisfacer sus necesidades de adquisición a través de procesos competitivos 
+de convocatoria pública, como licitaciones o selecciones abreviadas.  
+Restricciones a la Nómina y Comportamiento de Servidores Públicos:  La ley prohíbe 
+modificar la nómina estatal durante el periodo de campaña. Las entidades públicas no pueden 
+crear nuevos cargos, proveer vacantes que no correspondan a causas insalvables (como 
+renuncia voluntaria, muerte o destitución por falta disciplinar ia), ni realizar despidos 
+injustificados, con el fin de evitar que los puestos de trabajo se utilicen como moneda de 
+cambio por favores políticos.29 
+Adicionalmente, el Código General Disciplinario (Ley 1952 de 2019) clasifica como faltas 
+gravísimas las intervenciones indebidas en política. A los empleados del Estado les está 
+estrictamente prohibido:  
+● Acosar, presionar o determinar, en cualquier forma, a sus subalternos o contratistas para 
+que asistan a mítines, donen dinero o respalden alguna causa o campaña política.32 
+● Utilizar bienes públicos, papelería, vehículos o infraestructura oficial para transportar 
+material proselitista o movilizar votantes.30 
+● Difundir propaganda electoral a favor o en contra de cualquier partido o agrupación a 
+través de publicaciones oficiales, estaciones de televisión, radio o imprenta pública.32 
+● A los alcaldes y gobernadores se les prohíbe inaugurar obras públicas o efectuar eventos 
+de lanzamiento de programas sociales comunitarios si en dichos eventos participan 
+candidatos políticos o sus voceros, a fin de evitar que la gestión institucional se c onfunda 
+con propaganda de campaña.30 
+Los miembros de corporaciones públicas (concejales, diputados, senadores) que no 
+administran presupuesto directo tienen reglas ligeramente más flexibles frente a la asistencia a 
+eventos institucionales locales, pero la prohibición de usar dichas plataforma s como "tarimas 
+electorales" para pedir votos se mantiene invariable para todos.30 
+4. Contratación Pública: Normatividad, Modalidades y 
+Régimen de Inhabilidades  
+El aparato estatal colombiano ejecuta su presupuesto de inversión y funcionamiento a través 
+del Sistema de Compra Pública, estructurado fundamentalmente en el Estatuto General de 
+Contratación de la Administración Pública (Ley 80 de 1993), sus modificacione s sustanciales en 
+la Ley 1150 de 2007, y decretos reglamentarios consolidados.33 El sistema persigue la selección 
+objetiva de contratistas bajo principios de transparencia, economía, responsabilidad y 
+publicidad de las actuaciones.35 
+4.1. Registro de Proponentes y Modalidades de Selección  
+Para poder negociar con el Estado, existe un requisito de entrada ineludible. Todas las 
+personas naturales o jurídicas, nacionales o extranjeras con sucursal o domicilio en Colombia, 
+que aspiren a celebrar contratos con entidades estatales, están obligadas  a inscribirse, 
+calificarse y clasificarse en el Registro Único de Proponentes (RUP). Este registro es 
+administrado delegadamente por las Cámaras de Comercio con jurisdicción en el domicilio 
+principal del proponente, y actúa como el documento idóneo que ce rtifica la capacidad 
+jurídica, financiera, de organización y la experiencia acumulada del interesado.33 
+La Ley 1150 de 2007 estructuró las modalidades de selección para dinamizar las compras 
+estatales, estipulando que la escogencia del contratista debe obedecer a las características 
+del objeto a contratar:  
+1. Licitación Pública:  Es la modalidad general por excelencia, utilizada para la contratación 
+de obras públicas complejas o adquisiciones de gran cuantía, garantizando la máxima 
+pluralidad de oferentes en un proceso de etapas preclusivas.  
+2. Selección Abreviada:  Diseñada para la adquisición de bienes y servicios de 
+características técnicas uniformes y de común utilización en el mercado, permitiendo 
+subastas inversas y procesos más expeditos.  
+3. Concurso de Méritos:  Destinada exclusivamente a la selección de consultores o 
+interventores. En esta modalidad, la ley prohíbe utilizar el precio como factor 
+determinante de evaluación; las entidades deben calificar únicamente factores técnicos, 
+valorando la experiencia espec ífica del oferente, la metodología propuesta y el nivel 
+académico y experiencia del equipo de trabajo.35 
+4. Mínima Cuantía:  Aplicable a toda contratación cuyo valor no exceda el diez por ciento 
+(10%) de la menor cuantía de la entidad, independientemente de su objeto. Para 
+garantizar la publicidad en compras pequeñas, la ley impone como principio general la 
+convocatoria pública , permitiendo utilizar mecanismos de sorteo en audiencia pública 
+para definir a los participantes cuando las manifestaciones de interés superan los diez 
+proponentes.35 
+5. Contratación Directa:  Modalidad de uso restringido y excepcional. Solo procede en 
+causales taxativas expresadas en la ley, como la urgencia manifiesta, los contratos 
+interadministrativos, el desarrollo de actividades científicas, y la prestación de servicios 
+profesionales y de  apoyo a la gestión, donde la selección se basa en la idoneidad personal 
+del contratista.33 
+ 
+Modalidad de Selección  Objeto Principal  Característica Evaluativa  
+Licitación Pública  Obras mayores, compras 
+complejas  Pluralidad, ponderación 
+calidad/precio  
+Concurso de Méritos  Consultoría, estudios, 
+diseños  Solo factores técnicos y 
+experiencia 35 
+Mínima Cuantía  Contratos < 10% de la 
+menor cuantía  Convocatoria pública 
+abreviada, sorteos 
+permitidos 35 
+Contratación Directa  Urgencia, servicios Idoneidad intuitu personae, 
+sin concurso público 33 
+profesionales  
+Una vez que la entidad estatal agota el proceso de selección y emite el acto administrativo de 
+adjudicación a favor de un oferente, este acto se vuelve irrevocable y obliga jurídicamente 
+tanto a la entidad como al adjudicatario a firmar el contrato. No obs tante, la administración 
+conserva una facultad de salvaguarda: si en el lapso comprendido entre la adjudicación y la 
+suscripción material del contrato se descubre que sobreviene una inhabilidad legal sobre el 
+adjudicatario, o se demuestra mediante pruebas que el acto fue obtenido por medios 
+fraudulentos o ilegales, la entidad tiene la potestad excepcional de revocar el acto de 
+adjudicación sin incurrir en responsabilidad patrimonial.33 
+Adicionalmente, frente a incumplimientos durante la ejecución contractual, las entidades 
+estatales están facultadas para declarar el siniestro, imponer multas y hacer efectiva la 
+cláusula penal pecuniaria de manera directa, mediante actos administrativos m otivados. 
+Pueden satisfacer estas sumas compensándolas de los saldos que le adeuden al contratista, 
+ejecutando las pólizas de garantía, o acudiendo a los mecanismos de jurisdicción coactiva del 
+Estado.35 
+4.2. Régimen Taxativo de Inhabilidades, Incompatibilidades y 
+Conflictos de Interés  
+El sistema de compras públicas impone barreras severas para proteger la moralidad 
+administrativa. Este régimen de inhabilidades e incompatibilidades es un conjunto de 
+restricciones que afectan directamente la capacidad legal de las personas naturales o jur ídicas 
+para establecer relaciones contractuales con el Estado.  
+Desde la hermenéutica jurídica, la jurisprudencia unificada de la Corte Constitucional 
+(Sentencias C -085 y C -731) y del Consejo de Estado es categórica al afirmar que estas normas 
+deben interpretarse bajo el principio del Estado de Derecho ( pro libertate ), según el cual los 
+particulares pueden hacer todo aquello que no les esté expresamente prohibido.37 Por ende, 
+las causales de inhabilidad son de interpretación restrictiva y taxativa. Las entidades públicas 
+tienen terminantemente prohibido extender la aplicación de una inhabilidad por la vía de la 
+analogía a supuestos de hecho, parentescos o situaciones  corporativas que no estén descritas 
+explícitamente y con precisión en el texto de la ley.37 
+Sin embargo, frente a los supuestos que la ley sí contempla, la aplicación es inexorable. Todo 
+ciudadano que desee firmar un contrato estatal debe suscribir una declaración juramentada 
+certificando la inexistencia de causales de inhabilidad, incompatibilid ad, sanciones vigentes o 
+conflictos de interés que afecten la transparencia de la contratación.36 
+Causales Principales de Inhabilidad (Lo que está prohibido):  
+1. Condenas Penales y Disciplinarias:  Están inhabilitados de por vida para contratar con el 
+Estado quienes hayan sido condenados por sentencias judiciales ejecutoriadas por la 
+comisión de delitos contra el patrimonio del Estado. Tampoco pueden celebrar contratos 
+quienes reporten sanciones vig entes de carácter fiscal o disciplinario emitidas por la 
+Contraloría o la Procuraduría que conlleven destitución e inhabilidad general.36 
+2. Parentesco con Directivos:  Se prohíbe a la entidad estatal suscribir contratos con el 
+cónyuge, compañero o compañera permanente, o con los parientes hasta el segundo 
+grado de consanguinidad (hijos, padres, hermanos, abuelos y nietos), segundo de afinidad 
+(suegros, yernos, cuñados) y primero civil (hijos adoptivos, padres adoptantes) de los 
+servidores públicos que ocupen cargos en los niveles directivo, asesor o ejecutivo dentro 
+de esa misma entidad contratante.39 
+3. Prohibición Cruzada de Interventoría (Ley 1474 de 2011):  Para evitar la complacencia 
+en la supervisión, el Artículo 5 de la Ley 1474 prohíbe expresamente que una persona o 
+empresa celebre un contrato de interventoría si previamente ha suscrito con la misma 
+entidad contratos de obra pública, concesión, suministr o de medicamentos o alimentos 
+que deban ser objeto de dicha supervisión. Esta incompatibilidad se hace extensiva a su 
+cónyuge, compañero permanente, parientes dentro de los grados de ley y a los socios 
+con los que comparta sociedades matrices o subordinada s.41 
+4. Puertas Giratorias (Enfriamiento de Directivos):  En un esfuerzo por acercar la 
+contratación estatal al derecho disciplinario sancionatorio, el Estatuto Anticorrupción 
+impone una inhabilidad de dos (2) años para ex -servidores públicos. Una persona que 
+ocupó un cargo del nivel directivo en una entidad est atal tiene prohibido regresar como 
+contratista, o ejercer cargos de gestión o representación para empresas privadas ante 
+esa misma entidad, durante los 24 meses siguientes a su desvinculación oficial del cargo 
+público.42 
+5. El Sistema Tributario en 2026: Tarifas, Obligaciones 
+y Decretos de Emergencia  
+La estructura fiscal y tributaria de Colombia en 2026 está inmersa en un periodo de alta 
+volatilidad normativa. El recaudo de impuestos administrado por la Dirección de Impuestos y 
+Aduanas Nacionales (DIAN) es el motor que financia el presupuesto nacional,  pero la 
+planeación fiscal gubernamental enfrentó un obstáculo legislativo mayor a finales de 2025: el 
+Congreso de la República rechazó debatir y hundió el proyecto de Ley de Financiamiento 
+radicado por el Ejecutivo, el cual pretendía asegurar recursos por  26,3 billones de pesos para 
+sostener los programas sociales del Plan Nacional de Desarrollo.44 
+Ante la inminencia de la desfinanciación y la caída de las rentas públicas, el Gobierno Nacional 
+invocó las facultades del estado de excepción, promulgando el Decreto Legislativo 1474 del 29 
+de diciembre de 2025, por medio del cual declaró el Estado de Eme rgencia Económica, Social 
+y Ecológica para emitir medidas tributarias extraordinarias con fuerza de ley.46 
+5.1. Estructura de Impuestos y Tarifas (Decreto 1474 de 2025)  
+El decreto de emergencia reconfiguró las tarifas, bases gravables y fechas de cumplimiento 
+estipuladas en el Calendario Tributario de la DIAN para el año 2026, afectando tanto a 
+personas naturales como a personas jurídicas, determinando los umbrales de cau sación 
+mediante la Unidad de Valor Tributario (UVT).46 
+Personas Jurídicas y Sectores Específicos:  
+● Impuesto sobre la Renta:  La tarifa general del impuesto sobre la renta y 
+complementarios para las sociedades y corporaciones (personas jurídicas) se mantiene 
+fijada en un 35% sobre su renta líquida gravable.50 
+● Sobretasa al Sector Financiero:  Sin embargo, la carga tributaria no es equitativa para 
+todos los sectores económicos. Las entidades pertenecientes al sector financiero 
+(bancos, corporaciones de crédito) sufren una severa imposición adicional, obligándolas a 
+liquidar una sobretasa de 15 puntos porcentuales, lo que sitúa su tarifa total efectiva de 
+impuesto de renta en un 50% para el año gravable 2026. La DIAN exige que esta 
+sobretasa sea cancelada en su totalidad mediante el pago de un anticipo liquidado en dos 
+cuotas anuales iguales.46 
+● Castigo al Sector Extractivo:  El sector de hidrocarburos y minería de carbón enfrenta 
+reglas endurecidas. Las empresas extractivas con una renta líquida ordinaria superior a 
+50.000 UVT deben pagar un impuesto especial del 1% liquidado sobre la primera venta de 
+recursos o su exportació n. Adicionalmente, el decreto reitera la prohibición absoluta de 
+deducir el pago de regalías de la base gravable del impuesto de renta, una medida 
+altamente polémica dado que una norma similar había sido declarada inconstitucional por 
+la Corte Constitucion al (Sentencia C -489 de 2023) un par de años atrás.46 
+Personas Naturales:  
+● Impuesto al Patrimonio:  El gravamen sobre la riqueza de los individuos sufrió una 
+drástica reducción en su umbral de entrada. Para el año 2026, el impuesto al patrimonio 
+se causa a partir de las 40.000 UVT (aproximadamente COP $2 millones al valor 
+proyectado de la UVT), capturan do a una porción mucho más amplia de contribuyentes 
+de clase media -alta. A partir de este límite, el decreto establece tarifas marginales y 
+progresivas que inician en un 0,5% y pueden escalar hasta una tasa confiscatoria del 5% 
+anual para grandes capitales  con patrimonios líquidos que superen las 2.000.000 de UVT 
+(más de 104 mil millones de pesos).46 La obligación se liquida en dos cuotas; la primera 
+vence entre el 12 y el 26 de mayo de 2026, y la segunda se paga a más tardar el 14 de 
+septiembre.47 
+● Normalización Tributaria y Retenciones:  Los ciudadanos que hayan omitido activos en 
+el pasado o declarado pasivos inexistentes pueden acogerse a una amnistía de 
+normalización tributaria, liquidando un impuesto especial del 19% sobre los valores 
+ocultos, con plazo máximo de pago fijado para el 31 de julio de 2026.46 En el ámbito laboral 
+ordinario, la retención en la fuente por ingresos salariales protege a la base trabajadora: si 
+el ingreso mensual depurado del trabajador es igual o inferior a 95 UVT, los empleadores 
+tienen prohibido aplicar tarifas de retención, deb iendo retener una tasa del cero por 
+ciento.49 
+IVA, Impuesto al Consumo y Comercio Exterior:  
+● Impuesto sobre las Ventas (IVA):  La tarifa general del IVA permanece en el 19%. Esta 
+tasa aplica para la comercialización nacional de la mayoría de los bienes y servicios.46 Los 
+prestadores de servicios desde el exterior (plataformas digitales) deben cumplir 
+calendarios bimestrales estrictos para el pago del IVA recaudado (por ejemplo, el 
+bimestre noviembre -diciembre de 2025 se paga el 16 de enero de 2026).52 
+Adicionalmente, los juegos de azar online quedan plenamente gravados con el 19% de 
+IVA.46 
+● Impuesto Nacional al Consumo:  Los bienes catalogados como suntuarios o 
+desincentivados experimentan incrementos arancelarios y de consumo. El impuesto al 
+consumo para la compra de vehículos automóviles de alta gama, yates, botes, aviones y 
+motocicletas de cilindraje superior a 200 c.c . se incrementa al 19%. Asimismo, esta misma 
+tarifa punitiva aplica ahora para los cigarrillos electrónicos, vapeadores y sistemas 
+similares de suministro de nicotina.46 
+● Restricción a Envíos Postales:  Se reduce significativamente la exención del IVA para 
+compras internacionales por internet bajo la modalidad de tráfico postal y envíos 
+urgentes. La franquicia libre de impuestos, que antes protegía importaciones de hasta US
+50 
+quedan exentas de pagar el IVA en la aduana.46 
+5.2. Conciliaciones, Sanciones y Límites Legales de la DIAN  
+El Decreto de Emergencia 1474 introdujo paralelamente beneficios transitorios para el 
+saneamiento de cartera y la descongestión de procesos contencioso -administrativos. Estos 
+beneficios se traducen en garantías legales explícitas sobre lo que la administra ción tributaria 
+(DIAN) puede y no puede hacer frente a los contribuyentes morosos.53 
+Lo que la DIAN no puede hacer en 2026 bajo el decreto de emergencia:  
+● Cobro de sanciones plenas:  Si un contribuyente, responsable solidario o garante tenía 
+deudas en mora consolidadas con la DIAN al 31 de diciembre de 2025, y procede a pagar 
+la totalidad del capital adeudado a más tardar el 3 de marzo de 2026, la DIAN no puede 
+exigirle el pago del 10 0% de las sanciones asociadas ni aplicarle la tasa de usura o la tasa 
+
+moratoria tributaria ordinaria. Por mandato legal transitorio, la administración está 
+obligada a reducir la sanción al quince por ciento (15%) del valor original y a liquidar los 
+intereses bajo una tasa especial preferencial del cuatro coma cinco por cient o (4.5%) 
+anual.46 
+● Penalización de obligaciones formales subsanadas:  El artículo 22 del Decreto estipula 
+que la DIAN no puede ignorar el derecho a la subsanación. Si un sujeto pasivo había 
+incumplido la presentación de declaraciones u otras obligaciones puramente formales al 
+30 de noviembre de 2025, pero logra subsanar la omisión enviando la información 
+requerida a más tardar el 30 de abril de 2026, la DIAN debe automáticamente reducir la 
+sanción aplicable al 15%. La única excepción donde la DIAN puede sostener la sanción 
+plena es si, para esa fecha, ya le había notificado formalmente al contribuyente la 
+resolución definitiva que resuelve un recurso de reconsideración en su contra.46 
+● Prohibición de cobro concurrente sobre impuestos saneados:  Según el Concepto de 
+la Subdirección de Normativa de la DIAN emitido en enero de 2026 (respuesta a consulta 
+sobre el Art. 21), si un contribuyente corrige sus declaraciones bajo los beneficios 
+temporales de la norma para sanear pasivos, y efectúa el pago total del mayor valor 
+liquidado, la DIAN no puede iniciar procesos de liquidación ni exigir el pago de intereses 
+moratorios retroactivos sobre esos mayores valores generados, independientemente de 
+que se deriven de la corrección de la declaración inicial.53 
+ 
+Beneficio Tributario 
+Transitorio  Requisito Principal  Consecuencia Legal 
+Vinculante  
+Reducción de Sanciones e 
+Intereses  Pago total del capital 
+adeudado (al 31 dic 2025) 
+antes del 3 de marzo de 
+2026 46 DIAN reduce sanción al 15% 
+y aplica tasa de interés 
+moratorio de 4.5% 46 
+Subsanación de 
+Obligaciones Formales  Presentar información 
+omitida antes del 30 de 
+abril de 2026 46 DIAN debe reducir la 
+sanción al 15% (si no hay 
+resolución ejecutoriada) 46 
+Conciliación de Litigios  Demanda activa 
+presentada antes del 31 de 
+dic de 2025; solicitud a 
+DIAN antes del 31 de mayo 
+de 2026 46 Reducción del 70% al 85% 
+de sanciones e intereses, 
+según la etapa procesal 46 
+A pesar de la vigencia de estas directrices recaudatorias y amnistías, firmas consultoras y 
+gremios empresariales advierten sobre una grave contingencia de seguridad jurídica. Dado 
+que el Gobierno expidió un paquete impositivo estructural y permanente recurriendo a la 
+excepcionalidad de la emergencia económica, vulnerando en apariencia las compet encias 
+exclusivas del legislador, existe una alta probabilidad derivada del análisis del principio de 
+separación de poderes de que la Corte Constitucional proceda a declarar la 
+inconstitucionalidad del Decreto 1474. En tal escenario, los tributos y sobreta sas liquidados 
+bajo este amparo podrían perder validez con efectos retroactivos.46 
+6. Emergencias Nacionales Adicionales (Desastres 
+Naturales)  
+La potestad presidencial para declarar estados de excepción (Artículo 215 de la Constitución) 
+no se limitó al ámbito fiscal. Durante la primera quincena de febrero de 2026, eventos 
+hidrometeorológicos atípicos desbordaron las capacidades ordinarias de gest ión de riesgos 
+territoriales, originando inundaciones que anegaron 87.054 hectáreas y destruyeron más de 
+110.000 hectáreas de cultivos y sistemas ganaderos de doble propósito.55 
+Frente a la afectación masiva de la seguridad alimentaria que sobrepasó el alcance 
+presupuestal de programas ministeriales como "Hambre Cero", el Gobierno promulgó el 
+Decreto 0150 del 11 de febrero de 2026.56 Este decreto declaró formalmente el Estado de 
+Emergencia Económica, Social y Ecológica por un periodo de 30 días en ocho departamentos 
+específicos afectados por la catástrofe.57 La Constitución y la Ley Estatutaria de Estados de 
+Excepción permiten al Ejecutivo, bajo esta declaratoria, expedir decretos con fuerza de ley 
+destinados exclusivamente a conjurar las causas de la crisis e impedir la extensión de sus 
+efectos, orientando r ecursos inmediatos para la rehabilitación agrícola y el restablecimiento 
+del equilibrio de los sistemas hídricos.55 Sin embargo, la ley le prohíbe taxativamente al 
+Presidente utilizar esta figura para suspender derechos humanos, alterar el funcionamiento 
+normal de las ramas del poder público o modificar leyes que no tengan relación directa y 
+específica con la mitigació n del desastre ecológico.  
+7. Políticas de Seguridad Social: La Transformación del 
+Sistema de Salud  
+El diseño institucional de las políticas sociales atraviesa cambios tectónicos. El Sistema de 
+Seguridad Social en Salud, históricamente fundamentado en el aseguramiento por parte de 
+actores privados denominados Entidades Promotoras de Salud (EPS), encara e n febrero de 
+2026 la culminación de un álgido trámite legislativo en el Senado de la República, buscando 
+instaurar un modelo preventivo, predictivo y centralizado en el manejo financiero estatal.60 
+7.1. Transformación Estructural: De las EPS a las Gestoras  
+El núcleo de la reforma suprime la función principal de las EPS como intermediarias financieras 
+plenas que recibían anualmente del Estado la Unidad de Pago por Capitación (UPC) por cada 
+afiliado. En el nuevo modelo, las EPS tienen la obligación de transfor marse administrativamente 
+en "Gestoras de Salud y Vida".63 
+Bajo la estructura propuesta, lo que las EPS o nuevas Gestoras ya no podrán hacer  es 
+mantener la gestión integral y el resguardo del riesgo financiero del sistema, ni podrán 
+contratar de manera discrecional e independiente la red de prestadores reteniendo los flujos 
+de capital.63 El control de los recursos pasa a la ADRES (Administradora de los Recursos del 
+Sistema General de Seguridad Social en Salud), entidad pública que asume el rol de pagador 
+único. Es la ADRES la que realizará convenios marco territoriales y emitirá el pago o  giro directo 
+a las redes de hospitales y clínicas que prestan el servicio efectivo. Las Gestoras, despojadas 
+del recaudo y administración del fondo, se limitarán a labores de auditoría de cuentas médicas, 
+revisión de convenios de desempeño y articulación logística de los pacientes, aunque diversas 
+propuestas de conciliación en el Congreso buscan permitirles conservar franjas reducidas de 
+operación y contratación directa de redes locales.61 
+A nivel del ciudadano, el diseño operativo establece los Centros de Atención Primaria en Salud 
+(CAPS) como la nueva puerta de entrada obligatoria al sistema. Todo ciudadano deberá ser 
+atendido y evaluado inicialmente en el CAPS adscrito a su comunidad o te rritorio.63 No 
+obstante, las revisiones técnicas de la reforma han estipulado que los CAPS no pueden 
+convertirse en mecanismos de encierro; el sistema debe asegurar que no se imponga una 
+adscripción territorial rígida que limite severamente la libertad de movilidad d e los usuarios, 
+garantizando el flujo hacia hospitales de mediana y alta complejidad cuando la patología lo 
+requiera.63 
+7.2. Derechos Irrenunciables, Prohibiciones a las EPS e 
+Inembargabilidad  
+La transición legislativa no suspende los derechos adquiridos de los pacientes, y el Ministerio 
+de Salud junto con la Superintendencia Nacional de Salud (Supersalud) han emitido directrices 
+draconianas para mitigar las barreras administrativas heredadas de l antiguo modelo comercial.  
+Prohibición de Intermediación Administrativa:  Mediante la Circular Conjunta 019 expedida 
+en mayo de 2025, el Estado erradicó uno de los trámites más lesivos para la atención oportuna 
+del paciente. Las EPS, IPS o Gestoras tienen expresamente prohibido exigir al usuario que 
+realice labores de intermediación administrativa  para obtener la autorización de acceso a 
+servicios y tecnologías en salud que le hayan sido prescritos por un profesional médico.64 Si un 
+médico tratante ordena un examen, procedimiento o suministro de medicamentos, es 
+responsabilidad de los entes del sistema tramitar internamente las autorizaciones, validar 
+auditorías y asignar citas sin someter al paciente a filas o radicaciones bur ocráticas 
+presenciales para validar órdenes médicas. La carga operativa recae exclusivamente sobre la 
+red prestadora y la entidad aseguradora/gestora.64 
+Inembargabilidad de los Recursos de la Salud:  Para proteger el flujo de liquidez hacia 
+hospitales y clínicas, y evitar la paralización en la compra de insumos, la Supersalud expidió el 
+Concepto Unificado Institucional 006 de 19 de enero de 2026. Este concepto impone límites 
+inquebrantables al poder d e la jurisdicción civil y laboral. Reitera la naturaleza pública y 
+parafiscal de los recursos del Sistema General de Seguridad Social en Salud.66 
+En consecuencia, los jueces de la república no pueden decretar embargos ni dictar medidas 
+cautelares  de secuestro sobre las cuentas bancarias maestras que manejen dineros 
+correspondientes a las cotizaciones de los afiliados o giros de la UPC realizados por la ADRES. 
+La inembargabilidad es absoluta, argumentando que dichos recursos tienen destinación 
+espe cífica exclusiva de orden constitucional: salvar vidas y financiar tratamientos. Cualquier 
+medida cautelar que un juzgado intente ejecutar ignorando esta naturaleza comete una 
+violación al bloque de constitucionalidad y amenaza el orden público.66 La única excepción 
+parcial permitida recae sobre los dineros girados a través del Sistema General de 
+Participaciones (SGP) a entes territoriales; en ese caso particular, el embargo solo procede 
+excepcionalmente si la deuda demandada, que originó el proces o judicial, proviene 
+estrictamente de obligaciones laborales o provisión de servicios intrínsecos a las actividades 
+médicas que esos fondos debían cubrir inicialmente.66 
+Adicionalmente, si el sistema institucional falla en garantizar la atención oportuna y amenaza la 
+vida de los ciudadanos, el ordenamiento constitucional consagra la pervivencia de la Acción de 
+Tutela como herramienta expedita e informal. Los ciudadanos man tienen el derecho a 
+interponer tutelas para amparar su derecho fundamental a la salud, pudiendo recurrir de 
+forma gratuita a entidades públicas de apoyo y Ministerio Público, como los consultorios 
+jurídicos universitarios, las personerías municipales y las  sedes regionales de la Defensoría del 
+Pueblo para recibir asistencia técnica en la redacción y radicación de las acciones de amparo 
+ante los jueces.67 
+8. Reforma Pensional: El Sistema de Pilares 
+Complementarios  
+A diferencia de la reforma a la salud que se debate en 2026, la restructuración del sistema de 
+pensiones en Colombia es una realidad legal consumada y operativa. La Ley 2381 de 2024 
+reformó radicalmente la Ley 100 de 1993, eliminando el régimen de competen cia paralela en el 
+cual el fondo público (Colpensiones - Régimen de Prima Media) y los fondos privados (AFP - 
+Régimen de Ahorro Individual) disputaban por los mismos afiliados de todos los estratos de 
+ingresos.68 A partir del 1 de julio de 2025, el Estado colombiano opera un Sistema de 
+Protección Social unificado basado en cuatro pilares complementarios.  
+8.1. Arquitectura de los Pilares y Restricciones de Administración  
+1. Pilar Solidario:  Diseñado como un subsidio no contributivo estatal. Otorga una 
+transferencia económica directa o renta básica a los adultos mayores en condición de 
+pobreza extrema y vulnerabilidad que no lograron acumular aportes suficientes durante 
+su vida laboral, ampli ando la cobertura de protección ante el riesgo de la vejez 
+indigente.68 
+2. Pilar Semicontributivo:  Protege a los trabajadores que realizaron esfuerzos de 
+cotización a la seguridad social, pero que al llegar a la edad de retiro no lograron acumular 
+el volumen de semanas exigido para obtener la pensión de vejez completa (1300 
+semanas). Si el individuo cu enta con al menos 500 semanas cotizadas y demuestra un año 
+continuo de aportes recientes, tiene el derecho garantizado a recibir una pensión parcial 
+o renta vitalicia proporcional a su ahorro, así como protección a beneficiarios en casos 
+contingentes de in validez o fallecimiento prematuro.68 
+3. Pilar Contributivo:  Representa la transformación fundamental del mercado laboral 
+formal. A partir de la vigencia de la ley, todos los trabajadores colombianos, 
+independientemente de sus ingresos totales, tienen la obligación ineludible de cotizar sus 
+ingresos básicos (hasta el tope de Salarios Mínimos fijado por la norma) exclusivamente al 
+régimen público administrado por Colpensiones. Como resultado, las Administradoras de 
+Fondos de Pensiones Privados (AFP) ya no pueden captar ni administrar  los aportes 
+obligatorios iniciales de la fuerza laboral, lo que transfiere a más de 18 millones de afiliados 
+al fondo público por defecto.69 Adicionalmente, se estableció un mecanismo de 
+cotización simplificada sin salud: las mujeres sin vinculación laboral formal, con ingresos 
+inferiores a un salario mínimo, y que estén afiliadas al sistema de salud como beneficiarias 
+o en régimen subsidiado,  pueden aportar directamente al pilar contributivo de pensiones 
+a través de un tercero, sin que se les exija realizar el aporte complementario forzoso al 
+régimen contributivo de salud.71 
+4. Pilar de Ahorro Voluntario (AFP):  Las Administradoras de Fondos de Pensiones privados 
+(AFP) quedan restringidas a operar en la franja superior de ingresos. Los trabajadores que 
+devengan sueldos superiores al límite de cotización forzosa en Colpensiones, canalizan 
+esos ingresos excedentes hacia cuentas de ahorro individual administradas por las AFP, 
+complementando así la futura mesada pensional pública con rendimientos de mercado 
+de capitales.71 
+Para disipar la desconfianza respecto a la masiva transferencia de flujos financieros hacia el 
+ente público (Colpensiones), el legislador introdujo un cerco institucional estricto sobre el 
+manejo del erario. Colpensiones asume la afiliación y liquidación d el derecho, pero tiene 
+absolutamente prohibido administrar o gestionar las inversiones financieras  del colosal 
+fondo de ahorro acumulado en el pilar contributivo. La Ley 2381 delegó la administración 
+exclusiva, el resguardo y la rentabilización técnica de estos billonarios recursos en el Banco de 
+la República , considerado el ente macroeconómico de mayor independencia y solvencia 
+institucional del Estado, operando como un contrapeso eficaz que impide al Gobierno 
+Ejecutivo utilizar los ahorros pensionales de los ciudadanos para financiar el gasto corriente o 
+déficit fiscal inmediato.72 El Estado también actúa como garante de última instancia en el 
+componente complementario de ahorro individual; si una entidad administradora quiebra o 
+incumple sus obligaciones, el Estado debe responder ante el ahorrador y proceder a la 
+repetición y sanci ón patrimonial contra las entidades fallidas.71 
+8.2. Régimen de Transición y Criterios de Género  
+El Estado colombiano reconoció la necesidad de respetar las expectativas legítimas de pensión 
+de los trabajadores de mayor edad frente al cambio normativo abrupto, estableciendo un 
+"Régimen de Transición" garantista.69 
+Quiénes aplican y qué pueden hacer:  A todas las personas que, a la fecha de entrada en 
+vigencia del nuevo sistema (1 de julio de 2025), contaran con un umbral avanzado de 
+cotización, se les seguirán aplicando exclusivamente las reglas vigentes en la anterior Ley 100 
+de 1993 (edades, regímen es, liquidación y cálculo sin tope de pilares). Los umbrales que 
+habilitan la permanencia en el régimen antiguo son haber alcanzado 750 semanas o más 
+cotizadas en el caso de las mujeres , o 900 semanas o más cotizadas en el caso de los 
+hombres  antes de la fecha límite.69 Quienes contabilizaban menos semanas al 1 de julio de 
+2025 ingresaron forzosamente al diseño del nuevo Sistema de Pilares de la Ley 2381.70 
+A fin de permitir ajustes patrimoniales finales, el sistema habilitó una oportunidad excepcional 
+de "Traslado Exprés". La ley permite una ventana temporal de dos (2) años para que los 
+afiliados que estén a diez (10) años o menos de cumplir la edad legal de  pensión (62 años para 
+los hombres, 57 años para las mujeres) puedan trasladarse voluntariamente de régimen (de 
+AFP privada a Colpensiones, o viceversa) previo cumplimiento del proceso de la doble asesoría 
+financiera.69 
+ 
+Régimen de 
+Pensiones  Población 
+Afectada  Administración de 
+Aportes 
+Principales  Condiciones  
+Ley 100 de 1993 
+(Transición)  Mujeres con ≥ 750 
+semanas y 
+Hombres con ≥ 900 
+semanas antes de Elección libre entre 
+AFP o Colpensiones 
+sobre el 100% del Liquidación bajo 
+parámetros 
+antiguos de 
+julio 1 de 2025 69 ingreso  semanas y tasas de 
+reemplazo  
+Ley 2381 de 2024 
+(Nuevo Sistema)  Trabajadores por 
+debajo de los 
+umbrales de 
+transición a julio de 
+2025 70 Colpensiones 
+recauda; Banco de 
+la República 
+administra el fondo 
+central 72 Sistema de Pilares; 
+los ingresos base 
+cotizan a RPM 
+público, el 
+excedente a 
+cuentas de ahorro 
+AFP 71 
+Finalmente, la reforma pensional introduce la equidad de género como política afirmativa de 
+Estado. Tras sentencias de exigibilidad de la Corte Constitucional en materia de protección 
+diferencial frente al mercado laboral de cuidado, el Estado reducirá esc alonadamente el 
+requisito general de las 1300 semanas de cotización para las mujeres. La legislación vigente 
+permite a las ciudadanas descontar paquetes de semanas de cotización del total exigido en 
+consideración a la carga de maternidad, asignándoles dism inuciones proporcionales según el 
+número de hijos que hayan concebido o criado.69 Esta medida materializa el mandato 
+constitucional de igualdad material, reconociendo institucionalmente las interrupciones en la 
+vida laboral formal de las mujeres como producto de los roles de economía del cuidado que 
+histórica y desproporcionadamente ha n recaído sobre ellas.  
+Obras citadas  
+1. Constitución Política de Colombia 1991 Edición Corte Constitucional de Colombia 
+- Rama Judicial, fecha de acceso: febrero 17, 2026, 
+https://sidn.ramajudicial.gov.co/SIDN/NORMATIVA/TEXTOS_COMPLETOS/1_CON
+STITUCION_POLITICA/Constituci%C3%B3n_2024.pdf  
+2. CONSTITUCION POLITICA DE COLOMBIA 1991 PREAMBULO EL PUEBLO DE 
+COLOMBIA en ejercicio de su poder soberano, representado por sus d, fecha de 
+acceso: febrero 17, 2026, 
+https://pdba.georgetown.edu/Constitutions/Colombia/colombia91.pdf  
+3. Constitución Política De Colombia > TÍTULO I, fecha de acceso: febrero 17, 2026, 
+https://colombia.justia.com/nacionales/constitucion -politica -de-colombia/titulo -
+i/ 
+4. Leyes desde 1992 - Vigencia expresa y control de constitucionalidad 
+[CONSTITUCION_POLITICA_1991] - Secretaria del Senado, fecha de acceso: 
+febrero 17, 2026, 
+http://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991
+.html  
+5. Manual de Servicio a la Ciudadanía del Distrito Capital Versión 3 Capítulo I – 
+Aspectos generales Nov 2025 - Cultura, Recreación y Deporte, fecha de acceso: 
+febrero 17, 2026, 
+https://www.culturarecreacionydeporte.gov.co/sites/default/files/2026 -
+02/manual_de_servicio_a_la_ciudadania_del_distrito_capital._version_3.pdf  
+6. Ciudadano, derechos y deberes - Registraduría Nacional del ..., fecha de acceso: 
+febrero 17, 2026, https://www.registraduria.gov.co/Ciudadano -derechos -y-
+deberes -627.html  
+7. Estrategia de Servicio y/o Relacionamiento con la Ciudadanía 2026. Grupo 
+Relación Estado Ciudadano Ministerio de Transporte, fecha de acceso: febrero 
+17, 2026, 
+https://mintransporte.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFun
+cion=descargar&idFile=94423  
+8. Manual de Estructura del Estado - Función Pública, fecha de acceso: febrero 17, 
+2026, https://www.funcionpublica.gov.co/eva/gestornormativo/manual -
+estado/index.php  
+9. Rama Ejecutiva - Orden Nacional - Manual del Estado - Función Pública, fecha de 
+acceso: febrero 17, 2026, 
+https://www.funcionpublica.gov.co/eva/gestornormativo/manual -
+estado/ejecutiva -orden -nacional.php  
+10. Constitución Política 1 de 1991 Asamblea Nacional Constituyente - Gestor 
+Normativo, fecha de acceso: febrero 17, 2026, 
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4125  
+11. Sistema Político Electoral - Departamento Nacional de Planeación, fecha de 
+acceso: febrero 17, 2026, 
+https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/Portal%20Territori
+al/NuevosMandatarios/sistema%20politico%20electoral.pdf  
+12. Anexo:Ministerios de Colombia - Wikipedia, la enciclopedia libre, fecha de 
+acceso: febrero 17, 2026, 
+https://es.wikipedia.org/wiki/Anexo:Ministerios_de_Colombia  
+13. Estrategia Nacional Digital de Colombia 2023 – 2026 (END - MinTIC, fecha de 
+acceso: febrero 17, 2026, https://www.mintic.gov.co/portal/715/articles -
+334120_recurso_1.pdf  
+14. Ministerio de Defensa Nacional, fecha de acceso: febrero 17, 2026, 
+https://www.mindefensa.gov.co/  
+15. Limitaciones a las funciones de los ministros - Political Database of the Americas 
+- Georgetown University, fecha de acceso: febrero 17, 2026, 
+https://pdba.georgetown.edu/Comp/Ejecutivo/Ministros/limitaciones.html  
+16. Constitución Política De Colombia > TÍTULO VII > CAPÍTULO 4, fecha de acceso: 
+febrero 17, 2026, https://colombia.justia.com/nacionales/constitucion -politica -
+de-colombia/titulo -vii/capitulo -4/ 
+17. INFORMACIÓN SOBRE PARTIDOS Y MOVIMIENTOS POLÍTICOS - Consejo 
+Nacional Electoral, fecha de acceso: febrero 17, 2026, 
+https://www.cne.gov.co/informacion -sobre -partidos -y-movimientos -politicos  
+18. Constitución Política De Colombia > TÍTULO IV > CAPÍTULO 2, fecha de acceso: 
+febrero 17, 2026, https://colombia.justia.com/nacionales/constitucion -politica -
+de-colombia/titulo -iv/capitulo -2/ 
+19. Yo, identificado (a) como aparece al pie de mi firma, en mi condición de 
+candidato (Marque con una X solo una opción) a Presid - Partido Cambio Radical, 
+fecha de acceso: febrero 17, 2026, https://www.partidocambioradical.org/wp -
+content/uploads/2025/11/FORMATO -DECLARACION -JURAMENTADA -2026.pdf  
+20. Ley 1757 de 2015 - Gestor Normativo - Función Pública, fecha de acceso: febrero 
+17, 2026, 
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=65335  
+21. Mecanismos de participación ciudadana - Registraduría Nacional del Estado Civil, 
+fecha de acceso: febrero 17, 2026, https://www.registraduria.gov.co/ -
+Mecanismos -de-participacion -ciudadana -50-.html  
+22. Mecanismos de participación ciudadana - SUIN -Juriscol, fecha de acceso: 
+febrero 17, 2026, https://www.suin -
+juriscol.gov.co/legislacion/participacionciudadana.html  
+23. Ley 134 de 1994 Congreso de la República de Colombia, fecha de acceso: 
+febrero 17, 2026, 
+https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=330  
+24. ¿Qué puedo hacer para participar en una reunión del Concejo Municipal? - 
+MinJusticia, fecha de acceso: febrero 17, 2026, 
+https://www.minjusticia.gov.co/programas -
+co/LegalApp/Paginas/%C2%BFQu%C3%A9 -puedo -hacer -para -participar -en-
+una-reuni%C3%B3n -del-Concejo -Municipal.aspx  
+25. fecha de acceso: febrero 17, 2026, https://www.registraduria.gov.co/ -Cabildo -
+abierto -articles -
+.html#:~:text=Para%20realizar%20el%20Cabildo%20Abierto,municipio%2C%20l
+ocalidad%20o%20comuna).  
+26. LEY ESTATUTARIA 1757 DE 2015 - Sistema Nacional de Bibliotecas Judiciales, 
+fecha de acceso: febrero 17, 2026, 
+https://sidn.ramajudicial.gov.co/SIDN/NORMATIVA/DIARIOS_OFICIALES/2015%20
+(49382%20a%2049742)/DO.%2049565%20de%202015.pdf  
+27. Cabildo abierto - Registraduría Nacional del Estado Civil, fecha de acceso: 
+febrero 17, 2026, https://www.registraduria.gov.co/ -cabildo -abierto -.html  
+28. ¿Qué regula la Ley de Garantías Electorales? - YouTube, fecha de acceso: 
+febrero 17, 2026, https://www.youtube.com/watch?v=cc_yPrWneNQ  
+29. Restricciones en la nómina y en la contratación estatal con ocasión de las 
+elecciones a la Presidencia, Vicepresidencia y Congreso de la República - Función 
+Pública, fecha de acceso: febrero 17, 2026, 
+https://www1.funcionpublica.gov.co/noticias/ -
+/asset_publisher/mQXU1au9B4LL/content/restricciones -en-la-nomina -y-en-la-
+contratacion -estatal -con-ocasion -de-las-elecciones -a-la-presidencia -
+vicepresidencia -y-congreso -de-la-republica  
+30. ¡Pilas con la Ley de Garantías! Lo que debes saber sobre eventos y política, fecha 
+de acceso: febrero 17, 2026, http://www.gobiernobogota.gov.co/noticias/pilas -
+con-ley-garantias -debes -saber  
+31. El 8 de noviembre inicia la Ley de Garantías: esto es lo que debe saber, fecha de 
+acceso: febrero 17, 2026, https://www.colombiacompra.gov.co/archivos/23847  
+32. Concepto 066461 de 2024 Departamento Administrativo de la Función Pública - 
+Gestor Normativo, fecha de acceso: febrero 17, 2026, 
+https://www.funcionpublica.gov.co/eva//gestornormativo//norma.php?i=241098  
+33. Ley 1150 de 2007 - Gestor Normativo - Función Pública, fecha de acceso: 
+febrero 17, 2026, 
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=184686  
+34. Contratación Estatal - SUIN -Juriscol, fecha de acceso: febrero 17, 2026, 
+https://www.suin -juriscol.gov.co/legislacion/contratacionpublica.html  
+35. Leyes desde 1992 - Vigencia expresa y control de constitucionalidad 
+[LEY_1150_2007] - Senado, fecha de acceso: febrero 17, 2026, 
+http://www.secretariasenado.gov.co/senado/basedoc/ley_1150_2007.html  
+36. DECLARACION DE INHABILIDADES E INCOMPATIBILIDADES O ..., fecha de 
+acceso: febrero 17, 2026, 
+https://www.funcionpublica.gov.co/eva/red/publicaciones/declaracion -
+inhabilidades -incompatibilidades -conflicto -intereses2026  
+37. C-085.docx - Relatoria ANCP -CCE, fecha de acceso: febrero 17, 2026, 
+https://relatoria.colombiacompra.gov.co/wp -content/uploads/2025/03/C -
+085.docx  
+38. C-731.docx - Relatoria ANCP -CCE, fecha de acceso: febrero 17, 2026, 
+https://relatoria.colombiacompra.gov.co/wp -content/uploads/2025/08/C -
+731.docx  
+39. Concepto marco de inhabilidades e incompatibilidades de los servidores 
+públicos, fecha de acceso: febrero 17, 2026, 
+https://www.registraduria.gov.co/IMG/pdf/INHABILIDADES_E_INCOMPATIBILIDA
+DES_DE_LOS_SERVIDORES_PUBLICOS.pdf  
+40. INHABILIDADES E INCOMPATIBILIDADES DE LOS SERVIDORES PUBLICOS, fecha 
+de acceso: febrero 17, 2026, 
+https://www.funcionpublica.gov.co/documents/418537/506911/1020.pdf/e43b09
+f4-ef4d -46c8 -8df1 -a34494379a7c  
+41. FORMATO PQRSD RÉGIMEN DE INHABILIDADES E INCOMPATIBILIDADES - 
+Beltran Pardo, fecha de acceso: febrero 17, 2026, 
+https://www.beltranpardo.com/sites/default/files/2026 -02/C -949-2025_BP.pdf  
+42. Inhabilidad de 2 años para ejercer un cargo de contrato estatal sí estuvo en un 
+cargo de nivel directivo - Función Pública, fecha de acceso: febrero 17, 2026, 
+https://www1.funcionpublica.gov.co/ -/%C2%A0inhabilidad -de-dos-a%C3%B1os -
+para -ejercer -un-cargo -de-contrato -estatal -si-estuvo -en-un-cargo -de-nivel -
+directivo  
+43. Del régimen de inhabilidades e incompatibilidades al de prohibiciones y conflictos 
+de interés en la contratación estatal, un proyecto de reforma con objetivos 
+sancionatorios - SciELO Colombia, fecha de acceso: febrero 17, 2026, 
+http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0121 -
+86972017000100105  
+44. Ley de Financiamiento: ajustes clave para aportes más equitativos - Minhacienda, 
+fecha de acceso: febrero 17, 2026, https://www.minhacienda.gov.co/w/ley -de-
+financiamiento -ajustes -clave -para -aportes -m%C3%A1s -equitativos  
+45. Gobierno radicó ante el Congreso proyecto de Ley de Financiamiento por $ 26,3 
+billones, fecha de acceso: febrero 17, 2026, 
+https://www.presidencia.gov.co/prensa/Paginas/Gobierno -radico -ante -el-
+Congreso -proyecto -de-Ley-de-Financiamiento -por-26-3-billones -250901.aspx  
+46. Nuevas medidas tributarias en Colombia para 2026: Declaratoria de emergencia 
+económica | Insights | Holland & Knight, fecha de acceso: febrero 17, 2026, 
+https://www.hklaw.com/en/insights/publications/2026/01/nuevas -medidas -
+tributarias -en-colombia -para -2026 -declaratoria  
+47. Dian definió el Calendario Tributario para el año 2026 - Presidencia, fecha de 
+acceso: febrero 17, 2026, https://www.presidencia.gov.co/prensa/Paginas/Dian -
+definio -el-Calendario -Tributario -para -el-ano-2026 -251226.aspx  
+48. Tabla de Retención en la Fuente 2026: Nuevas tarifas, rangos en UVT y más 
+valores, fecha de acceso: febrero 17, 2026, 
+https://wradio.com.co/2026/01/06/tabla -de-retencion -en-la-fuente -2026 -
+nuevas -tarifas -rangos -en-uvt-y-mas -valores/  
+49. UVT 2026 en Colombia: nuevo valor confirmado y su ... - Actualícese, fecha de 
+acceso: febrero 17, 2026, https://actualicese.com/uvt -2026/  
+50. Impuesto de renta 2026: ¿cuál es la tarifa general para personas jurídicas en 
+Colombia?, fecha de acceso: febrero 17, 2026, https://actualicese.com/tarifa -
+general -del-impuesto -de-renta -2026 -para -personas -juridicas/  
+51. Reforma tributaria 2026: Ley de financiamiento - PwC, fecha de acceso: febrero 
+17, 2026, https://www.pwc.com/co/es/pwc -insights/reforma -tributaria -2026 -ley-
+de-financiamiento.html  
+52. Vencimientos tributarios enero de 2026 - DIAN, fecha de acceso: febrero 17, 
+2026, https://www.dian.gov.co/Paginas/Vencimientos -tributarios -enero -
+2026.aspx  
+53. 100208192 - 117 Bogotá, D.C., 26 de enero de 2026. Señores ..., fecha de acceso: 
+febrero 17, 2026, 
+https://www.dian.gov.co/dian/EmergenciaDecreto14742025/Concepto -general -
+Decreto -1474 -de-2025.pdf  
+54. Reduccion de sanciones e intereses decreto 1474 de 2025 - Consultor Contable, 
+fecha de acceso: febrero 17, 2026, 
+https://www.consultorcontable.com/reduccion -de-sanciones -e-intereses -
+decreto -1474 -de-2025/  
+55. DECRETO No. 0150 DEL 11 DE FEBRERO DE 2026 - CIJUF, fecha de acceso: 
+febrero 17, 2026, 
+https://cijuf.org.co/sites/cijuf.org.co/files/activos/documentos/DECRETO%20No.
+%200150%20DEL%2011%20DE%20FEBRERO%20DE%202026.pdf  
+56. Gobierno declara el Estado de Emergencia Económica, Social y Ecológica en 
+parte del territorio nacional | Decreto 0150 del 11 de febrero de 2026 - Guerrero 
+Ruiz | Legal, fecha de acceso: febrero 17, 2026, 
+https://www.guerreroruiz.com/post/gobierno -declara -el-estado -de-
+emergencia -econ%C3%B3mica -social -y-ecol%C3%B3gica -en-parte -del-
+territorio -nacio  
+57. Gobierno declara emergencia económica, social y ecológica en ocho 
+departamentos del norte del país tras inundaciones, fecha de acceso: febrero 17, 
+2026, https://www.infobae.com/colombia/2026/02/12/gobierno -declara -
+emergencia -economica -social -y-ecologica -en-ocho -departamentos -tras-
+inundaciones/  
+58. Decretos Febrero 2026 - DAPRE, fecha de acceso: febrero 17, 2026, 
+https://dapre.presidencia.gov.co/normativa/decretos -2026/decretos -febrero -
+2026  
+59. Gobierno declara estado de emergencia económica en ocho departamentos, 
+fecha de acceso: febrero 17, 2026, 
+https://www.presidencia.gov.co/prensa/Paginas/Gobierno -declara -estado -de-
+emergencia -economica -en-ocho -departamentos -260211.aspx  
+60. Reforma de la salud: ¿Nueva era estatal o modelo mixto mejorado? - Senado, 
+fecha de acceso: febrero 17, 2026, https://www.senado.gov.co/index.php/el -
+senado/noticias/6375 -reforma -de-la-salud -nueva -era-estatal -o-modelo -mixto -
+mejorado  
+61. La reforma a la salud termina su segundo debate en la plenaria de la Cámara de 
+Representantes y se prepara para iniciar su trámite en la Comisión Séptima del 
+Senado, fecha de acceso: febrero 17, 2026, 
+https://www.minsalud.gov.co/Paginas/reforma -a-la-salud -termina -su-segundo -
+debate -en-la-plenaria -de-la-camara.aspx  
+62. Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema 
+de Salud en Colombia, fecha de acceso: febrero 17, 2026, 
+https://www.minsalud.gov.co/Paginas/nueva -propuesta -para -transformar -
+entre -todos -el-sistema -de-salud -en-colombia.aspx  
+63. Reforma a la Salud en Colombia: claves, escenarios y debate - S.C.A.R.E., fecha 
+de acceso: febrero 17, 2026, https://scare.org.co/noticias/reforma -salud -
+avances/  
+64. Prohibición de intermediación del usuario en autorizaciones para servicios y 
+tecnologías en salud: nueva Circular conjunta del MinSalud y SuperSalud - 
+consultorsalud, fecha de acceso: febrero 17, 2026, 
+https://consultorsalud.com/prohibicion -intermediacion -autorizaciones/  
+65. Cartilla Derechos y Deberes - Supersalud, fecha de acceso: febrero 17, 2026, 
+https://docs.supersalud.gov.co/PortalWeb/ProteccionUsuario/Carta%20de%20D
+erechos%20y%20Deberes/Cartilla%20derechos%20y%20deberes_Web.pdf  
+66. Supersalud unifica criterio sobre inembargabilidad de los recursos del sistema de 
+salud, fecha de acceso: febrero 17, 2026, 
+https://docs.supersalud.gov.co/PortalWeb/Comunicaciones/Comunicados/comu
+nicado_006_2026_supersalud_unifica_criterio_sobre_inembargabilidad_de_los_r
+ecursos_del_sistema_de_salud.pdf  
+67. La Acción de tutela en salud: cuándo y cómo presentarla - CONSULTORSALUD, 
+fecha de acceso: febrero 17, 2026, https://consultorsalud.com/accion -de-tutela -
+salud -como -presentarla/  
+68. Reforma Pensional en Colombia 2025: Puntos clave que debes saber, fecha de 
+acceso: febrero 17, 2026, https://www.autonoma.edu.co/blog/articulos/reforma -
+pensional -en-colombia -2025 -puntos -clave -que-debes -saber  
+69. ¿De qué trata la Nueva ley Pensional 2381? - Colfondos, fecha de acceso: febrero 
+17, 2026, https://www.colfondos.com.co/dxp/personas/pensiones -
+obligatorias/ley -2381  
+70. Nueva Reforma pensional: Lo que debes saber y hacer - Porvenir, fecha de 
+acceso: febrero 17, 2026, https://www.porvenir.com.co/porvenir -te-
+responde/reforma -pensional  
+71. ABC de la Ley de Reforma Pensional que el presidente Gustavo Petro sanciona 
+este martes en la Plaza de Bolívar, fecha de acceso: febrero 17, 2026, 
+https://www.presidencia.gov.co/prensa/Paginas/ABC -de-la-Ley-de-Reforma -
+Pensional -que-el-presidente -Gustavo -Petro -sanciona -240716.aspx  
+72. Reforma Pensional - Nuevo sistema, nuevas reglas - YouTube, fecha de acceso: 
+febrero 17, 2026, https://www.youtube.com/watch?v=ysuCL9cJjiU  

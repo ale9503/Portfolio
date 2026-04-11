@@ -1,0 +1,195 @@
+/* Estilos específicos para el reporte de Elecciones 2026 */
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #13141c;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent-color: #3b82f6;
+  --card-bg: rgba(20, 22, 30, 0.6);
+  --card-border: rgba(255, 255, 255, 0.05);
+}
+
+body.elecciones-body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.report-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.report-hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.15), transparent 60%);
+}
+
+.report-hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.report-hero p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Grillas */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grid-charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .grid-charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chart-wrapper {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.chart-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  transition: transform 0.3s ease;
+}
+
+.chart-wrapper img:hover {
+  transform: scale(1.02);
+}
+
+.section-head {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 1rem;
+}
+
+.profile-match {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateX(5px);
+}
+
+.profile-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.profile-card .candidate {
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+}
+
+.conclusion-block {
+  background: linear-gradient(145deg, rgba(37, 99, 235, 0.1) 0%, rgba(20, 22, 30, 0.8) 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.vp-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .vp-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.vp-item h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+.vp-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.btn-back {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #1e293b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-top: 2rem;
+}
+
+.btn-back:hover {
+  background: #334155;
+}
