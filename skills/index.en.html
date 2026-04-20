@@ -141,21 +141,19 @@
 
             const maxCount = Math.max(...Object.values(categoryCounts), 1);
 
-            // Map the English labels to the original Spanish categories in JSON
-            const labelMapping = {
-              "Product & Innovation": "Producto",
-              "Strategy & Business Value": "Estrategia",
-              "Data & Analytics": "Datos",
-              "Leadership & Culture": "Liderazgo",
-              "Automation & Processes": "Automatización",
-              "Risk & Compliance": "Riesgo",
-              "Agile Delivery & Projects": "Delivery"
+            const labelToCategoryMap = {
+              "Product & Innovation": "Producto & Innovación",
+              "Strategy & Business Value": "Estrategia & Valor del Negocio",
+              "Data & Analytics": "Datos & Analítica",
+              "Leadership & Culture": "Liderazgo & Cultura",
+              "Automation & Processes": "Automatización & Tecnología",
+              "Risk & Compliance": "Riesgo & Cumplimiento",
+              "Agile Delivery & Projects": "Delivery & Proyectos Ágiles"
             };
 
             const calculatedValues = radarData.labels.map(label => {
-              const searchKey = labelMapping[label] || label.split(' ')[0];
-              const mappedKey = Object.keys(categoryCounts).find(k => k.includes(searchKey));
-              const count = mappedKey ? categoryCounts[mappedKey] : 0;
+              const categoryKey = labelToCategoryMap[label] || label;
+              const count = categoryCounts[categoryKey] || 0;
               return Math.min(100, Math.round((count / maxCount) * 80) + 20);
             });
 
