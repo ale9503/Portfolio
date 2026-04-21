@@ -1,5 +1,19 @@
 [
   {
+    "What did I learn?": "Arquitectura Medallion y Data Mesh \u2014 Data CoE GCP Masterclass",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Medallion Architecture, Data Mesh, BigQuery, Dataproc Serverless, Cloud Composer, Dataplex, Data Contracts, Open Lineage, BIAN, Open Banking (PSD2 / FAPI / CMA9), CDC, SFTP, Power BI, Databricks",
+    "Record Date (DD/MM/YYYY)": "21/04/2026",
+    "Description": "Masterclass de 1 hora (Data CoE \u2013 Get to know GCP Medallion, 21/04/2026). Cubri\u00f3 la Arquitectura Medallion como patr\u00f3n de organizaci\u00f3n de datos agn\u00f3stico a la nube (no es una herramienta ni un producto). Capas: Bronze \u2192 ingesta inmutable (datos crudos, audit trail completo, retenci\u00f3n larga, particionado por fecha, base del reprocesamiento confiable); Silver \u2192 refinado con limpieza, tipado, CDC/deduplicaci\u00f3n, modelo por dominio e integraci\u00f3n cross-fuente; Gold \u2192 consumo business-ready con m\u00e9tricas/KPIs, modelo dimensional, sem\u00e1ntica de negocio, lista para BI/ML/reportes regulatorios. Ventajas: reprocesamiento confiable, separaci\u00f3n de responsabilidades, calidad progresiva, batch+streaming unificados, habilitador de BI y ML, auditor\u00eda y trazabilidad. Antipatr\u00f3n identificado: 'Medallion Vanity' (copiar Bronze a Silver sin transformaci\u00f3n real triplica el almacenamiento sin agregar valor). Data Mesh como evoluci\u00f3n: domain ownership, data as a product, self-serve platform y federated governance; no reemplaza Medallion, lo extiende. Stack GCP: ingesta v\u00eda CDC/SFTP/batch, BigQuery, Dataproc Serverless, Composer, Dataplex, data contracts, data catalog. Contexto bancario: est\u00e1ndares BIAN (~300 dominios) y Open Banking (PSD2, FAPI Brasil, CMA9). Regulaciones: Basilea, IFRS 9, SBS/SBIF, SOX, GDPR/LGDP con requisitos obligatorios de linaje, retenci\u00f3n y auditor\u00eda. Retos identificados: sem\u00e1ntica inmadura (campos no hom\u00f3geneos entre pa\u00edses), contratos de datos incompletos, data quality dependiente de sem\u00e1ntica, streaming no implementado, Gold gen\u00e9rico, linaje y documentaci\u00f3n insuficientes (tribal knowledge). Visi\u00f3n futura: consolidar sem\u00e1ntica y contratos enterprise, activar data quality y lineage automatizado (Open Lineage), estrategia multicloud GCP + Databricks, IA como habilitador del gobierno de datos.",
+    "Categoria": [
+      "Datos \u0026 Anal\u00edtica",
+      "Estrategia \u0026 Valor del Negocio",
+      "Riesgo \u0026 Cumplimiento",
+      "Automatizaci\u00f3n \u0026 Procesos"
+    ],
+    "N\u00b0": 61
+  },
+  {
     "What did I learn?": "Database Foundations: Intro to Databases",
     "Learning Type*": "High Level",
     "Skill/Tool": "SQL, Bases de datos relacionales, Docker, pgAdmin, PostgreSQL",
