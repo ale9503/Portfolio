@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:24px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; margin-bottom:12px; }
+  .divider { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:14px 0; }
+  .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:10px; }
+  .badge { display:inline-flex; align-items:center; font-size:11px; font-weight:600; letter-spacing:0.03em; padding:3px 9px; white-space:nowrap; }
+  .b-white { background:#F0F4FF; color:#07080A; }
+  .b-blue { background:#0F4C9E; color:#F0F4FF; }
+  .b-outline { background:transparent; color:#F0F4FF; border:1px solid rgba(255,255,255,0.20); }
+  .b-dim { background:#141720; color:#5A6A8A; border:1px solid rgba(255,255,255,0.06); }
+  .b-success { background:rgba(58,184,138,0.15); color:#3AB88A; }
+  .b-error { background:rgba(224,82,82,0.15); color:#E05252; }
+  .b-warning { background:rgba(232,168,48,0.15); color:#E8A830; }
+  .tag { display:inline-flex; align-items:center; font-size:11px; font-weight:500; padding:4px 10px; border-radius:6px; }
+  .t-blue { background:rgba(15,76,158,0.3); color:#6AA3F0; }
+  .t-default { background:#141720; color:#C8D4EE; border-radius:6px; }
+  .status { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:#C8D4EE; }
+  .dot { width:6px; height:6px; border-radius:50%; display:inline-block; }
+</style>
+</head>
+<body>
+  <div class="label">Badges</div>
+  <div class="row">
+    <span class="badge b-white">Default</span>
+    <span class="badge b-blue">Brand blue</span>
+    <span class="badge b-outline">Outline</span>
+    <span class="badge b-dim">Muted</span>
+    <span class="badge b-success">Activo</span>
+    <span class="badge b-error">Error</span>
+    <span class="badge b-warning">Atención</span>
+  </div>
+  <hr class="divider">
+  <div class="label">Tags (radius 6px)</div>
+  <div class="row">
+    <span class="tag t-blue">Tecnología</span>
+    <span class="tag t-blue">Innovación</span>
+    <span class="tag t-default">Exploración</span>
+    <span class="tag t-default">Datos</span>
+    <span class="tag t-default">Estrategia</span>
+    <span class="tag t-blue">Largo plazo</span>
+  </div>
+  <hr class="divider">
+  <div class="label">Status</div>
+  <div class="row">
+    <span class="status"><span class="dot" style="background:#3AB88A;"></span>Activo</span>
+    <span class="status"><span class="dot" style="background:#3A7FE0;"></span>En progreso</span>
+    <span class="status"><span class="dot" style="background:#E8A830;"></span>En revisión</span>
+    <span class="status"><span class="dot" style="background:#E05252;"></span>Bloqueado</span>
+    <span class="status"><span class="dot" style="background:#2E3850;"></span>Inactivo</span>
+  </div>
+</body>
+</html>

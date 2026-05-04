@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:20px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; padding-bottom:8px; }
+  .grid { display:grid; grid-template-columns:repeat(5,1fr); gap:0; }
+  .swatch { height:72px; display:flex; flex-direction:column; justify-content:flex-end; padding:7px; }
+  .swatch strong { font-size:11px; font-weight:600; }
+  .swatch span { font-family:'JetBrains Mono',monospace; font-size:9px; margin-top:2px; opacity:0.7; }
+  hr { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:14px 0; }
+</style>
+</head>
+<body>
+  <div class="label">Royal Navy Blue — Primary Brand</div>
+  <div class="grid">
+    <div class="swatch" style="background:#071E42;"><strong style="color:#A8C8F8">900</strong><span style="color:#A8C8F8">#071E42</span></div>
+    <div class="swatch" style="background:#0A2D64;"><strong style="color:#A8C8F8">800</strong><span style="color:#A8C8F8">#0A2D64</span></div>
+    <div class="swatch" style="background:#0C3A80;"><strong style="color:#D4E5FC">700</strong><span style="color:#D4E5FC">#0C3A80</span></div>
+    <div class="swatch" style="background:#0F4C9E;"><strong style="color:#EBF3FF">600 ★</strong><span style="color:#EBF3FF">#0F4C9E</span></div>
+    <div class="swatch" style="background:#1A63C5;"><strong style="color:#EBF3FF">500</strong><span style="color:#EBF3FF">#1A63C5</span></div>
+  </div>
+  <div class="grid">
+    <div class="swatch" style="background:#3A7FE0;"><strong style="color:#07080A">400</strong><span style="color:#07080A">#3A7FE0</span></div>
+    <div class="swatch" style="background:#6AA3F0;"><strong style="color:#07080A">300</strong><span style="color:#07080A">#6AA3F0</span></div>
+    <div class="swatch" style="background:#A8C8F8;"><strong style="color:#07080A">200</strong><span style="color:#07080A">#A8C8F8</span></div>
+    <div class="swatch" style="background:#D4E5FC;"><strong style="color:#07080A">100</strong><span style="color:#07080A">#D4E5FC</span></div>
+    <div class="swatch" style="background:#EBF3FF;border:1px solid rgba(0,0,0,0.08);"><strong style="color:#07080A">050</strong><span style="color:#07080A">#EBF3FF</span></div>
+  </div>
+  <hr>
+  <div class="label">Black — Base Surface</div>
+  <div class="grid">
+    <div class="swatch" style="background:#07080A;border:1px solid rgba(255,255,255,0.08);"><strong style="color:#F0F4FF">950</strong><span style="color:#F0F4FF">#07080A</span></div>
+    <div class="swatch" style="background:#0D0F14;"><strong style="color:#F0F4FF">900</strong><span style="color:#F0F4FF">#0D0F14</span></div>
+    <div class="swatch" style="background:#141720;"><strong style="color:#F0F4FF">800</strong><span style="color:#F0F4FF">#141720</span></div>
+    <div class="swatch" style="background:#1C2030;"><strong style="color:#C8D4EE">700</strong><span style="color:#C8D4EE">#1C2030</span></div>
+    <div class="swatch" style="background:#252A3A;"><strong style="color:#C8D4EE">600</strong><span style="color:#C8D4EE">#252A3A</span></div>
+  </div>
+</body>
+</html>

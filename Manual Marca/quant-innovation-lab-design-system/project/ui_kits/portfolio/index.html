@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alejandro Gómez — De la mente al mundo</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  body { background:#07080A; color:#F0F4FF; font-family:'Plus Jakarta Sans',sans-serif; }
+  ::-webkit-scrollbar { width:4px; } ::-webkit-scrollbar-track { background:#0D0F14; } ::-webkit-scrollbar-thumb { background:#1C2030; }
+  .fade { animation: fadeUp .28s cubic-bezier(.25,.1,.25,1) both; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+  button { font-family:inherit; }
+  a { color:inherit; text-decoration:none; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+
+/* ── Shared tokens ─────────────────────────────────────── */
+const C = {
+  ink:     '#07080A',
+  surface: '#0D0F14',
+  raised:  '#141720',
+  navy:    '#09153A',
+  blue600: '#0F4C9E',
+  blue400: '#3A7FE0',
+  blue300: '#6AA3F0',
+  white:   '#F0F4FF',
+  muted:   '#5A6A8A',
+  dim:     '#2E3850',
+  dimmer:  '#1C2030',
+};
+
+/* ── Orbital Q SVG ─────────────────────────────────────── */
+const OrbitalQ = ({ size = 40, color = C.white, blue = C.blue400, dim = C.blue600 }) => (
+  <svg width={size} height={size} viewBox="0 0 100 100" fill="none">
+    <circle cx="8"  cy="12" r="0.9" fill={C.raised}/>
+    <circle cx="88" cy="10" r="1.3" fill={C.raised}/>
+    <circle cx="92" cy="78" r="0.8" fill={C.dimmer}/>
+    <circle cx="6"  cy="80" r="1.0" fill={C.dimmer}/>
+    <ellipse cx="50" cy="50" rx="44" ry="14" stroke={C.raised} strokeWidth="1" fill="none" transform="rotate(-28 50 50)"/>
+    <ellipse cx="50" cy="50" rx="33" ry="11" stroke={dim}  strokeWidth="1.2" fill="none" transform="rotate(-28 50 50)"/>
+    <ellipse cx="50" cy="50" rx="24" ry="8"  stroke={blue} strokeWidth="1"   fill="none" transform="rotate(55 50 50)"/>
+    <circle cx="50" cy="50" r="18" stroke={color} strokeWidth="2.2" fill="none"/>
+    <line x1="50" y1="44" x2="50" y2="56" stroke={dim}  strokeWidth="1.5"/>
+    <line x1="44" y1="50" x2="56" y2="50" stroke={dim}  strokeWidth="1.5"/>
+    <circle cx="50" cy="50" r="3.5" fill="none" stroke={blue} strokeWidth="1.2"/>
+    <circle cx="50" cy="50" r="1.5" fill={blue}/>
+    <circle cx="78.5" cy="28" r="4"   fill={blue}/>
+    <circle cx="62"   cy="30" r="2.2" fill={C.blue300}/>
+    <circle cx="14"   cy="62" r="2.5" fill={dim} stroke={blue} strokeWidth="1"/>
+  </svg>
+);
+
+/* ── Header ────────────────────────────────────────────── */
+const Header = ({ screen, navigate, lang, setLang }) => {
+  const nav = [
+    { es:'Proyectos', en:'Projects', key:'projects' },
+    { es:'Habilidades', en:'Skills', key:'skills' },
+    { es:'Acerca', en:'About', key:'about' },
+    { es:'Sandbox', en:'Sandbox', key:'sandbox' },
+  ];
+  return (
+    <header style={{ position:'fixed', top:0, left:0, right:0, zIndex:100,
+      background:'rgba(7,8,10,0.96)', backdropFilter:'blur(12px)',
+      borderBottom:`1px solid rgba(255,255,255,0.07)`, height:'56px',
+      display:'flex', alignItems:'center' }}>
+      <div style={{ maxWidth:'1280px', margin:'0 auto', padding:'0 28px',
+        display:'flex', alignItems:'center', justifyContent:'space-between', width:'100%' }}>
+        {/* Logo */}
+        <button onClick={() => navigate('home')} style={{ display:'flex', alignItems:'center', gap:'10px', background:'none', border:'none', cursor:'pointer', padding:0 }}>
+          <OrbitalQ size={28}/>
+          <div>
+            <div style={{ display:'flex', alignItems:'baseline', gap:'1px' }}>
+              <span style={{ fontFamily:"'Exo 2',sans-serif", fontSize:'13px', fontWeight:700, color:C.white, letterSpacing:'0.04em', textTransform:'uppercase' }}>Alejandro Gómez</span>
+            </div>
+            <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'8px', color:C.blue400, letterSpacing:'0.06em', marginTop:'1px' }}>QIL · De la mente al mundo</div>
+          </div>
+        </button>
+        {/* Nav */}
+        <nav style={{ display:'flex', alignItems:'center', gap:'2px' }}>
+          {nav.map(({ es, en, key }) => (
+            <button key={key} onClick={() => navigate(key)} style={{
+              background:'none', border:'none', cursor:'pointer', padding:'5px 12px',
+              fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'13px', fontWeight:500,
+              color: screen === key ? C.white : C.muted,
+              borderBottom: screen === key ? `1px solid ${C.blue400}` : '1px solid transparent',
+              transition:'color .15s',
+            }}>{lang === 'es' ? es : en}</button>
+          ))}
+          <button onClick={() => navigate('contact')} style={{
+            marginLeft:'10px', background:C.blue600, color:C.white,
+            border:'none', padding:'7px 16px', fontFamily:"'Plus Jakarta Sans',sans-serif",
+            fontSize:'12px', fontWeight:700, cursor:'pointer',
+          }}>{lang === 'es' ? 'Contacto' : 'Contact'} →</button>
+          {/* Lang toggle */}
+          <div style={{ marginLeft:'14px', display:'flex', gap:'4px', borderLeft:`1px solid ${C.dimmer}`, paddingLeft:'14px' }}>
+            {['es','en'].map(l => (
+              <button key={l} onClick={() => setLang(l)} style={{
+                background:'none', border:'none', cursor:'pointer', padding:'3px 6px',
+                fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', fontWeight:700,
+                color: lang === l ? C.white : C.dim, textTransform:'uppercase',
+              }}>{l}</button>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+/* ── Footer ────────────────────────────────────────────── */
+const Footer = ({ lang }) => (
+  <footer style={{ background:C.ink, borderTop:`1px solid rgba(255,255,255,0.05)`, padding:'32px 28px' }}>
+    <div style={{ maxWidth:'1280px', margin:'0 auto', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:'16px' }}>
+      <div style={{ display:'flex', alignItems:'center', gap:'10px' }}>
+        <OrbitalQ size={20}/>
+        <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim }}>© 2026 Alejandro Gómez · QIL</span>
+      </div>
+      <div style={{ display:'flex', gap:'20px' }}>
+        {[['LinkedIn','https://linkedin.com/in/nalejob'],['GitHub','https://github.com/ale9503'],['WhatsApp','https://wa.me/573108195437']].map(([l]) => (
+          <span key={l} style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'12px', color:C.muted, cursor:'pointer' }}>{l}</span>
+        ))}
+      </div>
+      <span style={{ fontFamily:"'Space Mono',monospace", fontSize:'10px', color:C.dim, fontStyle:'italic' }}>De la mente al mundo_</span>
+    </div>
+  </footer>
+);
+
+/* ── HOME ──────────────────────────────────────────────── */
+const HomeScreen = ({ navigate, lang }) => {
+  const t = {
+    pre: { es:'// Ejecutivo Digital · QIL', en:'// Digital Executive · QIL' },
+    h1:  { es:'De la mente\nal mundo.', en:'From mind\nto world.' },
+    sub: { es:'Explorando tecnología, finanzas e innovación con rigor y visión de largo plazo.', en:'Exploring technology, finance and innovation with rigour and long-term vision.' },
+    cta: { es:'Explorar proyectos', en:'Explore projects' },
+    cv:  { es:'Descargar CV', en:'Download CV' },
+  };
+  const pillars = [
+    { es:'Banca & Finanzas', en:'Banking & Finance', icon:'◈' },
+    { es:'Tecnologías Emergentes', en:'Emerging Tech', icon:'◎' },
+    { es:'Gestión de Producto', en:'Product Mgmt', icon:'◇' },
+    { es:'Gestión de Proyectos', en:'Project Mgmt', icon:'◉' },
+    { es:'Innovación', en:'Innovation', icon:'◐' },
+  ];
+  return (
+    <div className="fade">
+      {/* Hero */}
+      <section style={{ background:C.ink, minHeight:'92vh', display:'flex', alignItems:'flex-end', padding:'120px 28px 72px', position:'relative', overflow:'hidden' }}>
+        {/* Grid */}
+        <div style={{ position:'absolute', inset:0, opacity:0.025,
+          backgroundImage:'linear-gradient(rgba(15,76,158,1) 1px,transparent 1px),linear-gradient(90deg,rgba(15,76,158,1) 1px,transparent 1px)',
+          backgroundSize:'52px 52px', pointerEvents:'none' }}/>
+        {/* Accent lines */}
+        <div style={{ position:'absolute', top:'72px', right:'72px', width:'1px', height:'140px', background:C.blue600, opacity:.5 }}/>
+        <div style={{ position:'absolute', top:'72px', right:'72px', width:'140px', height:'1px', background:C.blue600, opacity:.5 }}/>
+        <div style={{ position:'absolute', top:'70px', right:'70px', width:'5px', height:'5px', background:C.blue400 }}/>
+        {/* Large orbital mark bg */}
+        <div style={{ position:'absolute', right:'-60px', top:'50%', transform:'translateY(-50%)', opacity:0.05 }}>
+          <OrbitalQ size={500} color="#F0F4FF" blue="#3A7FE0" dim="#0F4C9E"/>
+        </div>
+        {/* Photo */}
+        <div style={{ position:'absolute', right:'120px', bottom:'0', width:'320px', overflow:'hidden', opacity:0.85 }}>
+          <img src="https://alejandrogomezhub.com/1.png" alt="Alejandro Gómez"
+            style={{ width:'100%', objectFit:'cover', objectPosition:'top', filter:'grayscale(20%) contrast(1.05)' }}
+            onError={e => e.target.style.display='none'}/>
+          {/* gradient fade at bottom */}
+          <div style={{ position:'absolute', bottom:0, left:0, right:0, height:'120px',
+            background:`linear-gradient(transparent, ${C.ink})` }}/>
+        </div>
+
+        <div style={{ maxWidth:'1280px', margin:'0 auto', width:'100%', position:'relative', zIndex:1 }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'11px', color:C.blue400, marginBottom:'28px', letterSpacing:'0.04em' }}>
+            {t.pre[lang]}
+          </div>
+          <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'clamp(44px,6vw,84px)',
+            lineHeight:1.0, letterSpacing:'-0.03em', color:C.white,
+            maxWidth:'640px', marginBottom:'12px', fontWeight:700,
+            whiteSpace:'pre-line' }}>{t.h1[lang]}</h1>
+          <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'clamp(16px,2vw,24px)',
+            color:C.blue400, fontStyle:'italic', marginBottom:'32px', lineHeight:1.1 }}>
+            Alejandro Gómez_
+          </div>
+          <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'17px', lineHeight:1.7,
+            color:C.muted, maxWidth:'460px', marginBottom:'48px' }}>{t.sub[lang]}</p>
+          <div style={{ display:'flex', gap:'14px', flexWrap:'wrap' }}>
+            <button onClick={() => navigate('projects')} style={{
+              background:C.white, color:C.ink, border:'none', padding:'13px 28px',
+              fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', fontWeight:800, cursor:'pointer' }}>
+              {t.cta[lang]} →
+            </button>
+            <button style={{
+              background:'transparent', color:C.white, border:`1px solid rgba(255,255,255,0.15)`,
+              padding:'13px 28px', fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', fontWeight:500, cursor:'pointer' }}>
+              {t.cv[lang]}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 5 Pillars */}
+      <section style={{ background:C.surface, borderTop:`1px solid rgba(255,255,255,0.06)`, padding:'72px 28px' }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'8px' }}>
+            {lang === 'es' ? '// mis 5 pilares' : '// my 5 pillars'}
+          </div>
+          <h2 style={{ fontFamily:"'Space Mono',monospace", fontSize:'26px', fontWeight:700, color:C.white, letterSpacing:'-0.02em', marginBottom:'40px' }}>
+            {lang === 'es' ? 'Áreas de expertise' : 'Areas of expertise'}
+          </h2>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:'1px', background:'rgba(255,255,255,0.05)' }}>
+            {pillars.map(({ es, en, icon }, i) => (
+              <div key={i} style={{ background:C.ink, padding:'32px 24px', borderTop:`2px solid ${i === 0 ? C.blue400 : 'transparent'}` }}>
+                <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'20px', color:C.blue400, marginBottom:'16px' }}>{icon}</div>
+                <div style={{ fontFamily:"'Exo 2',sans-serif", fontSize:'15px', fontWeight:700, color:C.white, lineHeight:1.3 }}>{lang === 'es' ? es : en}</div>
+                <div style={{ marginTop:'16px', height:'1px', width:'32px', background:C.blue600 }}/>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured projects strip */}
+      <section style={{ background:C.navy, borderTop:`1px solid rgba(15,76,158,0.3)`, borderBottom:`1px solid rgba(15,76,158,0.3)`, padding:'72px 28px' }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto', display:'flex', justifyContent:'space-between', alignItems:'flex-end', marginBottom:'40px' }}>
+          <div>
+            <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'8px' }}>
+              {lang === 'es' ? '// proyectos destacados' : '// featured projects'}
+            </div>
+            <h2 style={{ fontFamily:"'Space Mono',monospace", fontSize:'26px', fontWeight:700, color:C.white, letterSpacing:'-0.02em' }}>
+              {lang === 'es' ? 'Casos de estudio' : 'Case studies'}
+            </h2>
+          </div>
+          <button onClick={() => navigate('projects')} style={{ background:'none', border:'none', color:C.blue400, fontSize:'13px', fontWeight:700, cursor:'pointer', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>
+            {lang === 'es' ? 'Ver todos →' : 'View all →'}
+          </button>
+        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'1px', background:'rgba(15,76,158,0.2)' }}>
+          {[
+            { tag:'AI · Asistente', title:'JARVIS', desc:{ es:'Asistente digital personal impulsado por IA para automatización de tareas, gestión del conocimiento y soporte en decisiones ejecutivas.', en:'AI-powered personal digital assistant for task automation, knowledge management and executive decision support.' }},
+            { tag:'Transformación Digital', title:'Digital Transformation Calculator', desc:{ es:'Herramienta para medir capacidades digitales de organizaciones y trazar rutas de transformación basadas en datos.', en:'Tool to measure organizational digital maturity and map data-driven transformation roadmaps.' }},
+            { tag:'FinTech · Algoritmos', title:'Trading Bot Algorítmico', desc:{ es:'Robot de trading que ejecuta estrategias algorítmicas en mercados financieros con gestión de riesgo automatizada.', en:'Trading robot executing algorithmic strategies in financial markets with automated risk management.' }},
+          ].map(({ tag, title, desc }, i) => (
+            <div key={i} style={{ background:'rgba(9,21,58,0.8)', padding:'32px 28px', borderTop: i===0 ? `2px solid ${C.blue400}` : `1px solid rgba(15,76,158,0.3)` }}>
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:C.blue400, marginBottom:'12px' }}>{tag}</div>
+              <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'18px', fontWeight:700, color:C.white, marginBottom:'12px', lineHeight:1.15 }}>{title}</div>
+              <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', lineHeight:1.65, color:C.muted }}>{desc[lang]}</p>
+              <div style={{ marginTop:'24px', display:'flex', justifyContent:'flex-end' }}>
+                <span style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'12px', fontWeight:700, color:C.blue400 }}>
+                  {lang === 'es' ? 'Ver caso →' : 'View case →'}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <Footer lang={lang}/>
+    </div>
+  );
+};
+
+/* ── PROJECTS ──────────────────────────────────────────── */
+const ProjectsScreen = ({ navigate, lang }) => {
+  const projects = [
+    { tag:'AI · NLP', title:'JARVIS', year:'2025', status:{ es:'Activo', en:'Active' },
+      desc:{ es:'Asistente digital personal con capacidades de procesamiento de lenguaje natural, integración de calendario, gestión del conocimiento y soporte en toma de decisiones ejecutivas. Construido sobre modelos de lenguaje de última generación.', en:'Personal digital assistant with NLP, calendar integration, knowledge management and executive decision support. Built on state-of-the-art language models.' },
+      tools:['Python','OpenAI API','LangChain','FastAPI'], accent:true },
+    { tag:'Transformación Digital', title:'Calculadora de Capacidades Digitales', year:'2024', status:{ es:'Completado', en:'Completed' },
+      desc:{ es:'Framework de diagnóstico cuantitativo para medir el nivel de madurez digital de organizaciones en cinco dimensiones: datos, tecnología, cultura, procesos y estrategia.', en:'Quantitative diagnostic framework to measure organizational digital maturity across five dimensions: data, technology, culture, processes and strategy.' },
+      tools:['React','D3.js','Python','Streamlit'] },
+    { tag:'FinTech · Quant', title:'Robot de Trading Algorítmico', year:'2024', status:{ es:'Activo', en:'Active' },
+      desc:{ es:'Sistema de trading automatizado que implementa estrategias cuantitativas en mercados de futuros con gestión de riesgo dinámica, backtesting histórico y reporting en tiempo real.', en:'Automated trading system implementing quantitative strategies in futures markets with dynamic risk management, historical backtesting and real-time reporting.' },
+      tools:['Python','Pandas','TA-Lib','Binance API'] },
+    { tag:'Gestión de Producto', title:'QIL Lab Framework', year:'2026', status:{ es:'En desarrollo', en:'In progress' },
+      desc:{ es:'Marco de trabajo propietario para la gestión de proyectos de innovación en el laboratorio: desde la exploración inicial hasta la graduación como producto independiente.', en:'Proprietary framework for managing innovation projects in the lab: from initial exploration to graduation as an independent product.' },
+      tools:['Notion','Figma','Python'], accent:true },
+  ];
+  return (
+    <div className="fade" style={{ background:C.surface, minHeight:'100vh' }}>
+      <div style={{ background:C.ink, padding:'88px 28px 48px', borderBottom:`1px solid rgba(255,255,255,0.06)` }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'10px' }}>// {lang==='es'?'proyectos':'projects'}</div>
+          <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'48px', fontWeight:700, color:C.white, letterSpacing:'-0.03em' }}>
+            {lang==='es' ? 'Casos de estudio' : 'Case studies'}
+          </h1>
+        </div>
+      </div>
+      <div style={{ maxWidth:'1280px', margin:'0 auto', padding:'48px 28px' }}>
+        <div style={{ display:'flex', flexDirection:'column', gap:'1px', background:'rgba(255,255,255,0.04)' }}>
+          {projects.map(({ tag, title, year, status, desc, tools, accent }, i) => (
+            <div key={i} style={{ background:C.ink, padding:'36px 32px', borderLeft: accent ? `3px solid ${C.blue400}` : '3px solid transparent', display:'grid', gridTemplateColumns:'1fr auto', gap:'32px', alignItems:'start' }}>
+              <div>
+                <div style={{ display:'flex', gap:'12px', alignItems:'center', marginBottom:'10px' }}>
+                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color: accent ? C.blue400 : C.dim }}>{tag}</span>
+                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', color:C.dimmer }}>{year}</span>
+                </div>
+                <h3 style={{ fontFamily:"'Space Mono',monospace", fontSize:'22px', fontWeight:700, color:C.white, marginBottom:'12px', letterSpacing:'-0.02em' }}>{title}</h3>
+                <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', lineHeight:1.7, color:C.muted, maxWidth:'640px', marginBottom:'20px' }}>{desc[lang]}</p>
+                <div style={{ display:'flex', gap:'8px', flexWrap:'wrap' }}>
+                  {tools.map(t => (
+                    <span key={t} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.blue300, background:'rgba(58,127,224,0.08)', padding:'3px 8px', border:`1px solid rgba(58,127,224,0.15)` }}>{t}</span>
+                  ))}
+                </div>
+              </div>
+              <div style={{ display:'flex', flexDirection:'column', alignItems:'flex-end', gap:'8px' }}>
+                <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.06em', textTransform:'uppercase',
+                  color: status[lang]==='Activo'||status[lang]==='Active' ? '#3AB88A' : C.dim,
+                  background: status[lang]==='Activo'||status[lang]==='Active' ? 'rgba(58,184,138,0.1)' : 'rgba(46,56,80,0.3)',
+                  padding:'3px 8px' }}>{status[lang]}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Footer lang={lang}/>
+    </div>
+  );
+};
+
+/* ── SKILLS ────────────────────────────────────────────── */
+const SkillsScreen = ({ lang }) => {
+  const pillars = [
+    { icon:'◈', es:'Banca & Finanzas', en:'Banking & Finance',
+      items:['Scotiabank · Corporate Banking','Análisis financiero cuantitativo','Estructuración de productos financieros','Riesgo y cumplimiento regulatorio','Modelos de valoración'] },
+    { icon:'◎', es:'Tecnologías Emergentes', en:'Emerging Technologies',
+      items:['IA / Machine Learning','LLMs & Agentes autónomos','Blockchain & Web3','Low-code / No-code','Cloud & DevOps'] },
+    { icon:'◇', es:'Gestión de Producto', en:'Product Management',
+      items:['Product discovery','Roadmapping estratégico','OKRs & métricas','Design thinking','Go-to-market'] },
+    { icon:'◉', es:'Gestión de Proyectos', en:'Project Management',
+      items:['Agile / Scrum / Kanban','PMO & gobernanza','Gestión del cambio','Stakeholder management','Presupuesto y recursos'] },
+    { icon:'◐', es:'Innovación', en:'Innovation',
+      items:['Laboratorio de exploración QIL','Propiedad intelectual','Corporate innovation','Open innovation','Ecosistemas de startups'] },
+  ];
+  return (
+    <div className="fade" style={{ background:C.surface, minHeight:'100vh' }}>
+      <div style={{ background:C.ink, padding:'88px 28px 48px', borderBottom:`1px solid rgba(255,255,255,0.06)` }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'10px' }}>// {lang==='es'?'habilidades':'skills'}</div>
+          <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'48px', fontWeight:700, color:C.white, letterSpacing:'-0.03em' }}>
+            {lang==='es' ? 'Mis 5 Pilares' : 'My 5 Pillars'}
+          </h1>
+        </div>
+      </div>
+      <div style={{ maxWidth:'1280px', margin:'0 auto', padding:'48px 28px' }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:'1px', background:'rgba(255,255,255,0.04)' }}>
+          {pillars.map(({ icon, es, en, items }, i) => (
+            <div key={i} style={{ background:C.ink, padding:'32px 24px', borderTop:`2px solid ${i===0?C.blue400:'transparent'}` }}>
+              <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'24px', color:C.blue400, marginBottom:'12px' }}>{icon}</div>
+              <div style={{ fontFamily:"'Exo 2',sans-serif", fontSize:'14px', fontWeight:700, color:C.white, marginBottom:'20px', lineHeight:1.3 }}>{lang==='es'?es:en}</div>
+              <ul style={{ listStyle:'none', display:'flex', flexDirection:'column', gap:'8px' }}>
+                {items.map(item => (
+                  <li key={item} style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'12px', color:C.muted, lineHeight:1.5, display:'flex', gap:'6px', alignItems:'flex-start' }}>
+                    <span style={{ color:C.blue600, flexShrink:0, marginTop:'3px' }}>—</span>{item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Tools grid */}
+        <div style={{ marginTop:'48px' }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'20px' }}>// tools & stack</div>
+          <div style={{ display:'flex', gap:'8px', flexWrap:'wrap' }}>
+            {['Python','SQL','React','LangChain','OpenAI','Figma','Notion','Power BI','Tableau','AWS','GCP','Scrum','OKRs','D3.js','FastAPI','Streamlit','Git'].map(t => (
+              <span key={t} style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'11px', color:C.blue300, background:'rgba(58,127,224,0.06)', padding:'5px 10px', border:`1px solid rgba(58,127,224,0.12)` }}>{t}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer lang={lang}/>
+    </div>
+  );
+};
+
+/* ── ABOUT ─────────────────────────────────────────────── */
+const AboutScreen = ({ lang }) => (
+  <div className="fade">
+    <div style={{ background:C.ink, padding:'88px 28px 80px' }}>
+      <div style={{ maxWidth:'840px', margin:'0 auto' }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'16px' }}>// {lang==='es'?'acerca':'about'}</div>
+        <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'52px', lineHeight:1.0, color:C.white, fontWeight:700, letterSpacing:'-0.03em', marginBottom:'12px' }}>
+          Alejandro<br /><span style={{ color:C.blue400, fontStyle:'italic' }}>Gómez.</span>
+        </h1>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'11px', color:C.blue400, marginBottom:'36px' }}>Digital Executive · Founder · QIL</div>
+        <div style={{ display:'grid', gridTemplateColumns:'3fr 2fr', gap:'48px', alignItems:'start' }}>
+          <div>
+            <p style={{ fontSize:'17px', lineHeight:1.8, color:'#C8D4EE', marginBottom:'20px' }}>
+              {lang==='es'
+                ? 'Me muevo en la intersección entre el mundo corporativo y el emprendimiento — donde las ideas más ambiciosas y la ejecución más rigurosa se encuentran. Mi laboratorio, QIL, es el espacio donde materializo esa convicción.'
+                : 'I move at the intersection of the corporate world and entrepreneurship — where the most ambitious ideas meet the most rigorous execution. My lab, QIL, is where I materialise that conviction.'}
+            </p>
+            <p style={{ fontSize:'17px', lineHeight:1.8, color:C.muted, marginBottom:'20px' }}>
+              {lang==='es'
+                ? 'Mi trayectoria en Scotiabank me dio una base sólida en finanzas y tecnología. El CESA me ayudó a aterrizar el proyecto que vengo construyendo desde los 18 años. Con la conclusión de mi máster, entendí que la propiedad intelectual es el activo más infrautilizado por las personas.'
+                : 'My track record at Scotiabank gave me solid foundations in finance and technology. CESA helped me ground the project I\'ve been building since I was 18. Finishing my master\'s, I understood that intellectual property is the most underutilised asset people have.'}
+            </p>
+            <p style={{ fontSize:'17px', lineHeight:1.8, color:C.muted }}>
+              {lang==='es'
+                ? 'Explorar, probar y compartir — ese es el mantra. Porque imaginar el futuro no es suficiente: hay que construirlo, juntos.'
+                : 'Explore, test and share — that\'s the mantra. Because imagining the future isn\'t enough: we have to build it, together.'}
+            </p>
+          </div>
+          <div style={{ display:'flex', flexDirection:'column', gap:'16px' }}>
+            {[['CESA','Master · Innovación & Emprendimiento'],['Scotiabank','Digital Banking · Tech & Finance'],['QIL','Fundador · Lab de Innovación'],].map(([org, role]) => (
+              <div key={org} style={{ background:C.surface, border:`1px solid rgba(255,255,255,0.07)`, padding:'18px 20px' }}>
+                <div style={{ fontFamily:"'Exo 2',sans-serif", fontSize:'14px', fontWeight:700, color:C.white, marginBottom:'4px' }}>{org}</div>
+                <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'12px', color:C.muted }}>{role}</div>
+              </div>
+            ))}
+            <div style={{ background:C.navy, border:`1px solid rgba(15,76,158,0.3)`, padding:'18px 20px', marginTop:'4px' }}>
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', color:C.blue400, letterSpacing:'0.06em', marginBottom:'8px' }}>// QIL</div>
+              <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'13px', color:C.white, lineHeight:1.4 }}>
+                {lang==='es' ? 'De la mente al mundo_' : 'From mind to world_'}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer lang={lang}/>
+  </div>
+);
+
+/* ── SANDBOX ───────────────────────────────────────────── */
+const SandboxScreen = ({ lang }) => {
+  const items = [
+    { tag:'AI', title:'JARVIS v2', status:'active', desc:{ es:'Segunda generación del asistente digital con memoria persistente y razonamiento multi-paso.', en:'Second generation digital assistant with persistent memory and multi-step reasoning.' }},
+    { tag:'FinTech', title:'Alpha Signal Research', status:'active', desc:{ es:'Investigación de señales cuantitativas para mercados emergentes latinoamericanos.', en:'Quantitative signal research for Latin American emerging markets.' }},
+    { tag:'Producto', title:'Digital Maturity Framework v2', status:'building', desc:{ es:'Nueva versión del framework con benchmarking por industria y roadmap generativo.', en:'New version of the framework with industry benchmarking and generative roadmap.' }},
+    { tag:'Exploración', title:'QIL Knowledge Graph', status:'exploring', desc:{ es:'Grafo de conocimiento que conecta proyectos, herramientas y hallazgos del laboratorio.', en:'Knowledge graph connecting lab projects, tools and findings.' }},
+  ];
+  const statusColor = { active:'#3AB88A', building:C.blue400, exploring:C.muted };
+  const statusLabel = { active:{ es:'Activo', en:'Active' }, building:{ es:'Construyendo', en:'Building' }, exploring:{ es:'Explorando', en:'Exploring' } };
+
+  return (
+    <div className="fade">
+      <div style={{ background:C.navy, padding:'88px 28px 64px', borderBottom:`1px solid rgba(15,76,158,0.3)` }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'10px' }}>// QIL · tech R&D sandbox</div>
+          <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'48px', fontWeight:700, color:C.white, letterSpacing:'-0.03em', marginBottom:'12px' }}>
+            {lang==='es' ? 'Sandbox' : 'Sandbox'}
+          </h1>
+          <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'16px', lineHeight:1.7, color:C.muted, maxWidth:'540px' }}>
+            {lang==='es'
+              ? 'Proyectos en exploración activa. El laboratorio donde las ideas dejan de ser solo ideas.'
+              : 'Actively explored projects. The lab where ideas stop being just ideas.'}
+          </p>
+        </div>
+      </div>
+      <div style={{ background:C.ink, minHeight:'60vh' }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto', padding:'48px 28px' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:'1px', background:'rgba(255,255,255,0.05)' }}>
+            {items.map(({ tag, title, status, desc }, i) => (
+              <div key={i} style={{ background:C.ink, padding:'36px 32px', borderTop:`2px solid ${i===0?C.blue400:'transparent'}` }}>
+                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', marginBottom:'14px' }}>
+                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:C.blue400 }}>{tag}</span>
+                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', color:statusColor[status], background:`${statusColor[status]}15`, padding:'2px 7px' }}>
+                    {statusLabel[status][lang]}
+                  </span>
+                </div>
+                <h3 style={{ fontFamily:"'Space Mono',monospace", fontSize:'19px', fontWeight:700, color:C.white, marginBottom:'12px', lineHeight:1.15 }}>{title}</h3>
+                <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', lineHeight:1.65, color:C.muted }}>{desc[lang]}</p>
+                <div style={{ marginTop:'24px', display:'flex', alignItems:'center', gap:'8px' }}>
+                  <div style={{ width:'6px', height:'6px', borderRadius:'50%', background:statusColor[status] }}/>
+                  <span style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', color:C.dim }}>QIL · {new Date().getFullYear()}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div style={{ marginTop:'40px', background:C.surface, border:`1px solid rgba(255,255,255,0.06)`, padding:'28px 32px', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:'16px' }}>
+            <div>
+              <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'16px', fontWeight:700, color:C.white, marginBottom:'4px' }}>
+                {lang==='es' ? '¿Quieres explorar algo juntos?' : 'Want to explore something together?'}
+              </div>
+              <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'13px', color:C.muted }}>
+                {lang==='es' ? 'QIL está abierto a colaboraciones y proyectos de exploración.' : 'QIL is open to collaborations and exploration projects.'}
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/company/quantinnovationlab/" target="_blank" style={{ background:C.blue600, color:C.white, border:'none', padding:'11px 22px', fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'13px', fontWeight:700, cursor:'pointer', textDecoration:'none' }}>
+              QIL en LinkedIn →
+            </a>
+          </div>
+        </div>
+      </div>
+      <Footer lang={lang}/>
+    </div>
+  );
+};
+
+/* ── CONTACT ───────────────────────────────────────────── */
+const ContactScreen = ({ lang }) => (
+  <div className="fade" style={{ background:C.ink, minHeight:'100vh' }}>
+    <div style={{ maxWidth:'680px', margin:'0 auto', padding:'108px 28px 80px' }}>
+      <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:C.dim, letterSpacing:'0.10em', textTransform:'uppercase', marginBottom:'16px' }}>// {lang==='es'?'contacto':'contact'}</div>
+      <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'48px', lineHeight:1.05, color:C.white, fontWeight:700, letterSpacing:'-0.03em', marginBottom:'16px' }}>
+        {lang==='es' ? 'Hablemos.' : "Let's talk."}
+      </h1>
+      <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'16px', lineHeight:1.7, color:C.muted, marginBottom:'48px' }}>
+        {lang==='es'
+          ? '¿Tienes un proyecto, una idea o una pregunta difícil? Estoy listo para explorar.'
+          : 'Got a project, an idea or a hard question? Ready to explore.'}
+      </p>
+      <div style={{ display:'flex', flexDirection:'column', gap:'14px', marginBottom:'40px' }}>
+        {[
+          [lang==='es'?'Nombre':'Name', 'text', lang==='es'?'Tu nombre…':'Your name…'],
+          ['Email','email','correo@ejemplo.com'],
+          [lang==='es'?'Organización':'Organisation','text',lang==='es'?'Empresa u organización…':'Company or organisation…'],
+        ].map(([label, type, ph]) => (
+          <div key={label} style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
+            <label style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.10em', textTransform:'uppercase', color:C.muted }}>{label}</label>
+            <input type={type} placeholder={ph} style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', color:C.white, background:C.surface, border:`1px solid rgba(255,255,255,0.09)`, padding:'11px 14px', outline:'none', width:'100%' }}/>
+          </div>
+        ))}
+        <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
+          <label style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.10em', textTransform:'uppercase', color:C.muted }}>{lang==='es'?'Mensaje':'Message'}</label>
+          <textarea placeholder={lang==='es'?'Cuéntame sobre tu proyecto…':'Tell me about your project…'} style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', color:C.white, background:C.surface, border:`1px solid rgba(255,255,255,0.09)`, padding:'11px 14px', outline:'none', width:'100%', minHeight:'110px', resize:'vertical' }}/>
+        </div>
+        <button style={{ background:C.white, color:C.ink, border:'none', padding:'13px 28px', fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', fontWeight:800, cursor:'pointer', alignSelf:'flex-start', marginTop:'6px' }}>
+          {lang==='es' ? 'Enviar mensaje →' : 'Send message →'}
+        </button>
+      </div>
+      <div style={{ borderTop:`1px solid rgba(255,255,255,0.06)`, paddingTop:'28px', display:'flex', gap:'20px', flexWrap:'wrap' }}>
+        {[['LinkedIn','linkedin.com/in/nalejob'],['GitHub','github.com/ale9503'],['WhatsApp','wa.me/573108195437'],['Email','ale.9503@hotmail.com']].map(([label, val]) => (
+          <div key={label}>
+            <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', color:C.dim, letterSpacing:'0.06em', textTransform:'uppercase', marginBottom:'3px' }}>{label}</div>
+            <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'12px', color:C.blue400 }}>{val}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
+/* ── APP ───────────────────────────────────────────────── */
+const App = () => {
+  const saved = (() => { try { return JSON.parse(localStorage.getItem('ag_portfolio_v2')) || {screen:'home',lang:'es'}; } catch { return {screen:'home',lang:'es'}; } })();
+  const [screen, setScreen] = React.useState(saved.screen);
+  const [lang, setLang] = React.useState(saved.lang);
+  const ref = React.useRef(null);
+
+  const navigate = (s) => {
+    setScreen(s);
+    localStorage.setItem('ag_portfolio_v2', JSON.stringify({screen:s, lang}));
+    if (ref.current) ref.current.scrollTop = 0;
+  };
+  const changeLang = (l) => {
+    setLang(l);
+    localStorage.setItem('ag_portfolio_v2', JSON.stringify({screen, lang:l}));
+  };
+
+  const screens = { home:<HomeScreen navigate={navigate} lang={lang}/>, projects:<ProjectsScreen navigate={navigate} lang={lang}/>, skills:<SkillsScreen lang={lang}/>, about:<AboutScreen lang={lang}/>, sandbox:<SandboxScreen lang={lang}/>, contact:<ContactScreen lang={lang}/> };
+
+  return (
+    <div ref={ref} style={{ minHeight:'100vh', overflowY:'auto', overflowX:'hidden' }}>
+      <Header screen={screen} navigate={navigate} lang={lang} setLang={changeLang}/>
+      <main style={{ paddingTop:'56px' }}>{screens[screen] || screens.home}</main>
+    </div>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

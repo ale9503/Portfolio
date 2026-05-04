@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:20px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; padding-bottom:8px; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .token { display:flex; align-items:center; gap:10px; background:#0D0F14; border:1px solid rgba(255,255,255,0.06); padding:10px 12px; }
+  .dot { width:28px; height:28px; flex-shrink:0; border:1px solid rgba(255,255,255,0.06); }
+  .ti strong { font-size:11px; font-weight:600; color:#F0F4FF; display:block; }
+  .ti span { font-family:'JetBrains Mono',monospace; font-size:9px; color:#5A6A8A; }
+  hr { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:14px 0; }
+</style>
+</head>
+<body>
+  <div class="label">Semantic Foreground Tokens</div>
+  <div class="grid2">
+    <div class="token"><div class="dot" style="background:#F0F4FF;"></div><div class="ti"><strong>--fg-1</strong><span>Primary text · #F0F4FF</span></div></div>
+    <div class="token"><div class="dot" style="background:#C8D4EE;"></div><div class="ti"><strong>--fg-2</strong><span>Secondary · #C8D4EE</span></div></div>
+    <div class="token"><div class="dot" style="background:#5A6A8A;"></div><div class="ti"><strong>--fg-3</strong><span>Muted · #5A6A8A</span></div></div>
+    <div class="token"><div class="dot" style="background:#2E3850;"></div><div class="ti"><strong>--fg-4</strong><span>Disabled · #2E3850</span></div></div>
+    <div class="token"><div class="dot" style="background:#3A7FE0;"></div><div class="ti"><strong>--fg-accent</strong><span>Blue accent · #3A7FE0</span></div></div>
+    <div class="token"><div class="dot" style="background:#09153A;"></div><div class="ti"><strong>--bg-blue-wash</strong><span>Navy hero bg</span></div></div>
+  </div>
+  <hr>
+  <div class="label">Semantic States</div>
+  <div class="grid2">
+    <div class="token"><div class="dot" style="background:#E05252;"></div><div class="ti"><strong>Error</strong><span>#E05252</span></div></div>
+    <div class="token"><div class="dot" style="background:#3AB88A;"></div><div class="ti"><strong>Success</strong><span>#3AB88A</span></div></div>
+    <div class="token"><div class="dot" style="background:#E8A830;"></div><div class="ti"><strong>Warning</strong><span>#E8A830</span></div></div>
+    <div class="token"><div class="dot" style="background:#F0F4FF;"></div><div class="ti"><strong>White surface</strong><span>#F0F4FF · light mode</span></div></div>
+  </div>
+</body>
+</html>

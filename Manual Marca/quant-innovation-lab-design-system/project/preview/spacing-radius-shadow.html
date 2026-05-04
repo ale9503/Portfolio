@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:20px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; padding-bottom:10px; }
+  .row { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px; }
+  .token-name { font-family:'JetBrains Mono',monospace; font-size:9px; color:#3A7FE0; margin-top:5px; display:block; }
+  .swatch-note { font-size:9px; color:#2E3850; margin-top:2px; display:block; }
+  .r-box { width:52px; height:36px; background:#0F4C9E; display:inline-block; }
+  .s-box { width:80px; height:40px; background:#0D0F14; border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-size:10px; color:#5A6A8A; font-family:'JetBrains Mono',monospace; }
+  .divider { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:14px 0; }
+  .b-row { display:flex; gap:12px; align-items:center; margin-bottom:10px; }
+  .b-line { height:1px; width:80px; }
+</style>
+</head>
+<body>
+  <div class="label">Border Radius</div>
+  <div class="row">
+    <div><div class="r-box" style="border-radius:0;"></div><span class="token-name">--radius-none</span><span class="swatch-note">0 · default</span></div>
+    <div><div class="r-box" style="border-radius:2px;"></div><span class="token-name">--radius-xs</span><span class="swatch-note">2px · inputs</span></div>
+    <div><div class="r-box" style="border-radius:6px;"></div><span class="token-name">--radius-sm</span><span class="swatch-note">6px · tags/btns</span></div>
+    <div><div class="r-box" style="border-radius:10px;opacity:0.4;"></div><span class="token-name">--radius-md</span><span class="swatch-note">10px · sparingly</span></div>
+  </div>
+  <hr class="divider">
+  <div class="label">Elevation / Shadow (dark mode)</div>
+  <div class="row">
+    <div><div class="s-box" style="box-shadow:none;border:1px solid rgba(255,255,255,0.08);">flat</div><span class="token-name">--shadow-none</span></div>
+    <div><div class="s-box" style="box-shadow:0 1px 3px rgba(0,0,0,0.3);">sm</div><span class="token-name">--shadow-sm</span></div>
+    <div><div class="s-box" style="box-shadow:0 4px 20px rgba(0,0,0,0.4);">md</div><span class="token-name">--shadow-md</span></div>
+    <div><div class="s-box" style="box-shadow:0 0 0 1px rgba(15,76,158,0.5),0 4px 20px rgba(15,76,158,0.15);">blue</div><span class="token-name">--shadow-blue</span></div>
+  </div>
+  <hr class="divider">
+  <div class="label">Borders</div>
+  <div class="b-row"><div class="b-line" style="background:rgba(255,255,255,0.06);"></div><span style="font-size:9px;color:#2E3850;font-family:'JetBrains Mono',monospace;">--border-subtle · rgba(255,255,255,0.06)</span></div>
+  <div class="b-row"><div class="b-line" style="background:rgba(255,255,255,0.10);"></div><span style="font-size:9px;color:#2E3850;font-family:'JetBrains Mono',monospace;">--border-default · rgba(255,255,255,0.10)</span></div>
+  <div class="b-row"><div class="b-line" style="background:rgba(255,255,255,0.20);"></div><span style="font-size:9px;color:#2E3850;font-family:'JetBrains Mono',monospace;">--border-strong · rgba(255,255,255,0.20)</span></div>
+  <div class="b-row"><div class="b-line" style="background:#0F4C9E;"></div><span style="font-size:9px;color:#3A7FE0;font-family:'JetBrains Mono',monospace;">--border-brand · #0F4C9E</span></div>
+</body>
+</html>

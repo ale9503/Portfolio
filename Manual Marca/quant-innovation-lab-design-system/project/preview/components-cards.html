@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:24px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; margin-bottom:14px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .card { background:#0D0F14; border:1px solid rgba(255,255,255,0.08); padding:24px; }
+  .card-blue { background:#09153A; border:1px solid rgba(15,76,158,0.4); padding:24px; }
+  .card-accent-top { background:#0D0F14; border:1px solid rgba(255,255,255,0.08); border-top:2px solid #3A7FE0; padding:24px; }
+  .card-light { background:#F0F4FF; border:1px solid rgba(0,0,0,0.08); padding:24px; }
+  .ctag { font-size:9px; font-weight:600; letter-spacing:0.10em; text-transform:uppercase; color:#3A7FE0; margin-bottom:8px; }
+  .ctag-dark { color:#5A6A8A; }
+  .ctitle { font-family:'Space Mono',monospace; font-size:17px; color:#F0F4FF; margin-bottom:8px; line-height:1.2; font-weight:700; }
+  .ctitle-dk { font-family:'Space Mono',monospace; font-size:17px; color:#07080A; margin-bottom:8px; line-height:1.2; font-weight:700; }
+  .cbody { font-size:13px; line-height:1.6; color:#5A6A8A; }
+  .cbody-dk { font-size:13px; line-height:1.6; color:#52647A; }
+</style>
+</head>
+<body>
+  <div class="label">Cards / Tarjetas</div>
+  <div class="grid">
+    <div class="card">
+      <div class="ctag">Research · 2026</div>
+      <div class="ctitle">De la mente al mundo</div>
+      <div class="cbody">Exploramos, probamos y compartimos — porque la innovación crece cuando se cuida.</div>
+    </div>
+    <div class="card-accent-top">
+      <div class="ctag">Destacado</div>
+      <div class="ctitle">Blue accent top</div>
+      <div class="cbody">Tarjeta con borde azul superior para contenido prioritario.</div>
+    </div>
+    <div class="card-blue">
+      <div class="ctag">Comunidad</div>
+      <div class="ctitle">Build it, together_</div>
+      <div class="cbody">Cultura, comunidad y estrategia están entrelazadas en QIL.</div>
+    </div>
+    <div class="card-light">
+      <div class="ctag" style="color:#0F4C9E;">Light mode</div>
+      <div class="ctitle-dk">Visión de largo plazo</div>
+      <div class="cbody-dk">Tarjeta en modo claro — para páginas de contenido o documentación.</div>
+    </div>
+  </div>
+</body>
+</html>

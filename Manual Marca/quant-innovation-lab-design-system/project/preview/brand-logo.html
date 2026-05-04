@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Exo 2',sans-serif; padding:20px; }
+  .sec-label { font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.10em; text-transform:uppercase; color:#2E3850; margin-bottom:14px; }
+  .row { display:flex; gap:14px; align-items:flex-start; flex-wrap:wrap; }
+  .mark-box { display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .mark-label { font-family:'JetBrains Mono',monospace; font-size:8px; color:#2E3850; }
+  .divider { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:18px 0; }
+</style>
+</head>
+<body>
+
+<!--
+  NAGR × QIL CONSTELLATION MARK
+  ─────────────────────────────────────────────────────────
+  Octagon nodes, radius 36, hub at (50,44):
+    T=(50,8)  TR=(76,18)  R=(86,44)  BR=(76,70)
+    B=(50,80) BL=(24,70)  L=(14,44)  TL=(24,18)
+    Hub=(50,44)
+
+  BLUE = NAGR (personal identity):
+    N: TL→BL, TL→BR (crosses hub), TR→BR
+    A: TL→T, TR→T, TL→TR
+    G: L→TL, L→BL, L→Hub
+    R: TR→R, R→BR, R→Hub
+
+  WHITE = QIL (lab identity):
+    Q: full outer ring 8 segments + tail BR→(90,88)
+    I: subtle dashed T→B axis
+    L: BL→B→BR brighter white
+
+  Radial fade: crisp center → soft at rim (orbital density)
+-->
+
+<div class="sec-label">// NAGR × QIL · constelación · densidad orbital · azul=personal · blanco=lab</div>
+<div class="row">
+
+  <!-- PRIMARY — dark 80px -->
+  <div class="mark-box">
+    <div style="background:#07080A;padding:16px;border:1px solid rgba(255,255,255,0.07);">
+      <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="p-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="white" stop-opacity="1"/>
+            <stop offset="40%"  stop-color="white" stop-opacity="0.96"/>
+            <stop offset="70%"  stop-color="white" stop-opacity="0.60"/>
+            <stop offset="88%"  stop-color="white" stop-opacity="0.36"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0.20"/>
+          </radialGradient>
+          <mask id="p-m"><rect width="100" height="100" fill="url(#p-rg)"/></mask>
+          <filter id="p-f" x="-15%" y="-15%" width="130%" height="130%">
+            <feGaussianBlur stdDeviation="0.5"/>
+          </filter>
+        </defs>
+        <!-- Stars -->
+        <circle cx="6"  cy="7"  r="0.8" fill="#252A3A" opacity="0.5"/>
+        <circle cx="94" cy="5"  r="1.0" fill="#1C2030" opacity="0.5"/>
+        <circle cx="4"  cy="88" r="0.9" fill="#252A3A" opacity="0.5"/>
+        <circle cx="92" cy="90" r="0.7" fill="#1C2030" opacity="0.5"/>
+        <!-- Hub spokes (dim skeleton) -->
+        <g mask="url(#p-m)" stroke="#181E2C" stroke-width="0.7">
+          <line x1="50" y1="44" x2="50" y2="8"/>
+          <line x1="50" y1="44" x2="76" y2="18"/>
+          <line x1="50" y1="44" x2="86" y2="44"/>
+          <line x1="50" y1="44" x2="76" y2="70"/>
+          <line x1="50" y1="44" x2="50" y2="80"/>
+          <line x1="50" y1="44" x2="24" y2="70"/>
+          <line x1="50" y1="44" x2="14" y2="44"/>
+          <line x1="50" y1="44" x2="24" y2="18"/>
+        </g>
+        <!-- Q outer ring (white, blurred+faded) -->
+        <g mask="url(#p-m)" filter="url(#p-f)" stroke="#F0F4FF" stroke-width="1.3" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/>
+          <line x1="50" y1="8"  x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/>
+          <line x1="86" y1="44" x2="76" y2="70"/>
+          <line x1="76" y1="70" x2="50" y2="80"/>
+          <line x1="50" y1="80" x2="24" y2="70"/>
+          <line x1="24" y1="70" x2="14" y2="44"/>
+          <line x1="14" y1="44" x2="24" y2="18"/>
+        </g>
+        <!-- Q tail -->
+        <line x1="76" y1="70" x2="90" y2="88" stroke="#F0F4FF" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="90" cy="88" r="2" fill="#F0F4FF"/>
+        <!-- I dashed axis -->
+        <line x1="50" y1="8" x2="50" y2="80" stroke="rgba(240,244,255,0.15)" stroke-width="0.7" stroke-dasharray="2,3.5"/>
+        <!-- L corner brighter -->
+        <g mask="url(#p-m)" stroke="#D4E5FC" stroke-width="2.0" stroke-linecap="round">
+          <line x1="24" y1="70" x2="50" y2="80"/>
+          <line x1="50" y1="80" x2="76" y2="70"/>
+        </g>
+        <!-- G (dim blue) -->
+        <g mask="url(#p-m)" stroke="rgba(58,127,224,0.42)" stroke-width="1.0" stroke-linecap="round">
+          <line x1="14" y1="44" x2="24" y2="18"/>
+          <line x1="14" y1="44" x2="24" y2="70"/>
+          <line x1="14" y1="44" x2="50" y2="44"/>
+        </g>
+        <!-- R (dim blue) -->
+        <g mask="url(#p-m)" stroke="rgba(58,127,224,0.42)" stroke-width="1.0" stroke-linecap="round">
+          <line x1="76" y1="18" x2="86" y2="44"/>
+          <line x1="86" y1="44" x2="76" y2="70"/>
+          <line x1="86" y1="44" x2="50" y2="44"/>
+        </g>
+        <!-- A (lighter blue) -->
+        <g mask="url(#p-m)" stroke="#6AA3F0" stroke-width="1.1" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/>
+          <line x1="76" y1="18" x2="50" y2="8"/>
+          <line x1="24" y1="18" x2="76" y2="18"/>
+        </g>
+        <!-- N (bright blue) -->
+        <g mask="url(#p-m)">
+          <line x1="24" y1="18" x2="24" y2="70" stroke="#3A7FE0" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="24" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="76" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <!-- Cardinal nodes (T,R,B,L) dim -->
+        <g mask="url(#p-m)" filter="url(#p-f)">
+          <circle cx="50" cy="8"  r="1.6" fill="#1C2030" stroke="#2E3850" stroke-width="0.7"/>
+          <circle cx="86" cy="44" r="1.6" fill="#1C2030" stroke="#2E3850" stroke-width="0.7"/>
+          <circle cx="50" cy="80" r="1.6" fill="#1C2030" stroke="#2E3850" stroke-width="0.7"/>
+          <circle cx="14" cy="44" r="1.6" fill="#1C2030" stroke="#2E3850" stroke-width="0.7"/>
+        </g>
+        <!-- Corner nodes (TL,TR,BR,BL) brighter -->
+        <g mask="url(#p-m)">
+          <circle cx="24" cy="18" r="2.6" fill="#07080A" stroke="#8FA4BE" stroke-width="1.0"/>
+          <circle cx="76" cy="18" r="2.6" fill="#07080A" stroke="#8FA4BE" stroke-width="1.0"/>
+          <circle cx="76" cy="70" r="3.0" fill="#07080A" stroke="#6AA3F0" stroke-width="1.3"/>
+          <circle cx="24" cy="70" r="2.6" fill="#07080A" stroke="#5A6A8A" stroke-width="1.0"/>
+        </g>
+        <!-- Hub — always crisp -->
+        <circle cx="50" cy="44" r="6.5" fill="#071E42"/>
+        <circle cx="50" cy="44" r="4"   fill="#0F4C9E"/>
+        <circle cx="50" cy="44" r="2"   fill="#3A7FE0"/>
+        <circle cx="50" cy="44" r="0.8" fill="#A8C8F8"/>
+      </svg>
+    </div>
+    <span class="mark-label">dark · 80px</span>
+  </div>
+
+  <!-- NAVY -->
+  <div class="mark-box">
+    <div style="background:#09153A;padding:16px;border:1px solid rgba(15,76,158,0.25);">
+      <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="nv-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="white" stop-opacity="1"/>
+            <stop offset="70%" stop-color="white" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0.18"/>
+          </radialGradient>
+          <mask id="nv-m"><rect width="100" height="100" fill="url(#nv-rg)"/></mask>
+        </defs>
+        <g mask="url(#nv-m)" stroke="#0A2D64" stroke-width="0.7">
+          <line x1="50" y1="44" x2="50" y2="8"/><line x1="50" y1="44" x2="76" y2="18"/>
+          <line x1="50" y1="44" x2="86" y2="44"/><line x1="50" y1="44" x2="76" y2="70"/>
+          <line x1="50" y1="44" x2="50" y2="80"/><line x1="50" y1="44" x2="24" y2="70"/>
+          <line x1="50" y1="44" x2="14" y2="44"/><line x1="50" y1="44" x2="24" y2="18"/>
+        </g>
+        <g mask="url(#nv-m)" stroke="#A8C8F8" stroke-width="1.3" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/>
+          <line x1="76" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="24" y2="70"/>
+          <line x1="24" y1="70" x2="14" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+        </g>
+        <line x1="76" y1="70" x2="90" y2="88" stroke="#A8C8F8" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="90" cy="88" r="2" fill="#A8C8F8"/>
+        <g mask="url(#nv-m)" stroke="#D4E5FC" stroke-width="2.0" stroke-linecap="round">
+          <line x1="24" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="76" y2="70"/>
+        </g>
+        <g mask="url(#nv-m)" stroke="rgba(106,163,240,0.45)" stroke-width="1.0" stroke-linecap="round">
+          <line x1="14" y1="44" x2="24" y2="18"/><line x1="14" y1="44" x2="24" y2="70"/><line x1="14" y1="44" x2="50" y2="44"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/><line x1="86" y1="44" x2="50" y2="44"/>
+        </g>
+        <g mask="url(#nv-m)" stroke="#A8C8F8" stroke-width="1.1" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="76" y1="18" x2="50" y2="8"/><line x1="24" y1="18" x2="76" y2="18"/>
+        </g>
+        <g mask="url(#nv-m)">
+          <line x1="24" y1="18" x2="24" y2="70" stroke="#6AA3F0" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="24" y1="18" x2="76" y2="70" stroke="#6AA3F0" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="76" y1="18" x2="76" y2="70" stroke="#6AA3F0" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <g mask="url(#nv-m)">
+          <circle cx="24" cy="18" r="2.5" fill="#09153A" stroke="#A8C8F8" stroke-width="1.0"/>
+          <circle cx="76" cy="18" r="2.5" fill="#09153A" stroke="#A8C8F8" stroke-width="1.0"/>
+          <circle cx="76" cy="70" r="2.9" fill="#09153A" stroke="#6AA3F0" stroke-width="1.2"/>
+          <circle cx="24" cy="70" r="2.5" fill="#09153A" stroke="#5A6A8A" stroke-width="1.0"/>
+        </g>
+        <circle cx="50" cy="44" r="6.5" fill="#071E42"/>
+        <circle cx="50" cy="44" r="4"   fill="#1A63C5"/>
+        <circle cx="50" cy="44" r="2"   fill="#6AA3F0"/>
+        <circle cx="50" cy="44" r="0.8" fill="#D4E5FC"/>
+      </svg>
+    </div>
+    <span class="mark-label">navy</span>
+  </div>
+
+  <!-- BLUE bg -->
+  <div class="mark-box">
+    <div style="background:#0F4C9E;padding:16px;">
+      <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="bl-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="white" stop-opacity="1"/>
+            <stop offset="70%" stop-color="white" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0.18"/>
+          </radialGradient>
+          <mask id="bl-m"><rect width="100" height="100" fill="url(#bl-rg)"/></mask>
+        </defs>
+        <g mask="url(#bl-m)" stroke="rgba(255,255,255,0.08)" stroke-width="0.7">
+          <line x1="50" y1="44" x2="50" y2="8"/><line x1="50" y1="44" x2="76" y2="18"/>
+          <line x1="50" y1="44" x2="86" y2="44"/><line x1="50" y1="44" x2="76" y2="70"/>
+          <line x1="50" y1="44" x2="50" y2="80"/><line x1="50" y1="44" x2="24" y2="70"/>
+          <line x1="50" y1="44" x2="14" y2="44"/><line x1="50" y1="44" x2="24" y2="18"/>
+        </g>
+        <g mask="url(#bl-m)" stroke="rgba(255,255,255,0.85)" stroke-width="1.3" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/>
+          <line x1="76" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="24" y2="70"/>
+          <line x1="24" y1="70" x2="14" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+        </g>
+        <line x1="76" y1="70" x2="90" y2="88" stroke="rgba(255,255,255,0.9)" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="90" cy="88" r="2" fill="rgba(255,255,255,0.9)"/>
+        <g mask="url(#bl-m)" stroke="rgba(255,255,255,0.9)" stroke-width="2.0" stroke-linecap="round">
+          <line x1="24" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="76" y2="70"/>
+        </g>
+        <g mask="url(#bl-m)" stroke="rgba(255,255,255,0.35)" stroke-width="1.0" stroke-linecap="round">
+          <line x1="14" y1="44" x2="24" y2="18"/><line x1="14" y1="44" x2="24" y2="70"/><line x1="14" y1="44" x2="50" y2="44"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/><line x1="86" y1="44" x2="50" y2="44"/>
+        </g>
+        <g mask="url(#bl-m)" stroke="rgba(255,255,255,0.65)" stroke-width="1.1" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="76" y1="18" x2="50" y2="8"/><line x1="24" y1="18" x2="76" y2="18"/>
+        </g>
+        <g mask="url(#bl-m)">
+          <line x1="24" y1="18" x2="24" y2="70" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="24" y1="18" x2="76" y2="70" stroke="rgba(255,255,255,0.95)" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="76" y1="18" x2="76" y2="70" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <g mask="url(#bl-m)">
+          <circle cx="24" cy="18" r="2.5" fill="#0F4C9E" stroke="rgba(255,255,255,0.7)" stroke-width="1.0"/>
+          <circle cx="76" cy="18" r="2.5" fill="#0F4C9E" stroke="rgba(255,255,255,0.7)" stroke-width="1.0"/>
+          <circle cx="76" cy="70" r="2.9" fill="#0F4C9E" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"/>
+          <circle cx="24" cy="70" r="2.5" fill="#0F4C9E" stroke="rgba(255,255,255,0.55)" stroke-width="1.0"/>
+        </g>
+        <circle cx="50" cy="44" r="6.5" fill="rgba(0,0,0,0.3)"/>
+        <circle cx="50" cy="44" r="4"   fill="rgba(255,255,255,0.3)"/>
+        <circle cx="50" cy="44" r="2"   fill="rgba(255,255,255,0.7)"/>
+        <circle cx="50" cy="44" r="0.8" fill="white"/>
+      </svg>
+    </div>
+    <span class="mark-label">blue</span>
+  </div>
+
+  <!-- LIGHT bg -->
+  <div class="mark-box">
+    <div style="background:#F0F4FF;padding:16px;border:1px solid rgba(0,0,0,0.08);">
+      <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="lt-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="black" stop-opacity="1"/>
+            <stop offset="70%" stop-color="black" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="black" stop-opacity="0.18"/>
+          </radialGradient>
+          <mask id="lt-m"><rect width="100" height="100" fill="url(#lt-rg)"/></mask>
+        </defs>
+        <g mask="url(#lt-m)" stroke="#E2E8F8" stroke-width="0.7">
+          <line x1="50" y1="44" x2="50" y2="8"/><line x1="50" y1="44" x2="76" y2="18"/>
+          <line x1="50" y1="44" x2="86" y2="44"/><line x1="50" y1="44" x2="76" y2="70"/>
+          <line x1="50" y1="44" x2="50" y2="80"/><line x1="50" y1="44" x2="24" y2="70"/>
+          <line x1="50" y1="44" x2="14" y2="44"/><line x1="50" y1="44" x2="24" y2="18"/>
+        </g>
+        <g mask="url(#lt-m)" stroke="#07080A" stroke-width="1.3" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/>
+          <line x1="76" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="24" y2="70"/>
+          <line x1="24" y1="70" x2="14" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+        </g>
+        <line x1="76" y1="70" x2="90" y2="88" stroke="#07080A" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="90" cy="88" r="2" fill="#07080A"/>
+        <g mask="url(#lt-m)" stroke="#3A7FE0" stroke-width="2.0" stroke-linecap="round">
+          <line x1="24" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="76" y2="70"/>
+        </g>
+        <g mask="url(#lt-m)" stroke="rgba(15,76,158,0.4)" stroke-width="1.0" stroke-linecap="round">
+          <line x1="14" y1="44" x2="24" y2="18"/><line x1="14" y1="44" x2="24" y2="70"/><line x1="14" y1="44" x2="50" y2="44"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/><line x1="86" y1="44" x2="50" y2="44"/>
+        </g>
+        <g mask="url(#lt-m)" stroke="#3A7FE0" stroke-width="1.1" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="76" y1="18" x2="50" y2="8"/><line x1="24" y1="18" x2="76" y2="18"/>
+        </g>
+        <g mask="url(#lt-m)">
+          <line x1="24" y1="18" x2="24" y2="70" stroke="#0F4C9E" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="24" y1="18" x2="76" y2="70" stroke="#0F4C9E" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="76" y1="18" x2="76" y2="70" stroke="#0F4C9E" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <g mask="url(#lt-m)">
+          <circle cx="24" cy="18" r="2.5" fill="#F0F4FF" stroke="#07080A" stroke-width="1.0"/>
+          <circle cx="76" cy="18" r="2.5" fill="#F0F4FF" stroke="#07080A" stroke-width="1.0"/>
+          <circle cx="76" cy="70" r="2.9" fill="#F0F4FF" stroke="#0F4C9E" stroke-width="1.2"/>
+          <circle cx="24" cy="70" r="2.5" fill="#F0F4FF" stroke="#5A6A8A" stroke-width="1.0"/>
+        </g>
+        <circle cx="50" cy="44" r="6.5" fill="#0A2D64"/>
+        <circle cx="50" cy="44" r="4"   fill="#0F4C9E"/>
+        <circle cx="50" cy="44" r="2"   fill="#3A7FE0"/>
+        <circle cx="50" cy="44" r="0.8" fill="#F0F4FF"/>
+      </svg>
+    </div>
+    <span class="mark-label">light</span>
+  </div>
+
+  <!-- Size scale -->
+  <div style="display:flex;gap:10px;align-items:flex-end;padding-left:10px;border-left:1px solid rgba(255,255,255,0.05);">
+    <div class="mark-box">
+      <svg width="40" height="40" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="s1-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="white" stop-opacity="1"/>
+            <stop offset="72%" stop-color="white" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0.2"/>
+          </radialGradient>
+          <mask id="s1-m"><rect width="100" height="100" fill="url(#s1-rg)"/></mask>
+        </defs>
+        <g mask="url(#s1-m)" stroke="#1C2030" stroke-width="0.8">
+          <line x1="50" y1="44" x2="50" y2="8"/><line x1="50" y1="44" x2="76" y2="18"/>
+          <line x1="50" y1="44" x2="86" y2="44"/><line x1="50" y1="44" x2="76" y2="70"/>
+          <line x1="50" y1="44" x2="24" y2="70"/><line x1="50" y1="44" x2="14" y2="44"/>
+          <line x1="50" y1="44" x2="24" y2="18"/>
+        </g>
+        <g mask="url(#s1-m)" stroke="#F0F4FF" stroke-width="1.4" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/>
+          <line x1="76" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="24" y2="70"/>
+          <line x1="24" y1="70" x2="14" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+        </g>
+        <line x1="76" y1="70" x2="90" y2="88" stroke="#F0F4FF" stroke-width="1.8" stroke-linecap="round"/>
+        <circle cx="90" cy="88" r="2.5" fill="#F0F4FF"/>
+        <g mask="url(#s1-m)">
+          <line x1="24" y1="18" x2="24" y2="70" stroke="#3A7FE0" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="24" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="76" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="24" cy="18" r="3"   fill="#07080A" stroke="#C8D4EE" stroke-width="1.2"/>
+          <circle cx="76" cy="18" r="3"   fill="#07080A" stroke="#C8D4EE" stroke-width="1.2"/>
+          <circle cx="76" cy="70" r="3.5" fill="#07080A" stroke="#3A7FE0" stroke-width="1.5"/>
+          <circle cx="24" cy="70" r="3"   fill="#07080A" stroke="#6AA3F0" stroke-width="1.2"/>
+        </g>
+        <circle cx="50" cy="44" r="7"   fill="#0A2D64"/>
+        <circle cx="50" cy="44" r="4.5" fill="#0F4C9E"/>
+        <circle cx="50" cy="44" r="2.5" fill="#3A7FE0"/>
+        <circle cx="50" cy="44" r="1"   fill="#A8C8F8"/>
+      </svg>
+      <span class="mark-label">40px</span>
+    </div>
+    <div class="mark-box">
+      <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="s2-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="white" stop-opacity="1"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0.2"/>
+          </radialGradient>
+          <mask id="s2-m"><rect width="100" height="100" fill="url(#s2-rg)"/></mask>
+        </defs>
+        <g mask="url(#s2-m)" stroke="#F0F4FF" stroke-width="2" stroke-linecap="round">
+          <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+        </g>
+        <line x1="76" y1="70" x2="90" y2="88" stroke="#F0F4FF" stroke-width="2.5" stroke-linecap="round"/>
+        <g mask="url(#s2-m)">
+          <line x1="24" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="3" stroke-linecap="round"/>
+          <line x1="76" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <circle cx="50" cy="44" r="8"   fill="#0F4C9E"/>
+        <circle cx="50" cy="44" r="5"   fill="#3A7FE0"/>
+        <circle cx="50" cy="44" r="2"   fill="#A8C8F8"/>
+      </svg>
+      <span class="mark-label">24px</span>
+    </div>
+    <div class="mark-box">
+      <svg width="16" height="16" viewBox="0 0 100 100" fill="none">
+        <defs>
+          <radialGradient id="s3-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="white" stop-opacity="1"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0.18"/>
+          </radialGradient>
+          <mask id="s3-m"><rect width="100" height="100" fill="url(#s3-rg)"/></mask>
+        </defs>
+        <g mask="url(#s3-m)" stroke="#F0F4FF" stroke-width="5" stroke-linecap="round">
+          <line x1="50" y1="8" x2="76" y2="18"/>
+          <line x1="76" y1="18" x2="86" y2="44"/>
+        </g>
+        <g mask="url(#s3-m)">
+          <line x1="24" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <circle cx="50" cy="44" r="11"  fill="#0F4C9E"/>
+        <circle cx="50" cy="44" r="6.5" fill="#3A7FE0"/>
+        <circle cx="50" cy="44" r="2.5" fill="#A8C8F8"/>
+      </svg>
+      <span class="mark-label">16px</span>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- LOCKUPS -->
+<div class="sec-label">// lockup — Exo 2 · NAGR × QIL</div>
+<div style="display:flex;flex-direction:column;gap:10px;">
+
+  <!-- Full dark -->
+  <div style="background:#07080A;padding:12px 16px;border:1px solid rgba(255,255,255,0.07);display:inline-flex;align-items:center;gap:14px;">
+    <svg width="40" height="40" viewBox="0 0 100 100" fill="none">
+      <defs>
+        <radialGradient id="lk-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="white" stop-opacity="1"/>
+          <stop offset="70%" stop-color="white" stop-opacity="0.6"/>
+          <stop offset="100%" stop-color="white" stop-opacity="0.2"/>
+        </radialGradient>
+        <mask id="lk-m"><rect width="100" height="100" fill="url(#lk-rg)"/></mask>
+        <filter id="lk-f" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="0.5"/></filter>
+      </defs>
+      <g mask="url(#lk-m)" stroke="#1C2030" stroke-width="0.75">
+        <line x1="50" y1="44" x2="50" y2="8"/><line x1="50" y1="44" x2="76" y2="18"/>
+        <line x1="50" y1="44" x2="86" y2="44"/><line x1="50" y1="44" x2="76" y2="70"/>
+        <line x1="50" y1="44" x2="24" y2="70"/><line x1="50" y1="44" x2="14" y2="44"/>
+        <line x1="50" y1="44" x2="24" y2="18"/>
+      </g>
+      <g mask="url(#lk-m)" filter="url(#lk-f)" stroke="#F0F4FF" stroke-width="1.2" stroke-linecap="round">
+        <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+        <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/>
+        <line x1="76" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="24" y2="70"/>
+        <line x1="24" y1="70" x2="14" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+      </g>
+      <line x1="76" y1="70" x2="90" y2="88" stroke="#F0F4FF" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="90" cy="88" r="2.5" fill="#F0F4FF"/>
+      <g mask="url(#lk-m)" stroke="rgba(58,127,224,0.42)" stroke-width="1.0" stroke-linecap="round">
+        <line x1="14" y1="44" x2="24" y2="18"/><line x1="14" y1="44" x2="24" y2="70"/><line x1="14" y1="44" x2="50" y2="44"/>
+        <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/><line x1="86" y1="44" x2="50" y2="44"/>
+      </g>
+      <g mask="url(#lk-m)" stroke="#6AA3F0" stroke-width="1.1" stroke-linecap="round">
+        <line x1="24" y1="18" x2="50" y2="8"/><line x1="76" y1="18" x2="50" y2="8"/><line x1="24" y1="18" x2="76" y2="18"/>
+      </g>
+      <g mask="url(#lk-m)">
+        <line x1="24" y1="18" x2="24" y2="70" stroke="#3A7FE0" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="24" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="76" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <g mask="url(#lk-m)">
+        <circle cx="24" cy="18" r="2.6" fill="#07080A" stroke="#8FA4BE" stroke-width="1.0"/>
+        <circle cx="76" cy="18" r="2.6" fill="#07080A" stroke="#8FA4BE" stroke-width="1.0"/>
+        <circle cx="76" cy="70" r="3.0" fill="#07080A" stroke="#6AA3F0" stroke-width="1.3"/>
+        <circle cx="24" cy="70" r="2.6" fill="#07080A" stroke="#5A6A8A" stroke-width="1.0"/>
+      </g>
+      <circle cx="50" cy="44" r="6.5" fill="#071E42"/>
+      <circle cx="50" cy="44" r="4"   fill="#0F4C9E"/>
+      <circle cx="50" cy="44" r="2"   fill="#3A7FE0"/>
+      <circle cx="50" cy="44" r="0.8" fill="#A8C8F8"/>
+    </svg>
+    <div>
+      <div style="font-family:'Exo 2',sans-serif;font-size:16px;font-weight:700;color:#F0F4FF;letter-spacing:0.05em;text-transform:uppercase;line-height:1.1;">Quant Innovation Lab</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#3A7FE0;letter-spacing:0.05em;margin-top:3px;">De la mente al mundo · NAGR × QIL</div>
+    </div>
+  </div>
+
+  <!-- Compact -->
+  <div style="background:#07080A;padding:7px 12px;border:1px solid rgba(255,255,255,0.07);display:inline-flex;align-items:center;gap:10px;">
+    <svg width="20" height="20" viewBox="0 0 100 100" fill="none">
+      <defs>
+        <radialGradient id="cp-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="white" stop-opacity="1"/>
+          <stop offset="100%" stop-color="white" stop-opacity="0.2"/>
+        </radialGradient>
+        <mask id="cp-m"><rect width="100" height="100" fill="url(#cp-rg)"/></mask>
+      </defs>
+      <g mask="url(#cp-m)" stroke="#F0F4FF" stroke-width="2.5" stroke-linecap="round">
+        <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+        <line x1="76" y1="18" x2="86" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+      </g>
+      <line x1="76" y1="70" x2="90" y2="88" stroke="#F0F4FF" stroke-width="3" stroke-linecap="round"/>
+      <g mask="url(#cp-m)">
+        <line x1="24" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="76" y1="18" x2="76" y2="70" stroke="#3A7FE0" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <circle cx="50" cy="44" r="9"   fill="#0F4C9E"/>
+      <circle cx="50" cy="44" r="5.5" fill="#3A7FE0"/>
+      <circle cx="50" cy="44" r="2.5" fill="#A8C8F8"/>
+    </svg>
+    <span style="font-family:'Exo 2',sans-serif;font-size:12px;font-weight:700;color:#F0F4FF;letter-spacing:0.08em;text-transform:uppercase;">QIL</span>
+    <div style="width:1px;height:14px;background:rgba(255,255,255,0.09);"></div>
+    <span style="font-family:'Exo 2',sans-serif;font-size:11px;font-weight:300;color:#5A6A8A;letter-spacing:0.04em;text-transform:uppercase;">Quant Innovation Lab</span>
+  </div>
+
+  <!-- Light lockup -->
+  <div style="background:#F0F4FF;padding:10px 14px;border:1px solid rgba(0,0,0,0.08);display:inline-flex;align-items:center;gap:12px;">
+    <svg width="30" height="30" viewBox="0 0 100 100" fill="none">
+      <defs>
+        <radialGradient id="ll-rg" cx="50" cy="44" r="46" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="black" stop-opacity="1"/>
+          <stop offset="70%" stop-color="black" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="black" stop-opacity="0.15"/>
+        </radialGradient>
+        <mask id="ll-m"><rect width="100" height="100" fill="url(#ll-rg)"/></mask>
+      </defs>
+      <g mask="url(#ll-m)" stroke="#E2E8F8" stroke-width="0.75">
+        <line x1="50" y1="44" x2="76" y2="18"/><line x1="50" y1="44" x2="76" y2="70"/>
+        <line x1="50" y1="44" x2="24" y2="70"/><line x1="50" y1="44" x2="24" y2="18"/>
+      </g>
+      <g mask="url(#ll-m)" stroke="#07080A" stroke-width="1.5" stroke-linecap="round">
+        <line x1="24" y1="18" x2="50" y2="8"/><line x1="50" y1="8" x2="76" y2="18"/>
+        <line x1="76" y1="18" x2="86" y2="44"/><line x1="86" y1="44" x2="76" y2="70"/>
+        <line x1="24" y1="70" x2="14" y2="44"/><line x1="14" y1="44" x2="24" y2="18"/>
+      </g>
+      <line x1="76" y1="70" x2="90" y2="88" stroke="#07080A" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="90" cy="88" r="2.5" fill="#07080A"/>
+      <g mask="url(#ll-m)" stroke="#3A7FE0" stroke-width="2" stroke-linecap="round">
+        <line x1="24" y1="70" x2="50" y2="80"/><line x1="50" y1="80" x2="76" y2="70"/>
+      </g>
+      <g mask="url(#ll-m)">
+        <line x1="24" y1="18" x2="24" y2="70" stroke="#0F4C9E" stroke-width="2" stroke-linecap="round"/>
+        <line x1="24" y1="18" x2="76" y2="70" stroke="#0F4C9E" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="76" y1="18" x2="76" y2="70" stroke="#0F4C9E" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="18" r="3"   fill="#F0F4FF" stroke="#07080A" stroke-width="1.2"/>
+        <circle cx="76" cy="18" r="3"   fill="#F0F4FF" stroke="#07080A" stroke-width="1.2"/>
+        <circle cx="76" cy="70" r="3.5" fill="#F0F4FF" stroke="#0F4C9E" stroke-width="1.5"/>
+        <circle cx="24" cy="70" r="3"   fill="#F0F4FF" stroke="#0F4C9E" stroke-width="1.2"/>
+      </g>
+      <circle cx="50" cy="44" r="6.5" fill="#0A2D64"/>
+      <circle cx="50" cy="44" r="4"   fill="#0F4C9E"/>
+      <circle cx="50" cy="44" r="2"   fill="#3A7FE0"/>
+      <circle cx="50" cy="44" r="0.8" fill="#F0F4FF"/>
+    </svg>
+    <div>
+      <div style="font-family:'Exo 2',sans-serif;font-size:14px;font-weight:700;color:#07080A;letter-spacing:0.05em;text-transform:uppercase;">Quant Innovation Lab</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#0F4C9E;margin-top:2px;letter-spacing:0.05em;">De la mente al mundo</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ANATOMY -->
+<div class="sec-label">// anatomía del símbolo</div>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+  <div style="background:#0D0F14;border:1px solid rgba(255,255,255,0.06);padding:10px;">
+    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+      <div style="width:18px;height:2px;background:#3A7FE0;border-radius:1px;"></div>
+      <span style="font-family:'Exo 2',sans-serif;font-size:11px;font-weight:700;color:#3A7FE0;">N · A</span>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#2E3850;line-height:1.6;">N = vertical+diagonal<br/>A = ápice+barra</div>
+  </div>
+  <div style="background:#0D0F14;border:1px solid rgba(255,255,255,0.06);padding:10px;">
+    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+      <div style="width:18px;height:1.5px;background:rgba(58,127,224,0.45);border-radius:1px;"></div>
+      <span style="font-family:'Exo 2',sans-serif;font-size:11px;color:rgba(58,127,224,0.7);">G · R</span>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#2E3850;line-height:1.6;">G = arco izq+lengüeta<br/>R = arco der+barra</div>
+  </div>
+  <div style="background:#0D0F14;border:1px solid rgba(255,255,255,0.06);padding:10px;">
+    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+      <div style="width:18px;height:1.5px;background:#F0F4FF;border-radius:1px;opacity:0.7;"></div>
+      <span style="font-family:'Exo 2',sans-serif;font-size:11px;font-weight:700;color:#F0F4FF;">Q · I</span>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#2E3850;line-height:1.6;">Q = anillo+tail<br/>I = eje vertical central</div>
+  </div>
+  <div style="background:#0D0F14;border:1px solid rgba(255,255,255,0.06);padding:10px;">
+    <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+      <div style="width:18px;height:1.5px;background:#D4E5FC;border-radius:1px;"></div>
+      <span style="font-family:'Exo 2',sans-serif;font-size:11px;color:#D4E5FC;">L · Hub</span>
+    </div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#2E3850;line-height:1.6;">L = esquina inferior<br/>Hub = tú al centro</div>
+  </div>
+</div>
+
+<!-- Signature footer -->
+<div style="margin-top:28px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.05);display:flex;justify-content:space-between;align-items:flex-end;">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:8px;color:#1C2030;line-height:1.8;">
+    © 2026 Quant Innovation Lab<br/>
+    NAGR × QIL · Constellation Mark
+  </div>
+  <!-- Signature SVG — artistic touch, trazado de la firma original -->
+  <svg width="120" height="72" viewBox="0 0 360 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.35;">
+    <!-- Main left sweep: curved stroke from apex down-left, concave -->
+    <path d="M 185 60 C 182 80, 175 120, 168 165 C 162 200, 148 230, 125 258" 
+          stroke="#3A7FE0" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Inner curved edge — the sail-like concave left side -->
+    <path d="M 185 60 C 175 100, 158 148, 145 185 C 135 212, 128 238, 125 258" 
+          stroke="#3A7FE0" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <!-- Long diagonal slash — top-right to lower-left, straight through center -->
+    <path d="M 278 148 C 250 168, 220 188, 190 208 C 160 228, 135 246, 108 260" 
+          stroke="#3A7FE0" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- Right descender: apex down to lower-right -->
+    <path d="M 185 60 C 210 120, 230 170, 240 210 C 248 238, 245 255, 235 268" 
+          stroke="#3A7FE0" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- Base concave arc: left foot to right foot, curving upward in middle -->
+    <path d="M 108 260 C 130 252, 160 248, 180 250 C 200 252, 220 258, 235 268" 
+          stroke="#3A7FE0" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </svg>
+</div>
+
+</body>
+</html>

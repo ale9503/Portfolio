@@ -1,52 +1,107 @@
 /* =========================================================
-   Sistema de diseño Ejecutivo 2026 — Alejandro Gómez
-   Bento Grid & Elegant Minimalism
+   Sistema de diseño QIL — Alejandro Gómez · Dark-First v2026
 ========================================================= */
 :root {
-    /* Paleta 2026 (Autoridad Bancaria/Tech) */
-    --neutral-100: #F8F9FA;
-    /* Gris perla / Off-white (Fondo Principal) */
-    --neutral-900: #212529;
-    /* Grafito profundo (Texto Principal) */
-    --neutral-700: #495057;
-    /* Texto secundario */
-    --neutral-200: rgba(0, 0, 0, 0.05);
-    /* Bordes sutiles */
-    --white: #ffffff;
+    /* Fondos */
+    --bg-base: #07080A;
+    --bg-surface: #0D0F14;
+    --bg-elevated: #141720;
+    --bg-overlay: #1C2030;
+    --bg-blue-wash: #09153A;
+    --bg-blue-card: #0A1E4A;
 
-    --brand-core: #0A2540;
-    /* Azul Corporativo (Confianza) */
-    --brand-accent: #2ad1ff;
-    /* Teal dinamico para nodos CTA/Radar */
-    --brand-accent-hover: #1ab0db;
-    --bg-dark: #0A2540;
+    /* Foreground */
+    --fg-1: #F0F4FF;
+    --fg-2: #C8D4EE;
+    --fg-3: #5A6A8A;
+    --fg-4: #2E3850;
+    --fg-accent: #3A7FE0;
 
-    /* Tipografía Escaneable */
-    --font-heading: 'Space Grotesk', system-ui, sans-serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    /* Brand */
+    --brand: #0F4C9E;
+    --brand-bright: #3A7FE0;
+    --brand-dim: #0A2D64;
 
-    /* Tamaños font-size: base no menor a 16px */
+    /* Bordes */
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.10);
+    --border-strong: rgba(255, 255, 255, 0.20);
+    --border-brand: #0F4C9E;
+    --border-brand-dim: rgba(15, 76, 158, 0.4);
+
+    /* Interactivo */
+    --btn-primary-bg: #F0F4FF;
+    --btn-primary-fg: #07080A;
+    --btn-accent-bg: #0F4C9E;
+    --btn-accent-fg: #F0F4FF;
+    --focus-ring: #3A7FE0;
+
+    /* Semántico */
+    --error: #E05252;
+    --success: #3AB88A;
+    --warning: #E8A830;
+
+    /* Tipografías QIL */
+    --font-display: 'Space Mono', monospace;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Aliases: mapean vars antiguas → nuevas sin tocar el resto del CSS */
+    --neutral-100: var(--bg-base);
+    --neutral-900: var(--fg-1);
+    --neutral-700: var(--fg-2);
+    --neutral-200: var(--border-subtle);
+    --white: var(--fg-1);
+    --brand-core: var(--brand);
+    --brand-accent: var(--brand-bright);
+    --brand-accent-hover: var(--brand);
+    --bg-dark: var(--bg-base);
+    --font-heading: var(--font-display);
+
+    /* Vars usadas en el CSS pero nunca declaradas */
+    --surface-light: var(--bg-elevated);
+    --border-color: var(--border-default);
+    --text-main: var(--fg-1);
+    --text-muted: var(--fg-3);
+    --transition-fast: all 0.2s ease;
+
+    /* Tamaños tipográficos (sin cambio) */
     --fs-base: 16px;
     --fs-body: 1rem;
-    /* 16px */
     --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
-    /* Reducido para mejor legibilidad */
     --fs-h2: clamp(1.25rem, 3vw, 2rem);
     --fs-h3: 1.15rem;
     --fs-kpi: 2.5rem;
-    /* KPIs y métricas duras */
 
     --lh-body: 1.6;
 
-    /* Espaciado del Bento Grid */
+    /* Espaciado base-8 (QIL) */
+    --space-1: 4px;   --space-2: 8px;   --space-3: 12px;
+    --space-4: 16px;  --space-5: 24px;  --space-6: 32px;
+    --space-7: 48px;  --space-8: 64px;  --space-9: 96px;
+    --space-10: 128px;
+
+    /* Bento (redefinidos con tokens QIL) */
     --bento-gap: 16px;
     --bento-padding: 32px;
-    --bento-radius: 12px;
-    --bento-border: 1px solid rgba(0, 0, 0, 0.05);
-    --bento-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    --bento-radius: var(--radius-md);
+    --bento-border: 1px solid var(--border-subtle);
+    --bento-shadow: var(--shadow-sm);
 
-    /* Focus ring accesible */
-    --focus: 3px solid var(--brand-accent);
+    /* Radios QIL */
+    --radius-xs: 2px;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-full: 9999px;
+
+    /* Sombras dark style */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+    --shadow-blue: 0 0 0 1px rgba(15, 76, 158, 0.5), 0 4px 20px rgba(15, 76, 158, 0.15);
+
+    /* Focus ring */
+    --focus: 3px solid var(--brand-bright);
 }
 
 /* Reset mínimo y base */
@@ -77,7 +132,7 @@ h5,
 h6 {
     font-family: var(--font-heading);
     font-weight: 700;
-    color: var(--brand-core);
+    color: var(--fg-1);
     margin-top: 0;
     line-height: 1.2;
 }
@@ -99,8 +154,8 @@ img {
 
 /* Sidebar / Header colapsable */
 .sidebar {
-    background: var(--brand-core);
-    color: var(--white);
+    background: var(--bg-surface);
+    color: var(--fg-1);
     padding: 40px 24px;
     display: flex;
     flex-direction: column;
@@ -153,7 +208,7 @@ img {
 
 .language-switch .is-active {
     background: var(--brand-accent);
-    color: var(--brand-core);
+    color: var(--fg-1);
     border-color: var(--brand-accent);
     pointer-events: none;
     font-weight: 800;
@@ -185,7 +240,7 @@ img {
 }
 
 .bento-card {
-    background: var(--white);
+    background: var(--bg-surface);
     border: var(--bento-border);
     border-radius: var(--bento-radius);
     padding: var(--bento-padding);
@@ -195,7 +250,7 @@ img {
 
 .bento-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-md);
 }
 
 .bento-card--dark {
@@ -211,6 +266,11 @@ img {
 
 .bento-card--accent {
     background: var(--neutral-100);
+}
+
+.bento-card--light {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
 }
 
 /* =========================================================
@@ -358,8 +418,8 @@ img {
 
 .bento-card__role {
     font-weight: 500;
-    color: var(--brand-core);
-    background: var(--neutral-100);
+    color: var(--fg-1);
+    background: var(--brand);
     padding: 8px 16px;
     border-radius: 99px;
     font-size: 0.9rem;
@@ -413,8 +473,8 @@ img {
 /* Dropdowns & Selects (Global consistency) */
 select {
     appearance: none;
-    background-color: var(--white);
-    /* Assuming --surface-light is white or similar */
+    background-color: var(--bg-elevated);
+
     color: var(--neutral-900);
     /* Assuming --text-main is neutral-900 */
     border: 1px solid var(--neutral-200);
@@ -426,7 +486,7 @@ select {
     font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23212529%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23C8D4EE%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
     background-position: right 12px center;
     background-size: 10px auto;
@@ -436,8 +496,8 @@ select {
 
 select:focus {
     outline: none;
-    border-color: var(--brand-core);
-    box-shadow: 0 0 0 3px rgba(42, 209, 255, 0.2);
+    border-color: var(--brand-bright);
+    box-shadow: 0 0 0 3px rgba(58, 127, 224, 0.2);
 }
 
 select:disabled {
@@ -481,8 +541,8 @@ hr {
 }
 
 .skills-table th {
-    background: var(--brand-core);
-    color: var(--white);
+    background: var(--brand);
+    color: var(--fg-1);
     font-weight: 600;
     font-family: var(--font-heading);
     font-size: 0.95rem;
@@ -515,7 +575,7 @@ hr {
 }
 
 .intro-text-bento {
-    background: var(--white);
+    background: var(--bg-surface);
     padding: 24px;
     border-radius: var(--bento-radius);
     border: var(--bento-border);
@@ -556,7 +616,8 @@ hr {
 }
 
 .radar-tooltip {
-    background: var(--neutral-100);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
     padding: 32px;
 }
 
@@ -626,13 +687,14 @@ hr {
 }
 
 .main .btn--secondary {
-    color: var(--brand-core);
-    border-color: var(--brand-core);
+    color: var(--brand-bright);
+    border-color: var(--border-default);
 }
 
 .main .btn--secondary:hover {
-    background: var(--brand-core);
-    color: var(--white);
+    background: var(--bg-elevated);
+    color: var(--fg-1);
+    border-color: var(--brand-bright);
 }
 
 
@@ -751,4 +813,20 @@ hr {
     .language-switch .btn {
         padding: 8px 16px;
     }
+}
+
+/* =========================================================
+   Sidebar — Logo QIL
+========================================================= */
+.sidebar__brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.sidebar__logo {
+    width: 140px;
+    height: auto;
+    display: block;
 }

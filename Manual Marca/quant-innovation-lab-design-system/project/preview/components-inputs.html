@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:24px; color:#F0F4FF; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; margin-bottom:12px; }
+  .divider { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:16px 0; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .field { display:flex; flex-direction:column; gap:5px; }
+  .fl { font-size:12px; font-weight:600; color:#C8D4EE; }
+  .fh { font-size:10px; color:#2E3850; font-family:'JetBrains Mono',monospace; }
+  input, select, textarea {
+    font-family:'Plus Jakarta Sans',sans-serif; font-size:14px; color:#F0F4FF;
+    background:#0D0F14; border:1px solid rgba(255,255,255,0.10);
+    padding:9px 12px; outline:none; width:100%;
+  }
+  input::placeholder { color:#2E3850; }
+  input.focused { border-color:#3A7FE0; box-shadow:0 0 0 2px rgba(58,127,224,0.15); }
+  input.error { border-color:#E05252; }
+  .err { font-size:11px; color:#E05252; font-family:'JetBrains Mono',monospace; }
+  input.disabled { background:#141720; color:#2E3850; cursor:not-allowed; }
+  select { appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A6A8A' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 12px center; padding-right:32px; background-color:#0D0F14; }
+  textarea { resize:vertical; min-height:64px; background:#0D0F14; }
+  .check { display:flex; align-items:center; gap:8px; font-size:14px; }
+</style>
+</head>
+<body>
+  <div class="label">Formularios / Form Inputs</div>
+  <div class="grid">
+    <div class="field"><div class="fl">Default</div><input type="text" placeholder="Enter value…"></div>
+    <div class="field"><div class="fl">Focused</div><input class="focused" type="text" value="Active input"></div>
+    <div class="field"><div class="fl">Error</div><input class="error" type="text" value="Valor inválido"><div class="err">Este campo es requerido.</div></div>
+    <div class="field"><div class="fl">Disabled</div><input class="disabled" type="text" value="Solo lectura" disabled></div>
+  </div>
+  <hr class="divider">
+  <div class="grid">
+    <div class="field"><div class="fl">Select</div><select><option>Área de enfoque…</option><option selected>Tecnología</option><option>Estrategia</option></select></div>
+    <div class="field"><div class="fl">Textarea</div><textarea placeholder="Describe el proyecto…"></textarea></div>
+  </div>
+  <hr class="divider">
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+    <div class="check"><input type="checkbox" checked style="width:15px;height:15px;accent-color:#3A7FE0;"> Explorar</div>
+    <div class="check"><input type="checkbox" style="width:15px;height:15px;accent-color:#3A7FE0;"> Probar</div>
+    <div class="check"><input type="radio" name="r" checked style="width:15px;height:15px;accent-color:#3A7FE0;"> Largo plazo</div>
+    <div class="check"><input type="radio" name="r" style="width:15px;height:15px;accent-color:#3A7FE0;"> Rápido</div>
+  </div>
+</body>
+</html>

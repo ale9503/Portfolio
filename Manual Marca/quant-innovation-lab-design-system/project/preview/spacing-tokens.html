@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:20px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; padding-bottom:8px; }
+  .row { display:flex; align-items:center; gap:12px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.04); }
+  .bar { background:#0F4C9E; height:8px; flex-shrink:0; }
+  .token { font-family:'JetBrains Mono',monospace; font-size:10px; color:#3A7FE0; width:72px; flex-shrink:0; }
+  .px { font-size:11px; font-weight:600; color:#F0F4FF; width:36px; }
+  .use { font-size:10px; color:#2E3850; }
+</style>
+</head>
+<body>
+  <div class="label">Espaciado / Spacing — base 8px</div>
+  <div class="row"><span class="token">--space-1</span><div class="bar" style="width:4px;"></div><span class="px">4px</span><span class="use">Gaps inline, icon padding</span></div>
+  <div class="row"><span class="token">--space-2</span><div class="bar" style="width:8px;"></div><span class="px">8px</span><span class="use">Default gap, small padding</span></div>
+  <div class="row"><span class="token">--space-3</span><div class="bar" style="width:12px;"></div><span class="px">12px</span><span class="use">Input padding, list gap</span></div>
+  <div class="row"><span class="token">--space-4</span><div class="bar" style="width:16px;"></div><span class="px">16px</span><span class="use">Card padding, base unit</span></div>
+  <div class="row"><span class="token">--space-5</span><div class="bar" style="width:24px;"></div><span class="px">24px</span><span class="use">Component margin, column gap</span></div>
+  <div class="row"><span class="token">--space-6</span><div class="bar" style="width:32px;"></div><span class="px">32px</span><span class="use">Section padding</span></div>
+  <div class="row"><span class="token">--space-7</span><div class="bar" style="width:48px;"></div><span class="px">48px</span><span class="use">Large block spacing</span></div>
+  <div class="row"><span class="token">--space-8</span><div class="bar" style="width:64px;"></div><span class="px">64px</span><span class="use">Hero / page top</span></div>
+  <div class="row"><span class="token">--space-9</span><div class="bar" style="width:80px;"></div><span class="px">96px</span><span class="use">Section gap desktop</span></div>
+  <div class="row"><span class="token">--space-10</span><div class="bar" style="width:96px;"></div><span class="px">128px</span><span class="use">Page-level breathing room</span></div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QIL — Quant Innovation Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  html { font-size:16px; }
+  body { background:#07080A; color:#F0F4FF; font-family:'Plus Jakarta Sans',sans-serif; }
+  ::-webkit-scrollbar { width:4px; } ::-webkit-scrollbar-track { background:#0D0F14; } ::-webkit-scrollbar-thumb { background:#1C2030; }
+  button { font-family:inherit; }
+  .fade-in { animation:fadeUp 0.25s cubic-bezier(0.25,0.1,0.25,1) both; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="Header.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="LabCard.jsx"></script>
+<script type="text/babel" src="Footer.jsx"></script>
+
+<script type="text/babel">
+const PROJECTS = [
+  { id:1, tag:'Ciencia de Datos', title:'Redes de innovación en ecosistemas tech', description:'¿Cómo se propagan las ideas en comunidades conectadas? Modelamos la difusión de innovación usando simulación basada en agentes.', date:'2026-03', accent:true },
+  { id:2, tag:'Métodos Cuantitativos', title:'Midiendo impacto de investigación a largo plazo', description:'Un estudio longitudinal de redes de citas revela que el trabajo más impactante rara vez se reconoce en los primeros cinco años.', date:'2025-11' },
+  { id:3, tag:'Estrategia', title:'Cultura como ventaja competitiva', description:'Cómo la cultura organizacional moldea la velocidad de innovación en 200 empresas a lo largo de una década.', date:'2025-09' },
+  { id:4, tag:'Comunidad', title:'Conocimiento abierto e inteligencia colectiva', description:'Cuando los investigadores comparten temprano, ¿mejoran los resultados? Evidencia de cinco años de publicaciones abiertas.', date:'2025-07', accent:true },
+  { id:5, tag:'Sistemas', title:'De la mente al mercado', description:'Mapeando las barreras cognitivas y estructurales que separan una buena idea de un producto viable.', date:'2025-04' },
+  { id:6, tag:'IA / ML', title:'Inferencia causal en investigación observacional', description:'Enfoques prácticos para identificación causal cuando la aleatorización no es factible — con aplicaciones a análisis de política.', date:'2025-01' },
+];
+
+// ── Screens ──────────────────────────────────────────────────────────────────
+
+const HomeScreen = ({ navigate }) => (
+  <div className="fade-in">
+    <Hero navigate={navigate} />
+
+    {/* Featured */}
+    <section style={{ background:'#07080A', padding:'80px 32px' }}>
+      <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+        <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-end', marginBottom:'40px' }}>
+          <div>
+            <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', letterSpacing:'0.08em', textTransform:'uppercase', color:'#2E3850', marginBottom:'8px' }}>// últimas publicaciones</div>
+            <h2 style={{ fontFamily:"'Space Mono',monospace", fontSize:'28px', color:'#F0F4FF', fontWeight:700, letterSpacing:'-0.02em' }}>Investigación destacada</h2>
+          </div>
+          <button onClick={() => navigate('research')} style={{ background:'none', border:'none', color:'#3A7FE0', fontSize:'13px', fontWeight:700, cursor:'pointer', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>Ver todo →</button>
+        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'1px', background:'rgba(255,255,255,0.05)' }}>
+          {PROJECTS.slice(0,3).map(p => <LabCard key={p.id} {...p} onClick={() => navigate('project', p)} />)}
+        </div>
+      </div>
+    </section>
+
+    {/* About strip */}
+    <section style={{ background:'#0D0F14', borderTop:'1px solid rgba(255,255,255,0.06)', borderBottom:'1px solid rgba(255,255,255,0.06)', padding:'80px 32px' }}>
+      <div style={{ maxWidth:'1280px', margin:'0 auto', display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center' }}>
+        <div>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', letterSpacing:'0.08em', textTransform:'uppercase', color:'#2E3850', marginBottom:'16px' }}>// nuestro enfoque</div>
+          <h2 style={{ fontFamily:"'Space Mono',monospace", fontSize:'34px', lineHeight:1.15, color:'#F0F4FF', fontWeight:700, marginBottom:'24px', letterSpacing:'-0.02em' }}>
+            La innovación crece cuando<br /><span style={{ color:'#3A7FE0', fontStyle:'italic' }}>se cuida.</span>
+          </h2>
+          <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'16px', lineHeight:1.7, color:'#5A6A8A', marginBottom:'32px' }}>
+            No buscamos victorias rápidas. Exploramos, probamos y compartimos — porque el futuro no se construye en solitario.
+          </p>
+          <button onClick={() => navigate('about')} style={{ background:'none', border:'1px solid rgba(255,255,255,0.15)', color:'#F0F4FF', padding:'11px 22px', fontSize:'13px', fontWeight:600, cursor:'pointer', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>Acerca de QIL</button>
+        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1px', background:'rgba(255,255,255,0.06)' }}>
+          {[['40+','Proyectos'],['12','Instituciones'],['200K','Registros open data'],['5','Años de impacto']].map(([n, l]) => (
+            <div key={l} style={{ background:'#07080A', padding:'32px 24px' }}>
+              <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'36px', fontWeight:700, color:'#F0F4FF', marginBottom:'6px', letterSpacing:'-0.02em' }}>{n}</div>
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', color:'#2E3850', letterSpacing:'0.06em', textTransform:'uppercase' }}>{l}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* CTA strip */}
+    <section style={{ background:'#09153A', borderBottom:'1px solid rgba(15,76,158,0.3)', padding:'64px 32px' }}>
+      <div style={{ maxWidth:'1280px', margin:'0 auto', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:'24px' }}>
+        <div>
+          <div style={{ fontFamily:"'Space Mono',monospace", fontSize:'22px', fontWeight:700, color:'#F0F4FF', marginBottom:'8px' }}>¿Tienes un problema interesante?</div>
+          <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'15px', color:'#5A6A8A' }}>Exploramos junto a ti — sin compromisos iniciales.</div>
+        </div>
+        <button onClick={() => navigate('contact')} style={{ background:'#F0F4FF', color:'#07080A', border:'none', padding:'13px 28px', fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', fontWeight:800, cursor:'pointer' }}>Hablemos →</button>
+      </div>
+    </section>
+
+    <Footer navigate={navigate} />
+  </div>
+);
+
+const ResearchScreen = ({ navigate }) => {
+  const [active, setActive] = React.useState('Todos');
+  const filters = ['Todos', 'Ciencia de Datos', 'Estrategia', 'Comunidad', 'Sistemas', 'IA / ML'];
+  const filtered = active === 'Todos' ? PROJECTS : PROJECTS.filter(p => p.tag === active);
+
+  return (
+    <div className="fade-in" style={{ background:'#F0F4FF', minHeight:'100vh' }}>
+      <div style={{ background:'#07080A', padding:'96px 32px 48px' }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+          <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', letterSpacing:'0.08em', textTransform:'uppercase', color:'#2E3850', marginBottom:'12px' }}>// investigación</div>
+          <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'52px', color:'#F0F4FF', fontWeight:700, letterSpacing:'-0.03em' }}>Todos los proyectos</h1>
+        </div>
+      </div>
+      <div style={{ background:'#F0F4FF', borderBottom:'1px solid rgba(0,0,0,0.08)', padding:'0 32px' }}>
+        <div style={{ maxWidth:'1280px', margin:'0 auto', display:'flex', gap:'0', overflowX:'auto' }}>
+          {filters.map(f => (
+            <button key={f} onClick={() => setActive(f)} style={{
+              background:'none', border:'none', borderBottom: active===f ? '2px solid #0F4C9E' : '2px solid transparent',
+              padding:'13px 18px', fontSize:'13px', fontWeight: active===f ? 700 : 400,
+              color: active===f ? '#07080A' : '#5A6A8A', cursor:'pointer', whiteSpace:'nowrap',
+              fontFamily:"'Plus Jakarta Sans',sans-serif",
+            }}>{f}</button>
+          ))}
+        </div>
+      </div>
+      <div style={{ maxWidth:'1280px', margin:'0 auto', padding:'48px 32px' }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'16px' }}>
+          {filtered.map(p => <LabCardLight key={p.id} {...p} onClick={() => navigate('project', p)} />)}
+        </div>
+      </div>
+      <div style={{ background:'#07080A' }}><Footer navigate={navigate} /></div>
+    </div>
+  );
+};
+
+const ProjectScreen = ({ project, navigate }) => (
+  <div className="fade-in" style={{ background:'#F0F4FF', minHeight:'100vh' }}>
+    <div style={{ background:'#07080A', padding:'96px 32px 64px' }}>
+      <div style={{ maxWidth:'760px', margin:'0 auto' }}>
+        <button onClick={() => navigate('research')} style={{ background:'none', border:'none', color:'#5A6A8A', fontSize:'13px', cursor:'pointer', marginBottom:'32px', display:'flex', alignItems:'center', gap:'6px', fontFamily:"'Plus Jakarta Sans',sans-serif" }}>← Investigación</button>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'#3A7FE0', marginBottom:'16px' }}>{project.tag}</div>
+        <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'42px', lineHeight:1.1, color:'#F0F4FF', fontWeight:700, letterSpacing:'-0.025em', marginBottom:'20px' }}>{project.title}</h1>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'11px', color:'#2E3850' }}>{project.date}</div>
+      </div>
+    </div>
+    <div style={{ maxWidth:'760px', margin:'0 auto', padding:'64px 32px' }}>
+      <p style={{ fontSize:'18px', lineHeight:1.75, color:'#141720', marginBottom:'40px', fontWeight:400 }}>{project.description}</p>
+      <div style={{ borderTop:'1px solid rgba(0,0,0,0.08)', paddingTop:'32px', display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'32px', marginBottom:'48px' }}>
+        {[['Estado','Activo'],['Tipo','Artículo de investigación'],['Acceso','Datos abiertos']].map(([k,v]) => (
+          <div key={k}>
+            <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'9px', fontWeight:700, letterSpacing:'0.10em', textTransform:'uppercase', color:'#5A6A8A', marginBottom:'6px' }}>{k}</div>
+            <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'15px', fontWeight:600, color:'#07080A' }}>{v}</div>
+          </div>
+        ))}
+      </div>
+      {['Introducción','Metodología','Hallazgos'].map(section => (
+        <div key={section} style={{ marginBottom:'36px' }}>
+          <h2 style={{ fontFamily:"'Space Mono',monospace", fontSize:'20px', color:'#07080A', marginBottom:'14px', fontWeight:700 }}>{section}</h2>
+          {[100,88,94,76].map((w,i) => <div key={i} style={{ height:'10px', background:'rgba(0,0,0,0.07)', marginBottom:'8px', width:`${w}%` }} />)}
+        </div>
+      ))}
+    </div>
+    <div style={{ background:'#07080A' }}><Footer navigate={navigate} /></div>
+  </div>
+);
+
+const AboutScreen = ({ navigate }) => (
+  <div className="fade-in">
+    <div style={{ background:'#07080A', padding:'96px 32px 80px' }}>
+      <div style={{ maxWidth:'720px', margin:'0 auto' }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', letterSpacing:'0.08em', textTransform:'uppercase', color:'#2E3850', marginBottom:'16px' }}>// acerca</div>
+        <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'52px', lineHeight:1.05, color:'#F0F4FF', fontWeight:700, letterSpacing:'-0.03em', marginBottom:'32px' }}>
+          De la mente<br /><span style={{ color:'#3A7FE0', fontStyle:'italic' }}>al mundo.</span>
+        </h1>
+        <p style={{ fontSize:'18px', lineHeight:1.75, color:'#5A6A8A', marginBottom:'24px' }}>
+          Quant Innovation Lab es un colectivo de investigación impulsado por ejecución rigurosa y visión de largo plazo. No buscamos victorias rápidas: exploramos, probamos y compartimos.
+        </p>
+        <p style={{ fontSize:'18px', lineHeight:1.75, color:'#5A6A8A' }}>
+          Creemos que la innovación crece cuando se cuida. Porque imaginar el futuro no es suficiente: hay que construirlo, juntos.
+        </p>
+      </div>
+    </div>
+    <div style={{ background:'#0D0F14', borderTop:'1px solid rgba(255,255,255,0.06)', padding:'64px 32px' }}>
+      <div style={{ maxWidth:'1280px', margin:'0 auto' }}>
+        <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', letterSpacing:'0.08em', textTransform:'uppercase', color:'#2E3850', marginBottom:'32px' }}>// principios</div>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'1px', background:'rgba(255,255,255,0.05)' }}>
+          {[
+            {n:'01', t:'Explorar', b:'Buscamos ideas que otros ignoran, con visión de largo plazo en investigación que se compone con el tiempo.'},
+            {n:'02', t:'Probar', b:'El rigor es innegociable. Cada hipótesis se prueba a fondo antes de convertirse en hallazgo.'},
+            {n:'03', t:'Compartir', b:'El conocimiento solo genera impacto cuando se mueve. Publicamos abiertamente y construimos comunidad.'},
+          ].map(({n,t,b}) => (
+            <div key={n} style={{ background:'#07080A', padding:'40px 32px' }}>
+              <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'11px', color:'#2E3850', marginBottom:'16px' }}>{n}</div>
+              <h3 style={{ fontFamily:"'Space Mono',monospace", fontSize:'24px', color:'#F0F4FF', fontWeight:700, marginBottom:'12px' }}>{t}_</h3>
+              <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', lineHeight:1.7, color:'#5A6A8A' }}>{b}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    <Footer navigate={navigate} />
+  </div>
+);
+
+const ContactScreen = ({ navigate }) => (
+  <div className="fade-in" style={{ background:'#07080A', minHeight:'100vh' }}>
+    <div style={{ maxWidth:'680px', margin:'0 auto', padding:'120px 32px 80px' }}>
+      <div style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', letterSpacing:'0.08em', textTransform:'uppercase', color:'#2E3850', marginBottom:'16px' }}>// conectar</div>
+      <h1 style={{ fontFamily:"'Space Mono',monospace", fontSize:'44px', lineHeight:1.1, color:'#F0F4FF', fontWeight:700, letterSpacing:'-0.025em', marginBottom:'16px' }}>Hablemos.</h1>
+      <p style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'16px', lineHeight:1.7, color:'#5A6A8A', marginBottom:'48px' }}>¿Tienes un proyecto, una idea o una pregunta difícil? Estamos listos para explorar.</p>
+
+      <div style={{ display:'flex', flexDirection:'column', gap:'16px' }}>
+        {[['Nombre / Name','text','Tu nombre…'],['Email','email','correo@ejemplo.com'],['Organización','text','Empresa u organización…']].map(([label, type, ph]) => (
+          <div key={label} style={{ display:'flex', flexDirection:'column', gap:'6px' }}>
+            <label style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'#5A6A8A' }}>{label}</label>
+            <input type={type} placeholder={ph} style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', color:'#F0F4FF', background:'#0D0F14', border:'1px solid rgba(255,255,255,0.10)', padding:'11px 14px', outline:'none', width:'100%' }} />
+          </div>
+        ))}
+        <div style={{ display:'flex', flexDirection:'column', gap:'6px' }}>
+          <label style={{ fontFamily:"'JetBrains Mono',monospace", fontSize:'10px', fontWeight:700, letterSpacing:'0.08em', textTransform:'uppercase', color:'#5A6A8A' }}>Mensaje / Message</label>
+          <textarea placeholder="Cuéntanos sobre tu proyecto…" style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', color:'#F0F4FF', background:'#0D0F14', border:'1px solid rgba(255,255,255,0.10)', padding:'11px 14px', outline:'none', width:'100%', minHeight:'120px', resize:'vertical' }} />
+        </div>
+        <button style={{ background:'#F0F4FF', color:'#07080A', border:'none', padding:'13px 28px', fontFamily:"'Plus Jakarta Sans',sans-serif", fontSize:'14px', fontWeight:800, cursor:'pointer', alignSelf:'flex-start', marginTop:'8px' }}>Enviar mensaje →</button>
+      </div>
+    </div>
+  </div>
+);
+
+// ── App ──────────────────────────────────────────────────────────────────────
+const App = () => {
+  const savedScreen = (() => { try { return JSON.parse(localStorage.getItem('qil_screen_v2')) || {name:'home'}; } catch { return {name:'home'}; } })();
+  const [screen, setScreen] = React.useState(savedScreen);
+  const containerRef = React.useRef(null);
+
+  const navigate = (name, data=null) => {
+    const s = {name, data};
+    setScreen(s);
+    localStorage.setItem('qil_screen_v2', JSON.stringify(s));
+    if (containerRef.current) containerRef.current.scrollTop = 0;
+  };
+
+  const renderScreen = () => {
+    switch(screen.name) {
+      case 'home':     return <HomeScreen navigate={navigate} />;
+      case 'research': return <ResearchScreen navigate={navigate} />;
+      case 'project':  return <ProjectScreen project={screen.data} navigate={navigate} />;
+      case 'about':    return <AboutScreen navigate={navigate} />;
+      case 'contact':  return <ContactScreen navigate={navigate} />;
+      default:         return <HomeScreen navigate={navigate} />;
+    }
+  };
+
+  return (
+    <div ref={containerRef} style={{ minHeight:'100vh', overflowY:'auto', overflowX:'hidden' }}>
+      <Header currentScreen={screen.name} navigate={navigate} />
+      <main style={{ paddingTop:'58px' }}>{renderScreen()}</main>
+    </div>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

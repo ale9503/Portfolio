@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:20px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; padding-bottom:10px; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-bottom:12px; }
+  .swatch { height:56px; display:flex; flex-direction:column; justify-content:flex-end; padding:6px; }
+  .swatch strong { font-size:10px; font-weight:600; }
+  .swatch span { font-family:'JetBrains Mono',monospace; font-size:8px; opacity:0.6; margin-top:2px; }
+  hr { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:12px 0; }
+</style>
+</head>
+<body>
+  <div class="label">Cool White — Light Surfaces</div>
+  <div class="grid">
+    <div class="swatch" style="background:#FFFFFF;border:1px solid rgba(0,0,0,0.08);"><strong style="color:#07080A">000</strong><span style="color:#07080A">#FFFFFF</span></div>
+    <div class="swatch" style="background:#F0F4FF;border:1px solid rgba(0,0,0,0.06);"><strong style="color:#07080A">100</strong><span style="color:#07080A">#F0F4FF</span></div>
+    <div class="swatch" style="background:#E2E8F8;border:1px solid rgba(0,0,0,0.05);"><strong style="color:#07080A">200</strong><span style="color:#07080A">#E2E8F8</span></div>
+    <div class="swatch" style="background:#C8D4EE;"><strong style="color:#07080A">300</strong><span style="color:#07080A">#C8D4EE</span></div>
+  </div>
+  <hr>
+  <div class="label">Coffee / Warm Accent (very sparingly)</div>
+  <div class="grid">
+    <div class="swatch" style="background:#7C5A3C;"><strong style="color:#F0F4FF">500</strong><span style="color:#F0F4FF">#7C5A3C</span></div>
+    <div class="swatch" style="background:#A8845E;"><strong style="color:#F0F4FF">300</strong><span style="color:#F0F4FF">#A8845E</span></div>
+    <div class="swatch" style="background:#D4B896;"><strong style="color:#07080A">100</strong><span style="color:#07080A">#D4B896</span></div>
+    <div class="swatch" style="background:#07080A;border:1px solid rgba(255,255,255,0.06);">
+      <span style="color:#5A6A8A;font-size:8px;font-family:'Plus Jakarta Sans',sans-serif;">Warm touch only</span>
+    </div>
+  </div>
+  <hr>
+  <div style="display:flex;gap:8px;">
+    <div style="flex:1;background:#0D0F14;border:1px solid rgba(255,255,255,0.06);padding:12px;">
+      <div style="font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:#3A7FE0;margin-bottom:6px;">Surface dark</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#5A6A8A;">--bg-surface #0D0F14</div>
+    </div>
+    <div style="flex:1;background:#09153A;border:1px solid rgba(15,76,158,0.3);padding:12px;">
+      <div style="font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:#3A7FE0;margin-bottom:6px;">Blue wash</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#5A6A8A;">--bg-blue-wash #09153A</div>
+    </div>
+    <div style="flex:1;background:#0A1E4A;border:1px solid rgba(15,76,158,0.3);padding:12px;">
+      <div style="font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:#3A7FE0;margin-bottom:6px;">Blue card</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#5A6A8A;">--bg-blue-card #0A1E4A</div>
+    </div>
+  </div>
+</body>
+</html>

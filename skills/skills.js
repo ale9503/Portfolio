@@ -408,16 +408,16 @@ function renderTreemap(container, treemapData) {
   const colorScale = d3.scaleOrdinal()
     .domain(treemapData.legend.map(item => item.slug))
     .range([
-      '#005B96',
-      '#00A6FB',
-      '#0084A8',
-      '#FF8C42',
-      '#C8553D',
-      '#7B5BA5',
-      '#2A9D8F',
-      '#264653',
-      '#E76F51',
-      '#1D3557',
+      '#3A7FE0',
+      '#0F4C9E',
+      '#6AA3F0',
+      '#3AB88A',
+      '#C8922A',
+      '#E8A830',
+      '#A8C8F8',
+      '#5A6A8A',
+      '#1A63C5',
+      '#0C3A80',
     ]);
 
   const hierarchy = d3.hierarchy(treemapData.root)

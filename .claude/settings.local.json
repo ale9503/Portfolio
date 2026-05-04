@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem -Path \"E:\\\\Proyectos\\\\Portfolio\\\\Manual Marca\" -Recurse -Force)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(Measure-Object)",
+      "Bash(Select-Object Count)",
+      "PowerShell(Get-ChildItem *)",
+      "Bash(Get-ChildItem -Path \"E:\\\\Proyectos\\\\Portfolio\\\\skills\" -File)",
+      "Bash(Select-Object Name)",
+      "Read(//mnt/e/Proyectos/**)",
+      "Bash(python -m http.server 8080)"
+    ]
+  }
+}

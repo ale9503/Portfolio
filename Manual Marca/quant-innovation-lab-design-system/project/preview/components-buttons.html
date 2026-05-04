@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#07080A; font-family:'Plus Jakarta Sans',sans-serif; padding:24px; }
+  .label { font-size:10px; letter-spacing:0.10em; text-transform:uppercase; font-weight:600; color:#3A7FE0; margin-bottom:14px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:flex-start; margin-bottom:20px; }
+  .cap { font-size:9px; color:#2E3850; margin-top:5px; text-align:center; display:block; font-family:'JetBrains Mono',monospace; }
+  .divider { border:none; border-top:1px solid rgba(255,255,255,0.06); margin:4px 0 18px; }
+  button { font-family:'Plus Jakarta Sans',sans-serif; cursor:default; }
+
+  .btn-primary { background:#F0F4FF; color:#07080A; border:none; padding:10px 20px; font-size:14px; font-weight:700; }
+  .btn-blue { background:#0F4C9E; color:#F0F4FF; border:none; padding:10px 20px; font-size:14px; font-weight:600; }
+  .btn-outline { background:transparent; color:#F0F4FF; border:1px solid rgba(255,255,255,0.20); padding:10px 20px; font-size:14px; font-weight:500; }
+  .btn-ghost { background:transparent; color:#3A7FE0; border:none; padding:10px 20px; font-size:14px; font-weight:600; text-decoration:underline; text-underline-offset:3px; }
+  .btn-danger { background:#E05252; color:#F0F4FF; border:none; padding:10px 20px; font-size:14px; font-weight:600; }
+  .btn-disabled { background:#141720; color:#2E3850; border:1px solid rgba(255,255,255,0.06); padding:10px 20px; font-size:14px; cursor:not-allowed; }
+
+  .btn-sm { padding:6px 14px; font-size:12px; }
+  .btn-lg { padding:14px 28px; font-size:16px; font-weight:700; }
+
+  .light-row { background:#F0F4FF; padding:16px 20px; margin:0 -24px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .btn-lp { background:#0F4C9E; color:#F0F4FF; border:none; padding:10px 20px; font-size:14px; font-weight:600; font-family:'Plus Jakarta Sans',sans-serif; }
+  .btn-lo { background:transparent; color:#07080A; border:1px solid rgba(0,0,0,0.20); padding:10px 20px; font-size:14px; font-weight:500; font-family:'Plus Jakarta Sans',sans-serif; }
+  .btn-lg2 { background:#07080A; color:#F0F4FF; border:none; padding:10px 20px; font-size:14px; font-weight:700; font-family:'Plus Jakarta Sans',sans-serif; }
+</style>
+</head>
+<body>
+  <div class="label">Botones / Buttons — dark mode</div>
+  <div class="row">
+    <div><button class="btn-primary">Primary</button><span class="cap">white · bold</span></div>
+    <div><button class="btn-blue">Blue accent</button><span class="cap">brand blue</span></div>
+    <div><button class="btn-outline">Outline</button><span class="cap">border only</span></div>
+    <div><button class="btn-ghost">Ghost →</button><span class="cap">underline</span></div>
+    <div><button class="btn-danger">Destructive</button><span class="cap">error red</span></div>
+    <div><button class="btn-disabled" disabled>Disabled</button><span class="cap">disabled</span></div>
+  </div>
+  <div class="label">Sizes</div>
+  <div class="row" style="margin-bottom:16px;">
+    <div><button class="btn-blue btn-sm">Small</button><span class="cap">12px</span></div>
+    <div><button class="btn-blue">Default</button><span class="cap">14px</span></div>
+    <div><button class="btn-blue btn-lg">Large</button><span class="cap">16px</span></div>
+  </div>
+  <div class="light-row">
+    <button class="btn-lp">Blue primary</button>
+    <button class="btn-lo">Outline</button>
+    <button class="btn-lg2">Dark</button>
+    <span style="font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:#5A6A8A;margin-left:8px;font-family:'JetBrains Mono',monospace;">light mode</span>
+  </div>
+</body>
+</html>

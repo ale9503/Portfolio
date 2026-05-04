@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" fill="none">
+  <rect x="0" y="0" width="40" height="40" fill="#F5F1E8"></rect>
+  <text x="8" y="29" font-family="&#39;DM Serif Display&#39;, Georgia, serif" font-size="22" fill="#C8922A" letter-spacing="-1">Q</text>
+  <text x="52" y="26" font-family="&#39;Space Grotesk&#39;, Arial, sans-serif" font-size="15" font-weight="600" fill="#F5F1E8" letter-spacing="0.5">QUANT INNOVATION LAB</text>
+  <line x1="52" y1="32" x2="316" y2="32" stroke="#C8922A" stroke-width="1"></line>
+</svg>
