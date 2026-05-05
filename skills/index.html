@@ -143,7 +143,8 @@
               }
             });
 
-            const maxCount = Math.max(...Object.values(categoryCounts), 1);
+            const sortedCounts = Object.values(categoryCounts).sort((a, b) => b - a);
+            const secondMax = sortedCounts.length > 1 ? sortedCounts[1] : (sortedCounts[0] || 1);
 
             const labelToCategoryMap = {
               "Producto & Innovación": "Producto & Innovación",
@@ -157,17 +158,16 @@
 
             const calculatedValues = radarData.labels.map(label => {
               const categoryKey = labelToCategoryMap[label] || label;
-              const count = categoryCounts[categoryKey] || 0;
-              return Math.min(100, Math.round((count / maxCount) * 40) + 60);
+              return categoryCounts[categoryKey] || 0;
             });
 
-            renderRadarChart(radarData.labels, radarData.tooltips, calculatedValues);
+            renderRadarChart(radarData.labels, radarData.tooltips, calculatedValues, secondMax);
           }
         })
         .catch(err => console.error("Could not load radar data", err));
     });
 
-    function renderRadarChart(labels, tooltips, values) {
+    function renderRadarChart(labels, tooltips, values, maxScale) {
       const ctx = document.getElementById('skills-radar-chart').getContext('2d');
       const dataValues = values;
 
@@ -201,7 +201,7 @@
                 color: '#C8D4EE'
               },
               min: 0,
-              max: 100,
+              max: maxScale,
               ticks: { display: false }
             }
           },
