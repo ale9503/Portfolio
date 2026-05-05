@@ -157,7 +157,7 @@
             const calculatedValues = radarData.labels.map(label => {
               const categoryKey = labelToCategoryMap[label] || label;
               const count = categoryCounts[categoryKey] || 0;
-              return Math.min(100, Math.round((count / maxCount) * 80) + 20);
+              return Math.min(100, Math.round((count / maxCount) * 40) + 60);
             });
 
             renderRadarChart(radarData.labels, radarData.tooltips, calculatedValues);
@@ -199,7 +199,9 @@
                 font: { family: 'Plus Jakarta Sans', size: 12, weight: '600' },
                 color: '#C8D4EE'
               },
-              ticks: { display: false, min: 0, max: 100 }
+              min: 0,
+              max: 100,
+              ticks: { display: false }
             }
           },
           plugins: {
