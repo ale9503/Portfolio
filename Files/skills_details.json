@@ -1,5 +1,29 @@
 [
   {
+    "What did I learn?": "Programming Foundations",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Python, Programaci\u00f3n, Fundamentos de programaci\u00f3n",
+    "Record Date (DD/MM/YYYY)": "14/05/2026",
+    "Description": "Curso 'Programming Foundations' (LinkedIn Learning) con Annyce Davis. Nivel: principiante. Duraci\u00f3n: 3h 11min. Fecha de actualizaci\u00f3n: 13/12/2024. Exploraci\u00f3n de los conceptos b\u00e1sicos y estructura de los lenguajes de programaci\u00f3n usando Python, incluyendo variables, cadenas, expresiones condicionales, funciones y soluci\u00f3n de errores. Parte de un Certificado Profesional de Microsoft.",
+    "Categoria": [
+      "Automatizaci\u00f3n & Procesos",
+      "Datos & Anal\u00edtica"
+    ],
+    "N\u00b0": 63
+  },
+  {
+    "What did I learn?": "Data Engineering Foundations",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Ingenier\u00eda de datos, Apache Airflow, ETL, DAGs, Orquestaci\u00f3n, Python",
+    "Record Date (DD/MM/YYYY)": "14/05/2026",
+    "Description": "Curso 'Data Engineering Foundations' (LinkedIn Learning) con Vinoo Ganesh. Nivel: principiante. Duraci\u00f3n: 1h 33min. Fecha de actualizaci\u00f3n: 18/06/2024. Visi\u00f3n general de habilidades fundamentales para ingenier\u00eda de datos. Incluye ELT, OLTP/OLAP, orquestaci\u00f3n, DAGs, y configuraci\u00f3n de despliegues locales de Apache Airflow para extracci\u00f3n, transformaci\u00f3n y carga de datos. Parte de un Certificado Profesional de Astr\u00f3nomo.",
+    "Categoria": [
+      "Datos & Anal\u00edtica",
+      "Automatizaci\u00f3n & Procesos"
+    ],
+    "N\u00b0": 62
+  },
+  {
     "What did I learn?": "Arquitectura Medallion y Data Mesh \u2014 Data CoE GCP Masterclass",
     "Learning Type*": "Deep Level",
     "Skill/Tool": "Medallion Architecture, Data Mesh, BigQuery, Dataproc Serverless, Cloud Composer, Dataplex, Data Contracts, Open Lineage, BIAN, Open Banking (PSD2 / FAPI / CMA9), CDC, SFTP, Power BI, Databricks",
