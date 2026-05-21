@@ -1,5 +1,29 @@
 [
   {
+    "What did I learn?": "Python Essential Training",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Python",
+    "Record Date (DD/MM/YYYY)": "20/05/2026",
+    "Description": "Curso 'Python Essential Training' con Ryan Mitchell. Nivel: principiante. Duración: 4h 23min. Actualizado: 8/4/2024. Guía a través de todos los aspectos esenciales para aprender y usar Python. Incluye instalación, variables, operadores, funciones, clases, objetos, gestión de errores, excepciones, hilos, procesos y trabajo con diferentes tipos de archivos. Este curso forma parte de un Certificado Profesional del Python Institute.",
+    "Categoria": [
+      "Automatización & Procesos",
+      "Datos & Analítica"
+    ],
+    "N°": 65
+  },
+  {
+    "What did I learn?": "Data Management Essential Training",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Gestión de datos",
+    "Record Date (DD/MM/YYYY)": "14/05/2026",
+    "Description": "Curso 'Data Management Essential Training' con Jess Pomfret. Nivel: principiante. Duración: 2h 49min. Publicado: 7/1/2025. Visión completa de todo el ciclo de vida de la gestión de datos, desde la adquisición y almacenamiento de datos hasta el procesamiento de datos, gobernanza, seguridad, análisis y mucho más. Desarrollo de habilidades prácticas para implementar estrategias sólidas de gestión de datos.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 64
+  },
+  {
     "What did I learn?": "Programming Foundations",
     "Learning Type*": "High Level",
     "Skill/Tool": "Python, Programaci\u00f3n, Fundamentos de programaci\u00f3n",
