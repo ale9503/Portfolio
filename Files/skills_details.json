@@ -1,5 +1,106 @@
 [
   {
+    "What did I learn?": "Guided Lab: Real-World Data Engineering Project with Microsoft Fabric",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Microsoft Fabric, Azure Service Fabric, Ingeniería de datos",
+    "Record Date (DD/MM/YYYY)": "30/06/2026",
+    "Description": "Curso en LinkedIn Learning con Deepak Goyal. Duración: 57 minutos. Nivel: Intermedio. ID del certificado: a1dbfb5c0c1a295ba51d8f1c88b9b7c7862fb73c42761f2f97265d65888ff273",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 74
+  },
+  {
+    "What did I learn?": "Descubre Microsoft Fabric: Unifica, prepara, modela y analiza datos",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Microsoft Fabric, Análisis de datos, Modelado de datos",
+    "Record Date (DD/MM/YYYY)": "30/06/2026",
+    "Description": "Curso en LinkedIn Learning con Ana María Bisbé York. Duración: 1 hora 2 minutos. Nivel: Principiante + Intermedio. ID del certificado: 02e2faad59d4d54c47471ff50f262a295dd77cdef77b79baeeeb4edbce677c38",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 73
+  },
+  {
+    "What did I learn?": "Learning Microsoft Fabric",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Microsoft Fabric, Análisis de Big Data, Analítica de datos",
+    "Record Date (DD/MM/YYYY)": "26/06/2026",
+    "Description": "Curso en LinkedIn Learning con Ginger Grant. Duración: 1 hora 28 minutos. Nivel: Intermedio. ID del certificado: 7f0fcf90bdf7d161ed85bb7e5dfed7a16da06d11e9661fe31b3316d1e4322e5d",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 72
+  },
+  {
+    "What did I learn?": "powerBI: Dashboard For Beginners",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Microsoft Power BI, Panel de control, Visualización de datos",
+    "Record Date (DD/MM/YYYY)": "26/06/2026",
+    "Description": "Curso en LinkedIn Learning con Joshua Rischin. Duración: 40 minutos. Nivel: Intermedio.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 71
+  },
+  {
+    "What did I learn?": "Python Avanzado",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Python",
+    "Record Date (DD/MM/YYYY)": "26/06/2026",
+    "Description": "Curso en LinkedIn Learning con Ana María Pinto. Duración: 3 horas 1 minuto. Nivel: Avanzado.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos"
+    ],
+    "N°": 70
+  },
+  {
+    "What did I learn?": "Complete Guide to Power BI for Data Analysts by Microsoft Press (2024)",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Análisis de datos, Microsoft Power BI",
+    "Record Date (DD/MM/YYYY)": "24/06/2026",
+    "Description": "Curso en LinkedIn Learning con Chris Sorensen. Duración: 7 horas 14 minutos. Nivel: Intermedio. ID del certificado: 7d0e7e4ee1100bbe5dd1dd75896c01f6f0406957ef30c1b83d08a6c1fdc7e4b2",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 69
+  },
+  {
+    "What did I learn?": "Domina Python: manipulación de datos con pandas",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Pandas (Software), Python, Manipulación de datos",
+    "Record Date (DD/MM/YYYY)": "22/06/2026",
+    "Description": "Curso en LinkedIn Learning con Lincy González Rojas. Duración: 1 hora 24 minutos. Nivel: Avanzado. ID del certificado: 375a575c843c1bc272c725832cb587949582fdcbc9f4005d1cc33b27cf9a476d",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos"
+    ],
+    "N°": 68
+  },
+  {
+    "What did I learn?": "Level Up: Advanced SQL",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Consultas en bases de datos, SQL",
+    "Record Date (DD/MM/YYYY)": "19/06/2026",
+    "Description": "Curso en LinkedIn Learning con Jess Pomfret. Duración: 37 minutos. Nivel: Avanzado.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 67
+  },
+  {
+    "What did I learn?": "SQL Practice: Intermediate Queries",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Consultas en bases de datos, SQL",
+    "Record Date (DD/MM/YYYY)": "19/06/2026",
+    "Description": "Curso en LinkedIn Learning con Scott Simpson. Duración: 11 minutos. Nivel: Intermedio.",
+    "Categoria": [
+      "Datos & Analítica"
+    ],
+    "N°": 66
+  },
+  {
     "What did I learn?": "Python Essential Training",
     "Learning Type*": "High Level",
     "Skill/Tool": "Python",
