@@ -25,8 +25,8 @@
             },
             {
                 "id": "product",
-                "name": "Gestión de Producto",
-                "description": "Diseñando y coordinando el ciclo de vida del producto enfocándose siempre en la creación de valor."
+                "name": "Gestión de Producto para Tecnologías Emergentes",
+                "description": "Diseñando y coordinando el ciclo de vida de productos basados en tecnologías emergentes, enfocándose siempre en la creación de valor y adopción."
             },
             {
                 "id": "project",
@@ -36,7 +36,7 @@
             {
                 "id": "innovation",
                 "name": "Innovación y FinOps",
-                "description": "Impulsando la eficiencia operativa estructural a través de robótica, optimización de procesos y control financiero."
+                "description": "Impulsando la eficiencia operativa mediante la optimización, control financiero y un enfoque sistemático de descubrimiento y experimentación."
             }
         ]
     },
@@ -96,8 +96,8 @@
         ]
     },
     "sandbox": {
-        "title": "Laboratorio I+D & Pruebas IA",
-        "description": "Utilizo flujos de IA Agéntica, Python y SQL para prototipar y validar diseños arquitectónicos antes de escalarlos. Este laboratorio de experimentación continua asegura entregas técnicas de alta confianza."
+        "title": "Laboratorio de Innovación",
+        "description": "Espacio de experimentación continua para procesos de exploración y creación digital. Utilizo prototipado con IA, Python y SQL para validar hipótesis tecnológicas y asegurar entregas de alta confianza."
     },
     "ui": {
         "download_cv": "Descargar CV",

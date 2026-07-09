@@ -16,7 +16,15 @@
       "Bash(Get-ChildItem -Path \"E:\\\\Proyectos\\\\Portfolio\\\\skills\" -File)",
       "Bash(Select-Object Name)",
       "Read(//mnt/e/Proyectos/**)",
-      "Bash(python -m http.server 8080)"
+      "Bash(python -m http.server 8080)",
+      "Bash(Get-ChildItem -Path \"E:\\\\Proyectos\\\\Portfolio\" -Recurse -Include \"*.tsx\", \"*.ts\", \"*.jsx\", \"*.js\", \"*.json\")",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(node *)",
+      "Bash(git -C \"E:\\\\Proyectos\\\\Portfolio\" status)",
+      "Bash(git -C \"E:\\\\Proyectos\\\\Portfolio\" diff)",
+      "Bash(git -C \"E:\\\\Proyectos\\\\Portfolio\" add skills/index.html skills/index.en.html)",
+      "Bash(git -C \"E:\\\\Proyectos\\\\Portfolio\" log --oneline -3)",
+      "Bash(git *)"
     ]
   }
 }

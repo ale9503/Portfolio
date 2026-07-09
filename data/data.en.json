@@ -25,8 +25,8 @@
       },
       {
         "id": "product",
-        "name": "Product Management",
-        "description": "Designing and coordinating the product lifecycle with a focus on value creation and user experience."
+        "name": "Product Management for Emerging Techs",
+        "description": "Designing and coordinating the product lifecycle for solutions based on emerging technologies, focusing on value creation and adoption."
       },
       {
         "id": "project",
@@ -36,7 +36,7 @@
       {
         "id": "innovation",
         "name": "Innovation & FinOps",
-        "description": "Driving efficiency and new business lines through process optimization, robotics, and financial engineering."
+        "description": "Driving operational efficiency and new business lines through process optimization, financial engineering, and a systematic approach to discovery and experimentation."
       }
     ]
   },
@@ -96,8 +96,8 @@
     ]
   },
   "sandbox": {
-    "title": "Tech R&D & AI Laboratory",
-    "description": "I leverage Agentic AI flows, Python, and SQL to prototype and validate architectural designs prior to scaling. This continuous experimentation laboratory ensures high-confidence technical delivery."
+    "title": "Innovation Laboratory",
+    "description": "A continuous experimentation space for digital creation and exploration. I leverage AI prototyping, Python, and SQL to validate technological hypotheses and ensure high-confidence technical delivery."
   },
   "purpose": {
     "title": "Personal-Purpose Framework",

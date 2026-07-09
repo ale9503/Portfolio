@@ -1,5 +1,30 @@
 [
   {
+    "What did I learn?": "Microsoft AI Product Manager",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Product Management, Market Research, UX/UI, Cloud Strategy, Azure, Power BI, AI Copilot",
+    "Record Date (DD/MM/YYYY)": "08/07/2026",
+    "Description": "Certificado Profesional en Coursera por Microsoft. Cubre investigación de mercado, estrategia cloud, diseño UX/UI y ciclo de vida de producto gestionado de forma segura y escalable usando Azure, Power BI y Copilot.",
+    "Categoria": [
+      "Producto & Innovación",
+      "Datos & Analítica",
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 76
+  },
+  {
+    "What did I learn?": "Product Launch and Post-Launch Management",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Product Launch, Post-Launch Management, Go-to-market strategies",
+    "Record Date (DD/MM/YYYY)": "08/07/2026",
+    "Description": "Curso en Coursera por Microsoft. Estrategias de lanzamiento al mercado (go-to-market) y análisis post-lanzamiento.",
+    "Categoria": [
+      "Producto & Innovación",
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 75
+  },
+  {
     "What did I learn?": "Guided Lab: Real-World Data Engineering Project with Microsoft Fabric",
     "Learning Type*": "High Level",
     "Skill/Tool": "Microsoft Fabric, Azure Service Fabric, Ingeniería de datos",
