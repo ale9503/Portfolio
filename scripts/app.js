@@ -31,6 +31,7 @@ async function loadData(lang) {
         populateDOM(data);
         renderProjects(data.projects, data.ui);
         renderPillars(data.pillars);
+        renderEducation(data.education, data.ui);
         
         // Dispatch custom event in case components (like Radar Chart) need to re-render
         document.dispatchEvent(new CustomEvent('dataLoaded', { detail: { data, lang } }));
@@ -146,6 +147,48 @@ function renderPillars(pillarsData) {
         `;
         container.appendChild(card);
     });
+}
+
+/**
+ * Renders Education Section
+ */
+function renderEducation(education, ui) {
+    const container = document.getElementById('education-grid');
+    if (!container || !education) return; 
+    
+    container.innerHTML = '';
+    
+    // Degrees
+    if (education.degrees) {
+        education.degrees.forEach(deg => {
+            const card = document.createElement('div');
+            card.className = 'bento-card bento-card--education';
+            card.innerHTML = `
+                <div class="education-card__header">
+                    <span class="education-card__year">${deg.year}</span>
+                    <h4 class="education-card__degree">${deg.degree}</h4>
+                </div>
+                <p class="education-card__institution">${deg.institution}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    // Certifications
+    if (education.certifications) {
+        education.certifications.forEach(cert => {
+            const card = document.createElement('div');
+            card.className = 'bento-card bento-card--certification bento-card--dark';
+            card.innerHTML = `
+                <div class="education-card__header">
+                    <span class="education-card__year">${cert.year}</span>
+                    <h4 class="education-card__degree">${cert.name}</h4>
+                </div>
+                <p class="education-card__institution">${cert.issuer}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
 }
 
 function getNestedValue(obj, path) {

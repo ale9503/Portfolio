@@ -66,6 +66,52 @@
       "impact": "Generated ~30 to 50 FTEs in saved costs and created new capacity for value-add activities, enabling teams to tackle new assignments."
     }
   ],
+  "education": {
+    "title": "Education & Certifications",
+    "description": "Academic background and certifications that support my technical and strategic profile in Data Analytics, AI, and Digital Transformation.",
+    "degrees": [
+      {
+        "id": "master",
+        "degree": "Double Master's: Digital Transformation (Data Analytics) & Digital Business",
+        "institution": "CESA",
+        "year": "2025"
+      },
+      {
+        "id": "specialization",
+        "degree": "Specializations: Project Management & Financial Intelligence",
+        "institution": "EAN & University of New Haven",
+        "year": "2020"
+      },
+      {
+        "id": "bachelor",
+        "degree": "Bachelor: Business and International Relations",
+        "institution": "Universidad de La Salle",
+        "year": "2018"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Enterprise AI Product Mgmt",
+        "issuer": "Microsoft",
+        "year": "2026"
+      },
+      {
+        "name": "Scrum Master/PO/Dev",
+        "issuer": "Scrum",
+        "year": "2023"
+      },
+      {
+        "name": "Google Analytics",
+        "issuer": "Google",
+        "year": "2025"
+      },
+      {
+        "name": "Celonis Fundamentals",
+        "issuer": "Celonis",
+        "year": "2025"
+      }
+    ]
+  },
   "skills_radar": {
     "labels": [
       "Product & Innovation",

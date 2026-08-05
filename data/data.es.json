@@ -66,6 +66,52 @@
             "impact": "Las automatizaciones generaron entre ~30 y 50 FTEs en reducción de costos directos y creación de nueva capacidad instalada. Esto liberó a los equipos operativos para asumir nuevas asignaciones estratégicas de mayor valor."
         }
     ],
+    "education": {
+        "title": "Educación y Certificaciones",
+        "description": "Formación académica y certificaciones que respaldan mi perfil técnico y estratégico en Data Analytics, IA y Transformación Digital.",
+        "degrees": [
+            {
+                "id": "master",
+                "degree": "Doble Maestría: Digital Transformation (Data Analytics) & Digital Business",
+                "institution": "CESA",
+                "year": "2025"
+            },
+            {
+                "id": "specialization",
+                "degree": "Especializaciones: Gerencia de Proyectos & Inteligencia Financiera",
+                "institution": "EAN & University of New Haven",
+                "year": "2020"
+            },
+            {
+                "id": "bachelor",
+                "degree": "Pregrado: Negocios y Relaciones Internacionales",
+                "institution": "Universidad de La Salle",
+                "year": "2018"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Enterprise AI Product Mgmt",
+                "issuer": "Microsoft",
+                "year": "2026"
+            },
+            {
+                "name": "Scrum Master/PO/Dev",
+                "issuer": "Scrum",
+                "year": "2023"
+            },
+            {
+                "name": "Google Analytics",
+                "issuer": "Google",
+                "year": "2025"
+            },
+            {
+                "name": "Celonis Fundamentals",
+                "issuer": "Celonis",
+                "year": "2025"
+            }
+        ]
+    },
     "skills_radar": {
         "labels": [
             "Producto & Innovación",
