@@ -1,5 +1,18 @@
 [
   {
+    "What did I learn?": "Machine Learning in Production",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "MLOps, Continuous Deployment, Data Quality, Data Validation, Data Synthesis, Model Deployment, Model Training, Data Maintenance, Data Integrity, Applied Machine Learning",
+    "Record Date (DD/MM/YYYY)": "13/08/2026",
+    "Description": "Curso en Coursera por DeepLearning.AI (Andrew Ng). Cubre el ciclo de vida de proyectos de ML en producción, incluyendo componentes clave del pipeline ML, selección de patrones de despliegue y monitoreo para distintos escenarios, optimización de rendimiento de modelos priorizando ejemplos representativos de slices de datos, y resolución de desafíos de producción con datos estructurados, no estructurados, pequeños y grandes, con énfasis en consistencia de etiquetado.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 77
+  },
+  {
     "What did I learn?": "Microsoft AI Product Manager",
     "Learning Type*": "Deep Level",
     "Skill/Tool": "Product Management, Market Research, UX/UI, Cloud Strategy, Azure, Power BI, AI Copilot",

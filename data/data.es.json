@@ -91,6 +91,11 @@
         ],
         "certifications": [
             {
+                "name": "Machine Learning in Production",
+                "issuer": "DeepLearning.AI (Coursera)",
+                "year": "2026"
+            },
+            {
                 "name": "Enterprise AI Product Mgmt",
                 "issuer": "Microsoft",
                 "year": "2026"
