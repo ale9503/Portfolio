@@ -1,5 +1,18 @@
 [
   {
+    "What did I learn?": "Introduction to AI and Machine Learning on Google Cloud",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Google Cloud, Vertex AI, Generative AI, Gemini, Prompt Engineering, Predictive AI, BigQuery ML, AutoML, MLOps, Data-to-AI Lifecycle",
+    "Record Date (DD/MM/YYYY)": "28/08/2026",
+    "Description": "Curso en Coursera por Google Cloud en alianza con Google Cloud Skills Boost. Cubre las capacidades de IA y Machine Learning en Google Cloud a lo largo del ciclo de vida 'Data-to-AI', desarrollo con Vertex AI, implementación de soluciones de IA Generativa con modelos Gemini y Prompt Engineering, modelos predictivos con BigQuery ML y AutoML, y fundamentos de MLOps.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 78
+  },
+  {
     "What did I learn?": "Machine Learning in Production",
     "Learning Type*": "Deep Level",
     "Skill/Tool": "MLOps, Continuous Deployment, Data Quality, Data Validation, Data Synthesis, Model Deployment, Model Training, Data Maintenance, Data Integrity, Applied Machine Learning",

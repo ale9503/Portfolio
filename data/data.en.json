@@ -91,6 +91,11 @@
     ],
     "certifications": [
       {
+        "name": "Introduction to AI and Machine Learning on Google Cloud",
+        "issuer": "Google Cloud (Coursera)",
+        "year": "2026"
+      },
+      {
         "name": "Machine Learning in Production",
         "issuer": "DeepLearning.AI (Coursera)",
         "year": "2026"
