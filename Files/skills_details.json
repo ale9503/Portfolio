@@ -1,5 +1,83 @@
 [
   {
+    "What did I learn?": "Preparing for Google Cloud Certification: Machine Learning Engineer (Professional Certificate)",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Google Cloud, Vertex AI, Machine Learning Engineering, TensorFlow, Keras, Feature Engineering, MLOps, Vertex AI Pipelines, Production ML Systems, BigQuery ML",
+    "Record Date (DD/MM/YYYY)": "30/10/2026",
+    "Description": "Certificado Profesional en Coursera por Google Cloud (6 cursos). Prepara para la certificación Professional Machine Learning Engineer de Google Cloud: diseño, construcción y productivización de modelos de ML para resolver retos de negocio en Google Cloud, experimentación con ML end-to-end y técnicas avanzadas para construir modelos listos para producción.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 84
+  },
+  {
+    "What did I learn?": "Machine Learning Operations (MLOps): Getting Started",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "MLOps, CI/CD/CT, Vertex AI Pipelines, Vertex AI Model Registry, Vertex AI Feature Store, Model Monitoring, ML Lifecycle Automation, Google Cloud",
+    "Record Date (DD/MM/YYYY)": "30/10/2026",
+    "Description": "Curso en Coursera por Google Cloud. Introduce las herramientas y buenas prácticas de MLOps para desplegar, evaluar, monitorear y operar sistemas de ML en producción en Google Cloud, incluyendo integración, entrega y entrenamiento continuos (CI/CD/CT) y la automatización del ciclo de vida de los modelos con Vertex AI.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 83
+  },
+  {
+    "What did I learn?": "Production Machine Learning Systems",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Production ML, Vertex AI, Static vs Dynamic Training, Batch & Online Inference, Distributed Training, GPUs/TPUs, Hybrid ML, TensorFlow, ML System Design, Google Cloud",
+    "Record Date (DD/MM/YYYY)": "30/10/2026",
+    "Description": "Curso en Coursera por Google Cloud. Cubre los componentes y buenas prácticas de un sistema de ML de alto rendimiento en producción: entrenamiento estático vs. dinámico, inferencia batch y online, entrenamiento distribuido con GPUs y TPUs, diseño de sistemas de ML adaptables a cambios en los datos y modelos híbridos.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 82
+  },
+  {
+    "What did I learn?": "Machine Learning in the Enterprise",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Vertex AI, AutoML, Custom Training, Hyperparameter Tuning, Vertex AI Experiments, Vertex ML Metadata, Data Governance, Model Monitoring, Vertex AI Pipelines, Google Cloud",
+    "Record Date (DD/MM/YYYY)": "30/10/2026",
+    "Description": "Curso en Coursera por Google Cloud. Presenta un enfoque práctico del flujo de trabajo de ML en la empresa: gestión y gobierno de datos, entrenamiento con AutoML y entrenamiento personalizado, ajuste de hiperparámetros, seguimiento de experimentos y metadatos, despliegue, monitoreo de modelos y orquestación con Vertex AI Pipelines.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 81
+  },
+  {
+    "What did I learn?": "Feature Engineering",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Feature Engineering, Vertex AI Feature Store, BigQuery ML, Feature Crosses, TensorFlow Transform, Dataflow, Apache Beam, Keras Preprocessing, Google Cloud",
+    "Record Date (DD/MM/YYYY)": "30/10/2026",
+    "Description": "Curso en Coursera por Google Cloud. Explora la transformación de datos crudos en features útiles para modelos de ML: buenas prácticas de feature engineering, Vertex AI Feature Store, feature crosses, preprocesamiento con BigQuery ML, Keras y TensorFlow, y pipelines de transformación con Dataflow/Apache Beam y TensorFlow Transform.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 80
+  },
+  {
+    "What did I learn?": "Build, Train and Deploy ML Models with Keras on Google Cloud",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "TensorFlow, Keras, tf.data, Keras Sequential & Functional API, Preprocessing Layers, Regularization, Model Training at Scale, Vertex AI, Model Deployment, Google Cloud",
+    "Record Date (DD/MM/YYYY)": "30/10/2026",
+    "Description": "Curso en Coursera por Google Cloud. Cubre el diseño y construcción de modelos de ML con TensorFlow y Keras: pipelines de datos con tf.data, capas de preprocesamiento, APIs Sequential y Functional, regularización, entrenamiento a escala y despliegue de modelos para inferencia en Vertex AI.",
+    "Categoria": [
+      "Datos & Analítica",
+      "Automatización & Procesos",
+      "Producto & Innovación"
+    ],
+    "N°": 79
+  },
+  {
     "What did I learn?": "Introduction to AI and Machine Learning on Google Cloud",
     "Learning Type*": "Deep Level",
     "Skill/Tool": "Google Cloud, Vertex AI, Generative AI, Gemini, Prompt Engineering, Predictive AI, BigQuery ML, AutoML, MLOps, Data-to-AI Lifecycle",
