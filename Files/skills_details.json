@@ -1,5 +1,86 @@
 [
   {
+    "What did I learn?": "Generative AI for Business Leaders",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "IA Generativa, Estrategia de negocio, IA para negocios, Casos de uso de IA",
+    "Record Date (DD/MM/YYYY)": "18/04/2024",
+    "Description": "Curso 'Generative AI for Business Leaders' (LinkedIn Learning). Duración: 55 min. Visión ejecutiva de la IA generativa: oportunidades de negocio, identificación de casos de uso, riesgos y consideraciones para su adopción estratégica en la organización.",
+    "Categoria": [
+      "Estrategia & Valor del Negocio",
+      "Producto & Innovación"
+    ],
+    "N°": 91
+  },
+  {
+    "What did I learn?": "Getting Started with Professional Scrum",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "Scrum; Agile; Project Management; roles, eventos y artefactos de Scrum.",
+    "Record Date (DD/MM/YYYY)": "9/09/2025",
+    "Description": "Curso “Getting Started with Professional Scrum” (LinkedIn Learning, PMI R.E.P.). Duración: 1h 28min.",
+    "Categoria": [
+      "Delivery & Proyectos Ágiles"
+    ],
+    "N°": 90
+  },
+  {
+    "What did I learn?": "UX Research: Journey Mapping",
+    "Learning Type*": "Tactical Level",
+    "Skill/Tool": "UX Research; customer journey maps; puntos de dolor y oportunidades.",
+    "Record Date (DD/MM/YYYY)": "22/08/2025",
+    "Description": "Curso “UX Research: Journey Mapping” (LinkedIn Learning). Duración: 30 min.",
+    "Categoria": [
+      "Producto & Innovación"
+    ],
+    "N°": 89
+  },
+  {
+    "What did I learn?": "Programming Foundations: Data Structures",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Estructuras de datos, Fundamentos de programación, Python",
+    "Record Date (DD/MM/YYYY)": "30/05/2026",
+    "Description": "Curso 'Programming Foundations: Data Structures' (LinkedIn Learning). Nivel: principiante. Duración: 2h 46min. Estructuras de datos fundamentales y su uso en Python: arreglos/listas, diccionarios, sets, pilas, colas y cuándo elegir cada una.",
+    "Categoria": [
+      "Automatización & Procesos",
+      "Datos & Analítica"
+    ],
+    "N°": 88
+  },
+  {
+    "What did I learn?": "Programming Foundations: Beyond the Fundamentals",
+    "Learning Type*": "High Level",
+    "Skill/Tool": "Python, Programación, Fundamentos de programación",
+    "Record Date (DD/MM/YYYY)": "29/05/2026",
+    "Description": "Curso 'Programming Foundations: Beyond the Fundamentals' (LinkedIn Learning). Duración: 3h 6min. Continuación de Programming Foundations: Fundamentals; profundiza en conceptos de programación con Python más allá de lo básico.",
+    "Categoria": [
+      "Automatización & Procesos",
+      "Datos & Analítica"
+    ],
+    "N°": 87
+  },
+  {
+    "What did I learn?": "Product Design and UX/UI Fundamentals",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Product Design, UX/UI, User Research, Wireframing, Prototyping, Usability, Design Thinking",
+    "Record Date (DD/MM/YYYY)": "05/06/2026",
+    "Description": "Curso en Coursera por Microsoft. Fundamentos de diseño de producto y UX/UI: comprensión de necesidades del usuario, principios de diseño, wireframes y prototipos, y validación de usabilidad para productos digitales y de IA. Parte del path Microsoft AI Product Manager.",
+    "Categoria": [
+      "Producto & Innovación"
+    ],
+    "N°": 86
+  },
+  {
+    "What did I learn?": "Product Strategy and Roadmapping",
+    "Learning Type*": "Deep Level",
+    "Skill/Tool": "Product Strategy, Product Roadmap, Product Vision, Prioritization, OKRs, Stakeholder Alignment",
+    "Record Date (DD/MM/YYYY)": "01/05/2026",
+    "Description": "Curso en Coursera por Microsoft. Definición de visión y estrategia de producto, priorización de iniciativas y construcción de roadmaps alineados con objetivos de negocio y stakeholders. Parte del path Microsoft AI Product Manager.",
+    "Categoria": [
+      "Producto & Innovación",
+      "Estrategia & Valor del Negocio"
+    ],
+    "N°": 85
+  },
+  {
     "What did I learn?": "Preparing for Google Cloud Certification: Machine Learning Engineer (Professional Certificate)",
     "Learning Type*": "Deep Level",
     "Skill/Tool": "Google Cloud, Vertex AI, Machine Learning Engineering, TensorFlow, Keras, Feature Engineering, MLOps, Vertex AI Pipelines, Production ML Systems, BigQuery ML",
@@ -28,9 +109,9 @@
   {
     "What did I learn?": "Production Machine Learning Systems",
     "Learning Type*": "Deep Level",
-    "Skill/Tool": "Production ML, Vertex AI, Static vs Dynamic Training, Batch & Online Inference, Distributed Training, GPUs/TPUs, Hybrid ML, TensorFlow, ML System Design, Google Cloud",
+    "Skill/Tool": "Production ML, Vertex AI, Static vs Dynamic Training, Batch & Online Inference, Distributed Training, GPUs/TPUs, Hybrid ML, TensorFlow, TensorFlow Data Validation, Kubeflow, TensorFlow Lite, ML System Design, Google Cloud",
     "Record Date (DD/MM/YYYY)": "30/10/2026",
-    "Description": "Curso en Coursera por Google Cloud. Cubre los componentes y buenas prácticas de un sistema de ML de alto rendimiento en producción: entrenamiento estático vs. dinámico, inferencia batch y online, entrenamiento distribuido con GPUs y TPUs, diseño de sistemas de ML adaptables a cambios en los datos y modelos híbridos.",
+    "Description": "Curso en Coursera por Google Cloud. Cubre los componentes y buenas prácticas de un sistema de ML de alto rendimiento en producción: entrenamiento estático vs. dinámico, inferencia batch y online, entrenamiento distribuido con GPUs y TPUs, diseño de sistemas de ML adaptables a cambios en los datos (concept drift, TensorFlow Data Validation) y sistemas híbridos con Kubeflow y TensorFlow Lite.",
     "Categoria": [
       "Datos & Analítica",
       "Automatización & Procesos",
@@ -254,11 +335,11 @@
     "N°": 64
   },
   {
-    "What did I learn?": "Programming Foundations",
+    "What did I learn?": "Programming Foundations: Fundamentals",
     "Learning Type*": "High Level",
     "Skill/Tool": "Python, Programaci\u00f3n, Fundamentos de programaci\u00f3n",
     "Record Date (DD/MM/YYYY)": "14/05/2026",
-    "Description": "Curso 'Programming Foundations' (LinkedIn Learning) con Annyce Davis. Nivel: principiante. Duraci\u00f3n: 3h 11min. Fecha de actualizaci\u00f3n: 13/12/2024. Exploraci\u00f3n de los conceptos b\u00e1sicos y estructura de los lenguajes de programaci\u00f3n usando Python, incluyendo variables, cadenas, expresiones condicionales, funciones y soluci\u00f3n de errores. Parte de un Certificado Profesional de Microsoft.",
+    "Description": "Curso 'Programming Foundations: Fundamentals' (LinkedIn Learning) con Annyce Davis. Nivel: principiante. Duraci\u00f3n: 3h 11min. Fecha de actualizaci\u00f3n: 13/12/2024. Exploraci\u00f3n de los conceptos b\u00e1sicos y estructura de los lenguajes de programaci\u00f3n usando Python, incluyendo variables, cadenas, expresiones condicionales, funciones y soluci\u00f3n de errores. Parte de un Certificado Profesional de Microsoft.",
     "Categoria": [
       "Automatizaci\u00f3n & Procesos",
       "Datos & Anal\u00edtica"
@@ -266,11 +347,11 @@
     "N\u00b0": 63
   },
   {
-    "What did I learn?": "Data Engineering Foundations",
+    "What did I learn?": "Hands-On Introduction: Data Engineering",
     "Learning Type*": "High Level",
     "Skill/Tool": "Ingenier\u00eda de datos, Apache Airflow, ETL, DAGs, Orquestaci\u00f3n, Python",
     "Record Date (DD/MM/YYYY)": "14/05/2026",
-    "Description": "Curso 'Data Engineering Foundations' (LinkedIn Learning) con Vinoo Ganesh. Nivel: principiante. Duraci\u00f3n: 1h 33min. Fecha de actualizaci\u00f3n: 18/06/2024. Visi\u00f3n general de habilidades fundamentales para ingenier\u00eda de datos. Incluye ELT, OLTP/OLAP, orquestaci\u00f3n, DAGs, y configuraci\u00f3n de despliegues locales de Apache Airflow para extracci\u00f3n, transformaci\u00f3n y carga de datos. Parte de un Certificado Profesional de Astr\u00f3nomo.",
+    "Description": "Curso 'Hands-On Introduction: Data Engineering' (LinkedIn Learning) con Vinoo Ganesh. Nivel: principiante. Duraci\u00f3n: 1h 33min. Fecha de actualizaci\u00f3n: 18/06/2024. Visi\u00f3n general de habilidades fundamentales para ingenier\u00eda de datos. Incluye ELT, OLTP/OLAP, orquestaci\u00f3n, DAGs, y configuraci\u00f3n de despliegues locales de Apache Airflow para extracci\u00f3n, transformaci\u00f3n y carga de datos. Parte de un Certificado Profesional de Astronomer.",
     "Categoria": [
       "Datos & Anal\u00edtica",
       "Automatizaci\u00f3n & Procesos"

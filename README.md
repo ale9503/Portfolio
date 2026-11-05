@@ -13,8 +13,8 @@ The core architectural decision was to create a **strict separation of concerns*
 
 A defining feature is the **Strategic Skills Radar**, which moves away from hard-coded self-evaluations towards an empirical, data-driven approach.
 
-1. **`Files/skills_details.json`:** Contains the raw output of 97 learning milestones, courses, and technical tools. 
-2. **Strict Multi-Category Tagging:** A Python regex classification script (`strict_reclassify.py`) was used to scan all 97 rows and tag each skill natively with one (or multiple) of the following 7 core Executive pillars:
+1. **`Files/skills_details.json`:** Contains the raw output of 188 learning milestones, courses, and technical tools. 
+2. **Strict Multi-Category Tagging:** A Python regex classification script (`strict_reclassify.py`) was used to scan the original 97 rows and tag each skill natively with one (or multiple) of the following 7 core Executive pillars:
    - Producto & Innovación
    - Estrategia & Valor del Negocio
    - Datos & Analítica
@@ -22,7 +22,7 @@ A defining feature is the **Strategic Skills Radar**, which moves away from hard
    - Automatización & Procesos
    - Riesgo & Cumplimiento
    - Delivery & Proyectos Ágiles
-3. **Dynamic Canvas Projection:** Instead of reading flat percentages from the `data.XX.json` files, `skills.js` fetches the 97 rows, aggregates the frequencies of the aforementioned 7 pillars in milliseconds, normalizes the array computationally, and draws the vertices on the Chart.js canvas. Overlapping skills directly stretch multiple vertices.
+3. **Dynamic Canvas Projection:** Instead of reading flat percentages from the `data.XX.json` files, `skills.js` fetches all rows, aggregates the frequencies of the aforementioned 7 pillars in milliseconds, normalizes the array computationally, and draws the vertices on the Chart.js canvas. Overlapping skills directly stretch multiple vertices.
 
 ## 🎨 Bento UI & Constraints
 The interface was updated to a **2026 Corporate Bento Standard**:
